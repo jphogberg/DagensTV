@@ -1,0 +1,11 @@
+﻿@model IQueryable<DagensTV.Models.ViewModels.ChannelVM>
+
+@{
+    ViewBag.Title = "DagensTV";
+    ViewBag.Current = "Home";
+}
+@Html.Partial("_NavSecond")
+@Html.Action("PopIndex")
+<div class="content-wrapper" id="schedules">
+    @Html.Partial("_TvSchedules")
+</div>

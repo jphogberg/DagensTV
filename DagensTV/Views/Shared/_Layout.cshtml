@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Din TV-guide</title>
+    <meta name="keywords" content="tv, tablå, guide, dagens">
+    <meta name="description" content="DagensTV - TV-tablå med allt på TV idag">
+    <meta name="author" content="Patrik Högberg">
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <!-- jQuery UI Theme -->
+    @Styles.Render("~/Content/themes/base/css")
+    <!-- Google Fonts -->
+    @Styles.Render("~/font1")
+    @Styles.Render("~/font2")
+    <!-- My CSS -->
+    @Styles.Render("~/Content/myCSS")
+    <!-- Material Design Icons -->
+    @Styles.Render("~/icons")
+
+</head>
+<body>
+    @Html.Partial("_Navmenu")    
+    @RenderBody()
+
+    <!-- Bootstrap Modal som visas när man klickar på ett program i tablån -->
+    <div class="modal fade" tabindex="-1" id="tv-overlay">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header"> <!-- Todo: lägg till kategori-färg på divens nedre kant -->
+                    <a class="closebtn" data-dismiss="modal">&times;</a> 
+                    <img src="../img/placeholder.jpg" />
+                </div>
+                <div class="modal-body" id="overlay-body">  
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Gammal modal variant, kommer tas bort i projektet och ersättas med bootstrap-modal även för sökfunktionen -->
+    <div id="search-overlay" class="overlay">
+        <div class="overlay-content">
+            <span class="closebtn" onclick="hideOverlay()">&times;</span>
+            <p>
+                <span id="overlay-value"></span>
+            </p>
+        </div>
+    </div>
+    
+    <footer>
+        <section id="contactme">
+            <h3>
+                <a href="mailto:pahg1601@student.miun.se" class="mdi mdi-email">
+                    &copy; Patrik Högberg @DateTime.Now.Year
+                </a>
+            </h3>
+        </section>
+        <section id="contactus">
+            <h3>
+                <a href="contact.html" class="mdi mdi-email-variant">
+                    Kontakta oss
+                </a>
+            </h3>
+        </section>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/myJS")    
+</body>
+</html>

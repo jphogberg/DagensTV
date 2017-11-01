@@ -1,0 +1,23 @@
+﻿@model IEnumerable<DagensTV.Models.PopularContent>
+
+<div id="popular-wrapper">
+    @if (Model != null)
+    {
+        <section id="popular-list">
+            <h1>
+                <span id="pop">POPULÄRT</span> JUST NU
+            </h1>
+            @foreach (var item in Model)
+            {
+                <figure class="pop-img">
+                    <img src="@item.ImgUrl" title="@item.ImgTitle" alt="@item.ImgTitle">
+                    <figcaption>
+                        @item.ImgTitle
+                        <br>
+                        <i class="@item.Icon"></i>@item.Channel
+                    </figcaption>
+                </figure>
+            }                     
+        </section>
+    }    
+</div>

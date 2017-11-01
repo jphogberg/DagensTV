@@ -1,0 +1,24 @@
+﻿@model IQueryable<DagensTV.Models.ViewModels.ChannelVM>
+
+@if (Model != null)
+{
+    foreach (var channel in Model)
+    {
+        <section class="channel-list">
+            <img src="~/img/@channel.ImgUrl" class="channel" title="@channel.Name" alt="@channel.Name">
+            <span>@channel.Name</span>
+
+            <ul>
+                @foreach (var show in channel.Schedules)
+                    {
+                    <li>
+                        <span class="start-time">@show.StartTime.Value.ToShortTimeString()</span><div class="@show.CategoryTag">
+                            <span class="title" title="@show.ShowName"><a onclick="ShowInfo(@show.Id)">@show.ShowName</a></span><br>
+                            <span class="genre">@show.MovieGenre</span><span class="rating mdi mdi-star">@show.ImdbRating</span>
+                        </div>
+                    </li>
+                }
+            </ul>
+        </section>
+    }
+}

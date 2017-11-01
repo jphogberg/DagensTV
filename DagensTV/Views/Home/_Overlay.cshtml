@@ -1,0 +1,10 @@
+﻿@if (ViewBag.ScheduleList != null)
+{
+    foreach (var item in ViewBag.ScheduleList)
+    {
+        <h2>@item.ShowName<span class="category-name"> (@item.CategoryName)</span></h2>
+            <h6>@item.StartTime.ToShortTimeString() - @item.EndTime.ToShortTimeString() @item.ChannelName</h6>
+            <p>@item.Resume</p>
+
+    }
+}
