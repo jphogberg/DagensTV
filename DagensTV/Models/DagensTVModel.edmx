@@ -19,6 +19,7 @@
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="LogoFilePath" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Schedule">
           <Key>
@@ -40,6 +41,7 @@
           <Property Name="CategoryId" Type="int" />
           <Property Name="MovieGenre" Type="varchar" MaxLength="50" />
           <Property Name="ImdbRating" Type="nchar" MaxLength="10" />
+          <Property Name="RatingIcon" Type="varchar" MaxLength="50" />
         </EntityType>
         <Association Name="FK_Listing_ToTable">
           <End Role="Channel" Type="Self.Channel" Multiplicity="0..1" />
@@ -115,6 +117,7 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Schedule" Relationship="Self.FK_Listing_ToTable" FromRole="Channel" ToRole="Schedule" />
+          <Property Name="LogoFilePath" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="Schedule">
           <Key>
@@ -139,7 +142,8 @@
           <NavigationProperty Name="Category" Relationship="Self.FK_Show_ToTable" FromRole="Show" ToRole="Category" />
           <NavigationProperty Name="Schedule" Relationship="Self.FK_Listing_ToTable_1" FromRole="Show" ToRole="Schedule" />
           <Property Name="MovieGenre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="ImdbRating" Type="String" />
+          <Property Name="ImdbRating" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="RatingIcon" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <Association Name="FK_Show_ToTable">
           <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
@@ -213,6 +217,7 @@
           <EntitySetMapping Name="Channel">
             <EntityTypeMapping TypeName="DagensTVModel.Channel">
               <MappingFragment StoreEntitySet="Channel">
+                <ScalarProperty Name="LogoFilePath" ColumnName="LogoFilePath" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
               </MappingFragment>
@@ -233,6 +238,7 @@
           <EntitySetMapping Name="Show">
             <EntityTypeMapping TypeName="DagensTVModel.Show">
               <MappingFragment StoreEntitySet="Show">
+                <ScalarProperty Name="RatingIcon" ColumnName="RatingIcon" />
                 <ScalarProperty Name="ImdbRating" ColumnName="ImdbRating" />
                 <ScalarProperty Name="MovieGenre" ColumnName="MovieGenre" />
                 <ScalarProperty Name="Id" ColumnName="Id" />

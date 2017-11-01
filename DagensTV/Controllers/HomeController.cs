@@ -15,12 +15,12 @@ namespace DagensTV.Controllers
 
         #region Main
         public ActionResult Index()
-        {                   
+        {
             var channelList = db.Channel.Select(x => new ChannelVM
             {
                 Id = x.Id,
                 Name = x.Name,
-                ImgUrl = x.Name + ".png",
+                ImgUrl = x.LogoFilePath,
                 Schedules = db.Schedule.Where(s => s.ChannelId == x.Id).Select(schedule => new ScheduleVM
                 {
                     Id = schedule.Id,
@@ -29,7 +29,8 @@ namespace DagensTV.Controllers
                     ShowName = schedule.Show.Name,
                     CategoryTag = schedule.Show.Category.Tag,
                     MovieGenre = schedule.Show.MovieGenre,
-                    ImdbRating = schedule.Show.ImdbRating
+                    ImdbRating = schedule.Show.ImdbRating,
+                    StarImage = schedule.Show.RatingIcon
                 }).ToList()                
             });          
 
@@ -43,7 +44,7 @@ namespace DagensTV.Controllers
             {
                 Id = x.Id,
                 Name = x.Name,
-                ImgUrl = x.Name + ".png",
+                ImgUrl = x.LogoFilePath,
                 Schedules = db.Schedule.Where(s => s.ChannelId == x.Id && s.Show.Category.Name.Contains(Filter)).Select(schedule => new ScheduleVM
                 {
                     Id = schedule.Id,
@@ -52,7 +53,8 @@ namespace DagensTV.Controllers
                     ShowName = schedule.Show.Name,
                     CategoryTag = schedule.Show.Category.Tag,
                     MovieGenre = schedule.Show.MovieGenre,
-                    ImdbRating = schedule.Show.ImdbRating
+                    ImdbRating = schedule.Show.ImdbRating,
+                    StarImage = schedule.Show.RatingIcon
                 }).ToList()
             });
 
@@ -71,7 +73,8 @@ namespace DagensTV.Controllers
                 CategoryName = x.Show.Category.Name,
                 CategoryTag = x.Show.Category.Tag,
                 MovieGenre = x.Show.MovieGenre,
-                ImdbRating = x.Show.ImdbRating
+                ImdbRating = x.Show.ImdbRating,
+                StarImage = x.Show.RatingIcon
             }).ToList();
 
             ViewBag.ScheduleList = scheduleList;

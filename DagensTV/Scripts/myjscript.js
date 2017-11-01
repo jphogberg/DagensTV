@@ -1,7 +1,7 @@
 /* Funktion för att toggla menyn i responsivt läge */
 function toggleMenu(x) {
     x.classList.toggle("change");
-    var x = document.getElementById("nav-menu");
+    x = document.getElementById("nav-menu");
     if (x.className === "menu") {
         x.className += " responsive";
     } else {

@@ -50,7 +50,7 @@ ul {
 }
 
 .mdi {	
-	  margin-right: 3px;
+	  margin-right: 0;
   }
 
 /* --- Nav --- */
@@ -391,7 +391,7 @@ div .rating {
 	font-size: .9em;
 	font-weight: 300;
 	padding-left: 14px;
-	margin-left: 2px;	
+	margin-left: 0;
 }
 
 .generic, .reality, .sports, .tvshow, .movie, .culture, .documentary, .news, .children {
@@ -405,7 +405,7 @@ div .rating {
 	width: 76%;
 	overflow: hidden;
 	vertical-align: top;
-	text-overflow: ellipsis;	
+	text-overflow: ellipsis;
 }
 .reality {
 	border-color: #ec8ac7;

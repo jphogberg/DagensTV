@@ -21,5 +21,6 @@ namespace DagensTV.Models.ViewModels
         public string CategoryTag { get; set; }
         public string MovieGenre { get; set; }
         public string ImdbRating { get; set; }
+        public string StarImage { get; set; }
     }
 }
