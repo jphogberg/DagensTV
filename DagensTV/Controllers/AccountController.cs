@@ -1,4 +1,5 @@
-﻿using DagensTV.Models.ViewModels;
+﻿using DagensTV.Data;
+using DagensTV.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,8 @@ namespace DagensTV.Controllers
 {
     public class AccountController : Controller
     {
+        DbOperations db = new DbOperations();
+
         // GET: Account
         public ActionResult Login()
         {
@@ -22,10 +25,18 @@ namespace DagensTV.Controllers
         {
             if (ModelState.IsValid)
             {
-                FormsAuthentication.SetAuthCookie(model.Username, false);
-                return Redirect(ReturnUrl);
+                if(db.CheckUser(model.Username, model.Password))
+                {
+                    FormsAuthentication.SetAuthCookie(model.Username, false);
+                    return Redirect(ReturnUrl);
+                    //behöver hantera om url inte finns
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Felaktigt användarnamn eller lösenord.");
+                    
+                }
             }
-
             return View();
         }
 

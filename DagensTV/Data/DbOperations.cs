@@ -8,6 +8,22 @@ namespace DagensTV.Data
 {
     public class DbOperations
     {
-        DagensTVEntities db = new DagensTVEntities();
+        private DagensTVEntities db = new DagensTVEntities();
+
+        public bool CheckUser(string username, string password)
+        {
+            var user = db.Person.Where(
+                x => x.Username.Equals(username) && x.Password.Equals(password));
+            if (user.Any())
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+
     }
 }
