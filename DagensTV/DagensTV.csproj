@@ -159,6 +159,7 @@
     <Compile Include="Controllers\SeriesController.cs" />
     <Compile Include="Controllers\SportController.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Data\DbOperations.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

@@ -97,6 +97,7 @@ namespace DagensTV.Controllers
 
             return PartialView("_PopularContent", popList);
         }
-        #endregion        
+        #endregion
+
     }
 }
