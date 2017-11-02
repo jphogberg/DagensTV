@@ -63,31 +63,51 @@ header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 100;
+	z-index: 300;
 	opacity: 0.98;
 }
 
-.nav-second {
-    background: #193441;    
-    border-bottom: 2px solid #91AA9D;
+#sub-nav {
     position: fixed;
-    width: 100%;
+    background: #193441;
+    border-bottom: 2px solid #91AA9D;
     top: 60px;
+    left: 0;
+    width: 100%;
+    height: 20px;    
+    z-index: 300;
+    opacity: 0.98;
+    padding: 4px 32px 20px 32px;
+}
+
+#sub-nav-content {
+    width: 100%;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+    animation-duration: 0.3s;    
+}
+
+#nav-second, #nav-second-calendar {    
     left: 0;
     z-index: 100;
     opacity: 0.98;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    float: right;    
 }
 
+#nav-second-calendar {
+    float: left;    
+}
 
-.nav-second a, .nav-category {
+#nav-second a, #nav-second-calendar, #nav-category {
     font: 0.95em 'Roboto', sans-serif;
     font-weight: 400;        
     margin: 0 10px 0 0;
-    padding: 0 4px 0 0;
+    padding: 0;
     cursor: pointer;
+}
+
+#nav-second-calendar a {
+    margin: 0 10px 0 0;
 }
 
 a[tabindex]:focus {
@@ -96,7 +116,7 @@ a[tabindex]:focus {
     outline: none;
 }
 
-.nav-category {
+#nav-category {
     color: #FCFFF5;
     cursor: default;
 }
