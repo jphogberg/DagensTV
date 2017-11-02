@@ -153,10 +153,6 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\MoviesController.cs" />
-    <Compile Include="Controllers\PlayController.cs" />
-    <Compile Include="Controllers\SeriesController.cs" />
-    <Compile Include="Controllers\SportController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -333,10 +329,6 @@
     <Content Include="Views\Shared\_NavMenu.cshtml" />
     <Content Include="Views\Shared\_PopularContent.cshtml" />
     <Content Include="Views\Home\_TvSchedules.cshtml" />
-    <Content Include="Views\Sport\Index.cshtml" />
-    <Content Include="Views\Play\Index.cshtml" />
-    <Content Include="Views\Series\Index.cshtml" />
-    <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Home\_Overlay.cshtml" />
     <Content Include="Views\Home\_NavSecond.cshtml" />
   </ItemGroup>
