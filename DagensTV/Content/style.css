@@ -57,7 +57,7 @@ ul {
 
 header {
 	background: #193441;
-	border-bottom: 2px solid #91AA9D;
+	border-bottom: 1px solid #91AA9D;
 	width: 100%;	
 	height: 60px;
 	position: fixed;
@@ -67,47 +67,27 @@ header {
 	opacity: 0.98;
 }
 
-#sub-nav {
-    position: fixed;
-    background: #193441;
-    border-bottom: 2px solid #91AA9D;
-    top: 60px;
-    left: 0;
+#nav-content {
     width: 100%;
-    height: 20px;    
-    z-index: 300;
-    opacity: 0.98;
-    padding: .1% 20% 1% 20%;
+    display: flex;
 }
 
-#sub-nav-content {
-    width: 100%;
-    animation-fill-mode: both;
-    animation-name: fadeIn;
-    animation-duration: 0.3s;    
+#main-menu {
+    margin-right: auto;
+    margin-left: 12%;
 }
 
-#nav-second, #nav-second-calendar {    
-    left: 0;
-    z-index: 100;
-    opacity: 0.98;
-    float: right;    
+#menu-login {
+    margin-left: auto;    
 }
 
-#nav-second-calendar {
-    float: left;    
+#menu-login li a {
+    font-size: 1em;
+    padding: 0 10px 0 7px;
 }
 
-#nav-second a, #nav-second-calendar, #nav-category {
-    font: 0.95em 'Roboto', sans-serif;
-    font-weight: 400;        
-    margin: 0 10px 0 0;
-    padding: 0;
-    cursor: pointer;
-}
-
-#nav-second-calendar a {
-    margin: 0 10px 0 0;
+#sub-nav-content, #nav-content {
+    width: 100%;    
 }
 
 a[tabindex]:focus {
@@ -116,47 +96,50 @@ a[tabindex]:focus {
     outline: none;
 }
 
-#nav-category {
-    color: #FCFFF5;
-    cursor: default;
-}
-
 #logo {	
 	position: absolute;	
 	width: 187px;
 	height: 60px;
 	background: url(../img/logo.png) no-repeat center;	
-	margin-left: .2%;
+	margin-left: .3%;
 }
 
-nav {
+#current {
+    color: #FCFFF5;
+    background: #2f4854;
+    opacity: 1;
+}
+
+nav.menu {
 	text-align: center;
-	padding: 15px 0 20px 0;
-	overflow: hidden;	
+	padding: 0 0 20px 0;
+	overflow: hidden;
 }
 
 nav ul {
-	display: flex;	
-	justify-content: center;
-	margin-left: 120px;
+	display: flex;		
 }
 
-nav .menuLink {			
-	font: 1.5em 'Roboto Condensed', sans-serif;	
-	font-weight: 700;	
-	text-transform: uppercase;
-	text-align: center;	
-	margin: 0 15px 0 0;
-	padding: 0 4px 0 0;
+nav .menuLink {
+    font: 1.5em 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    opacity: 0.55;
+    padding: 0 17px;
+    text-align: center;
+    margin: 0 15px 0 0;    
+    height: 59px;
+    vertical-align: middle;
+    display: table-cell;
 }
 
 nav .icon {
 	display: none;
 }
 
-.menuLink:hover {	
-	color: #FCFFF5;		
-	border-bottom: 3px solid;
+.menuLink:hover {
+    color: #FCFFF5;
+    background: #2f4854;
+    opacity: 1;
 }
 
 .nav-icon-bar1, .nav-icon-bar2, .nav-icon-bar3 {
@@ -186,10 +169,59 @@ nav .icon {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
+/* --- Sub-Nav --- */
+
+#sub-nav {
+    position: fixed;
+    background: #193441;
+    border-bottom: 1px solid #91AA9D;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    z-index: 300;
+    opacity: 0.98;
+    padding: .1% 20% 1% 20%;
+}
+
+#nav-second, #nav-second-calendar {
+    left: 0;
+    z-index: 100;
+    opacity: 0.98;
+    float: right;
+}
+
+#nav-second-calendar {
+    float: left;
+}
+
+#nav-second a, #nav-second-calendar, #nav-category {
+    font: 0.95em 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0 10px 0 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+#nav-second-calendar a {
+    margin: 0 10px 0 0;
+}
+
+#nav-category {
+    color: #FCFFF5;
+    cursor: default;
+}
+
 /* --- Search --- */
 
+#search-large {
+    vertical-align: middle;
+    display: table-cell;
+    height: 58px;
+    padding-top: 15px;
+}
 #search-large:hover {
-	border-bottom: none;	
+    background: #193441;
 }
 
 input[type=search] {
@@ -221,8 +253,7 @@ input[type=search]:focus {
 	width: 100%;
 	outline: none !important;
 	border: 1px solid #D1DBBD;
-	box-shadow: 0 0 10px #719ECE;	
-	/* padding: 0 25px; */
+	box-shadow: 0 0 10px #719ECE;		
 }
 
 ::-webkit-input-placeholder { 
@@ -368,14 +399,6 @@ section span {
 .mobile-break {
 	display: none;
 }
-
-/*.channel-info {
-    color: #3E606F;
-}
-
-.channel-info:hover {
-    color: #193441;
-}*/
 
 /* --- Program type --- */
 
@@ -1047,7 +1070,7 @@ footer #contactus {
   /* --- Datorspecifikt --- */
   
   /* --- Mindre skärm --- */
-  @media screen and (min-width: 1150px) and (max-width: 1679px) {	
+  @media screen and (min-width: 1150px) and (max-width: 1694px) {	
 	#popular-wrapper {
 		width: 75%;
 	}
@@ -1085,7 +1108,7 @@ footer #contactus {
   }
 
   /* --- Stor skärm men ej full-HD --- */
-@media screen and (min-width: 1680px) and (max-width: 1919px) {
+@media screen and (min-width: 1695px) and (max-width: 1919px) {
     .menuLink#current {
         color: #FCFFF5;
         border-bottom: 3px solid;
