@@ -181,7 +181,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DagensTVModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Person.cs">
+      <DependentUpon>DagensTVModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\PopularContent.cs" />
+    <Compile Include="Models\Role.cs">
+      <DependentUpon>DagensTVModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Schedule.cs">
       <DependentUpon>DagensTVModel.tt</DependentUpon>
     </Compile>
