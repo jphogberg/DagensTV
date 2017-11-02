@@ -17,7 +17,7 @@ namespace DagensTV.Controllers
         // GET: User
         public ActionResult Index()
         {
-            var person = db.Person.Include(p => p.RoleId);
+            var person = db.Person.Include(p => p.Role);
             return View(person.ToList());
         }
 
@@ -57,7 +57,7 @@ namespace DagensTV.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.RoleId = new SelectList(db.Role, "Id", "Name", person.RoleId);
+            ViewBag.RoleId = new SelectList(db.Role, "Id", "Name", person.Role);
             return View(person);
         }
 
@@ -73,7 +73,7 @@ namespace DagensTV.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.RoleId = new SelectList(db.Role, "Id", "Name", person.RoleId);
+            ViewBag.RoleId = new SelectList(db.Role, "Id", "Name", person.Role);
             return View(person);
         }
 
@@ -90,7 +90,7 @@ namespace DagensTV.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.RoleId = new SelectList(db.Role, "Id", "Name", person.RoleId);
+            ViewBag.RoleId = new SelectList(db.Role, "Id", "Name", person.Role);
             return View(person);
         }
 
