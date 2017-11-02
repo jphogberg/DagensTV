@@ -6,7 +6,7 @@
     <title>@ViewBag.Title - Din TV-guide</title>
     <meta name="keywords" content="tv, tablå, guide, dagens">
     <meta name="description" content="DagensTV - TV-tablå med allt på TV idag">
-    <meta name="author" content="Patrik Högberg">
+    <meta name="author" content="Patrik Högberg & Linda Pettersson">
 
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -54,20 +54,12 @@
     </div>
     
     <footer>
-        <section id="contactme">
+        <section>
             <h3>
-                <a href="mailto:pahg1601@student.miun.se" class="mdi mdi-email">
-                    &copy; Patrik Högberg @DateTime.Now.Year
-                </a>
+                &copy;<a href="mailto:pahg1601@student.miun.se"> Patrik Högberg</a> & 
+                <a href="mailto:lipe1604@student.miun.se">Linda Pettersson</a> @DateTime.Now.Year                
             </h3>
-        </section>
-        <section id="contactus">
-            <h3>
-                <a href="contact.html" class="mdi mdi-email-variant">
-                    Kontakta oss
-                </a>
-            </h3>
-        </section>
+        </section>        
     </footer>
 
     @Scripts.Render("~/bundles/jquery")
