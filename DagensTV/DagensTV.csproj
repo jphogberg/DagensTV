@@ -183,7 +183,9 @@
     <Compile Include="Models\Person.cs">
       <DependentUpon>DagensTVModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\PopularContent.cs" />
+    <Compile Include="Models\PopularContent.cs">
+      <DependentUpon>DagensTVModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Role.cs">
       <DependentUpon>DagensTVModel.tt</DependentUpon>
     </Compile>

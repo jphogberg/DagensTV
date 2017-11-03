@@ -32,6 +32,16 @@
           <Property Name="Password" Type="nchar" MaxLength="20" Nullable="false" />
           <Property Name="RoleId" Type="int" />
         </EntityType>
+        <EntityType Name="PopularContent">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ImgUrl" Type="nchar" MaxLength="70" />
+          <Property Name="ImgTitle" Type="nchar" MaxLength="30" />
+          <Property Name="Icon" Type="nchar" MaxLength="30" />
+          <Property Name="ChannelId" Type="int" />
+        </EntityType>
         <EntityType Name="Role">
           <Key>
             <PropertyRef Name="Id" />
@@ -97,6 +107,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_PopularContent_ToTable">
+          <End Role="Channel" Type="Self.Channel" Multiplicity="0..1" />
+          <End Role="PopularContent" Type="Self.PopularContent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Channel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PopularContent">
+              <PropertyRef Name="ChannelId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_Show_ToTable">
           <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
           <End Role="Show" Type="Self.Show" Multiplicity="*" />
@@ -113,6 +135,7 @@
           <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Channel" EntityType="Self.Channel" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Person" EntityType="Self.Person" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PopularContent" EntityType="Self.PopularContent" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Schedule" EntityType="Self.Schedule" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Show" EntityType="Self.Show" Schema="dbo" store:Type="Tables" />
@@ -127,6 +150,10 @@
           <AssociationSet Name="FK_Person_Role" Association="Self.FK_Person_Role">
             <End Role="Role" EntitySet="Role" />
             <End Role="Person" EntitySet="Person" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PopularContent_ToTable" Association="Self.FK_PopularContent_ToTable">
+            <End Role="Channel" EntitySet="Channel" />
+            <End Role="PopularContent" EntitySet="PopularContent" />
           </AssociationSet>
           <AssociationSet Name="FK_Show_ToTable" Association="Self.FK_Show_ToTable">
             <End Role="Category" EntitySet="Category" />
@@ -154,6 +181,7 @@
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Schedule" Relationship="Self.FK_Listing_ToTable" FromRole="Channel" ToRole="Schedule" />
           <Property Name="LogoFilePath" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="PopularContent" Relationship="DagensTVModel.FK_PopularContent_ToTable" FromRole="Channel" ToRole="PopularContent" />
         </EntityType>
         <EntityType Name="Schedule">
           <Key>
@@ -240,6 +268,11 @@
             <End Role="Role" EntitySet="Role" />
             <End Role="Person" EntitySet="Person" />
           </AssociationSet>
+          <EntitySet Name="PopularContent" EntityType="DagensTVModel.PopularContent" />
+          <AssociationSet Name="FK_PopularContent_ToTable" Association="DagensTVModel.FK_PopularContent_ToTable">
+            <End Role="Channel" EntitySet="Channel" />
+            <End Role="PopularContent" EntitySet="PopularContent" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="Person">
           <Key>
@@ -270,6 +303,29 @@
             </Principal>
             <Dependent Role="Person">
               <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="PopularContent">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ImgUrl" Type="String" MaxLength="70" FixedLength="true" Unicode="true" />
+          <Property Name="ImgTitle" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+          <Property Name="Icon" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+          <Property Name="ChannelId" Type="Int32" />
+          <NavigationProperty Name="Channel" Relationship="DagensTVModel.FK_PopularContent_ToTable" FromRole="PopularContent" ToRole="Channel" />
+        </EntityType>
+        <Association Name="FK_PopularContent_ToTable">
+          <End Type="DagensTVModel.Channel" Role="Channel" Multiplicity="0..1" />
+          <End Type="DagensTVModel.PopularContent" Role="PopularContent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Channel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PopularContent">
+              <PropertyRef Name="ChannelId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -337,6 +393,17 @@
             <EntityTypeMapping TypeName="DagensTVModel.Role">
               <MappingFragment StoreEntitySet="Role">
                 <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PopularContent">
+            <EntityTypeMapping TypeName="DagensTVModel.PopularContent">
+              <MappingFragment StoreEntitySet="PopularContent">
+                <ScalarProperty Name="ChannelId" ColumnName="ChannelId" />
+                <ScalarProperty Name="Icon" ColumnName="Icon" />
+                <ScalarProperty Name="ImgTitle" ColumnName="ImgTitle" />
+                <ScalarProperty Name="ImgUrl" ColumnName="ImgUrl" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
