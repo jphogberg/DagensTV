@@ -16,20 +16,20 @@ namespace DagensTV.Controllers
         // GET: Account
         public ActionResult Login()
         {
-            return View();
+            
+            return View("Login");
         }
 
 
         [HttpPost]
-        public ActionResult Login(LoginVM model, string ReturnUrl)
+        public ActionResult Login(LoginVM model)
         {
             if (ModelState.IsValid)
             {
                 if(db.CheckUser(model.Username, model.Password))
                 {
                     FormsAuthentication.SetAuthCookie(model.Username, false);
-                    return Redirect(ReturnUrl);
-                    //behöver hantera om url inte finns
+                    return RedirectToAction("Index", "Admin");
                 }
                 else
                 {
