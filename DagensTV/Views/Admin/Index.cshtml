@@ -6,39 +6,60 @@
 <div class="col-md-offset-2 col-md-10">
     <h1>Hantera nyhetspuffar</h1>
 </div>
-
+<hr />
+<br /><br />
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
 
-       
-            @*<div class="col-md-offset-2 col-md-4">
-                @Html.LabelFor(model => model., htmlAttributes: new { @class = "control-label" })
-            </div>
-            <div class="col-md-offset-2 col-md-10">
-                @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control" } })
-            </div>
+    <div class="form-horizontal">
+        
+        <div class="col-md-offset-2 col-md-4">
+            @Html.Label("Välj befintlig nyhetspuff", htmlAttributes: new { @class = "control-label" })
+        </div>
+        <div class="col-md-offset-2 col-md-10">
+            @Html.Label("Plats för combobox", htmlAttributes: new { @class = "control-label" })
+        </div><br /><br />
+        <div class="col-md-offset-2 col-md-4">
+            @Html.LabelFor(model => model.ImgTitle, htmlAttributes: new { @class = "control-label" })
+        </div>
+        <div class="col-md-offset-2 col-md-10">
+            @Html.EditorFor(model => model.ImgTitle, new { htmlAttributes = new { @class = "form-control" } })
+        </div><br /><br />
 
-            <div class="col-md-offset-2 col-md-4">
-                @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label com-md-2" })
-            </div>
-            <div class="col-md-offset-2 col-md-10">
-                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
-            </div>*@
+        <div class="col-md-offset-2 col-md-4">
+            @Html.LabelFor(model => model.ImgUrl, htmlAttributes: new { @class = "control-label com-md-2" })
+        </div>
+        <div class="col-md-offset-2 col-md-10">
+            @Html.EditorFor(model => model.ImgUrl, new { htmlAttributes = new { @class = "form-control" } })
+        </div><br /><br />
+        <div class="col-md-offset-2 col-md-4">
+            @Html.LabelFor(model => model.Icon, htmlAttributes: new { @class = "control-label com-md-2" })
+        </div>
+        <div class="col-md-offset-2 col-md-10">
+            @Html.Label("Plats för ladda upp icon", htmlAttributes: new { @class = "control-label" })
+        </div><br /><br />
+        <div class="col-md-offset-2 col-md-4">
+            @Html.Label("Välj kanal", htmlAttributes: new { @class = "control-label" })
+        </div>
+        <div class="col-md-offset-2 col-md-10">
+            @Html.Label("Plats för combobox", htmlAttributes: new { @class = "control-label" })
+        </div>
 
+        <br /><br />
 
         <div class="form-group">
-            <div class="col-md-offset-4">
+            <div class="col-md-offset-6 col-md-10">
                 <input type="submit" value="Lägg till" class="btn btn-default" />
             </div>
-            <div class="col-md-offset-4">
+            <div class="col-md-offset-6 col-md-10">
                 <input type="submit" value="Redigera" class="btn btn-default" />
             </div>
-            <div class="col-md-offset-4">
+            <div class="col-md-offset-6 col-md-10">
                 <input type="submit" value="Ta bort" class="btn btn-default" />
             </div>
         </div>
+    </div>
 
-   
 }
