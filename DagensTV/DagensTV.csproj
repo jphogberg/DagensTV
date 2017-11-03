@@ -153,9 +153,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-	<Compile Include="Controllers\HomeController.cs" />
-	<Compile Include="Controllers\UserController.cs" />
-	<Compile Include="Data\DbOperations.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Data\DbOperations.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -180,13 +180,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DagensTVModel.edmx</DependentUpon>
     </Compile>
-	<Compile Include="Models\Person.cs">
-	  <DependentUpon>DagensTVModel.tt</DependentUpon>
-	</Compile>
+    <Compile Include="Models\Person.cs">
+      <DependentUpon>DagensTVModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\PopularContent.cs" />
-	<Compile Include="Models\Role.cs">
-	  <DependentUpon>DagensTVModel.tt</DependentUpon>
-	</Compile>
+    <Compile Include="Models\Role.cs">
+      <DependentUpon>DagensTVModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Schedule.cs">
       <DependentUpon>DagensTVModel.tt</DependentUpon>
     </Compile>
@@ -194,7 +194,7 @@
       <DependentUpon>DagensTVModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ViewModels\ChannelVM.cs" />
-	<Compile Include="Models\ViewModels\LoginVM.cs" />
+    <Compile Include="Models\ViewModels\LoginVM.cs" />
     <Compile Include="Models\ViewModels\ScheduleVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -341,12 +341,12 @@
     <Content Include="Views\Home\_TvSchedules.cshtml" />
     <Content Include="Views\Home\_Overlay.cshtml" />
     <Content Include="Views\Home\_NavSecond.cshtml" />
-	<Content Include="Views\User\Create.cshtml" />
-	<Content Include="Views\User\Delete.cshtml" />
-	<Content Include="Views\User\Details.cshtml" />
-	<Content Include="Views\User\Edit.cshtml" />
-	<Content Include="Views\User\Index.cshtml" />
-	<Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\User\Create.cshtml" />
+    <Content Include="Views\User\Delete.cshtml" />
+    <Content Include="Views\User\Details.cshtml" />
+    <Content Include="Views\User\Edit.cshtml" />
+    <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
