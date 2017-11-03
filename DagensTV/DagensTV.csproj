@@ -345,11 +345,7 @@
     <Content Include="Views\Home\_TvSchedules.cshtml" />
     <Content Include="Views\Home\_Overlay.cshtml" />
     <Content Include="Views\Home\_NavSecond.cshtml" />
-    <Content Include="Views\User\Create.cshtml" />
-    <Content Include="Views\User\Delete.cshtml" />
-    <Content Include="Views\User\Details.cshtml" />
-    <Content Include="Views\User\Edit.cshtml" />
-    <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\User\MyPage.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
   </ItemGroup>

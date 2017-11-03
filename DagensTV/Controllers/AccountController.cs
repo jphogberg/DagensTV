@@ -1,4 +1,5 @@
 ﻿using DagensTV.Data;
+using DagensTV.Models;
 using DagensTV.Models.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,8 @@ namespace DagensTV.Controllers
 {
     public class AccountController : Controller
     {
-        DbOperations db = new DbOperations();
+        DbOperations dbo = new DbOperations();
+        DagensTVEntities db = new DagensTVEntities();
 
         // GET: Account
         public ActionResult Login()
@@ -24,12 +26,31 @@ namespace DagensTV.Controllers
         [HttpPost]
         public ActionResult Login(LoginVM model)
         {
+            
             if (ModelState.IsValid)
             {
-                if(db.CheckUser(model.Username, model.Password))
+                if(dbo.CheckUser(model.Username, model.Password))
                 {
                     FormsAuthentication.SetAuthCookie(model.Username, false);
-                    return RedirectToAction("Index", "Admin");
+
+                    var persons = db.Person.ToList();
+                    var roleId = 0;
+                    foreach(var p in persons)
+                    {
+                        if(p.Username == model.Username)
+                        {
+                            roleId = p.RoleId.GetValueOrDefault();
+                        }
+                    }
+
+                    if (roleId == 1)
+                    {
+                        return RedirectToAction("Index", "Admin");
+                    }
+                    if (roleId == 2)
+                    {
+                        return RedirectToAction("MyPage", "User");
+                    }
                 }
                 else
                 {
