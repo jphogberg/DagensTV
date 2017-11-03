@@ -223,6 +223,10 @@ a[tabindex]:focus {
     float: right;
 }
 
+input[type=checkbox] {
+    display: none;
+}
+
 /* --- Search --- */
 
 #search-large {
