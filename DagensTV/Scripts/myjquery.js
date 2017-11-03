@@ -71,3 +71,18 @@ $(function () {
         });
     }).resize();
 });
+
+/* Toggla dropdown menyerna i SubNav för responsiva designen */
+$('.category-filter').click(function () {
+    $("#nav-second").toggle();    
+})
+$('.calendar-filter').click(function () {
+    $("#nav-second-calendar").toggle();
+})
+
+$('.show-genre').click(function () {
+    $("#nav-second").toggle();        
+})
+$('.show-calendar').click(function () {
+    $("#nav-second-calendar").toggle();
+})

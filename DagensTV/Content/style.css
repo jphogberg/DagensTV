@@ -53,6 +53,10 @@ ul {
 	  margin-right: 0;
   }
 
+.open {
+    display: flex;
+}
+
 /* --- Nav --- */
 
 header {
@@ -217,14 +221,6 @@ a[tabindex]:focus {
 
 .show-genre {
     float: right;
-}
-
-input[type=checkbox] {
-    display: none;    
-}
-
-input[type=checkbox]:checked ~ #nav-second-calendar, input[type=checkbox]:checked ~ #nav-second {
-    display: block;
 }
 
 /* --- Search --- */
@@ -754,7 +750,7 @@ footer section {
         height: 30px;
     }
     #sub-nav-content {
-        width: 100%;
+        width: 100%;        
     }
     #nav-second, #nav-second-calendar {
         position: absolute;                
@@ -772,8 +768,7 @@ footer section {
         left: 10%;
         right: auto;
     }
-    #nav-second-calendar li, #nav-second li {
-        display: flex;
+    #nav-second-calendar li, #nav-second li {        
         font-size: 0.8em;
         width: 100%;                
     }
@@ -898,7 +893,7 @@ footer section {
 	/* -- Search bar -- */	
 	#search-large {
 		display: block;
-	}	
+	}
 	nav.responsive #search-large {
 		margin: 0;
 		padding: 0;
