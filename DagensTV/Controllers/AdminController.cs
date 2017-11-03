@@ -15,7 +15,7 @@ namespace DagensTV.Controllers
         // GET: Admin
         public ActionResult Index()
         {
-            var popularContent = db.PopularContent.Select(x => new PopVM
+            var popularContentList = db.PopularContent.Select(x => new PopVM
             {
                 Id = x.Id,
                 ImgUrl = x.ImgUrl,
