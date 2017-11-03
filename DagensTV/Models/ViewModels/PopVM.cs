@@ -1,21 +1,21 @@
-﻿using DagensTV.Models.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace DagensTV.Models
+namespace DagensTV.Models.ViewModels
 {
-    public class PopularContent
-    {        
+    public class PopVM
+    {
+
         public int Id { get; set; }
         public string ImgUrl { get; set; }
         public string ImgTitle { get; set; }
         public string Icon { get; set; }
-        public int ChannelId { get; set; }
 
-        public virtual Channel Channel { get; set; }
+        public List<ChannelVM> Channels { get; set; }
+
+
+
     }
-
-
 }
