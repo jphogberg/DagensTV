@@ -355,7 +355,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Popular\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

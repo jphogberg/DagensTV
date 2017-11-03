@@ -16,6 +16,5 @@ namespace DagensTV.Models.ViewModels
         public List<ChannelVM> Channels { get; set; }
 
 
-
     }
 }

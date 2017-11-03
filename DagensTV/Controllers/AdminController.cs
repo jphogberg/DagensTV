@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace DagensTV.Controllers
 {
+    
     public class AdminController : Controller
     {
         DagensTVEntities db = new DagensTVEntities();
@@ -28,7 +29,7 @@ namespace DagensTV.Controllers
                 }).ToList()
             });
 
-            return View();
+            return View(popularContentList);
         }
     }
 }

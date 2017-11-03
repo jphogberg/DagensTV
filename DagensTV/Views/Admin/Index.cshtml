@@ -1,4 +1,4 @@
-﻿@model DagensTV.Models.ViewModels.PopVM
+﻿@model IEnumerable<DagensTV.Models.ViewModels.PopVM>
 @{
     ViewBag.Title = "Index";
 }
@@ -9,57 +9,62 @@
 <hr />
 <br /><br />
 
-@using (Html.BeginForm())
-{
+
     @Html.AntiForgeryToken()
 
-    <div class="form-horizontal">
+    
         
-        <div class="col-md-offset-2 col-md-4">
-            @Html.Label("Välj befintlig nyhetspuff", htmlAttributes: new { @class = "control-label" })
-        </div>
         <div class="col-md-offset-2 col-md-10">
-            @Html.Label("Plats för combobox", htmlAttributes: new { @class = "control-label" })
-        </div><br /><br />
-        <div class="col-md-offset-2 col-md-4">
-            @Html.LabelFor(model => model.ImgTitle, htmlAttributes: new { @class = "control-label" })
-        </div>
-        <div class="col-md-offset-2 col-md-10">
-            @Html.EditorFor(model => model.ImgTitle, new { htmlAttributes = new { @class = "form-control" } })
-        </div><br /><br />
+            <div class="dropdown">@*https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_comp_dropdown-menu&stacked=h*@
+                <button class="btn btn-default dropdown-toggle" type="button" id="menu-pop" data-toggle="dropdown">
+                    Nyhetspuffar
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu-pop">
+                    @foreach (var item in Model)
+                    {
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">@item.ImgTitle</a></li>
+                    }
+                </ul>
+            </div><br /><br />
+        
+            <div class="form-group">@*https://www.w3schools.com/bootstrap/bootstrap_forms_inputs.asp*@
+                <label for="img-title">Bildens titel:</label>
+                <input type="text" class="form-control" id="img-title">
+            </div>
+            <div class="form-group">
+                <label for="img-url">Bildens url:</label>
+                <input type="text" class="form-control" id="img-url">
+            </div>
+            <div class="form-group">
+                <label for="img-icon">Bildens ikon:</label>
+                <input type="text" class="form-control" id="img-icon">
+            </div><br /><br />
 
-        <div class="col-md-offset-2 col-md-4">
-            @Html.LabelFor(model => model.ImgUrl, htmlAttributes: new { @class = "control-label com-md-2" })
-        </div>
-        <div class="col-md-offset-2 col-md-10">
-            @Html.EditorFor(model => model.ImgUrl, new { htmlAttributes = new { @class = "form-control" } })
-        </div><br /><br />
-        <div class="col-md-offset-2 col-md-4">
-            @Html.LabelFor(model => model.Icon, htmlAttributes: new { @class = "control-label com-md-2" })
-        </div>
-        <div class="col-md-offset-2 col-md-10">
-            @Html.Label("Plats för ladda upp icon", htmlAttributes: new { @class = "control-label" })
-        </div><br /><br />
-        <div class="col-md-offset-2 col-md-4">
-            @Html.Label("Välj kanal", htmlAttributes: new { @class = "control-label" })
-        </div>
-        <div class="col-md-offset-2 col-md-10">
-            @Html.Label("Plats för combobox", htmlAttributes: new { @class = "control-label" })
-        </div>
+            <div class="dropdown">
+                @*https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_comp_dropdown-menu&stacked=h*@
+                <button class="btn btn-default dropdown-toggle" type="button" id="menu-pop" data-toggle="dropdown">
+                Kanaler
+                <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu-pop">
+                @foreach (var pop in Model)
+                {
+                    foreach (var channel in pop.Channels)
+                    {
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">@channel.Name</a></li>
+                    }
+                }
+                </ul>
+            </div>
+
 
         <br /><br />
 
-        <div class="form-group">
-            <div class="col-md-offset-6 col-md-10">
-                <input type="submit" value="Lägg till" class="btn btn-default" />
-            </div>
-            <div class="col-md-offset-6 col-md-10">
-                <input type="submit" value="Redigera" class="btn btn-default" />
-            </div>
-            <div class="col-md-offset-6 col-md-10">
-                <input type="submit" value="Ta bort" class="btn btn-default" />
-            </div>
-        </div>
-    </div>
+            @*https://www.w3schools.com/bootstrap/bootstrap_buttons.asp*@
+            <button type="button" class="btn btn-success">Lägg till</button>
+            <button type="button" class="btn btn-warning">Redigera</button>
+            <button type="button" class="btn btn-danger">Ta bort</button>
+   </div>
 
-}
+
