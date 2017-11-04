@@ -67,7 +67,7 @@ $(function () {
     $(window).on("resize", function (e) {
         var w = e.target.innerWidth;
         $("input[type=search]").attr("placeholder", function () {
-            return (w > 1 && w < 1149) ? "Sök" : "";
+            return (w > 1 && w < 1279) ? "Sök" : "";
         });
     }).resize();
 });
@@ -84,8 +84,7 @@ $('.calendar-filter').click(function () {
     var windowsize = $(window).width();
     if (windowsize < 1280) {
         $("#nav-second-calendar").toggle();
-    }
-    
+    }    
 })
 
 $('.show-genre').click(function () {
