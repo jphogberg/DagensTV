@@ -4,31 +4,25 @@
     ViewBag.Title = "Min Sida";
 }
 
-<div class="col-md-2">
-    <h1>Mina kanaler</h1> 
-</div>
-<br/>
-<div class="form-group">
-    <div class="col-md-4">
-        <input type="submit" value="Spara inställningar" class="btn btn-success" />
-    </div>
-</div><br />
+<div class="col-md-2 col-md-10">
+    <h1>Mina kanaler</h1>
+</div><br/>
 <hr/><br/>
-
 
 @if (Model != null)
 {
-        foreach (var channel in Model)
-        {
-        @Html.CheckBoxFor(m => channel.MyPage)
-        <section class="my-channeList">
+    foreach (var channel in Model)
+    {
+        <section class="my-channelList">
             <ul>
                 <li>
-                    <img src="../@channel.LogoFilePath" class="channel" title="@channel.Name" alt="@channel.Name">
+                    <form>
+                        @Html.CheckBoxFor(x => channel.MyPage)
+                        <img src="../@channel.LogoFilePath" class="channel" title="@channel.Name" alt="@channel.Name"><span id="channel-name"> @channel.Name</span>
+                    </form>
                 </li>
             </ul>
         </section>
-    }
-
+        }
 }
-
+        
