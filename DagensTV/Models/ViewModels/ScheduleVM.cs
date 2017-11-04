@@ -15,7 +15,7 @@ namespace DagensTV.Models.ViewModels
         public Nullable<int> ChannelId { get; set; }
         public Nullable<int> ShowId { get; set; }
         public string ChannelName { get; set; }
-        public string ShowName { get; set; }
+        public string ShowName { get; set; }        
 
         public string CategoryName { get; set; }
         public string CategoryTag { get; set; }

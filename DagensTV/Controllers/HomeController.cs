@@ -25,14 +25,16 @@ namespace DagensTV.Controllers
                 {
                     Id = schedule.Id,
                     StartTime = schedule.StartTime,
-                    ChannelId = schedule.ChannelId,                    
+                    EndTime = DbFunctions.AddMinutes(schedule.StartTime, schedule.Duration),
+                    ChannelId = schedule.ChannelId,
+                    ShowId = schedule.Show.Id,
                     ShowName = schedule.Show.Name,
                     CategoryTag = schedule.Show.Category.Tag,
                     MovieGenre = schedule.Show.MovieGenre,
                     ImdbRating = schedule.Show.ImdbRating,
-                    StarImage = schedule.Show.RatingIcon
+                    StarImage = schedule.Show.RatingIcon,                 
                 }).ToList()                
-            });          
+            });            
 
             return View(channelList);
         }
@@ -89,10 +91,10 @@ namespace DagensTV.Controllers
             // Hårdkodat tillsvidare
             List<PopularContent> popList = new List<PopularContent>
             {
-                //new PopularContent { ImgUrl = "../img/resevil.jpg", ImgTitle = "Resident Evil: Apocalypse", Icon = "mdi mdi-movie", ChannelId = "TV6" },
-                //new PopularContent { ImgUrl = "../img/startrek.jpg", ImgTitle = "Star Trek: Discovery", Icon = "mdi mdi-cast-connected", ChannelId = "Netflix" },
-                //new PopularContent { ImgUrl = "../img/skavlan.jpg", ImgTitle = "Skavlan", Icon = "mdi mdi-television", ChannelId = "SVT1" },
-                //new PopularContent { ImgUrl = "../img/idoljuryn.jpg", ImgTitle = "Idol 2017", Icon = "mdi mdi-television", ChannelId = "TV4" }
+                new PopularContent { ImgUrl = "../img/resevil.jpg", ImgTitle = "Resident Evil: Apocalypse", Icon = "mdi mdi-movie", ChannelName = "TV6" },
+                new PopularContent { ImgUrl = "../img/startrek.jpg", ImgTitle = "Star Trek: Discovery", Icon = "mdi mdi-cast-connected", ChannelName = "Netflix" },
+                new PopularContent { ImgUrl = "../img/skavlan.jpg", ImgTitle = "Skavlan", Icon = "mdi mdi-television", ChannelName = "SVT1" },
+                new PopularContent { ImgUrl = "../img/idoljuryn.jpg", ImgTitle = "Idol 2017", Icon = "mdi mdi-television", ChannelName = "TV4" }
             };
 
             return PartialView("_PopularContent", popList);

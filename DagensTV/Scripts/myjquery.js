@@ -74,14 +74,23 @@ $(function () {
 
 /* Toggla dropdown menyerna i SubNav för responsiva designen */
 $('.category-filter').click(function () {
-    $("#nav-second").toggle();    
+    var windowsize = $(window).width();
+    if (windowsize < 1280) {
+        $(".nav-second").toggle();
+    }    
 })
+
 $('.calendar-filter').click(function () {
-    $("#nav-second-calendar").toggle();
+    var windowsize = $(window).width();
+    if (windowsize < 1280) {
+        $("#nav-second-calendar").toggle();
+    }
+    
 })
 
 $('.show-genre').click(function () {
-    $("#nav-second").toggle();        
+    $("#nav-second").toggle();
+    
 })
 $('.show-calendar').click(function () {
     $("#nav-second-calendar").toggle();
