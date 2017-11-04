@@ -575,16 +575,32 @@ footer section {
 }
 
 /* --- Clear --- */
-
 .clear {
 	clear: both;
 }
 
-/* ----------------- MEDIA ----------------- */
+/* --- User --- */
+.my-channelList input[type=checkbox] {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
 
+.my-channelList{
+    width: 20%;
+}
+
+#channel-name {
+    margin: 0 15px 0 5px;
+    vertical-align: middle;
+    font-size: 3em;
+    text-transform: none;
+}
+
+/* ----------------- MEDIA ----------------- */
 /* --- Mobil & Tablet --- */
-@media screen and (max-width: 1149px) {	
-	nav.responsive input:hover {
+@media screen and (max-width: 1149px) {
+    nav .responsive input:hover {
 		color: #193441;
 	}
 	input:hover::placeholder {

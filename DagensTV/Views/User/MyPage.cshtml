@@ -11,15 +11,18 @@
 
 @if (Model != null)
 {
-        foreach (var channel in Model)
-        {
-        @Html.CheckBox("MyPage", false)
-        <section class="my-channeList">
+    foreach (var channel in Model)
+    {
+        <section class="my-channelList">
             <ul>
                 <li>
-                    <img src="../@channel.LogoFilePath" class="channel" title="@channel.Name" alt="@channel.Name">
+                    <form>
+                        @Html.CheckBoxFor(x => channel.MyPage)
+                        <img src="../@channel.LogoFilePath" class="channel" title="@channel.Name" alt="@channel.Name"><span id="channel-name"> @channel.Name</span>
+                    </form>
                 </li>
             </ul>
         </section>
         }
 }
+        

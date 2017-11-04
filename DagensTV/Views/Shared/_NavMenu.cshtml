@@ -29,9 +29,7 @@
                         @*<li>@Html.ActionLink(" Logga in", "Login", "Account", new { @class = "menuLink mdi mdi-login-variant" })</li>
                         <li>@Html.ActionLink(" Skapa konto", "Create", "Account", new { @class = "menuLink mdi mdi-account-plus" })</li>*@
                         <li><a href="@Url.Action("Login", "Account")" class="menuLink mdi mdi-login-variant"> Logga in</a></li>
-                        <li><a href="@Url.Action("Create", "Login")" class="menuLink mdi mdi-account-plus"> Skapa konto</a></li>
-                        /* Tills vidare */
-                        <li><a href="@Url.Action("SignOut", "Account")" class="menuLink mdi mdi-logout-variant"> Logga ut</a></li>
+                        <li><a href="@Url.Action("Create", "Login")" class="menuLink mdi mdi-account-plus"> Skapa konto</a></li>                        
                     }
                 </ul>
             </div>
