@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using DagensTV.Models;
+using DagensTV.Models.ViewModels;
 
 namespace DagensTV.Controllers
 {
@@ -23,7 +24,15 @@ namespace DagensTV.Controllers
             return View(channelList);
         }
 
-
+        [HttpPost]
+        public ActionResult SetMyPage(MyPageVM mypage)
+        {
+            foreach(var item in mypage.Channels)
+            {
+                var boolList = item.MyPage;
+            }
+            return View();
+        }
        
     }
 }
