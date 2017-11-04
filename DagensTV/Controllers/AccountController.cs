@@ -50,7 +50,7 @@ namespace DagensTV.Controllers
                     //}
                     //if (roleId == 2)
                     //{
-                    //    return RedirectToAction("MyPage", "User");
+                    //    return RedirectToAction("MinSida", "User");
                     //}
                 }
                 else

@@ -14,6 +14,7 @@ namespace DagensTV.Controllers
         DagensTVEntities db = new DagensTVEntities();
 
         // GET: Admin
+        [Authorize]
         public ActionResult Index()
         {
             var popularContentList = db.PopularContent.Select(x => new PopVM

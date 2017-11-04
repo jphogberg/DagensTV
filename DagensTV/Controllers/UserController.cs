@@ -15,7 +15,8 @@ namespace DagensTV.Controllers
         private DagensTVEntities db = new DagensTVEntities();
 
         // GET: User
-        public ActionResult MyPage()
+        [Authorize]
+        public ActionResult MinSida()
         {
             
             return View();
