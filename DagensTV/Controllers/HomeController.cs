@@ -91,10 +91,10 @@ namespace DagensTV.Controllers
             // Hårdkodat tillsvidare
             List<PopularContent> popList = new List<PopularContent>
             {
-                new PopularContent { ImgUrl = "../img/resevil.jpg", ImgTitle = "Resident Evil: Apocalypse", Icon = "mdi mdi-movie", ChannelName = "TV6" },
-                new PopularContent { ImgUrl = "../img/startrek.jpg", ImgTitle = "Star Trek: Discovery", Icon = "mdi mdi-cast-connected", ChannelName = "Netflix" },
-                new PopularContent { ImgUrl = "../img/skavlan.jpg", ImgTitle = "Skavlan", Icon = "mdi mdi-television", ChannelName = "SVT1" },
-                new PopularContent { ImgUrl = "../img/idoljuryn.jpg", ImgTitle = "Idol 2017", Icon = "mdi mdi-television", ChannelName = "TV4" }
+                //new PopularContent { ImgUrl = "../img/resevil.jpg", ImgTitle = "Resident Evil: Apocalypse", Icon = "mdi mdi-movie", ChannelName = "TV6" },
+                //new PopularContent { ImgUrl = "../img/startrek.jpg", ImgTitle = "Star Trek: Discovery", Icon = "mdi mdi-cast-connected", ChannelName = "Netflix" },
+                //new PopularContent { ImgUrl = "../img/skavlan.jpg", ImgTitle = "Skavlan", Icon = "mdi mdi-television", ChannelName = "SVT1" },
+                //new PopularContent { ImgUrl = "../img/idoljuryn.jpg", ImgTitle = "Idol 2017", Icon = "mdi mdi-television", ChannelName = "TV4" }
             };
 
             return PartialView("_PopularContent", popList);
