@@ -20,6 +20,7 @@
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="varchar" MaxLength="50" />
           <Property Name="LogoFilePath" Type="varchar" MaxLength="50" />
+          <Property Name="MyPage" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="Person">
           <Key>
@@ -182,6 +183,7 @@
           <NavigationProperty Name="Schedule" Relationship="Self.FK_Listing_ToTable" FromRole="Channel" ToRole="Schedule" />
           <Property Name="LogoFilePath" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="PopularContent" Relationship="DagensTVModel.FK_PopularContent_ToTable" FromRole="Channel" ToRole="PopularContent" />
+          <Property Name="MyPage" Type="Boolean" Nullable="false" />
         </EntityType>
         <EntityType Name="Schedule">
           <Key>
@@ -347,6 +349,7 @@
           <EntitySetMapping Name="Channel">
             <EntityTypeMapping TypeName="DagensTVModel.Channel">
               <MappingFragment StoreEntitySet="Channel">
+                <ScalarProperty Name="MyPage" ColumnName="MyPage" />
                 <ScalarProperty Name="LogoFilePath" ColumnName="LogoFilePath" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />

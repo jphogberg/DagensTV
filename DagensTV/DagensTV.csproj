@@ -198,6 +198,7 @@
     </Compile>
     <Compile Include="Models\ViewModels\ChannelVM.cs" />
     <Compile Include="Models\ViewModels\LoginVM.cs" />
+    <Compile Include="Models\ViewModels\MyPageVM.cs" />
     <Compile Include="Models\ViewModels\PopVM.cs" />
     <Compile Include="Models\ViewModels\ScheduleVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

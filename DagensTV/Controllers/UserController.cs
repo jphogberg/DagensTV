@@ -18,8 +18,9 @@ namespace DagensTV.Controllers
         [Authorize]
         public ActionResult MyPage()
         {
-            
-            return View();
+            var channelList = db.Channel.ToList();
+
+            return View(channelList);
         }
 
 

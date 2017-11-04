@@ -1,7 +1,22 @@
-﻿@model IEnumerable<DagensTV.Models.Person>
+﻿@model IEnumerable<DagensTV.Models.Channel>
 
 @{
     ViewBag.Title = "Min Sida";
 }
 
 <h2>Min Sida</h2>
+
+@if (Model != null)
+{
+    foreach (var channel in Model)
+    {
+        <section class="my-channeList">
+            @Html.CheckBoxFor(model => model.MyPage)
+            <ul>
+                <li>
+                    <img src="@channel.LogoFilePath" class="channel" title="@channel.Name" alt="@channel.Name">
+                </li>
+            </ul>
+        </section>
+    }
+}
