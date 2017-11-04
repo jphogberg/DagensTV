@@ -4,12 +4,15 @@
     ViewBag.Title = "Min Sida";
 }
 
-<h2>Min Sida</h2>
+<div class="col-md-2 col-md-10">
+    <h1>Mina kanaler</h1>
+</div><br/>
+<hr/><br/>
 
 @if (Model != null)
 {
-    foreach (var channel in Model)
-    {
+        foreach (var channel in Model)
+        {
         @Html.CheckBox("MyPage", false)
         <section class="my-channeList">
             <ul>
@@ -18,5 +21,5 @@
                 </li>
             </ul>
         </section>
-    }
+        }
 }
