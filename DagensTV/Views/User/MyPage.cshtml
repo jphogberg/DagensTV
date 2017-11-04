@@ -10,11 +10,11 @@
 {
     foreach (var channel in Model)
     {
+        @Html.CheckBox("MyPage", false)
         <section class="my-channeList">
-            
             <ul>
                 <li>
-                    @Html.CheckBox("MyPage")<img src="@channel.LogoFilePath" class="channel" title="@channel.Name" alt="@channel.Name">
+                    <img src="@channel.LogoFilePath" class="channel" title="@channel.Name" alt="@channel.Name">
                 </li>
             </ul>
         </section>
