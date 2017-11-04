@@ -16,7 +16,7 @@ namespace DagensTV.Controllers
 
         // GET: User
         [Authorize]
-        public ActionResult MinSida()
+        public ActionResult MyPage()
         {
             
             return View();

@@ -34,24 +34,23 @@ namespace DagensTV.Controllers
                     FormsAuthentication.SetAuthCookie(model.Username, false);
 
                     var persons = db.Person.ToList();
-                    //var roleId = 0;
-                    //foreach(var p in persons)
-                    //{
-                        //if(p.Username == model.Username)
-                        //{
-                            //roleId = p.RoleId.GetValueOrDefault();
-                            return RedirectToAction("Index", "Admin");
-                        //}
-                    //}
+                    var roleId = 0;
+                    foreach (var p in persons)
+                    {
+                        if (p.Username.Trim().Equals(model.Username))
+                        {
+                            roleId = p.RoleId.GetValueOrDefault();
+                        }
+                    }
 
-                    //if (roleId == 1)
-                    //{
-                    //    return RedirectToAction("Index", "Admin");
-                    //}
-                    //if (roleId == 2)
-                    //{
-                    //    return RedirectToAction("MinSida", "User");
-                    //}
+                    if (roleId == 1)
+                    {
+                        return RedirectToAction("Index", "Admin");
+                    }
+                    if (roleId == 2)
+                    {
+                        return RedirectToAction("MyPage", "User");
+                    }
                 }
                 else
                 {
