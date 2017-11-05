@@ -3,68 +3,39 @@
     ViewBag.Title = "Index";
 }
 
-<div class="col-md-offset-2 col-md-10">
+<div class="col-md-2 col-md-10">
     <h1>Hantera nyhetspuffar</h1>
-</div>
-<hr />
-<br /><br />
+</div><br />
+<hr /><br />
 
+@using (Html.BeginForm())
+{
 
-    @Html.AntiForgeryToken()
-
-    
-        
-        <div class="col-md-offset-2 col-md-10">
-            <div class="dropdown">@*https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_comp_dropdown-menu&stacked=h*@
-                <button class="btn btn-default dropdown-toggle" type="button" id="menu-pop" data-toggle="dropdown">
-                    Nyhetspuffar
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="menu-pop">
-                    @foreach (var item in Model)
-                    {
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">@item.ImgTitle</a></li>
-                    }
-                </ul>
-            </div><br /><br />
-        
-            <div class="form-group">@*https://www.w3schools.com/bootstrap/bootstrap_forms_inputs.asp*@
+@Html.AntiForgeryToken()
+    <div class="col-md-offset-2 col-md-10">
+        <div class="form">
+            <div class="form-group">
                 <label for="img-title">Bildens titel:</label>
                 <input type="text" class="form-control" id="img-title">
             </div>
+
             <div class="form-group">
                 <label for="img-url">Bildens url:</label>
                 <input type="text" class="form-control" id="img-url">
             </div>
+
             <div class="form-group">
                 <label for="img-icon">Bildens ikon:</label>
                 <input type="text" class="form-control" id="img-icon">
-            </div><br /><br />
-
-            <div class="dropdown">
-                @*https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_comp_dropdown-menu&stacked=h*@
-                <button class="btn btn-default dropdown-toggle" type="button" id="menu-pop" data-toggle="dropdown">
-                Kanaler
-                <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="menu-pop">
-                @foreach (var pop in Model)
-                {
-                    foreach (var channel in pop.Channels)
-                    {
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">@channel.Name</a></li>
-                    }
-                }
-                </ul>
             </div>
 
+            <div class="form-group">
+                <div class="col-md-offset-2">
+                    <input type="submit" value="Spara" class="btn btn-success" />
+                </div>
+            </div>
 
-        <br /><br />
+        </div>
+    </div>
 
-            @*https://www.w3schools.com/bootstrap/bootstrap_buttons.asp*@
-            <button type="button" class="btn btn-success">Lägg till</button>
-            <button type="button" class="btn btn-warning">Redigera</button>
-            <button type="button" class="btn btn-danger">Ta bort</button>
-   </div>
-
-
+}
