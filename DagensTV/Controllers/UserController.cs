@@ -17,41 +17,62 @@ namespace DagensTV.Controllers
 
         // GET: User
         [Authorize]
+        [HttpGet]
         public ActionResult MyPage()
         {
-            var channelList = db.Channel.ToList();
+            //var channelList = db.Channel.ToList();
 
-            return View(channelList);
+            return View(db.Channel);
         }
 
         [HttpPost]
-        public ActionResult SetMyPage(MyPageVM mypage)
+        public ActionResult MyPage(IEnumerable<Channel> channels)
         {
-            var list = mypage;
-            try
-            {
-                //Channel c;
-                //foreach (var channel in mypage.Channels)
-                //{
-                //    c = new Channel();
-                //    var dbC = db.Channel.Where(x => x.Id.Equals(channel.Id));
-                //    if (dbC != null)
-                //    {
+            var myChannels = channels;
 
-                //        //dbC.MyPage = channel.MyPage;
-                        
-                //    }
-                //}
-                ////db.SaveChanges();
-            }
-            catch(Exception ex)
-            {
-                throw ex;
-            }
-            
-              
-            return RedirectToAction("Index", "Home");
+            return View();
         }
-       
+
+        //[HttpPost]
+        //public JsonResult SaveMyChannels(string myChannels)
+        //{
+        //    string[] arr = myChannels.Split(',');
+
+        //    foreach (var id in arr)
+        //    {
+        //        var currentId = id;
+        //    }
+
+        //    return Json("", JsonRequestBehavior.AllowGet);
+        //}
+
+
+
+        //[HttpPost]
+        //public ActionResult SetMyPage(MyPageVM mypage)
+        //{
+        //    try
+        //    {
+        //        foreach (var channel in mypage.Channels)
+        //        {
+        //            var c = db.Channel.Where(x => x.Id.Equals(channel.Id));
+        //            if (c != null)
+        //            {
+
+        //                //c.MyPage = channel.MyPage;
+
+        //            }
+        //        }
+        //        db.SaveChanges();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+
+
+        //    return RedirectToAction("Index", "Home");
+        //}
+
     }
 }

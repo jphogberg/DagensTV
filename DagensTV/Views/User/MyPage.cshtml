@@ -6,28 +6,41 @@
 
 <div class="col-md-2 col-md-10">
     <h1>Mina kanaler</h1>
-</div><br/>
-@using (Html.BeginForm("SetMyPage", "User", FormMethod.Post))
+</div><br />
+<hr /><br />
+
+@using (Html.BeginForm())
 {
-<input type="submit" value="Spara kanalval" class="btn btn-default" />
-<hr/><br/>
+    @Html.EditorForModel()
+
+    <input type="submit" value="Spara kanalval" class="btn btn-default" />
+   
+
+} 
 
 
 
-    if (Model != null)
+
+
+@*"SetMyPage", "User", FormMethod.Post*@
+
+@*<input class="btn btn-success" onclick="checkboxValues()" value="Spara kanalval">*@
+
+    @*if (Model != null)
     {
-        foreach (var channel in Model)
-        {
+        //foreach (var channel in Model)
+        //{
             <section class="my-channelList">
-            <ul id="my-channels">
-                <li>
-                    <form>
-                        <input type="checkbox" id="@channel.Id" checked="@channel.MyPage" />
-                        <img src="../@channel.LogoFilePath" class="channel" title="@channel.Name" alt="@channel.Name"><span id="channel-name"> @channel.Name</span>
-                    </form>
-                </li>
-            </ul>
-            </section>
-        }
-    }
-}   
+                <ul id="ItemList">
+                    <li>
+                        //@Html.HiddenFor(x => channel.Id)
+                        //@Html.CheckBoxFor(x => channel.MyPage)
+
+                        @*<input type="checkbox" id="@channel.Id" checked="@channel.MyPage" />*@
+                        @*<img src="../@channel.LogoFilePath" class="channel" title="@channel.Name" alt="@channel.Name"><span id="channel-name"> @channel.Name</span>*@
+                    @*</li>
+                </ul>
+            </section>*@
+        @*//}*@
+    @*}*@
+  

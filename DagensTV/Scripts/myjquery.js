@@ -94,3 +94,35 @@ $('.show-genre').click(function () {
 $('.show-calendar').click(function () {
     $("#nav-second-calendar").toggle();
 })
+
+/* Save checkbox values */
+var checkboxValues = function() {
+    var arrChannels = [];
+    var strChannels = "";
+    debugger
+    $("#ItemList li input[type=checkbox]").each(function (index, val) {
+        var id = $(val).attr("Id");
+
+        arrChannels.push(id);
+    })
+
+    if (arrChannels.length != 0) {
+
+        strChannels = arrChannels.toString();
+
+        $.ajax({
+            url: "/User/SaveMyChannels",
+            type: "POST",
+            data: { ItemList: strChannels },
+            success: function (response) {
+
+            }
+
+        })
+    }
+
+
+
+   
+
+};
