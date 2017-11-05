@@ -16,10 +16,11 @@
         <section class="my-channelList">
             <ul>
                 <li>
-                    <form>
+                    @using (Html.BeginForm())
+                    {
                         @Html.CheckBoxFor(x => channel.MyPage)
                         <img src="../@channel.LogoFilePath" class="channel" title="@channel.Name" alt="@channel.Name"><span id="channel-name"> @channel.Name</span>
-                    </form>
+                    }
                 </li>
             </ul>
         </section>
