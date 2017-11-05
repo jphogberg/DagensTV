@@ -7,14 +7,13 @@ namespace DagensTV.Models.ViewModels
 {
     public class PopVM
     {
-
         public int Id { get; set; }
         public string ImgUrl { get; set; }
         public string ImgTitle { get; set; }
         public string Icon { get; set; }
+        public Nullable<int> ChannelId { get; set; }
+        public string ChannelName { get; set; }
 
         public List<ChannelVM> Channels { get; set; }
-
-
     }
 }

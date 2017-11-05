@@ -256,6 +256,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="img\alien.jpg" />
     <Content Include="img\detroit.jpg" />
+    <Content Include="img\doobidoo.jpg" />
     <Content Include="img\hammarby.jpg" />
     <Content Include="img\himym.jpg" />
     <Content Include="img\idoljuryn.jpg" />
@@ -270,6 +271,7 @@
     <Content Include="img\sjuan.png" />
     <Content Include="img\skavlan.jpg" />
     <Content Include="img\snooker.jpg" />
+    <Content Include="img\southpark.jpg" />
     <Content Include="img\star.png" />
     <Content Include="img\startrek.jpg" />
     <Content Include="img\svt1.png" />

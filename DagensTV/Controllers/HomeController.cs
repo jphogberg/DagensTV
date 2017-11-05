@@ -88,16 +88,17 @@ namespace DagensTV.Controllers
         #region Popular Content
         public ActionResult PopIndex()
         {
-            // Hårdkodat tillsvidare
-            List<PopularContent> popList = new List<PopularContent>
+            var popList = db.PopularContent.Select(x => new PopVM
             {
-                //new PopularContent { ImgUrl = "../img/resevil.jpg", ImgTitle = "Resident Evil: Apocalypse", Icon = "mdi mdi-movie", ChannelName = "TV6" },
-                //new PopularContent { ImgUrl = "../img/startrek.jpg", ImgTitle = "Star Trek: Discovery", Icon = "mdi mdi-cast-connected", ChannelName = "Netflix" },
-                //new PopularContent { ImgUrl = "../img/skavlan.jpg", ImgTitle = "Skavlan", Icon = "mdi mdi-television", ChannelName = "SVT1" },
-                //new PopularContent { ImgUrl = "../img/idoljuryn.jpg", ImgTitle = "Idol 2017", Icon = "mdi mdi-television", ChannelName = "TV4" }
-            };
+                Id = x.Id,
+                ImgUrl = x.ImgUrl,
+                ImgTitle = x.ImgTitle,
+                Icon = x.Icon,
+                ChannelId = x.ChannelId,
+                ChannelName = x.Channel.Name
+            }).ToList();
 
-            return PartialView("_PopularContent", popList);
+              return PartialView("_PopularContent", popList);
         }
         #endregion
 
