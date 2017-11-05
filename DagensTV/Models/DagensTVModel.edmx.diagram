@@ -12,11 +12,12 @@
         <AssociationConnector Association="DagensTVModel.FK_Show_ToTable" ManuallyRouted="false" />
         <AssociationConnector Association="DagensTVModel.FK_Listing_ToTable" ManuallyRouted="false" />
         <AssociationConnector Association="DagensTVModel.FK_Listing_ToTable_1" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="DagensTVModel.Person" Width="1.5" PointX="8.375" PointY="1.5" />
-        <EntityTypeShape EntityType="DagensTVModel.Role" Width="1.5" PointX="8.5" PointY="5.125" />
+        <EntityTypeShape EntityType="DagensTVModel.Person" Width="1.5" PointX="8.125" PointY="5.625" />
+        <EntityTypeShape EntityType="DagensTVModel.Role" Width="1.5" PointX="10.875" PointY="6.625" />
         <AssociationConnector Association="DagensTVModel.FK_Person_Role" />
         <EntityTypeShape EntityType="DagensTVModel.PopularContent" Width="1.5" PointX="3" PointY="7.125" />
         <AssociationConnector Association="DagensTVModel.FK_PopularContent_ToTable" />
+        <AssociationConnector Association="DagensTVModel.FK_Person_ToTable" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

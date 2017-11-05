@@ -7,14 +7,19 @@
 <div class="col-md-2 col-md-10">
     <h1>Mina kanaler</h1>
 </div><br/>
+@using (Html.BeginForm("SetMyPage", "User", FormMethod.Post))
+{
+<input type="submit" value="Spara kanalval" class="btn btn-default" />
 <hr/><br/>
 
-@if (Model != null)
-{
-    foreach (var channel in Model)
+
+
+    if (Model != null)
     {
-        <section class="my-channelList">
-            <ul>
+        foreach (var channel in Model)
+        {
+            <section class="my-channelList">
+            <ul id="my-channelList">
                 <li>
                     <form>
                         @Html.CheckBoxFor(x => channel.MyPage)
@@ -22,7 +27,7 @@
                     </form>
                 </li>
             </ul>
-        </section>
+            </section>
         }
-}
-        
+    }
+}   
