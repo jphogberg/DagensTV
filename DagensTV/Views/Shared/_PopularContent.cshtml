@@ -1,4 +1,4 @@
-﻿@model IEnumerable<DagensTV.Models.PopularContent>
+﻿@model IEnumerable<DagensTV.Models.ViewModels.PopVM>
 
 <div id="popular-wrapper">
     @if (Model != null)
@@ -12,13 +12,10 @@
                 <figure class="pop-img">
                     <img src="@item.ImgUrl" title="@item.ImgTitle" alt="@item.ImgTitle">
                     <figcaption>
-                        @item.ImgTitle
-                        <br>
-                        <i class="@item.Icon"></i>@item.ChannelId
+                        @item.ImgTitle<br /><i class="@item.Icon"></i> @item.ChannelName
                     </figcaption>
                 </figure>
             }                     
         </section>
     }    
 </div>
-

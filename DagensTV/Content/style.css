@@ -875,7 +875,7 @@ footer section {
 		padding-top: 10px;
         margin-right: 3%;
 	}
-    nav .menuLink, nav input/*, li#search-large.menuLink*/ {
+    nav .menuLink, nav input {
         display: none;
     }
 	nav ul {
