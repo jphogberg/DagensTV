@@ -27,21 +27,22 @@ namespace DagensTV.Controllers
         [HttpPost]
         public ActionResult SetMyPage(MyPageVM mypage)
         {
+            var list = mypage;
             try
             {
-                Channel c;
-                foreach (var channel in mypage.Channels)
-                {
-                    c = new Channel();
-                    var dbC = db.Channel.Where(x => x.Id.Equals(channel.Id));
-                    if (dbC != null)
-                    {
+                //Channel c;
+                //foreach (var channel in mypage.Channels)
+                //{
+                //    c = new Channel();
+                //    var dbC = db.Channel.Where(x => x.Id.Equals(channel.Id));
+                //    if (dbC != null)
+                //    {
 
-                        //dbC.MyPage = channel.MyPage;
+                //        //dbC.MyPage = channel.MyPage;
                         
-                    }
-                }
-                //db.SaveChanges();
+                //    }
+                //}
+                ////db.SaveChanges();
             }
             catch(Exception ex)
             {

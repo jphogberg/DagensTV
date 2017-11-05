@@ -19,10 +19,10 @@
         foreach (var channel in Model)
         {
             <section class="my-channelList">
-            <ul id="my-channelList">
+            <ul id="my-channels">
                 <li>
                     <form>
-                        @Html.CheckBoxFor(x => channel.MyPage)
+                        <input type="checkbox" id="@channel.Id" checked="@channel.MyPage" />
                         <img src="../@channel.LogoFilePath" class="channel" title="@channel.Name" alt="@channel.Name"><span id="channel-name"> @channel.Name</span>
                     </form>
                 </li>

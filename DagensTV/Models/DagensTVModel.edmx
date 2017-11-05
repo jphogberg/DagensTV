@@ -32,7 +32,6 @@
           <Property Name="Username" Type="nchar" MaxLength="20" Nullable="false" />
           <Property Name="Password" Type="nchar" MaxLength="20" Nullable="false" />
           <Property Name="RoleId" Type="int" />
-          <Property Name="ChannelId" Type="int" />
         </EntityType>
         <EntityType Name="PopularContent">
           <Key>
@@ -109,18 +108,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Person_ToTable">
-          <End Role="Channel" Type="Self.Channel" Multiplicity="0..1" />
-          <End Role="Person" Type="Self.Person" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Channel">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Person">
-              <PropertyRef Name="ChannelId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_PopularContent_ToTable">
           <End Role="Channel" Type="Self.Channel" Multiplicity="0..1" />
           <End Role="PopularContent" Type="Self.PopularContent" Multiplicity="*" />
@@ -165,10 +152,6 @@
             <End Role="Role" EntitySet="Role" />
             <End Role="Person" EntitySet="Person" />
           </AssociationSet>
-          <AssociationSet Name="FK_Person_ToTable" Association="Self.FK_Person_ToTable">
-            <End Role="Channel" EntitySet="Channel" />
-            <End Role="Person" EntitySet="Person" />
-          </AssociationSet>
           <AssociationSet Name="FK_PopularContent_ToTable" Association="Self.FK_PopularContent_ToTable">
             <End Role="Channel" EntitySet="Channel" />
             <End Role="PopularContent" EntitySet="PopularContent" />
@@ -201,7 +184,6 @@
           <Property Name="LogoFilePath" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="PopularContent" Relationship="DagensTVModel.FK_PopularContent_ToTable" FromRole="Channel" ToRole="PopularContent" />
           <Property Name="MyPage" Type="Boolean" Nullable="false" />
-          <NavigationProperty Name="Person" Relationship="DagensTVModel.FK_Person_ToTable" FromRole="Channel" ToRole="Person" />
         </EntityType>
         <EntityType Name="Schedule">
           <Key>
@@ -293,10 +275,6 @@
             <End Role="Channel" EntitySet="Channel" />
             <End Role="PopularContent" EntitySet="PopularContent" />
           </AssociationSet>
-          <AssociationSet Name="FK_Person_ToTable" Association="DagensTVModel.FK_Person_ToTable">
-            <End Role="Channel" EntitySet="Channel" />
-            <End Role="Person" EntitySet="Person" />
-          </AssociationSet>
         </EntityContainer>
         <EntityType Name="Person">
           <Key>
@@ -309,8 +287,6 @@
           <Property Name="Password" Type="String" Nullable="false" MaxLength="20" FixedLength="true" Unicode="true" />
           <Property Name="RoleId" Type="Int32" />
           <NavigationProperty Name="Role" Relationship="DagensTVModel.FK_Person_Role" FromRole="Person" ToRole="Role" />
-          <Property Name="ChannelId" Type="Int32" />
-          <NavigationProperty Name="Channel" Relationship="DagensTVModel.FK_Person_ToTable" FromRole="Person" ToRole="Channel" />
         </EntityType>
         <EntityType Name="Role">
           <Key>
@@ -351,18 +327,6 @@
               <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="PopularContent">
-              <PropertyRef Name="ChannelId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Person_ToTable">
-          <End Type="DagensTVModel.Channel" Role="Channel" Multiplicity="0..1" />
-          <End Type="DagensTVModel.Person" Role="Person" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Channel">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Person">
               <PropertyRef Name="ChannelId" />
             </Dependent>
           </ReferentialConstraint>
@@ -419,7 +383,6 @@
           <EntitySetMapping Name="Person">
             <EntityTypeMapping TypeName="DagensTVModel.Person">
               <MappingFragment StoreEntitySet="Person">
-                <ScalarProperty Name="ChannelId" ColumnName="ChannelId" />
                 <ScalarProperty Name="RoleId" ColumnName="RoleId" />
                 <ScalarProperty Name="Password" ColumnName="Password" />
                 <ScalarProperty Name="Username" ColumnName="Username" />
