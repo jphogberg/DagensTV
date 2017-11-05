@@ -22,7 +22,7 @@ namespace DagensTV.Controllers
         {
             //var channelList = db.Channel.ToList();
 
-            return View(db.Channel);
+            return View(db.Channel.ToList());
         }
 
         [HttpPost]
@@ -58,7 +58,7 @@ namespace DagensTV.Controllers
         //            var c = db.Channel.Where(x => x.Id.Equals(channel.Id));
         //            if (c != null)
         //            {
-
+                            ////Error Iqueryable.....
         //                //c.MyPage = channel.MyPage;
 
         //            }
