@@ -15,9 +15,11 @@ namespace DagensTV.Controllers
 
         // GET: Admin
         [Authorize]
+        [HttpGet]
         public ActionResult Index()
         {
-            var popularContentList = db.PopularContent.Select(x => new PopVM
+
+            var popularContent = db.PopularContent.Select(x => new PopVM
             {
                 Id = x.Id,
                 ImgUrl = x.ImgUrl,
@@ -30,7 +32,16 @@ namespace DagensTV.Controllers
                 }).ToList()
             });
 
-            return View(popularContentList);
+            return View(popularContent);
+        }
+
+        [HttpPost]
+        public ActionResult GetForm(PopVM model)
+        {
+           
+
+
+            return View();
         }
     }
 }
