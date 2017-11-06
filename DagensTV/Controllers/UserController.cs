@@ -20,8 +20,6 @@ namespace DagensTV.Controllers
         [HttpGet]
         public ActionResult MyPage()
         {
-            //var channelList = db.Channel.ToList();
-
             return View(db.Channel.ToList());
         }
 
@@ -30,8 +28,7 @@ namespace DagensTV.Controllers
         {
             var myChannels = channels;
 
-           
-           
+
             return View();
         }
     }

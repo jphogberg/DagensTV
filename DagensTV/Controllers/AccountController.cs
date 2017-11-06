@@ -47,7 +47,6 @@ namespace DagensTV.Controllers
                     FormsAuthentication.SetAuthCookie(model.Username, false);
 
                     var persons = db.Person.ToList();
-                    Person activeUser = new Person();
                     
                     var roleId = 0;
                     foreach (var p in persons)
@@ -55,7 +54,6 @@ namespace DagensTV.Controllers
                         if (p.Username.Trim().Equals(model.Username))
                         {
                             roleId = p.RoleId.GetValueOrDefault();
-                            activeUser = p;
                         }
                     }
 
