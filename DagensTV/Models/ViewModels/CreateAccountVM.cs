@@ -8,17 +8,16 @@ namespace DagensTV.Models.ViewModels
 {
     public class CreateAccountVM
     {
-        [Required]
+        [Required(ErrorMessage = "Fyll i förnamn")]
         public string Firstname { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Fyll i efternamn")]
         public string Lastname { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Fyll i ett användarnamn")]
         public string Username { get; set; }
 
-        [Required]
-        [DataType(DataType.Password)]
+        [Required(ErrorMessage = "Fyll i ett lösenord")]
         public string Password { get; set; }
 
      

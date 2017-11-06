@@ -17,7 +17,7 @@ namespace DagensTV.Controllers
 
         public ActionResult CreateAccount()
         {
-            return View();
+            return View("CreateAccount");
         }
 
         [HttpPost]
