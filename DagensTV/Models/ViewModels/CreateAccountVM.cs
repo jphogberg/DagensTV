@@ -6,13 +6,22 @@ using System.Web;
 
 namespace DagensTV.Models.ViewModels
 {
-    public class LoginVM
+    public class CreateAccountVM
     {
+        [Required]
+        public string Firstname { get; set; }
+
+        [Required]
+        public string Lastname { get; set; }
+
         [Required]
         public string Username { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
         public string Password { get; set; }
+
+     
+
     }
 }
