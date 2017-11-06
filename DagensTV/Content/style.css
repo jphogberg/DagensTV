@@ -586,14 +586,32 @@ footer section {
     vertical-align: middle;
 }
 
-.my-channelList{
-    width: 20%;
+#my-channels-info {
+    font: 2em 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+}
+
+.my-channelList {
+    width: 20%;    
+    display: inline-block;
+}
+
+.my-channelList img {
+    margin: 0 auto;
+}
+
+.channel-picker-submit {
+    margin: 2% 0 0 3.8%;
+}
+
+#ItemList {
+    margin: 0 auto;
 }
 
 #channel-name {
-    margin: 0 15px 0 5px;
+    margin: 0 auto;
     vertical-align: middle;
-    font-size: 3em;
+    font-size: 2em;
     text-transform: none;
 }
 

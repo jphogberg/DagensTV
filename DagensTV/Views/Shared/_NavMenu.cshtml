@@ -11,23 +11,20 @@
                     <a href="@Url.Action("Settings", "Home")" class="menuLink mdi mdi-settings"
                        id="@(ViewBag.Current == "Settings" ? "current" : "")"> Inställningar</a>
                 </li>            
-                <li class="menuLink" id="search-large">
+                @*<li class="menuLink" id="search-large">
                     <form>
                         <input class="searchbox ui-widget" type="search" name="search" placeholder="" title="Sök...">
                     </form>
-                </li>
+                </li>*@
             </ul>
             <div id="menu-login">
                 <ul>
                     @if (User.Identity.IsAuthenticated)
                     {
-                        @*<li>@Html.ActionLink(" Logga ut", "SignOut", "Account", new { @class = "menuLink mdi mdi-logout-variant" } )</li>*@
                         <li><a href="@Url.Action("SignOut", "Account")" class="menuLink mdi mdi-logout-variant"> Logga ut</a></li>
                     }
                     else
                     {                        
-                        @*<li>@Html.ActionLink(" Logga in", "Login", "Account", new { @class = "menuLink mdi mdi-login-variant" })</li>
-                        <li>@Html.ActionLink(" Skapa konto", "Create", "Account", new { @class = "menuLink mdi mdi-account-plus" })</li>*@
                         <li><a href="@Url.Action("Login", "Account")" class="menuLink mdi mdi-login-variant"> Logga in</a></li>
                         <li><a href="@Url.Action("Create", "Login")" class="menuLink mdi mdi-account-plus"> Skapa konto</a></li>                        
                     }

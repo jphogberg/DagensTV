@@ -32,47 +32,5 @@ namespace DagensTV.Controllers
 
             return View();
         }
-
-        //[HttpPost]
-        //public JsonResult SaveMyChannels(string myChannels)
-        //{
-        //    string[] arr = myChannels.Split(',');
-
-        //    foreach (var id in arr)
-        //    {
-        //        var currentId = id;
-        //    }
-
-        //    return Json("", JsonRequestBehavior.AllowGet);
-        //}
-
-
-
-        //[HttpPost]
-        //public ActionResult SetMyPage(MyPageVM mypage)
-        //{
-        //    try
-        //    {
-        //        foreach (var channel in mypage.Channels)
-        //        {
-        //            var c = db.Channel.Where(x => x.Id.Equals(channel.Id));
-        //            if (c != null)
-        //            {
-                            ////Error Iqueryable.....
-        //                //c.MyPage = channel.MyPage;
-
-        //            }
-        //        }
-        //        db.SaveChanges();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw ex;
-        //    }
-
-
-        //    return RedirectToAction("Index", "Home");
-        //}
-
     }
 }
