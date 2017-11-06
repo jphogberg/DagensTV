@@ -15,6 +15,20 @@ namespace DagensTV.Controllers
         DbOperations dbo = new DbOperations();
         DagensTVEntities db = new DagensTVEntities();
 
+        public ActionResult CreateAccount()
+        {
+            return View("CreateAccount");
+        }
+
+        [HttpPost]
+        public ActionResult SetAccount(CreateAccountVM model)
+        {
+
+
+            return View();
+        }
+
+
         // GET: Account
         public ActionResult Login()
         {

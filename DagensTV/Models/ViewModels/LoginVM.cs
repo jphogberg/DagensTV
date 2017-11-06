@@ -8,10 +8,10 @@ namespace DagensTV.Models.ViewModels
 {
     public class LoginVM
     {
-        [Required(ErrorMessage = "Ogiltigt användarnamn eller lösenord")]
+        [Required]
         public string Username { get; set; }
 
-        [Required(ErrorMessage = "Ogiltigt användarnamn eller lösenord")]
+        [Required]
         [DataType(DataType.Password)]
         public string Password { get; set; }
     }

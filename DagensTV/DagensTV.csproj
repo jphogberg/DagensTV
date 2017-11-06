@@ -197,6 +197,7 @@
       <DependentUpon>DagensTVModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ViewModels\ChannelVM.cs" />
+    <Compile Include="Models\ViewModels\CreateAccountVM.cs" />
     <Compile Include="Models\ViewModels\LoginVM.cs" />
     <Compile Include="Models\ViewModels\MyPageVM.cs" />
     <Compile Include="Models\ViewModels\PopVM.cs" />
@@ -386,6 +387,7 @@
     <Content Include="Views\User\MyPage.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Account\CreateAccount.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
