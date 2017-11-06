@@ -32,7 +32,5 @@ namespace DagensTV.Models
         public virtual DbSet<Person> Person { get; set; }
         public virtual DbSet<Role> Role { get; set; }
         public virtual DbSet<PopularContent> PopularContent { get; set; }
-
-        public System.Data.Entity.DbSet<DagensTV.Models.ViewModels.PopVM> PopVMs { get; set; }
     }
 }

@@ -1,6 +1,7 @@
 ﻿@model IEnumerable<DagensTV.Models.ViewModels.PopVM>
 @{
     ViewBag.Title = "Index";
+    ViewBag.Current = "Admin";
 }
 
 <div class="col-md-2 col-md-10">
@@ -20,7 +21,7 @@
             <ul class="dropdown-menu" role="menu" aria-labelledby="menu-pop">
                 @foreach (var item in Model)
                 {
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">@item.ImgTitle</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">@item.Name</a></li>
                 }
             </ul>
         </div><br /><br />
@@ -49,9 +50,9 @@
             <ul class="dropdown-menu" role="menu" aria-labelledby="menu-pop">
                 @foreach (var pop in Model)
                 {
-                    foreach (var channel in pop.Channels)
+                    foreach (var schedule in pop.Schedules)
                     {
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">@channel.Name</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">@schedule.ChannelName</a></li>
                     }
                 }
             </ul>

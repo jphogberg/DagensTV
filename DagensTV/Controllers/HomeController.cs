@@ -100,19 +100,41 @@ namespace DagensTV.Controllers
         #endregion
 
         #region Popular Content
+        //public ActionResult PopIndex()
+        //{
+        //    var popList = db.PopularContent.Select(x => new PopVM
+        //    {
+        //        Id = x.Id,
+        //        ImgUrl = x.ImgUrl,
+        //        ImgTitle = x.ImgTitle,
+        //        Icon = x.Icon,
+        //        ChannelId = x.ChannelId,
+        //        ChannelName = x.Channel.Name
+        //    }).ToList();
+
+        //      return PartialView("_PopularContent", popList);
+        //}
+
         public ActionResult PopIndex()
         {
-            var popList = db.PopularContent.Select(x => new PopVM
+            var popList = db.PopularContent.OrderBy(s => s.Id).Select(x => new PopVM
             {
                 Id = x.Id,
                 ImgUrl = x.ImgUrl,
-                ImgTitle = x.ImgTitle,
+                Name = x.Schedule.Show.Name,
                 Icon = x.Icon,
-                ChannelId = x.ChannelId,
-                ChannelName = x.Channel.Name
-            }).ToList();
+                ScheduleId = x.ScheduleId,
+                Schedules = db.Schedule.Where(s => s.Id == x.ScheduleId).Select(schedule => new ScheduleVM
+                {
+                    Id = schedule.Id,
+                    StartTime = schedule.StartTime,
+                    ChannelId = schedule.ChannelId,
+                    ChannelName = schedule.Channel.Name,
+                    ShowName = schedule.Show.Name
+                }).ToList()
+            });
 
-              return PartialView("_PopularContent", popList);
+            return PartialView("_PopularContent", popList);
         }
         #endregion
 

@@ -18,17 +18,20 @@ namespace DagensTV.Controllers
         [HttpGet]
         public ActionResult Index()
         {
-
-            var popularContent = db.PopularContent.Select(x => new PopVM
+            var popularContent = db.PopularContent.OrderBy(s => s.Id).Select(x => new PopVM
             {
                 Id = x.Id,
                 ImgUrl = x.ImgUrl,
-                ImgTitle = x.ImgTitle,
+                Name = x.Schedule.Show.Name,
                 Icon = x.Icon,
-                Channels = db.Channel.Where(s => s.Id == x.Id).Select(channel => new ChannelVM
+                ScheduleId = x.ScheduleId,
+                Schedules = db.Schedule.Where(s => s.Id == x.ScheduleId).Select(schedule => new ScheduleVM
                 {
-                    Id = channel.Id,
-                    Name = channel.Name
+                    Id = schedule.Id,
+                    StartTime = schedule.StartTime,
+                    ChannelId = schedule.ChannelId,
+                    ChannelName = schedule.Channel.Name,
+                    ShowName = schedule.Show.Name
                 }).ToList()
             });
 

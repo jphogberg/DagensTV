@@ -22,9 +22,13 @@
           <Property Name="LogoFilePath" Type="varchar" MaxLength="50" />
           <Property Name="MyPage" Type="bit" Nullable="false" />
         </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DagensTV.dbo.Person' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="Person">
           <Key>
             <PropertyRef Name="Id" />
+            
+            
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Firstname" Type="nchar" MaxLength="20" />
@@ -38,14 +42,16 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="ImgUrl" Type="nchar" MaxLength="70" />
-          <Property Name="ImgTitle" Type="nchar" MaxLength="30" />
-          <Property Name="Icon" Type="nchar" MaxLength="30" />
-          <Property Name="ChannelId" Type="int" />
+          <Property Name="ImgUrl" Type="varchar" MaxLength="50" />
+          <Property Name="Icon" Type="varchar" MaxLength="50" />
+          <Property Name="ScheduleId" Type="int" />
         </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DagensTV.dbo.Role' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="Role">
           <Key>
             <PropertyRef Name="Id" />
+            
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nchar" MaxLength="10" Nullable="false" />
@@ -60,6 +66,7 @@
           <Property Name="Resume" Type="varchar(max)" />
           <Property Name="ChannelId" Type="int" />
           <Property Name="ShowId" Type="int" />
+          <Property Name="Time" Type="nchar" MaxLength="10" />
         </EntityType>
         <EntityType Name="Show">
           <Key>
@@ -96,27 +103,15 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Person_Role">
-          <End Role="Role" Type="Self.Role" Multiplicity="0..1" />
-          <End Role="Person" Type="Self.Person" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Role">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Person">
-              <PropertyRef Name="RoleId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_PopularContent_ToTable">
-          <End Role="Channel" Type="Self.Channel" Multiplicity="0..1" />
+          <End Role="Schedule" Type="Self.Schedule" Multiplicity="0..1" />
           <End Role="PopularContent" Type="Self.PopularContent" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="Channel">
+            <Principal Role="Schedule">
               <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="PopularContent">
-              <PropertyRef Name="ChannelId" />
+              <PropertyRef Name="ScheduleId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -135,11 +130,25 @@
         <EntityContainer Name="DagensTVModelStoreContainer">
           <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Channel" EntityType="Self.Channel" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Person" EntityType="Self.Person" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="PopularContent" EntityType="Self.PopularContent" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Schedule" EntityType="Self.Schedule" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Show" EntityType="Self.Show" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Person" EntityType="Self.Person" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Person].[Id] AS [Id], 
+    [Person].[Firstname] AS [Firstname], 
+    [Person].[Lastname] AS [Lastname], 
+    [Person].[Username] AS [Username], 
+    [Person].[Password] AS [Password], 
+    [Person].[RoleId] AS [RoleId]
+    FROM [dbo].[Person] AS [Person]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Role" EntityType="Self.Role" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Role].[Id] AS [Id], 
+    [Role].[Name] AS [Name]
+    FROM [dbo].[Role] AS [Role]</DefiningQuery>
+          </EntitySet>
           <AssociationSet Name="FK_Listing_ToTable" Association="Self.FK_Listing_ToTable">
             <End Role="Channel" EntitySet="Channel" />
             <End Role="Schedule" EntitySet="Schedule" />
@@ -148,12 +157,8 @@
             <End Role="Show" EntitySet="Show" />
             <End Role="Schedule" EntitySet="Schedule" />
           </AssociationSet>
-          <AssociationSet Name="FK_Person_Role" Association="Self.FK_Person_Role">
-            <End Role="Role" EntitySet="Role" />
-            <End Role="Person" EntitySet="Person" />
-          </AssociationSet>
           <AssociationSet Name="FK_PopularContent_ToTable" Association="Self.FK_PopularContent_ToTable">
-            <End Role="Channel" EntitySet="Channel" />
+            <End Role="Schedule" EntitySet="Schedule" />
             <End Role="PopularContent" EntitySet="PopularContent" />
           </AssociationSet>
           <AssociationSet Name="FK_Show_ToTable" Association="Self.FK_Show_ToTable">
@@ -182,7 +187,6 @@
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Schedule" Relationship="Self.FK_Listing_ToTable" FromRole="Channel" ToRole="Schedule" />
           <Property Name="LogoFilePath" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="PopularContent" Relationship="DagensTVModel.FK_PopularContent_ToTable" FromRole="Channel" ToRole="PopularContent" />
           <Property Name="MyPage" Type="Boolean" Nullable="false" />
         </EntityType>
         <EntityType Name="Schedule">
@@ -197,6 +201,8 @@
           <Property Name="ShowId" Type="Int32" />
           <NavigationProperty Name="Channel" Relationship="Self.FK_Listing_ToTable" FromRole="Schedule" ToRole="Channel" />
           <NavigationProperty Name="Show" Relationship="Self.FK_Listing_ToTable_1" FromRole="Schedule" ToRole="Show" />
+          <Property Name="Time" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="PopularContent" Relationship="DagensTVModel.FK_PopularContent_ToTable1" FromRole="Schedule" ToRole="PopularContent" />
         </EntityType>
         <EntityType Name="Show">
           <Key>
@@ -271,8 +277,8 @@
             <End Role="Person" EntitySet="Person" />
           </AssociationSet>
           <EntitySet Name="PopularContent" EntityType="DagensTVModel.PopularContent" />
-          <AssociationSet Name="FK_PopularContent_ToTable" Association="DagensTVModel.FK_PopularContent_ToTable">
-            <End Role="Channel" EntitySet="Channel" />
+          <AssociationSet Name="FK_PopularContent_ToTable1" Association="DagensTVModel.FK_PopularContent_ToTable1">
+            <End Role="Schedule" EntitySet="Schedule" />
             <End Role="PopularContent" EntitySet="PopularContent" />
           </AssociationSet>
         </EntityContainer>
@@ -313,21 +319,20 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="ImgUrl" Type="String" MaxLength="70" FixedLength="true" Unicode="true" />
-          <Property Name="ImgTitle" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
-          <Property Name="Icon" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
-          <Property Name="ChannelId" Type="Int32" />
-          <NavigationProperty Name="Channel" Relationship="DagensTVModel.FK_PopularContent_ToTable" FromRole="PopularContent" ToRole="Channel" />
+          <Property Name="ImgUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Icon" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ScheduleId" Type="Int32" />
+          <NavigationProperty Name="Schedule" Relationship="DagensTVModel.FK_PopularContent_ToTable1" FromRole="PopularContent" ToRole="Schedule" />
         </EntityType>
-        <Association Name="FK_PopularContent_ToTable">
-          <End Type="DagensTVModel.Channel" Role="Channel" Multiplicity="0..1" />
+        <Association Name="FK_PopularContent_ToTable1">
+          <End Type="DagensTVModel.Schedule" Role="Schedule" Multiplicity="0..1" />
           <End Type="DagensTVModel.PopularContent" Role="PopularContent" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="Channel">
+            <Principal Role="Schedule">
               <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="PopularContent">
-              <PropertyRef Name="ChannelId" />
+              <PropertyRef Name="ScheduleId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -359,6 +364,7 @@
           <EntitySetMapping Name="Schedule">
             <EntityTypeMapping TypeName="DagensTVModel.Schedule">
               <MappingFragment StoreEntitySet="Schedule">
+                <ScalarProperty Name="Time" ColumnName="Time" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="StartTime" ColumnName="StartTime" />
                 <ScalarProperty Name="Duration" ColumnName="Duration" />
@@ -403,9 +409,8 @@
           <EntitySetMapping Name="PopularContent">
             <EntityTypeMapping TypeName="DagensTVModel.PopularContent">
               <MappingFragment StoreEntitySet="PopularContent">
-                <ScalarProperty Name="ChannelId" ColumnName="ChannelId" />
+                <ScalarProperty Name="ScheduleId" ColumnName="ScheduleId" />
                 <ScalarProperty Name="Icon" ColumnName="Icon" />
-                <ScalarProperty Name="ImgTitle" ColumnName="ImgTitle" />
                 <ScalarProperty Name="ImgUrl" ColumnName="ImgUrl" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
