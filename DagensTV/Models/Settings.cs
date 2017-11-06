@@ -12,25 +12,24 @@ namespace DagensTV.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Person
+    public partial class Settings
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Person()
+        public Settings()
         {
-            this.Settings1 = new HashSet<Settings>();
+            this.Person = new HashSet<Person>();
         }
     
         public int Id { get; set; }
-        public string Firstname { get; set; }
-        public string Lastname { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
-        public Nullable<int> RoleId { get; set; }
-        public Nullable<int> SettingsId { get; set; }
+        public Nullable<bool> Svt1 { get; set; }
+        public Nullable<bool> Svt2 { get; set; }
+        public Nullable<bool> Tv3 { get; set; }
+        public Nullable<bool> Tv4 { get; set; }
+        public Nullable<bool> Kanal5 { get; set; }
+        public Nullable<int> PersonId { get; set; }
     
-        public virtual Role Role { get; set; }
-        public virtual Settings Settings { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Settings> Settings1 { get; set; }
+        public virtual ICollection<Person> Person { get; set; }
+        public virtual Person Person1 { get; set; }
     }
 }

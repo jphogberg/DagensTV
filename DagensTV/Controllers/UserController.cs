@@ -28,6 +28,13 @@ namespace DagensTV.Controllers
         {
             var myChannels = channels;
 
+            foreach(var item in channels)
+            {
+                Person.activeUser.myChannels.Add(item.MyPage);
+            }
+
+            
+
 
             return View();
         }

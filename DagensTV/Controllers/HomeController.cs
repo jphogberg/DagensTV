@@ -112,7 +112,7 @@ namespace DagensTV.Controllers
         //        ChannelName = x.Channel.Name
         //    }).ToList();
 
-        //      return PartialView("_PopularContent", popList);
+        //    return PartialView("_PopularContent", popList);
         //}
 
         public ActionResult PopIndex()
