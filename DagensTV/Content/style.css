@@ -305,7 +305,7 @@ input[type=search]:focus {
 #popular-wrapper {
 	padding-top: 1%;
 	width: 66%;
-	margin: 0 auto;		
+	margin: 0 auto;
 }
 
 #popular-list {
@@ -802,6 +802,7 @@ footer section {
     #sub-nav {
         padding: 0 3%;
         height: 30px;
+        position: absolute;
     }
     #sub-nav-content {
         width: 100%;        
@@ -881,7 +882,13 @@ footer section {
 		display: inline-block;	
 		width: 45%;
 		margin: 1% 0 1% 3.8%;		
-	}	
+	}
+    figure.pop-img {
+        width: 48%;
+        float: left;
+        margin: 0 1%;
+        padding: 1% 0 2% 0;
+    }
 	#popular-wrapper {
 		width: 85%;
 	}
@@ -1004,11 +1011,12 @@ footer section {
 	}
     /* -- Sub-Nav -- */
     .nav-category {
-        display: none;
+        display: none;        
     }
     #sub-nav {
         padding: 0 3%;
         height: 40px;
+        position: absolute;
     }
     #sub-nav-content {
         width: 100%;
@@ -1073,39 +1081,64 @@ footer section {
     }
 }
 
-/* --- IE 10 & 11 hack för att search ska visas rätt responsivt... --- */
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-	nav.responsive input {
-		padding: 0 0 0 54px;
-	}
+/* Extra styling för landscape tablets */
+@media screen and (min-width: 810px) and (max-width: 919px) {
+    figure.pop-img {
+        margin: 0 auto;        
+    }
+    figure figcaption {
+        display: inline-block;                
+        width: 320px;
+        top: -2em;
+        position: relative;
+    }
 }
 
-  /* --- Datorspecifikt --- */
-  
-  /* --- Mindre skärm --- */
-  @media screen and (min-width: 1280px) and (max-width: 1694px) {	
-	#popular-wrapper {
-		width: 75%;
-	}
-	.content-wrapper {
-		width: 75%;
-	}	
-	section {
-		display: inline-block;	
-		width: 29%;
-		margin: 1% 0 1% 2.8%;				
-	}	
+@media screen and (min-width: 920px) and (max-width: 1279px) {
+    figure.pop-img {
+        width: 23%;
+    }
+}
+
+/* --- IE 10 & 11 hack för att search ska visas rätt responsivt... --- */
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    nav.responsive input {
+        padding: 0 0 0 54px;
+    }
+}
+
+/* --- Datorspecifikt --- */
+
+/* --- Mindre skärm --- */
+@media screen and (min-width: 1280px) and (max-width: 1694px) {
+    #popular-wrapper {
+        width: 75%;
+    }
+
+    .content-wrapper {
+        width: 75%;
+    }
+
+    section {
+        display: inline-block;
+        width: 29%;
+        margin: 1% 0 1% 2.8%;
+    }
+
     a.icon {
         padding-top: 10px;
         margin-right: 3%;
     }
+
     #sub-nav {
         padding: .1% 16.9% 1.2% 17.2%;
     }
+
     #nav-second a, #nav-second-calendar a, .nav-category {
         font-size: 0.88em;
         margin-right: 4px;
     }
+
     #main-menu {
         margin-right: auto;
         margin-left: 15.5%;
@@ -1114,10 +1147,10 @@ footer section {
     .my-channelList {
         width: 30%;
     }
-  }
+}
 
-  /* --- Stor skärm men ej full-HD --- */
-@media screen and (min-width: 1695px) and (max-width: 1919px) {        
+/* --- Stor skärm men ej full-HD --- */
+@media screen and (min-width: 1695px) and (max-width: 1919px) {
     #sub-nav {
         padding: .1% 16.9% 1.2% 17.2%;
     }
