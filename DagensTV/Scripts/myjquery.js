@@ -95,34 +95,36 @@ $('.show-calendar').click(function () {
     $("#nav-second-calendar").toggle();
 })
 
+$(function () {
+    $("#progressbar").progressbar({
+        value: 37
+    });
+});
+
 /* Save checkbox values */
-var checkboxValues = function() {
-    var arrChannels = [];
-    var strChannels = "";
-    debugger
-    $("#ItemList li input[type=checkbox]").each(function (index, val) {
-        var id = $(val).attr("Id");
+//var checkboxValues = function() {
+//    var arrChannels = [];
+//    var strChannels = "";
+//    debugger
+//    $("#ItemList li input[type=checkbox]").each(function (index, val) {
+//        var id = $(val).attr("Id");
 
-        arrChannels.push(id);
-    })
+//        arrChannels.push(id);
+//    })
 
-    if (arrChannels.length != 0) {
+//    if (arrChannels.length != 0) {
 
-        strChannels = arrChannels.toString();
+//        strChannels = arrChannels.toString();
 
-        $.ajax({
-            url: "/User/SaveMyChannels",
-            type: "POST",
-            data: { ItemList: strChannels },
-            success: function (response) {
+//        $.ajax({
+//            url: "/User/SaveMyChannels",
+//            type: "POST",
+//            data: { ItemList: strChannels },
+//            success: function (response) {
 
-            }
+//            }
 
-        })
-    }
+//        })
+//    } 
+//};
 
-
-
-   
-
-};

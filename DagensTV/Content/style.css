@@ -361,6 +361,22 @@ figure figcaption {
 	width: 66%;	
 	margin: 0 auto;	
 }
+
+.passed-programme {
+    opacity: 0.35;
+}
+
+.active-programme .start-time {
+    font-weight: 700;
+    font-size: 0.95em;
+}
+
+.active-programme a {
+    font-weight: 700;
+    font-size: 1.3em;
+    opacity: 1;
+}
+
 section {
 	display: inline-block;	
 	vertical-align: top;
@@ -409,6 +425,13 @@ section span {
 
 .mobile-break {
 	display: none;
+}
+
+/* -- Progressbar -- */
+
+#progressbar {
+    display: block;
+    width: 92%;    
 }
 
 /* --- Program type --- */
