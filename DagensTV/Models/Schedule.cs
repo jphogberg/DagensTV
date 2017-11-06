@@ -26,7 +26,6 @@ namespace DagensTV.Models
         public string Resume { get; set; }
         public Nullable<int> ChannelId { get; set; }
         public Nullable<int> ShowId { get; set; }
-        public string Time { get; set; }
     
         public virtual Channel Channel { get; set; }
         public virtual Show Show { get; set; }

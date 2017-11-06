@@ -36,7 +36,8 @@
                     {
                         <li><a href="@Url.Action("Login", "Account")" class="menuLink mdi mdi-login-variant" 
                                id="@(ViewBag.Current == "Login" ? "current" : "")"> Logga in</a></li>
-                        <li><a href="@Url.Action("Create", "Account")" class="menuLink mdi mdi-account-plus"> Skapa konto</a></li>
+                        <li><a href="@Url.Action("CreateAccount", "Account")" class="menuLink mdi mdi-account-plus"
+                               id="@(ViewBag.Current == "Create" ? "current" : "")"> Skapa konto</a></li>
                     }
                 </ul>
             </div>

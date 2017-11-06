@@ -100,18 +100,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Person_Role">
-          <End Role="Role" Type="Self.Role" Multiplicity="0..1" />
-          <End Role="Person" Type="Self.Person" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Role">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Person">
-              <PropertyRef Name="RoleId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_PopularContent_ToTable">
           <End Role="Schedule" Type="Self.Schedule" Multiplicity="0..1" />
           <End Role="PopularContent" Type="Self.PopularContent" Multiplicity="*" />
@@ -151,10 +139,6 @@
           <AssociationSet Name="FK_Listing_ToTable_1" Association="Self.FK_Listing_ToTable_1">
             <End Role="Show" EntitySet="Show" />
             <End Role="Schedule" EntitySet="Schedule" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Person_Role" Association="Self.FK_Person_Role">
-            <End Role="Role" EntitySet="Role" />
-            <End Role="Person" EntitySet="Person" />
           </AssociationSet>
           <AssociationSet Name="FK_PopularContent_ToTable" Association="Self.FK_PopularContent_ToTable">
             <End Role="Schedule" EntitySet="Schedule" />

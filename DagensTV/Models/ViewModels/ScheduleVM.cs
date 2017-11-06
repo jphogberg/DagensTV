@@ -22,5 +22,8 @@ namespace DagensTV.Models.ViewModels
         public string MovieGenre { get; set; }
         public string ImdbRating { get; set; }
         public string StarImage { get; set; }
+
+        public bool HasPassed { get; set; }
+        public bool IsActive { get; set; }
     }
 }

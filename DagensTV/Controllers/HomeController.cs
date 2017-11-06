@@ -22,7 +22,7 @@ namespace DagensTV.Controllers
                 Id = x.Id,
                 Name = x.Name,
                 ImgUrl = x.LogoFilePath,
-                Schedules = db.Schedule.Where(s => s.ChannelId == x.Id && s.StartTime.Value.Day == today.Day && DbFunctions.AddMinutes(s.StartTime, s.Duration) > DateTime.Now).Select(schedule => new ScheduleVM
+                Schedules = db.Schedule.Where(s => s.ChannelId == x.Id && s.StartTime.Value.Day == today.Day/* && DbFunctions.AddMinutes(s.StartTime, s.Duration) > DateTime.Now*/).Select(schedule => new ScheduleVM
                 {
                     Id = schedule.Id,
                     StartTime = schedule.StartTime,
@@ -34,6 +34,8 @@ namespace DagensTV.Controllers
                     MovieGenre = schedule.Show.MovieGenre,
                     ImdbRating = schedule.Show.ImdbRating,
                     StarImage = schedule.Show.RatingIcon,
+                    HasPassed = DbFunctions.AddMinutes(schedule.StartTime, schedule.Duration) > DateTime.Now,
+                    IsActive = DbFunctions.AddMinutes(schedule.StartTime, schedule.Duration) == DateTime.Now
                 }).ToList()
             });
 
@@ -52,7 +54,7 @@ namespace DagensTV.Controllers
 
             return View(channelList);
         }
-        
+
         [ActionName("FilterSchedule")]
         public ActionResult Index(string Filter)
         {
@@ -75,7 +77,7 @@ namespace DagensTV.Controllers
             });
 
             return PartialView("_TvSchedules", filterList);
-        }        
+        }
 
         public ActionResult ShowInfo(int Id)
         {
@@ -100,21 +102,6 @@ namespace DagensTV.Controllers
         #endregion
 
         #region Popular Content
-        //public ActionResult PopIndex()
-        //{
-        //    var popList = db.PopularContent.Select(x => new PopVM
-        //    {
-        //        Id = x.Id,
-        //        ImgUrl = x.ImgUrl,
-        //        ImgTitle = x.ImgTitle,
-        //        Icon = x.Icon,
-        //        ChannelId = x.ChannelId,
-        //        ChannelName = x.Channel.Name
-        //    }).ToList();
-
-        //      return PartialView("_PopularContent", popList);
-        //}
-
         public ActionResult PopIndex()
         {
             var popList = db.PopularContent.OrderBy(s => s.Id).Select(x => new PopVM
