@@ -15,13 +15,13 @@ namespace DagensTV.Controllers
 
         #region Main
         public ActionResult Index()
-        {
+        {            
             var channelList = db.Channel.Select(x => new ChannelVM
             {
                 Id = x.Id,
                 Name = x.Name,
                 ImgUrl = x.LogoFilePath,
-                Schedules = db.Schedule.Where(s => s.ChannelId == x.Id).Select(schedule => new ScheduleVM
+                Schedules = db.Schedule.Where(s => s.ChannelId == x.Id && DbFunctions.AddMinutes(s.StartTime, s.Duration) > DateTime.Now).Select(schedule => new ScheduleVM
                 {
                     Id = schedule.Id,
                     StartTime = schedule.StartTime,
@@ -32,9 +32,9 @@ namespace DagensTV.Controllers
                     CategoryTag = schedule.Show.Category.Tag,
                     MovieGenre = schedule.Show.MovieGenre,
                     ImdbRating = schedule.Show.ImdbRating,
-                    StarImage = schedule.Show.RatingIcon,                 
-                }).ToList()                
-            });            
+                    StarImage = schedule.Show.RatingIcon,
+                }).ToList()
+            });
 
             return View(channelList);
         }
@@ -104,6 +104,3 @@ namespace DagensTV.Controllers
 
     }
 }
-
-//Måste koppla ihop med channel
-//string Channel är numer int ChannelId
