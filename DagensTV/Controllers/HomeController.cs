@@ -15,13 +15,14 @@ namespace DagensTV.Controllers
 
         #region Main
         public ActionResult Index()
-        {            
+        {
+            var today = new DateTime(2017, 11, 09); //Hårdkodat för ett test bara            
             var channelList = db.Channel.Select(x => new ChannelVM
             {
                 Id = x.Id,
                 Name = x.Name,
                 ImgUrl = x.LogoFilePath,
-                Schedules = db.Schedule.Where(s => s.ChannelId == x.Id && DbFunctions.AddMinutes(s.StartTime, s.Duration) > DateTime.Now).Select(schedule => new ScheduleVM
+                Schedules = db.Schedule.Where(s => s.ChannelId == x.Id && s.StartTime.Value.Day == today.Day && DbFunctions.AddMinutes(s.StartTime, s.Duration) > DateTime.Now).Select(schedule => new ScheduleVM
                 {
                     Id = schedule.Id,
                     StartTime = schedule.StartTime,
@@ -35,6 +36,19 @@ namespace DagensTV.Controllers
                     StarImage = schedule.Show.RatingIcon,
                 }).ToList()
             });
+
+            // Används inte ännu
+            var date = DateTime.Now;
+            var dates = new List<string>
+            {
+                date.ToShortDateString(),
+                date.AddDays(1).ToShortDateString(),
+                date.AddDays(2).ToShortDateString(),
+                date.AddDays(3).ToShortDateString(),
+                date.AddDays(4).ToShortDateString(),
+                date.AddDays(5).ToShortDateString(),
+                date.AddDays(6).ToShortDateString(),
+            };
 
             return View(channelList);
         }
@@ -61,7 +75,7 @@ namespace DagensTV.Controllers
             });
 
             return PartialView("_TvSchedules", filterList);
-        }
+        }        
 
         public ActionResult ShowInfo(int Id)
         {

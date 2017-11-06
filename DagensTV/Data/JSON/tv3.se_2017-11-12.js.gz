@@ -1,0 +1,1745 @@
+{
+   "jsontv" : {
+      "programme" : [
+         {
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "tv3.se",
+            "stop" : "1510449900",
+            "desc" : {
+               "sv" : "Burgess stoppar en collegeprofessor med en v\u00e4ska full med heroin i kontroll. Roman ber\u00e4ttar f\u00f6r Platt om sin \u00f6nskan att stiga i graderna. Mouse skaffar ett jobb \u00e5t Halstead."
+            },
+            "subTitle" : {
+               "sv" : "A Night Owl"
+            },
+            "episodeNum" : {
+               "onscreen" : "Del 15 av 23 s\u00e4song 3",
+               "xmltv_ns" : "2 . 14/23 ."
+            },
+            "new" : "1",
+            "url" : [
+               "https://www.themoviedb.org/tv/58841/season/3/episode/15"
+            ],
+            "category" : {
+               "en" : [
+                  "series",
+                  "Crime",
+                  "Drama"
+               ]
+            },
+            "title" : {
+               "sv" : "Chicago P.D."
+            },
+            "date" : "2016",
+            "credits" : {
+               "director" : [
+                  {
+                     "name" : "Nick Gomez"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "name" : "Jason Beghe",
+                     "role" : "Hank Voight"
+                  },
+                  {
+                     "name" : "Sophia Bush",
+                     "role" : "Erin Lindsay"
+                  },
+                  {
+                     "role" : "Adam Ruzek",
+                     "name" : "Patrick John Flueger"
+                  },
+                  {
+                     "name" : "Brian Geraghty",
+                     "role" : "Sean Roman"
+                  },
+                  {
+                     "role" : "Jay Halstead",
+                     "name" : "Jesse Lee Soffer"
+                  },
+                  {
+                     "name" : "Marina Squerciati",
+                     "role" : "Kim Burgess"
+                  },
+                  {
+                     "name" : "Elias Koteas",
+                     "role" : "Alvin Olinsky"
+                  },
+                  {
+                     "name" : "Laroyce Hawkins",
+                     "role" : "Kevin Atwater"
+                  },
+                  {
+                     "role" : "Trudy Platt",
+                     "name" : "Amy Morton"
+                  },
+                  {
+                     "role" : "Antonio Dawson",
+                     "name" : "Jon Seda"
+                  }
+               ]
+            },
+            "country" : [
+               "US"
+            ],
+            "start" : "1510447200"
+         },
+         {
+            "date" : "2017",
+            "start" : "1510449900",
+            "category" : {
+               "en" : [
+                  "series",
+                  "Entertainment"
+               ]
+            },
+            "title" : {
+               "sv" : "Paradise Hotel"
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "7 . 28 .",
+               "onscreen" : "Del 29 s\u00e4song 8"
+            },
+            "new" : "0",
+            "channel" : "tv3.se",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510452600",
+            "desc" : {
+               "sv" : "En ny gl\u00f6dhet s\u00e4song av Paradise Hotel \u00e4r h\u00e4r - fullsp\u00e4ckad med k\u00e4rlek, br\u00e5k och sp\u00e4nnande nyheter. Rebecca Stella har tagit \u00f6ver som programledare och dessutom g\u00f6r flera favoriter comeback p\u00e5 hotellet, bland andra Jeppe Johansson, Kristian T\u00e4ljeblad och Robin \"Mos\" Andersson."
+            }
+         },
+         {
+            "country" : [
+               "US"
+            ],
+            "start" : "1510452600",
+            "date" : "2014",
+            "credits" : {
+               "actor" : [
+                  {
+                     "role" : "Abby McCarthy",
+                     "name" : "Lisa Edelstein"
+                  },
+                  {
+                     "name" : "Paul Adelstein",
+                     "role" : "Jake"
+                  },
+                  {
+                     "name" : "Beau Garrett",
+                     "role" : "Phoebe"
+                  },
+                  {
+                     "role" : "Delia",
+                     "name" : "Necar Zadegan"
+                  }
+               ],
+               "writer" : [
+                  {
+                     "name" : "Marti Noxon"
+                  }
+               ]
+            },
+            "title" : {
+               "sv" : "Girlfriends' Guide to Divorce"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Drama",
+                  "Comedy"
+               ]
+            },
+            "url" : [
+               "https://www.themoviedb.org/tv/62187/season/1/episode/2"
+            ],
+            "new" : "1",
+            "episodeNum" : {
+               "xmltv_ns" : "0 . 1/13 .",
+               "onscreen" : "Del 2 av 13 s\u00e4song 1"
+            },
+            "subTitle" : {
+               "sv" : "Rule #174: Never Trust Anyone Who Charges by the Hour"
+            },
+            "desc" : {
+               "sv" : "Abby k\u00e4mpar efter sitt offentliga sammanbrott f\u00f6r att \u00e5terh\u00e4mta sig och r\u00e4dda sitt namn. Samtidigt m\u00e5ste hon ordna skilsm\u00e4ssan tillsammans med Jake f\u00f6r barnens skull."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510455300",
+            "channel" : "tv3.se"
+         },
+         {
+            "title" : {
+               "sv" : "Back in the Game"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy",
+                  "Family"
+               ]
+            },
+            "country" : [
+               "US"
+            ],
+            "start" : "1510455300",
+            "date" : "2013",
+            "credits" : {
+               "actor" : [
+                  {
+                     "role" : "Terry 'The Cannon' Gannon, Sr.",
+                     "name" : "James Caan"
+                  },
+                  {
+                     "name" : "Maggie Lawson",
+                     "role" : "Terry Gannon Jr."
+                  },
+                  {
+                     "name" : "Benjamin Koldyke",
+                     "role" : "Dick Slingbaugh"
+                  },
+                  {
+                     "role" : "Danny Gannon",
+                     "name" : "Griffin Gluck"
+                  },
+                  {
+                     "name" : "Lenora Crichlow",
+                     "role" : "Gigi Fernandez-Lovette"
+                  },
+                  {
+                     "role" : "Vanessa",
+                     "name" : "Kennedy Waite"
+                  },
+                  {
+                     "role" : "Michael Lovette",
+                     "name" : "J.J. Totah"
+                  },
+                  {
+                     "role" : "David Slingbaugh",
+                     "name" : "Cooper Roth"
+                  },
+                  {
+                     "name" : "Brandon Salgado Telis",
+                     "role" : "Dudley Douglas"
+                  }
+               ]
+            },
+            "subTitle" : {
+               "sv" : "The Change Up"
+            },
+            "desc" : {
+               "sv" : "Danny korrigerar sin personlighet efter att Cannon s\u00e4ger att flickor gillar v\u00e4rstingar. Terry planerar en vild utekv\u00e4ll med Lulu."
+            },
+            "stop" : "1510456800",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "tv3.se",
+            "url" : [
+               "https://www.themoviedb.org/tv/50832/season/1/episode/4"
+            ],
+            "new" : "1",
+            "episodeNum" : {
+               "onscreen" : "Del 4 av 13 s\u00e4song 1",
+               "xmltv_ns" : "0 . 3/13 ."
+            }
+         },
+         {
+            "start" : "1510456800",
+            "country" : [
+               "US"
+            ],
+            "date" : "2015",
+            "credits" : {
+               "actor" : [
+                  {
+                     "role" : "Jessica Huang",
+                     "name" : "Constance Wu"
+                  },
+                  {
+                     "role" : "Louis Huang",
+                     "name" : "Randall Park"
+                  },
+                  {
+                     "name" : "Hudson Yang",
+                     "role" : "Eddie Huang"
+                  },
+                  {
+                     "name" : "Forrest Wheeler",
+                     "role" : "Emery Huang"
+                  },
+                  {
+                     "role" : "Evan Huang",
+                     "name" : "Ian Chen"
+                  },
+                  {
+                     "name" : "Lucille Soong",
+                     "role" : "Grandma Huang"
+                  },
+                  {
+                     "role" : "Honey",
+                     "name" : "Chelsey Crisp"
+                  },
+                  {
+                     "name" : "Paul Scheer",
+                     "role" : "Mitch"
+                  },
+                  {
+                     "name" : "Lucille Soong",
+                     "role" : "Grandma Huang"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Lynn Shelton"
+                  }
+               ],
+               "writer" : [
+                  {
+                     "name" : "Nahnatchka Khan"
+                  }
+               ]
+            },
+            "title" : {
+               "sv" : "Fresh Off the Boat"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            },
+            "url" : [
+               "https://www.themoviedb.org/tv/61692/season/1/episode/1"
+            ],
+            "new" : "0",
+            "episodeNum" : {
+               "onscreen" : "Del 1 av 13 s\u00e4song 1",
+               "xmltv_ns" : "0 . 0/13 ."
+            },
+            "subTitle" : {
+               "sv" : "Pilot"
+            },
+            "desc" : {
+               "sv" : "Efter att familjen Huang flyttar till f\u00f6rorten i Orlando inser de snabbt att deras tillvaro d\u00e4r kommer att skilja sig drastiskt fr\u00e5n livet i Chinatown i Washington DC."
+            },
+            "channel" : "tv3.se",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510458300"
+         },
+         {
+            "url" : [
+               "https://www.themoviedb.org/tv/61692/season/1/episode/2"
+            ],
+            "episodeNum" : {
+               "onscreen" : "Del 2 av 13 s\u00e4song 1",
+               "xmltv_ns" : "0 . 1/13 ."
+            },
+            "new" : "0",
+            "subTitle" : {
+               "sv" : "Home Sweet Home-School"
+            },
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "tv3.se",
+            "stop" : "1510459500",
+            "desc" : {
+               "sv" : "Jessica tror att skolan \u00e4r f\u00f6r enkel f\u00f6r pojkarna och ger dem extra l\u00e4xor att g\u00f6ra. Louis f\u00f6rs\u00f6ker att f\u00e5 henne att varva ned sin strikta metod."
+            },
+            "date" : "2015",
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Constance Wu",
+                     "role" : "Jessica Huang"
+                  },
+                  {
+                     "role" : "Louis Huang",
+                     "name" : "Randall Park"
+                  },
+                  {
+                     "name" : "Hudson Yang",
+                     "role" : "Eddie Huang"
+                  },
+                  {
+                     "role" : "Emery Huang",
+                     "name" : "Forrest Wheeler"
+                  },
+                  {
+                     "name" : "Ian Chen",
+                     "role" : "Evan Huang"
+                  },
+                  {
+                     "role" : "Grandma Huang",
+                     "name" : "Lucille Soong"
+                  },
+                  {
+                     "role" : "Honey",
+                     "name" : "Chelsey Crisp"
+                  }
+               ]
+            },
+            "start" : "1510458300",
+            "country" : [
+               "US"
+            ],
+            "title" : {
+               "sv" : "Fresh Off the Boat"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            }
+         },
+         {
+            "title" : {
+               "sv" : "Alla \u00e4lskar Raymond"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            },
+            "start" : "1510459500",
+            "country" : [
+               "US"
+            ],
+            "date" : "2001",
+            "credits" : {
+               "actor" : [
+                  {
+                     "role" : "Ally Barone",
+                     "name" : "Madylin Sweeten"
+                  },
+                  {
+                     "name" : "Sawyer Sweeten",
+                     "role" : "Geoffrey Barone"
+                  },
+                  {
+                     "name" : "Sullivan Sweeten",
+                     "role" : "Michael Barone"
+                  },
+                  {
+                     "name" : "Doris Roberts",
+                     "role" : "Marie Barone"
+                  },
+                  {
+                     "name" : "Ray Romano",
+                     "role" : "Ray Barone"
+                  },
+                  {
+                     "role" : "Debra Barone",
+                     "name" : "Patricia Heaton"
+                  },
+                  {
+                     "role" : "Frank Barone",
+                     "name" : "Peter Boyle"
+                  },
+                  {
+                     "role" : "Robert Barone",
+                     "name" : "Brad Garrett"
+                  },
+                  {
+                     "name" : "Alex Meneses"
+                  },
+                  {
+                     "name" : "David Proval"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Jerry Zaks"
+                  }
+               ],
+               "writer" : [
+                  {
+                     "name" : "Steve Skrovan"
+                  }
+               ]
+            },
+            "subTitle" : {
+               "sv" : "Odd Man Out"
+            },
+            "desc" : {
+               "sv" : "Frank blir svartsjuk d\u00e5 Marco tillbringar tid med Marie."
+            },
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "tv3.se",
+            "stop" : "1510461000",
+            "url" : [
+               "https://www.themoviedb.org/tv/2140/season/6/episode/3"
+            ],
+            "new" : "0",
+            "episodeNum" : {
+               "xmltv_ns" : "5 . 2/24 .",
+               "onscreen" : "Del 3 av 24 s\u00e4song 6"
+            }
+         },
+         {
+            "start" : "1510461000",
+            "country" : [
+               "US"
+            ],
+            "date" : "2001",
+            "credits" : {
+               "writer" : [
+                  {
+                     "name" : "Mike Royce"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Kenneth Shapiro"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "name" : "Madylin Sweeten",
+                     "role" : "Ally Barone"
+                  },
+                  {
+                     "role" : "Geoffrey Barone",
+                     "name" : "Sawyer Sweeten"
+                  },
+                  {
+                     "name" : "Sullivan Sweeten",
+                     "role" : "Michael Barone"
+                  },
+                  {
+                     "role" : "Marie Barone",
+                     "name" : "Doris Roberts"
+                  },
+                  {
+                     "role" : "Ray Barone",
+                     "name" : "Ray Romano"
+                  },
+                  {
+                     "name" : "Patricia Heaton",
+                     "role" : "Debra Barone"
+                  },
+                  {
+                     "name" : "Peter Boyle",
+                     "role" : "Frank Barone"
+                  },
+                  {
+                     "role" : "Robert Barone",
+                     "name" : "Brad Garrett"
+                  },
+                  {
+                     "name" : "Julie Claire"
+                  },
+                  {
+                     "name" : "Jeff Garlin"
+                  }
+               ]
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            },
+            "title" : {
+               "sv" : "Alla \u00e4lskar Raymond"
+            },
+            "new" : "1",
+            "episodeNum" : {
+               "xmltv_ns" : "5 . 3/24 .",
+               "onscreen" : "Del 4 av 24 s\u00e4song 6"
+            },
+            "url" : [
+               "https://www.themoviedb.org/tv/2140/season/6/episode/4"
+            ],
+            "desc" : {
+               "sv" : "Ray tappar bort sin vigselring och Debra blir svartsjuk och ska h\u00e4mnas."
+            },
+            "channel" : "tv3.se",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510462740",
+            "subTitle" : {
+               "sv" : "Ray's Ring"
+            }
+         },
+         {
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "tv3.se",
+            "stop" : "1510464300",
+            "desc" : {
+               "sv" : "I \"Kids do the craziest things\" f\u00e5r vi se barn runt hela v\u00e4rlden g\u00f6ra de mest galna, komiska och l\u00f6jliga sakerna."
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "0 . 19/78 .",
+               "onscreen" : "Del 20 av 78 s\u00e4song 1"
+            },
+            "new" : "1",
+            "category" : {
+               "en" : [
+                  "series",
+                  "Entertainment"
+               ]
+            },
+            "title" : {
+               "sv" : "Kids do the craziest things"
+            },
+            "date" : "2015",
+            "country" : [
+               "US"
+            ],
+            "start" : "1510462800"
+         },
+         {
+            "date" : "2015",
+            "credits" : {
+               "actor" : [
+                  {
+                     "role" : "Cristela",
+                     "name" : "Cristela Alonzo"
+                  },
+                  {
+                     "name" : "Maria Canals-Barrera",
+                     "role" : "Daniela"
+                  },
+                  {
+                     "name" : "Carlos Ponce",
+                     "role" : "Felix"
+                  },
+                  {
+                     "role" : "Natalia",
+                     "name" : "Terri Hoyos"
+                  },
+                  {
+                     "role" : "Trent",
+                     "name" : "Sam McMurray"
+                  }
+               ]
+            },
+            "start" : "1510464300",
+            "country" : [
+               "US"
+            ],
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            },
+            "title" : {
+               "sv" : "Cristela"
+            },
+            "episodeNum" : {
+               "onscreen" : "Del 16 av 22 s\u00e4song 1",
+               "xmltv_ns" : "0 . 15/22 ."
+            },
+            "new" : "1",
+            "url" : [
+               "https://www.themoviedb.org/tv/61510/season/1/episode/16"
+            ],
+            "stop" : "1510465500",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "tv3.se",
+            "desc" : {
+               "sv" : "Cristelas lojalitet mellan hem och jobb s\u00e4tts p\u00e5 prov n\u00e4r hon lovat att vara Henrys sponsor under en konfirmationscermoni och samtidigt ber Trent henne att vara vid hans sida under ett v\u00e4lg\u00f6renhetsevent."
+            },
+            "subTitle" : {
+               "sv" : "Confirmation"
+            }
+         },
+         {
+            "title" : {
+               "sv" : "Back in the Game"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy",
+                  "Family"
+               ]
+            },
+            "date" : "2013",
+            "credits" : {
+               "actor" : [
+                  {
+                     "role" : "Terry 'The Cannon' Gannon, Sr.",
+                     "name" : "James Caan"
+                  },
+                  {
+                     "name" : "Maggie Lawson",
+                     "role" : "Terry Gannon Jr."
+                  },
+                  {
+                     "name" : "Benjamin Koldyke",
+                     "role" : "Dick Slingbaugh"
+                  },
+                  {
+                     "role" : "Danny Gannon",
+                     "name" : "Griffin Gluck"
+                  },
+                  {
+                     "name" : "Lenora Crichlow",
+                     "role" : "Gigi Fernandez-Lovette"
+                  },
+                  {
+                     "role" : "Vanessa",
+                     "name" : "Kennedy Waite"
+                  },
+                  {
+                     "name" : "J.J. Totah",
+                     "role" : "Michael Lovette"
+                  },
+                  {
+                     "role" : "David Slingbaugh",
+                     "name" : "Cooper Roth"
+                  },
+                  {
+                     "role" : "Dudley Douglas",
+                     "name" : "Brandon Salgado Telis"
+                  }
+               ]
+            },
+            "start" : "1510465500",
+            "country" : [
+               "US"
+            ],
+            "subTitle" : {
+               "sv" : "She. Could. Go. All. The. Way!"
+            },
+            "channel" : "tv3.se",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510467000",
+            "desc" : {
+               "sv" : "Cannon och Dick f\u00f6rs\u00f6ker att sabotera Terrys f\u00f6rh\u00e5llande med en ny fru, medan Danny l\u00e4r n\u00e5gra av de andra barnen att fuska genom att tjuvtitta p\u00e5 hans prov."
+            },
+            "url" : [
+               "https://www.themoviedb.org/tv/50832/season/1/episode/5"
+            ],
+            "episodeNum" : {
+               "onscreen" : "Del 5 av 13 s\u00e4song 1",
+               "xmltv_ns" : "0 . 4/13 ."
+            },
+            "new" : "1"
+         },
+         {
+            "subTitle" : {
+               "sv" : "The Shunning"
+            },
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510468500",
+            "channel" : "tv3.se",
+            "desc" : {
+               "sv" : "Louis uppmanar familjen att skaffa nya v\u00e4nner n\u00e4r det h\u00e5lls en fest i grannskapet. Eddie f\u00f6rs\u00f6ker samtidigt att vinna respekt i omr\u00e5det."
+            },
+            "url" : [
+               "https://www.themoviedb.org/tv/61692/season/1/episode/3"
+            ],
+            "episodeNum" : {
+               "xmltv_ns" : "0 . 2/13 .",
+               "onscreen" : "Del 3 av 13 s\u00e4song 1"
+            },
+            "new" : "1",
+            "title" : {
+               "sv" : "Fresh Off the Boat"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            },
+            "credits" : {
+               "actor" : [
+                  {
+                     "role" : "Jessica Huang",
+                     "name" : "Constance Wu"
+                  },
+                  {
+                     "name" : "Randall Park",
+                     "role" : "Louis Huang"
+                  },
+                  {
+                     "name" : "Hudson Yang",
+                     "role" : "Eddie Huang"
+                  },
+                  {
+                     "role" : "Emery Huang",
+                     "name" : "Forrest Wheeler"
+                  },
+                  {
+                     "name" : "Ian Chen",
+                     "role" : "Evan Huang"
+                  },
+                  {
+                     "role" : "Grandma Huang",
+                     "name" : "Lucille Soong"
+                  },
+                  {
+                     "name" : "Chelsey Crisp",
+                     "role" : "Honey"
+                  }
+               ]
+            },
+            "date" : "2015",
+            "country" : [
+               "US"
+            ],
+            "start" : "1510467000"
+         },
+         {
+            "desc" : {
+               "sv" : "Familjen Huang f\u00e5r sig en obehaglig \u00f6verraskning n\u00e4r det visar sig att Jessicas framg\u00e5ngsrika syster och familj ska komma p\u00e5 bes\u00f6k. De b\u00f6rjar genast att tvivla p\u00e5 sig sj\u00e4lva."
+            },
+            "channel" : "tv3.se",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510470000",
+            "subTitle" : {
+               "sv" : "Sucess Perm"
+            },
+            "new" : "1",
+            "episodeNum" : {
+               "xmltv_ns" : "0 . 3/13 .",
+               "onscreen" : "Del 4 av 13 s\u00e4song 1"
+            },
+            "url" : [
+               "https://www.themoviedb.org/tv/61692/season/1/episode/4"
+            ],
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            },
+            "title" : {
+               "sv" : "Fresh Off the Boat"
+            },
+            "start" : "1510468500",
+            "country" : [
+               "US"
+            ],
+            "date" : "2015",
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Constance Wu",
+                     "role" : "Jessica Huang"
+                  },
+                  {
+                     "name" : "Randall Park",
+                     "role" : "Louis Huang"
+                  },
+                  {
+                     "name" : "Hudson Yang",
+                     "role" : "Eddie Huang"
+                  },
+                  {
+                     "name" : "Forrest Wheeler",
+                     "role" : "Emery Huang"
+                  },
+                  {
+                     "role" : "Evan Huang",
+                     "name" : "Ian Chen"
+                  },
+                  {
+                     "role" : "Grandma Huang",
+                     "name" : "Lucille Soong"
+                  },
+                  {
+                     "name" : "Chelsey Crisp",
+                     "role" : "Honey"
+                  },
+                  {
+                     "name" : "Susan Park",
+                     "role" : "Connie Chen"
+                  }
+               ]
+            }
+         },
+         {
+            "new" : "1",
+            "episodeNum" : {
+               "onscreen" : "Del 5 av 24 s\u00e4song 6",
+               "xmltv_ns" : "5 . 4/24 ."
+            },
+            "url" : [
+               "https://www.themoviedb.org/tv/2140/season/6/episode/5"
+            ],
+            "desc" : {
+               "sv" : "Roy och Debra blir f\u00f6rn\u00e4rmade av en skulptur som Marie har gjort."
+            },
+            "channel" : "tv3.se",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510471800",
+            "subTitle" : {
+               "sv" : "Marie's Sculpture"
+            },
+            "country" : [
+               "US"
+            ],
+            "start" : "1510470000",
+            "date" : "2001",
+            "credits" : {
+               "actor" : [
+                  {
+                     "role" : "Ally Barone",
+                     "name" : "Madylin Sweeten"
+                  },
+                  {
+                     "role" : "Geoffrey Barone",
+                     "name" : "Sawyer Sweeten"
+                  },
+                  {
+                     "role" : "Michael Barone",
+                     "name" : "Sullivan Sweeten"
+                  },
+                  {
+                     "role" : "Marie Barone",
+                     "name" : "Doris Roberts"
+                  },
+                  {
+                     "name" : "Ray Romano",
+                     "role" : "Ray Barone"
+                  },
+                  {
+                     "name" : "Patricia Heaton",
+                     "role" : "Debra Barone"
+                  },
+                  {
+                     "name" : "Peter Boyle",
+                     "role" : "Frank Barone"
+                  },
+                  {
+                     "role" : "Robert Barone",
+                     "name" : "Brad Garrett"
+                  },
+                  {
+                     "name" : "Lauri Johnson"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Kenneth Shapiro"
+                  }
+               ],
+               "writer" : [
+                  {
+                     "name" : "Jennifer Crittenden"
+                  }
+               ]
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            },
+            "title" : {
+               "sv" : "Alla \u00e4lskar Raymond"
+            }
+         },
+         {
+            "desc" : {
+               "sv" : "The Little Rascals are back in an all-new movie! Join the fun with Spanky, Alfalfa, Darla, Buckwheat, Petey the dog and the whole gang as they are up to their usual mischief! The Rascals try anything to raise the money needed to save their grandma's (Doris Roberts) bakery. The only trouble is - they can't seem to do anything right! From botched pet washes to terrible taxi service, they just can't raise a penny. Their only hope is to win prize money from the local talent show - but have you ever heard Alfalfa sing?"
+            },
+            "rating" : {
+               "stars" : "5.9 / 10"
+            },
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "tv3.se",
+            "stop" : "1510479000",
+            "url" : [
+               "http://www.themoviedb.org/movie/260535"
+            ],
+            "new" : "1",
+            "episodeNum" : {
+               "themoviedb.org" : "movie/260535"
+            },
+            "title" : {
+               "sv" : "The Little Rascals Save the Day"
+            },
+            "category" : {
+               "en" : [
+                  "movie",
+                  "Comedy"
+               ]
+            },
+            "start" : "1510471800",
+            "country" : [
+               "US"
+            ],
+            "date" : "2014",
+            "credits" : {
+               "producer" : [
+                  {
+                     "name" : "Mike Elliott"
+                  },
+                  {
+                     "name" : "Jerry P. Jacobs"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Alex Zamm"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "name" : "Drew Justice",
+                     "role" : "Alfalfa"
+                  },
+                  {
+                     "role" : "Woim",
+                     "name" : "Rio Mangini"
+                  },
+                  {
+                     "role" : "Mary Anne",
+                     "name" : "Jenna Ortega"
+                  },
+                  {
+                     "name" : "Eden Wood",
+                     "role" : "Darla"
+                  },
+                  {
+                     "role" : "Spanky",
+                     "name" : "Jet Jurgensmeyer"
+                  },
+                  {
+                     "name" : "Grant Palmer",
+                     "role" : "Waldo"
+                  },
+                  {
+                     "name" : "Camden Gray",
+                     "role" : "Porky"
+                  },
+                  {
+                     "name" : "Isaiah Fredericks",
+                     "role" : "Buckwheat"
+                  },
+                  {
+                     "name" : "Connor Berry",
+                     "role" : "Stymie"
+                  },
+                  {
+                     "role" : "Butch",
+                     "name" : "Chase Vacnin"
+                  },
+                  {
+                     "role" : "Violinda",
+                     "name" : "Zaria Zakiya"
+                  },
+                  {
+                     "role" : "Tap Dancer",
+                     "name" : "Kelly Anne Sweeney"
+                  },
+                  {
+                     "role" : "Ticket Kid",
+                     "name" : "Weston McClelland"
+                  },
+                  {
+                     "role" : "Sergio",
+                     "name" : "Brian Stepanek"
+                  },
+                  {
+                     "name" : "Valerie Azlynn",
+                     "role" : "Miss Crabtree"
+                  },
+                  {
+                     "role" : "Mailman",
+                     "name" : "Steve Monroe"
+                  },
+                  {
+                     "name" : "Doris Roberts"
+                  },
+                  {
+                     "name" : "Greg Germann"
+                  },
+                  {
+                     "role" : "Talent coordinator",
+                     "name" : "Mindy Sterling"
+                  },
+                  {
+                     "name" : "Anna Ross",
+                     "role" : "Cake Ballerina"
+                  }
+               ]
+            }
+         },
+         {
+            "title" : {
+               "sv" : "The Real Housewives of Atlanta"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Reality"
+               ]
+            },
+            "date" : "2016",
+            "country" : [
+               "US"
+            ],
+            "start" : "1510479000",
+            "subTitle" : {
+               "sv" : "Secrets Revealed"
+            },
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510482600",
+            "channel" : "tv3.se",
+            "desc" : {
+               "sv" : "Hemligheter avsl\u00f6jas. I detta avsnitt f\u00e5r vi se klipp som ej visats tidigare som till exempel Kims makeover och Peter och Cynthias video-drama."
+            },
+            "url" : [
+               "https://www.themoviedb.org/tv/17380/season/8/episode/21"
+            ],
+            "episodeNum" : {
+               "onscreen" : "Del 21 av 21 s\u00e4song 8",
+               "xmltv_ns" : "7 . 20/21 ."
+            },
+            "new" : "1"
+         },
+         {
+            "country" : [
+               "CA"
+            ],
+            "start" : "1510482600",
+            "date" : "2013",
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "William Baldwin",
+                     "role" : "Dan Farrell"
+                  },
+                  {
+                     "name" : "Natalie Brown",
+                     "role" : "Kate Burlingham"
+                  },
+                  {
+                     "role" : "Wendy Clark",
+                     "name" : "Lisa Berry"
+                  },
+                  {
+                     "name" : "James Thomas",
+                     "role" : "Gavin Malone"
+                  },
+                  {
+                     "name" : "Christian Martyn",
+                     "role" : "Tyler Farrell"
+                  },
+                  {
+                     "role" : "Rebecca",
+                     "name" : "Leah McPherson"
+                  },
+                  {
+                     "name" : "Michael Cram",
+                     "role" : "Joey"
+                  },
+                  {
+                     "name" : "Michael Xavier",
+                     "role" : "Michael Carrier"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Graeme Campbell"
+                  }
+               ]
+            },
+            "category" : {
+               "en" : [
+                  "movie",
+                  "Romance"
+               ]
+            },
+            "title" : {
+               "sv" : "Be My Valentine"
+            },
+            "new" : "1",
+            "episodeNum" : {
+               "themoviedb.org" : "movie/226167"
+            },
+            "url" : [
+               "http://www.themoviedb.org/movie/226167"
+            ],
+            "desc" : {
+               "sv" : "Brandmannen Dan Farrell (William Baldwin) \u00e4r en \u00e4nkling och ensamst\u00e5ende pappa som letar efter k\u00e4rlek. N\u00e5gra veckor f\u00f6re Alla hj\u00e4rtans dag f\u00e5r brandstationen ett larm om en brand i en blomsterhandel och Dan f\u00e5r upp \u00f6gonen f\u00f6r dess vackra \u00e4gare, Kate (Natalie Brown)."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510489500",
+            "channel" : "tv3.se"
+         },
+         {
+            "title" : {
+               "sv" : "Stolthet & f\u00f6rdom"
+            },
+            "category" : {
+               "en" : [
+                  "movie",
+                  "Drama",
+                  "Romance"
+               ]
+            },
+            "credits" : {
+               "director" : [
+                  {
+                     "name" : "Joe Wright"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "name" : "Keira Knightley"
+                  },
+                  {
+                     "name" : "Rosamund Pike"
+                  },
+                  {
+                     "name" : "Donald Sutherland"
+                  },
+                  {
+                     "name" : "Brenda Blethyn"
+                  },
+                  {
+                     "name" : "Judi Dench"
+                  }
+               ]
+            },
+            "date" : "2005",
+            "country" : [
+               "FR",
+               "GB"
+            ],
+            "start" : "1510489500",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "tv3.se",
+            "stop" : "1510498800",
+            "desc" : {
+               "sv" : "De fem systrarna Bennet \u00e4r uppvuxna med en mor som har ett enda m\u00e5l i livet - att hitta en man att gifta bort sina d\u00f6ttrar med. N\u00e4r Mrs Bennet n\u00e5s av nyheten att en ung och f\u00f6rm\u00f6gen man, Mr Bingley, flyttat in p\u00e5 granngodset blir livet i det Bennetska hush\u00e5llet aldrig sig likt igen. B\u00e5de Mrs Bingley och hennes d\u00f6ttrar fylls av hopp om att kunna v\u00e4lja och vraka bland en rad potentiella friare. Mr Bingley f\u00f6r\u00e4lskar sig i den vackra men blyga Jane. Lika varma k\u00e4nslor hyser dock inte Elisabeth f\u00f6r hans b\u00e4ste v\u00e4n Mr Darcy, en man lika stolt och f\u00f6rdomsfull som hon sj\u00e4lv."
+            },
+            "new" : "1"
+         },
+         {
+            "stop" : "1510500600",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "tv3.se",
+            "desc" : {
+               "sv" : "Vi f\u00e5r tr\u00e4ffa Natalies nya kille Richard. Han, Natalie och barnen ska tv\u00e4tta Natalies smutsiga Volvo som nu ska s\u00e4ljas. Men fr\u00e5gan \u00e4r om inte barnens insats i biltv\u00e4tten, stj\u00e4lper mer \u00e4n hj\u00e4lper? I S\u00f6dert\u00e4lje kommer en pr\u00e4st p\u00e5 bes\u00f6k hos Julia M f\u00f6r att planera Nanjas dop. Det \u00e4r mycket att t\u00e4nka p\u00e5 och m\u00e5nga psalmer att v\u00e4lja bland. Linn och Marcus planerar sitt kommande familjeliv n\u00e4r de \u00e4ntligen f\u00e5r se l\u00e4genheten som de ska flytta in i. \u00c4r den som de hade t\u00e4nkt sig? Kommer de tv\u00e5 som snart blir tre att f\u00e5 plats? Joy har ensam v\u00e5rdnad om Hailey, men Rasmus f\u00e5r tr\u00e4ffa henne ibland. Lyckas Joy l\u00e4mna \u00f6ver Hailey till Rasmus utan att br\u00e5k uppst\u00e5r? Julia B och Milan \u00e5ker till Sk\u00e5ne Djurpark tillsammans med sl\u00e4kten. D\u00e4r matar de djuren, men Julia blir f\u00f6rskr\u00e4ckt n\u00e4r getterna st\u00e5ngas."
+            },
+            "episodeNum" : {
+               "onscreen" : "Del 23 s\u00e4song 2",
+               "xmltv_ns" : "1 . 22 ."
+            },
+            "new" : "1",
+            "title" : {
+               "sv" : "Unga mammor"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Series"
+               ]
+            },
+            "date" : "2017",
+            "start" : "1510498800"
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "Series"
+               ]
+            },
+            "title" : {
+               "sv" : "Unga mammor"
+            },
+            "date" : "2017",
+            "start" : "1510500600",
+            "stop" : "1510502400",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "tv3.se",
+            "desc" : {
+               "sv" : "Natalie och Richard planerar att flytta ihop och tillsammans med barnen g\u00e5r de p\u00e5 husvisning. Kan detta bli familjens nya hem d\u00e4r alla barn, djur och bilar ska f\u00e5 plats? Julia M och Nanja \u00e5ker och tittar p\u00e5 kyrkan som Nanja ska d\u00f6pas i. Julia ber\u00e4ttar om sin d\u00f6ds\u00e5ngest och r\u00e4dslan f\u00f6r att Nanja ska f\u00f6rlora sin mamma n\u00e4r hon \u00e4r lika ung som Julia var n\u00e4r hon f\u00f6rlorade sin mamma. Linn och Marcus \u00e5ker p\u00e5 den \u00e5rliga campingen tillsammans med Marcus familj. De t\u00e4vlar om vem lyckas f\u00e5nga flest kr\u00e4ftor och Linn verkar inte har n\u00e5gra problem med att sova i husvagn med den stora magen. Joy och Hailey bes\u00f6ker Sofieros slott tillsammans med kompisen Sandy och hennes barn. De pratar om uppbrottet med Rasmus och den nya killen som Joy har b\u00f6rjat prata med. Att Milan \u00e4r sen i utvecklingen \u00e4r inget som Julia B oroar sig \u00f6ver l\u00e4ngre. Hon har blivit mer t\u00e5lmodig med \u00e5ren och har insett att det f\u00e5r g\u00e5 i hans takt."
+            },
+            "episodeNum" : {
+               "onscreen" : "Del 24 s\u00e4song 2",
+               "xmltv_ns" : "1 . 23 ."
+            },
+            "new" : "1"
+         },
+         {
+            "new" : "1",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510506000",
+            "channel" : "tv3.se",
+            "desc" : {
+               "sv" : "Svensk dokument\u00e4rfilm fr\u00e5n 2017. Programledaren Peter Jihde m\u00f6ter m\u00e4nniskor som ber\u00e4ttar hur de hanterar sin diabetes, en sjukdom som varje dag kostar fem svenskar livet. Medverkar g\u00f6r familjer som vakar sina barn dygnet runt, k\u00e4ndisar som ber\u00e4ttar hur de brottas med sjukdomen och idrottsstj\u00e4rnor som mot alla odds kan tr\u00e4na p\u00e5 elitniv\u00e5. \u00d6vriga medverkande \u00e4r Molly Sand\u00e9n, Bo Holmstr\u00f6m, Fanny Lyckeke, Gladys del Pilar, Hasse Andersson, Tina Mehrafzoon samt diabetesforskaren Viveca Gyberg."
+            },
+            "date" : "2017",
+            "start" : "1510502400",
+            "title" : {
+               "sv" : "Leva utan att d\u00f6 - en film om diabetes"
+            },
+            "category" : {
+               "en" : [
+                  "movie",
+                  "Series"
+               ]
+            }
+         },
+         {
+            "desc" : {
+               "sv" : "Det b\u00f6rjar n\u00e4rma sig slutet p\u00e5 sommarhusvistelsen. Beatrice har en mysig dejt i en vink\u00e4llare. Hos Johanna b\u00f6rjar svartsjuka visa sig hos killarna n\u00e4r den f\u00f6rsta kyssen delas ut. \u00c4ven hos Jenny b\u00f6rjar de f\u00f6rsta k\u00e4nslorna att stiga till ytan och inte blir det lugnare av att det \u00e5terigen \u00e4r dags f\u00f6r val."
+            },
+            "channel" : "tv3.se",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510509600",
+            "new" : "0",
+            "episodeNum" : {
+               "xmltv_ns" : "8 . 3 .",
+               "onscreen" : "Del 4 s\u00e4song 9"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Series"
+               ]
+            },
+            "title" : {
+               "sv" : "Ensam mamma s\u00f6ker"
+            },
+            "start" : "1510506000",
+            "date" : "2017"
+         },
+         {
+            "channel" : "tv3.se",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510513200",
+            "desc" : {
+               "sv" : "I Det stora hoppet har sex unga tjejer chansen att vinna ett en t\u00e4vlingsh\u00e4st utvald av Malin Baryard, men bara om deras pappor \u00e4r beredda att l\u00e4gga bort sin prestige och ge allt f\u00f6r sina d\u00f6ttrars stora intresse. Under n\u00e5gra intensiva veckor p\u00e5 vackra \u00d6sterlen ska tjejerna med hj\u00e4lp av coachen Malin Baryard l\u00e4ra sina pappor att t\u00e4vla p\u00e5 h\u00e4stryggen i klassiska ridsportgrenar. Klarar m\u00e4nnen av att vara i underl\u00e4ge och beroende av sina barn? Visst kommer det att bli dr\u00e5pliga situationer och dramatiska t\u00e4vlingar, men framf\u00f6r allt t\u00e5rar, skratt, k\u00e4rlek och ilska n\u00e4r vi p\u00e5 n\u00e4ra h\u00e5ll f\u00e5r f\u00f6lja sex vanliga svenska tjejer och deras pappors kamp f\u00f6r att uppn\u00e5 en gemensam dr\u00f6m. Ridsportkommentatorn Henrik Johnsson \u00e4r programledare f\u00f6r Det stora hoppet."
+            },
+            "episodeNum" : {
+               "onscreen" : "Del 4 s\u00e4song 1",
+               "xmltv_ns" : "0 . 3 ."
+            },
+            "new" : "0",
+            "title" : {
+               "sv" : "Det stora hoppet"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Entertainment"
+               ]
+            },
+            "date" : "2017",
+            "start" : "1510509600"
+         },
+         {
+            "channel" : "tv3.se",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510516800",
+            "desc" : {
+               "sv" : "I kv\u00e4llens avsnitt samlar Maria ihop hela familjen Montazami f\u00f6r att \u00e5ka p\u00e5 b\u00e5tutflykt. Jennifer \u00c5kerman shoppar coolt vintagemode tillsammans med mamma Vera. Elena Belle inspireras av Beyonce och dokumenterar sin gravidmage. Gunilla Perssons liv sl\u00e5s i spillror n\u00e4r en brand \u00f6del\u00e4gger bostaden, vilket ger eko i b\u00e5de Sverige och USA."
+            },
+            "episodeNum" : {
+               "onscreen" : "Del 10 s\u00e4song 11",
+               "xmltv_ns" : "10 . 9 ."
+            },
+            "new" : "0",
+            "title" : {
+               "sv" : "Svenska Hollywoodfruar"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Series"
+               ]
+            },
+            "date" : "2017",
+            "start" : "1510513200"
+         },
+         {
+            "title" : {
+               "sv" : "Die Hard 4.0"
+            },
+            "category" : {
+               "en" : [
+                  "movie",
+                  "Action",
+                  "Thriller"
+               ]
+            },
+            "credits" : {
+               "director" : [
+                  {
+                     "name" : "Len Wiseman"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "role" : "John McClane",
+                     "name" : "Bruce Willis"
+                  },
+                  {
+                     "name" : "Justin Long",
+                     "role" : "Matthew 'Matt' Farrell"
+                  },
+                  {
+                     "name" : "Timothy Olyphant",
+                     "role" : "Thomas Gabriel"
+                  },
+                  {
+                     "role" : "Bowman",
+                     "name" : "Cliff Curtis"
+                  },
+                  {
+                     "role" : "Mai Linh",
+                     "name" : "Maggie Q"
+                  },
+                  {
+                     "name" : "Mary Elizabeth Winstead",
+                     "role" : "Lucy McClane"
+                  },
+                  {
+                     "role" : "The Warlock",
+                     "name" : "Kevin Smith"
+                  },
+                  {
+                     "role" : "Agent Johnson",
+                     "name" : "Yancey Arias"
+                  },
+                  {
+                     "role" : "Taylor",
+                     "name" : "Christina Chang"
+                  },
+                  {
+                     "name" : "Yorgo Constantine",
+                     "role" : "Russo"
+                  },
+                  {
+                     "name" : "Andrew Friedman",
+                     "role" : "Casper"
+                  },
+                  {
+                     "name" : "Sung Kang",
+                     "role" : "Raj"
+                  },
+                  {
+                     "name" : "Matt O'Leary",
+                     "role" : "Clay"
+                  },
+                  {
+                     "name" : "Cyril Raffaelli",
+                     "role" : "Rand"
+                  },
+                  {
+                     "name" : "Jonathan Sadowski",
+                     "role" : "Trey"
+                  },
+                  {
+                     "name" : "Chris Palermo",
+                     "role" : "Del"
+                  },
+                  {
+                     "name" : "Zeljko Ivanek",
+                     "role" : "Agent Molina"
+                  },
+                  {
+                     "name" : "Jake McDorman",
+                     "role" : "Jim"
+                  },
+                  {
+                     "role" : "Goatee",
+                     "name" : "Allen Maldonado"
+                  },
+                  {
+                     "role" : "Scalvino",
+                     "name" : "Chris Ellis"
+                  },
+                  {
+                     "name" : "Nadine Ellis",
+                     "role" : "Teller"
+                  },
+                  {
+                     "role" : "Chuck Summer",
+                     "name" : "Tim Russ"
+                  },
+                  {
+                     "role" : "Assassin (uncredited)",
+                     "name" : "Clay Cullen"
+                  }
+               ],
+               "producer" : [
+                  {
+                     "name" : "Michael Fottrell"
+                  }
+               ],
+               "writer" : [
+                  {
+                     "name" : "Mark Bomback"
+                  }
+               ]
+            },
+            "date" : "2007",
+            "country" : [
+               "GB",
+               "US"
+            ],
+            "start" : "1510516800",
+            "channel" : "tv3.se",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510526700",
+            "rating" : {
+               "stars" : "6.4 / 10"
+            },
+            "desc" : {
+               "sv" : "En terrorattack mot USAs samtliga datorn\u00e4tverk hotar att sl\u00e5 ut hela nationens infrastruktur. M\u00e4nnen bakom attacken har f\u00f6rutsett alla \u00e5tg\u00e4rder som myndigheterna kan vidta f\u00f6r att hindra dem, men de r\u00e4knade inte med vad som kan h\u00e4nda n\u00e4r John McClane ger sig in i leken... Bruce Willis \u00e4r tillbaka som den n\u00e5got \u00e4ldre actionikonen John McClane. F\u00f6r regin svarar Len Weisman."
+            },
+            "url" : [
+               "http://www.themoviedb.org/movie/1571"
+            ],
+            "episodeNum" : {
+               "themoviedb.org" : "movie/1571"
+            },
+            "new" : "1"
+         },
+         {
+            "start" : "1510526700",
+            "date" : "2017",
+            "credits" : {
+               "writer" : [
+                  {
+                     "name" : "Morgan Jensen"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "name" : "Ola Rapace",
+                     "role" : "Roland Hassel"
+                  },
+                  {
+                     "role" : "Vida Bergman",
+                     "name" : "Wilma Lid\u00e9n"
+                  },
+                  {
+                     "role" : "Daniela Bergman",
+                     "name" : "Aliette Opheim"
+                  },
+                  {
+                     "role" : "Leon Forsberg",
+                     "name" : "Jens Hult\u00e9n"
+                  },
+                  {
+                     "role" : "Thomas Meyer",
+                     "name" : "Shanti Roney"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Amir Chamdin"
+                  }
+               ]
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Crime",
+                  "Drama"
+               ]
+            },
+            "title" : {
+               "sv" : "Hassel"
+            },
+            "new" : "0",
+            "episodeNum" : {
+               "xmltv_ns" : "0 . 2/10 .",
+               "onscreen" : "Del 3 av 10 s\u00e4song 1"
+            },
+            "url" : [
+               "https://www.themoviedb.org/tv/68360/season/1/episode/3"
+            ],
+            "desc" : {
+               "sv" : "Sakta b\u00f6rjar desperationen och paranoian infinna sig i jakten p\u00e5 Rudas m\u00f6rdare. Hassel sn\u00e4rjs in i ett spel och tvingas st\u00e4lla sig fr\u00e5gan vem han egentligen kan lita p\u00e5."
+            },
+            "stop" : "1510530300",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "tv3.se",
+            "subTitle" : {
+               "sv" : "Episode 3"
+            }
+         },
+         {
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510537200",
+            "channel" : "tv3.se",
+            "rating" : {
+               "stars" : "7 / 10"
+            },
+            "desc" : {
+               "sv" : "Calvin \u00e4r en ung f\u00f6rfattare som slog igenom stort med sin debut, men som nu k\u00e4mpar med sitt skrivande. S\u00e5 kommer genombrottet n\u00e4r han b\u00f6rjar skriva om Ruby Sparks. Inspirationen sprirar, men s\u00e5 h\u00e4nder n\u00e5got m\u00e4rkligt. En dag sitter hon d\u00e4r i hans soffa, en verklig Ruby. Eller \u00e4r det bara hans fantasi som flippat fullst\u00e4ndigt?"
+            },
+            "episodeNum" : {
+               "themoviedb.org" : "movie/103332"
+            },
+            "new" : "1",
+            "url" : [
+               "http://www.themoviedb.org/movie/103332"
+            ],
+            "category" : {
+               "en" : [
+                  "movie",
+                  "Comedy",
+                  "Romance",
+                  "Fantasy",
+                  "Drama"
+               ]
+            },
+            "title" : {
+               "sv" : "Ruby Sparks"
+            },
+            "credits" : {
+               "director" : [
+                  {
+                     "name" : "Jonathan Dayton"
+                  },
+                  {
+                     "name" : "Valerie Faris"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "role" : "Calvin",
+                     "name" : "Paul Dano"
+                  },
+                  {
+                     "name" : "Zoe Kazan",
+                     "role" : "Ruby"
+                  },
+                  {
+                     "role" : "Harry",
+                     "name" : "Chris Messina"
+                  },
+                  {
+                     "role" : "Gertrude",
+                     "name" : "Annette Bening"
+                  },
+                  {
+                     "name" : "Antonio Banderas",
+                     "role" : "Mort"
+                  },
+                  {
+                     "role" : "Mabel",
+                     "name" : "Alia Shawkat"
+                  },
+                  {
+                     "role" : "Lila",
+                     "name" : "Deborah Ann Woll"
+                  },
+                  {
+                     "name" : "Steve Coogan",
+                     "role" : "Langdon Tharp"
+                  },
+                  {
+                     "role" : "Dr. Rosenthal",
+                     "name" : "Elliott Gould"
+                  },
+                  {
+                     "name" : "Aasif Mandvi",
+                     "role" : "Cyrus Modi"
+                  },
+                  {
+                     "role" : "Susie",
+                     "name" : "Toni Trucks"
+                  },
+                  {
+                     "role" : "Mandi",
+                     "name" : "Eleanor Seigler"
+                  },
+                  {
+                     "role" : "Adam",
+                     "name" : "John F. Beach"
+                  },
+                  {
+                     "name" : "Jane Anne Thomas",
+                     "role" : "Saskia"
+                  },
+                  {
+                     "role" : "Warren",
+                     "name" : "Wallace Langham"
+                  },
+                  {
+                     "role" : "Female Professor",
+                     "name" : "Mary Jo Deschanel"
+                  }
+               ],
+               "writer" : [
+                  {
+                     "name" : "Zoe Kazan"
+                  }
+               ],
+               "producer" : [
+                  {
+                     "name" : "Ron Yerxa"
+                  },
+                  {
+                     "name" : "Albert Berger"
+                  }
+               ]
+            },
+            "date" : "2012",
+            "country" : [
+               "US"
+            ],
+            "start" : "1510530300"
+         }
+      ]
+   }
+}

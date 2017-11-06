@@ -1,0 +1,911 @@
+{
+   "jsontv" : {
+      "programme" : [
+         {
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510617900",
+            "channel" : "svt2.svt.se",
+            "new" : null,
+            "title" : {
+               "sv" : "Rapport"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "date" : "2017",
+            "start" : "1510617600"
+         },
+         {
+            "date" : "2017",
+            "start" : "1510617900",
+            "category" : {
+               "en" : [
+                  "sports",
+                  "Sports"
+               ]
+            },
+            "title" : {
+               "sv" : "Sportnytt"
+            },
+            "new" : null,
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510618800",
+            "channel" : "svt2.svt.se"
+         },
+         {
+            "start" : "1510618800",
+            "date" : "2017",
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "title" : {
+               "sv" : "Nyhetstecken"
+            },
+            "new" : null,
+            "desc" : {
+               "sv" : "Nyheter p\u00e5 teckenspr\u00e5k."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510619400"
+         },
+         {
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510621200",
+            "desc" : {
+               "sv" : "Nyheter fr\u00e5n hela Sverige - direkt fr\u00e5n Ume\u00e5."
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "2016 . 155/220 .",
+               "onscreen" : "Del 156 av 220 s\u00e4song 2017"
+            },
+            "new" : "0",
+            "title" : {
+               "sv" : "Sverige idag"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "date" : "2017",
+            "start" : "1510619400"
+         },
+         {
+            "start" : "1510621200",
+            "date" : "2017",
+            "title" : {
+               "sv" : "Rapport"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "new" : null,
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510621500"
+         },
+         {
+            "new" : "0",
+            "episodeNum" : {
+               "onscreen" : "Del 1 av 6 s\u00e4song 1",
+               "xmltv_ns" : "0 . 0/6 ."
+            },
+            "desc" : {
+               "sv" : "Under ett \u00e5r f\u00f6ljer vi fyra starka matprofiler baserade i Sapmi. De ber\u00e4ttar om sin relation till naturen, maten och r\u00e5varorna de hittar d\u00e4r och tar oss med p\u00e5 ett \u00e4ventyr fyllt av livsfilosofi och smaker fr\u00e5n den samiska mattraditionen. Martin arbetar som k\u00f6kschef p\u00e5 en fine-dining restaurang i centrala Narvik och vill utveckla den samiska mattraditionen. Maret \u00e4r rensk\u00f6tare och driver vandrarhem och restaurang med samisk pr\u00e4gel p\u00e5 Lofoten. Greta och hennes dotter Linn bor och verkar i Jokkmokk d\u00e4r de driver ett v\u00e4lk\u00e4nt kaf\u00e9 med samisk inriktning."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510623300",
+            "channel" : "svt2.svt.se",
+            "start" : "1510621500",
+            "date" : "2017",
+            "title" : {
+               "sv" : "Smaker fr\u00e5n S\u00e1pmi"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "News"
+               ]
+            }
+         },
+         {
+            "title" : {
+               "sv" : "Rapport"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "date" : "2017",
+            "start" : "1510624800",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510625100",
+            "new" : null
+         },
+         {
+            "new" : null,
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510628700",
+            "start" : "1510628400",
+            "date" : "2017",
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "title" : {
+               "sv" : "Rapport"
+            }
+         },
+         {
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "title" : {
+               "sv" : "Rapport"
+            },
+            "start" : "1510632000",
+            "date" : "2017",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510632300",
+            "new" : null
+         },
+         {
+            "channel" : "svt2.svt.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510644600",
+            "desc" : {
+               "sv" : "Fyra tjejer och en kille - fem ton\u00e5rsf\u00f6r\u00e4ldrar. Under ett \u00e5r f\u00f6ljer vi Elina, Nea, Emilia, Laura och Jussi, som alla blivit f\u00f6r\u00e4ldrar i ton\u00e5ren. Emilia oroar sig inf\u00f6r den stundande f\u00f6rlossningen. Jussis lumpen-planer f\u00f6r\u00e4ndras och Nea f\u00e5r sitt livs \u00f6verraskning."
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "1 . 6/8 .",
+               "onscreen" : "Del 7 av 8 s\u00e4song 2"
+            },
+            "new" : "0",
+            "category" : {
+               "en" : [
+                  "series",
+                  "Politics",
+                  "Society"
+               ]
+            },
+            "title" : {
+               "sv" : "Ton\u00e5rsmammor"
+            },
+            "date" : "2014",
+            "start" : "1510642800"
+         },
+         {
+            "title" : {
+               "sv" : "F\u00f6rv\u00e4xlingen"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Series"
+               ]
+            },
+            "start" : "1510644600",
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Nurg\u00fcl Yesil\u00e7ay"
+                  },
+                  {
+                     "name" : "Erkan Petekkaya"
+                  },
+                  {
+                     "name" : "Ebru \u00d6zkan"
+                  },
+                  {
+                     "name" : "Alina Boz"
+                  },
+                  {
+                     "name" : "Leyla Tanlar"
+                  },
+                  {
+                     "name" : "Bar??"
+                  }
+               ]
+            },
+            "date" : "2015",
+            "desc" : {
+               "sv" : "Vi f\u00e5r f\u00f6lja hur \u00f6dets vindar f\u00f6r\u00e4ndrar livet f\u00f6r de tv\u00e5 familjerna Gulpinar och Gurpinar, vars d\u00f6ttrar f\u00f6rv\u00e4xlades p\u00e5 BB. Falay med flera."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510646400",
+            "new" : "0",
+            "episodeNum" : {
+               "onscreen" : "Del 55 av 120 s\u00e4song 2",
+               "xmltv_ns" : "1 . 54/120 ."
+            }
+         },
+         {
+            "channel" : "svt2.svt.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510657200",
+            "desc" : {
+               "sv" : "Politiska seminarier, debatter och f\u00f6rel\u00e4sningar."
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "2016 . 182/215 .",
+               "onscreen" : "Del 183 av 215 s\u00e4song 2017"
+            },
+            "new" : null,
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "Politics",
+                  "Society"
+               ]
+            },
+            "title" : {
+               "sv" : "Forum"
+            },
+            "date" : "2017",
+            "start" : "1510646400"
+         },
+         {
+            "new" : null,
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510657500",
+            "date" : "2017",
+            "start" : "1510657200",
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "title" : {
+               "sv" : "Rapport"
+            }
+         },
+         {
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510671600",
+            "channel" : "svt2.svt.se",
+            "desc" : {
+               "sv" : "Politiska seminarier, debatter och f\u00f6rel\u00e4sningar."
+            },
+            "episodeNum" : {
+               "onscreen" : "Del 183 av 215 s\u00e4song 2017",
+               "xmltv_ns" : "2016 . 182/215 ."
+            },
+            "new" : null,
+            "title" : {
+               "sv" : "Forum"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "Politics",
+                  "Society"
+               ]
+            },
+            "date" : "2017",
+            "start" : "1510657500"
+         },
+         {
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510671900",
+            "channel" : "svt2.svt.se",
+            "new" : null,
+            "title" : {
+               "sv" : "Rapport"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "start" : "1510671600",
+            "date" : "2017"
+         },
+         {
+            "new" : null,
+            "episodeNum" : {
+               "xmltv_ns" : "2016 . 182/215 .",
+               "onscreen" : "Del 183 av 215 s\u00e4song 2017"
+            },
+            "desc" : {
+               "sv" : "Politiska seminarier, debatter och f\u00f6rel\u00e4sningar."
+            },
+            "stop" : "1510672500",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "start" : "1510671900",
+            "date" : "2017",
+            "title" : {
+               "sv" : "Forum"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "Politics",
+                  "Society"
+               ]
+            }
+         },
+         {
+            "date" : "2017",
+            "start" : "1510672500",
+            "category" : {
+               "en" : [
+                  "series",
+                  "Politics",
+                  "Society"
+               ]
+            },
+            "title" : {
+               "sv" : "Agenda"
+            },
+            "episodeNum" : {
+               "onscreen" : "Del 29 av 37 s\u00e4song 13",
+               "xmltv_ns" : "12 . 28/37 ."
+            },
+            "new" : "0",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510675200"
+         },
+         {
+            "date" : "2007",
+            "start" : "1510675200",
+            "title" : {
+               "sv" : "Via Sverige"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Travel"
+               ]
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "0 . 6/7 .",
+               "onscreen" : "Del 7 av 7 s\u00e4song 1"
+            },
+            "new" : "0",
+            "channel" : "svt2.svt.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510676100",
+            "desc" : {
+               "sv" : "Programledaren Tommi Lempinens rundresa genom Sverige b\u00f6rjar n\u00e4rma sig sitt slut. Innan turen g\u00e5r vidare hem mot Finland g\u00f6r han bes\u00f6k p\u00e5 bl.a. bilbingo i Vara, Finnkulturcentrum i Torsby och crazyrace i \u00d6sterg\u00f6tland."
+            }
+         },
+         {
+            "title" : {
+               "sv" : "Nyheter p\u00e5 l\u00e4tt svenska"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "start" : "1510676100",
+            "date" : "2017",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510676400",
+            "new" : null,
+            "episodeNum" : {
+               "xmltv_ns" : "2016 . 191/220 .",
+               "onscreen" : "Del 192 av 220 s\u00e4song 2017"
+            }
+         },
+         {
+            "new" : null,
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510677000",
+            "channel" : "svt2.svt.se",
+            "desc" : {
+               "sv" : "Nyheter p\u00e5 teckenspr\u00e5k."
+            },
+            "date" : "2017",
+            "start" : "1510676400",
+            "title" : {
+               "sv" : "Nyhetstecken"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            }
+         },
+         {
+            "title" : {
+               "sv" : "Oddasat"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "start" : "1510677000",
+            "date" : "2017",
+            "desc" : {
+               "sv" : "Samiskspr\u00e5kiga nyheter."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510677900",
+            "channel" : "svt2.svt.se",
+            "new" : null
+         },
+         {
+            "new" : null,
+            "desc" : {
+               "sv" : "Finskspr\u00e5kiga nyheter."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510678800",
+            "start" : "1510677900",
+            "date" : "2017",
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "title" : {
+               "sv" : "Uutiset"
+            }
+         },
+         {
+            "episodeNum" : {
+               "xmltv_ns" : "34 . 4/25 .",
+               "onscreen" : "Del 5 av 25 s\u00e4song 35"
+            },
+            "new" : "0",
+            "subTitle" : {
+               "sv" : "Scarborough Grand Spa Hall"
+            },
+            "channel" : "svt2.svt.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510682400",
+            "desc" : {
+               "sv" : "Jakten efter g\u00f6mda skatter har f\u00e4ngslat den engelska publiken i mer \u00e4n 30 \u00e5r, och idag \u00e5ker Fiona Bruce och antikexperterna till North Yorkshire-kusten. D\u00e4r uppt\u00e4cker de en hyllning till en Spitfirepilot och en av de tidigaste versionerna av kylsk\u00e5pet."
+            },
+            "date" : "2013",
+            "start" : "1510678800",
+            "title" : {
+               "sv" : "Engelska Antikrundan"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Magazine"
+               ]
+            }
+         },
+         {
+            "new" : "1",
+            "episodeNum" : {
+               "onscreen" : "Del 62 av 85 s\u00e4song 19",
+               "xmltv_ns" : "18 . 61/85 ."
+            },
+            "desc" : {
+               "sv" : "Rickard Olsson leder de t\u00e4vlande genom SVT:s fr\u00e5gesport som kan handla om allt fr\u00e5n Abba till atomer. F\u00f6rutom bred allm\u00e4nbildning kr\u00e4vs ocks\u00e5 ett strategiskt t\u00e4nkande."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510684200",
+            "channel" : "svt2.svt.se",
+            "start" : "1510682400",
+            "date" : "2017",
+            "title" : {
+               "sv" : "Vem vet mest?"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Entertainment",
+                  "Documentary"
+               ]
+            }
+         },
+         {
+            "new" : "1",
+            "episodeNum" : {
+               "xmltv_ns" : "1 . 55/120 .",
+               "onscreen" : "Del 56 av 120 s\u00e4song 2"
+            },
+            "desc" : {
+               "sv" : "Vi f\u00e5r f\u00f6lja hur \u00f6dets vindar f\u00f6r\u00e4ndrar livet f\u00f6r de tv\u00e5 familjerna Gulpinar och Gurpinar, vars d\u00f6ttrar f\u00f6rv\u00e4xlades p\u00e5 BB. Falay med flera."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510686000",
+            "channel" : "svt2.svt.se",
+            "start" : "1510684200",
+            "date" : "2015",
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Nurg\u00fcl Yesil\u00e7ay"
+                  },
+                  {
+                     "name" : "Erkan Petekkaya"
+                  },
+                  {
+                     "name" : "Ebru \u00d6zkan"
+                  },
+                  {
+                     "name" : "Alina Boz"
+                  },
+                  {
+                     "name" : "Leyla Tanlar"
+                  },
+                  {
+                     "name" : "Bar??"
+                  }
+               ]
+            },
+            "title" : {
+               "sv" : "F\u00f6rv\u00e4xlingen"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Series"
+               ]
+            }
+         },
+         {
+            "date" : "2017",
+            "credits" : {
+               "presenter" : [
+                  {
+                     "name" : "Claes JB L\u00f6fgren"
+                  }
+               ]
+            },
+            "start" : "1510686000",
+            "title" : {
+               "sv" : "Korrespondenterna"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Politics",
+                  "Society"
+               ]
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "18 . 5/10 .",
+               "onscreen" : "Del 6 av 10 s\u00e4song 19"
+            },
+            "new" : "1",
+            "subTitle" : {
+               "sv" : "Knarkkriget"
+            },
+            "stop" : "1510687800",
+            "channel" : "svt2.svt.se",
+            "desc" : {
+               "sv" : "Just nu p\u00e5g\u00e5r ett d\u00f6dligt krig mot knarket i Filippinerna, d\u00e4r m\u00e5nga oskyldiga hamnar i skottlinjen. Reportage om fotografen som f\u00f6rs\u00f6ker dokumentera alla d\u00f6da f\u00f6r att ta reda p\u00e5 sanningen."
+            }
+         },
+         {
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=164841&seasonid=250931&id=2255191&lid=8"
+            ],
+            "new" : "1",
+            "episodeNum" : {
+               "thetvdb.com" : "series/164841",
+               "onscreen" : "Del 7 s\u00e4song 24",
+               "xmltv_ns" : "23 . 6 ."
+            },
+            "subTitle" : {
+               "sv" : "Avsnitt 7"
+            },
+            "desc" : {
+               "sv" : "M\u00e5ste det vara dyrt att komma i form? Blossom Tainton ger r\u00e5d om tr\u00e4ning. Peter Stark, jurist p\u00e5 Konsumenternas F\u00f6rs\u00e4kringsbyr\u00e5, svarar p\u00e5 tittarnas fr\u00e5gor om f\u00f6rs\u00e4kringar."
+            },
+            "channel" : "svt2.svt.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510689600",
+            "start" : "1510687800",
+            "date" : "2017",
+            "credits" : {
+               "presenter" : [
+                  {
+                     "name" : "Inger Ljung Olsson"
+                  },
+                  {
+                     "name" : "Sanne Olsson"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "name" : "\u00c5sa Avdic",
+                     "role" : "Programledare"
+                  },
+                  {
+                     "role" : "Programledare",
+                     "name" : "Mathias Andersson"
+                  }
+               ]
+            },
+            "title" : {
+               "sv" : "Plus"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Special Interest"
+               ]
+            }
+         },
+         {
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510691940",
+            "channel" : "svt2.svt.se",
+            "new" : null,
+            "title" : {
+               "sv" : "Aktuellt"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "start" : "1510689600",
+            "date" : "2017"
+         },
+         {
+            "new" : null,
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510692360",
+            "channel" : "svt2.svt.se",
+            "start" : "1510691940",
+            "date" : "2017",
+            "title" : {
+               "sv" : "Kulturnyheterna"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            }
+         },
+         {
+            "title" : {
+               "sv" : "Lokala nyheter"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "date" : "2017",
+            "start" : "1510692360",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510692900",
+            "episodeNum" : {
+               "xmltv_ns" : "2016 . 145/180 .",
+               "onscreen" : "Del 146 av 180 s\u00e4song 2017"
+            },
+            "new" : null
+         },
+         {
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510693200",
+            "episodeNum" : {
+               "xmltv_ns" : "2016 . 141/180 .",
+               "onscreen" : "Del 142 av 180 s\u00e4song 2017"
+            },
+            "new" : null,
+            "title" : {
+               "sv" : "Nyhetssammanfattning"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "date" : "2017",
+            "start" : "1510692900"
+         },
+         {
+            "category" : {
+               "en" : [
+                  "sports",
+                  "Sports"
+               ]
+            },
+            "title" : {
+               "sv" : "Sportnytt"
+            },
+            "date" : "2017",
+            "start" : "1510693200",
+            "stop" : "1510694100",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "new" : null
+         },
+         {
+            "date" : "2017",
+            "start" : "1510694100",
+            "title" : {
+               "sv" : "Hitl\u00e5tens historia - Sweet Child O'Mine"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "8 . 0/6 .",
+               "onscreen" : "Del 1 av 6 s\u00e4song 9"
+            },
+            "new" : "1",
+            "channel" : "svt2.svt.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510695900",
+            "desc" : {
+               "sv" : "I slutet av 80-talet blev Guns N' Roses idoler \u00f6ver hela v\u00e4rlden. F\u00f6r Hitl\u00e5tens historia-producenten Magnus Broni, blev det l\u00e5ngt mer \u00e4n s\u00e5. Och fr\u00e5gan \u00e4r om den d\u00e4r maniska k\u00e4rleken till Slash & Co n\u00e5gonsin svalnat? S\u00e5 h\u00e4r n\u00e4stan 30 \u00e5r senare dammar han av skivsamlingen och ber\u00e4ttar historien om \"Sweet Child O' Mine\". L\u00e5ten som b\u00f6rjade som ett sk\u00e4mt men i slut\u00e4ndan v\u00e4nde Guns N' Roses tr\u00f6gstartade karri\u00e4r fr\u00e5n flopp till v\u00e4rldsherrav\u00e4lde."
+            }
+         },
+         {
+            "start" : "1510695900",
+            "date" : "2014",
+            "title" : {
+               "sv" : "Att dyka under isberget"
+            },
+            "new" : "0",
+            "desc" : {
+               "sv" : "En familj seglar i Arktis tillsammans med ett team och f\u00f6rs\u00f6ker dyka till hundra meters djup. Ingen har n\u00e5gonsin f\u00f6rr dykt s\u00e5 djupt i vatten vars temperatur \u00e4r en minusgrad. Ska de lyckas? UR."
+            },
+            "channel" : "svt2.svt.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510699200"
+         },
+         {
+            "new" : "0",
+            "desc" : {
+               "sv" : "Chris Burden s\u00e4kerst\u00e4llde sin plats i konsthistorien n\u00e4r han p\u00e5 1970-talet genomf\u00f6rde en serie farliga och uppseendev\u00e4ckande performanceverk. Han l\u00e4t sig bland annat bli skjuten, h\u00f6ll sig inne i ett sk\u00e5p i fem dagar och l\u00e4t korsf\u00e4sta sig p\u00e5 en bil. Efter sina banbrytande verk v\u00e4xte pressen och f\u00f6rv\u00e4ntningarna, och gr\u00e4nsen mellan Burdens liv och konst b\u00f6rjade bli suddig. I slutet av 70-talet b\u00f6rjade han ist\u00e4llet skapa fascinerande installationer, skulpturer och modeller. Det h\u00e4r \u00e4r en film om en konstn\u00e4r som i \u00f6ver 45 \u00e5r konsekvent har utmanat id\u00e9er om den moderna konstens gr\u00e4nser och natur, och som p\u00e5verkat en hel generation av konstn\u00e4rer."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510702740",
+            "channel" : "svt2.svt.se",
+            "start" : "1510699200",
+            "date" : "2016",
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "title" : {
+               "sv" : "Burden: en kula f\u00f6r konsten"
+            }
+         },
+         {
+            "title" : {
+               "sv" : "Via Sverige"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Travel"
+               ]
+            },
+            "start" : "1510702800",
+            "date" : "2007",
+            "desc" : {
+               "sv" : "Vad har Sommarsverige att erbjuda en finsk och tillika motorintresserad turist? Rundresan i Sverige har f\u00f6rt programledaren Tommi Lempinen till s\u00f6dra Sverige. Denna g\u00e5ng bes\u00f6ker han bl.a. en bilkyrkog\u00e5rd utanf\u00f6r Ryd och ett evenemang f\u00f6r veteranbilar i Helsingborg, innan resan g\u00e5r vidare upp mot G\u00f6teborg och Volvo Torslandaverken."
+            },
+            "stop" : "1510703700",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "new" : "0",
+            "episodeNum" : {
+               "xmltv_ns" : "0 . 5/7 .",
+               "onscreen" : "Del 6 av 7 s\u00e4song 1"
+            }
+         }
+      ]
+   }
+}
