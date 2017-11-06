@@ -16,7 +16,7 @@ namespace DagensTV.Controllers
         #region Main
         public ActionResult Index()
         {
-            var today = new DateTime(2017, 11, 09); //Hårdkodat för ett test bara            
+            var today = new DateTime(2017, 11, 09); //Hårdkodat tills vidare så att den tror vi är på 9e idag
             var channelList = db.Channel.Select(x => new ChannelVM
             {
                 Id = x.Id,
