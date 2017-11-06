@@ -25,15 +25,20 @@ namespace DagensTV.Controllers
                 ImgUrl = x.ImgUrl,
                 ImgTitle = x.ImgTitle,
                 Icon = x.Icon,
-                Channels = db.Channel.Where(s => s.Id == x.Id).Select(channel => new ChannelVM
-                {
-                    Id = channel.Id,
-                    Name = channel.Name
-                }).ToList()
+                ChannelName = x.Channel.Name,
+                
             });
 
+            var channelList = db.Channel.ToList();
+            ViewBag.PopChannelList = channelList;
             return View(popularContent);
         }
+
+        /*Channels = db.Channel.ToList()*/ /*Where(c => c.Id == x.Channel.Id).Select(channel => new Channel
+                //{
+                //    Id = channel.Id,
+                //    Name = channel.Name
+                //}).ToList()*/
 
         [HttpPost]
         public ActionResult GetForm(PopVM model)
