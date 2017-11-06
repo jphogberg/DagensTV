@@ -20,9 +20,12 @@ namespace DagensTV.Models
         public string Username { get; set; }
         public string Password { get; set; }
         public Nullable<int> RoleId { get; set; }
+        public Nullable<bool> Svt1 { get; set; }
+        public Nullable<bool> Svt2 { get; set; }
+        public Nullable<bool> Tv3 { get; set; }
+        public Nullable<bool> Tv4 { get; set; }
+        public Nullable<bool> Kanal5 { get; set; }
     
         public virtual Role Role { get; set; }
-
-        public List<Channel> MyChannels { get; set; }
     }
 }

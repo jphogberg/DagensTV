@@ -30,6 +30,8 @@ namespace DagensTV.Controllers
         {
             var myChannels = channels;
 
+           
+           
             return View();
         }
     }

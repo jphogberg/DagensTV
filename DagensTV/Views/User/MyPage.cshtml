@@ -19,6 +19,8 @@
                 <ul id="ItemList">
                     <li>
                         @Html.HiddenFor(x => x[i].Id)
+                        @Html.HiddenFor(x => x[i].Name)
+                        @Html.HiddenFor(x => x[i].LogoFilePath)
                         @Html.CheckBoxFor(x => x[i].MyPage)
                         
                         <img src="../@Model[i].LogoFilePath" class="channel" title="@Model[i].Name" alt="@Model[i].Name"><span id="channel-name"> @Model[i].Name</span>

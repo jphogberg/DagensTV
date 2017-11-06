@@ -19,7 +19,7 @@ namespace DagensTV.Models
         public string ImgTitle { get; set; }
         public string Icon { get; set; }
         public Nullable<int> ChannelId { get; set; }
-        
+    
         public virtual Channel Channel { get; set; }
     }
 }
