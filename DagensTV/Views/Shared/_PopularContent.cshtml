@@ -10,10 +10,13 @@
             @foreach (var item in Model)
             {
                 <figure class="pop-img">
-                    <img src="@item.ImgUrl" title="@item.ImgTitle" alt="@item.ImgTitle">
-                    <figcaption>
-                        @item.ImgTitle<br /><i class="@item.Icon"></i> @item.ChannelName
-                    </figcaption>
+                    <img src="@item.ImgUrl" title="@item.Name" alt="@item.Name">
+                    @foreach (var show in item.Schedules)
+                    {
+                        <figcaption>
+                            @show.ShowName<br /><i class="@item.Icon"></i> @show.ChannelName
+                        </figcaption>
+                    }                    
                 </figure>
             }                     
         </section>
