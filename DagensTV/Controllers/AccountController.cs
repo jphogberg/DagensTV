@@ -54,8 +54,8 @@ namespace DagensTV.Controllers
                         if (p.Username.Trim().Equals(model.Username))
                         {
                             roleId = p.RoleId.GetValueOrDefault();
-                            Person.activeUser.Username = p.Username;
-                            Person.activeUser.Password = p.Password;
+                            //Person.activeUser.Username = p.Username;
+                            //Person.activeUser.Password = p.Password;
                         }
                     }
 

@@ -30,7 +30,7 @@ namespace DagensTV.Controllers
 
             foreach(var item in channels)
             {
-                Person.activeUser.myChannels.Add(item.MyPage);
+                //Person.activeUser.myChannels.Add(item.MyPage);
             }
 
             

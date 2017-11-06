@@ -100,20 +100,7 @@ namespace DagensTV.Controllers
         #endregion
 
         #region Popular Content
-        //public ActionResult PopIndex()
-        //{
-        //    var popList = db.PopularContent.Select(x => new PopVM
-        //    {
-        //        Id = x.Id,
-        //        ImgUrl = x.ImgUrl,
-        //        ImgTitle = x.ImgTitle,
-        //        Icon = x.Icon,
-        //        ChannelId = x.ChannelId,
-        //        ChannelName = x.Channel.Name
-        //    }).ToList();
-
-        //    return PartialView("_PopularContent", popList);
-        //}
+        
 
         public ActionResult PopIndex()
         {
