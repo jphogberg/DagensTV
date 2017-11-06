@@ -1,0 +1,1090 @@
+{
+   "jsontv" : {
+      "programme" : [
+         {
+            "new" : null,
+            "channel" : "svt2.svt.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510445100",
+            "start" : "1510444800",
+            "date" : "2017",
+            "title" : {
+               "sv" : "Rapport"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            }
+         },
+         {
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510446000",
+            "channel" : "svt2.svt.se",
+            "new" : null,
+            "title" : {
+               "sv" : "Sportnytt"
+            },
+            "category" : {
+               "en" : [
+                  "sports",
+                  "Sports"
+               ]
+            },
+            "date" : "2017",
+            "start" : "1510445100"
+         },
+         {
+            "date" : "2013",
+            "start" : "1510446000",
+            "title" : {
+               "sv" : "Latela - bilduellen"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Reality"
+               ]
+            },
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=268569&seasonid=584901&id=4877545&lid=8"
+            ],
+            "episodeNum" : {
+               "xmltv_ns" : "1 . 4 .",
+               "onscreen" : "Del 5 s\u00e4song 2",
+               "thetvdb.com" : "series/268569"
+            },
+            "new" : "0",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510447800",
+            "desc" : {
+               "sv" : "Tommi och Harhala \u00e5ker p\u00e5 jobbresa till Frankrike. Killarna som \u00e4r kvar p\u00e5 hemmaplan f\u00e5r till sist bilen klar i tid, men fr\u00e5gan \u00e4r om uppdragsgivaren \u00e4r n\u00f6jd med resultatet? Bilmekskompisarna i g\u00e4nget Latela har \u00e5tagit sig att p\u00e5 21 dagar bygga en flakbil till en f\u00f6rfest inf\u00f6r en konsert med Justin Bieber. Latela best\u00e5r av Huttunen, Tommi, Valkama, Miika, Riku, Majuri, Harhala, H\u00e4rski och Jopa."
+            }
+         },
+         {
+            "date" : "2017",
+            "start" : "1510448400",
+            "title" : {
+               "sv" : "Rapport"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "new" : null,
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510448700"
+         },
+         {
+            "date" : "2013",
+            "start" : "1510448700",
+            "title" : {
+               "sv" : "Latela - bilduellen"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Reality"
+               ]
+            },
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=268569&seasonid=584901&id=4877546&lid=8"
+            ],
+            "episodeNum" : {
+               "thetvdb.com" : "series/268569",
+               "onscreen" : "Del 6 s\u00e4song 2",
+               "xmltv_ns" : "1 . 5 ."
+            },
+            "new" : "0",
+            "channel" : "svt2.svt.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510450500",
+            "desc" : {
+               "sv" : "Med en bil som blev klar i tid och en n\u00f6jd uppdragsgivare har det blivit dags att fira. Och det faktum att b\u00e5de Huttunen och Miika har blivit pappor ger ytterligare en orsak till fest. Bilmekskompisarna i g\u00e4nget Latela har \u00e5tagit sig att p\u00e5 21 dagar bygga en flakbil till en f\u00f6rfest inf\u00f6r en konsert med Justin Bieber. Latela best\u00e5r av Huttunen, Tommi, Valkama, Miika, Riku, Majuri, Harhala, H\u00e4rski och Jopa."
+            }
+         },
+         {
+            "start" : "1510452000",
+            "date" : "2017",
+            "title" : {
+               "sv" : "Rapport"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "new" : null,
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510452300"
+         },
+         {
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510455900",
+            "channel" : "svt2.svt.se",
+            "new" : null,
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "title" : {
+               "sv" : "Rapport"
+            },
+            "start" : "1510455600",
+            "date" : "2017"
+         },
+         {
+            "new" : null,
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510459500",
+            "channel" : "svt2.svt.se",
+            "start" : "1510459200",
+            "date" : "2017",
+            "title" : {
+               "sv" : "Rapport"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            }
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "Lifestyle"
+               ]
+            },
+            "title" : {
+               "sv" : "Fr\u00e5n Grand Hotel till K\u00f6ykiniemi"
+            },
+            "start" : "1510471800",
+            "date" : "2016",
+            "desc" : {
+               "sv" : "I n\u00e4rmare 40 \u00e5r har Einar Benjaminsen bott i den norska huvudstaden, d\u00e4r han har sin arbetsplats p\u00e5 Grand Hotel. Men Einar b\u00e4r p\u00e5 en st\u00e4ndig l\u00e4ngtan till sin kv\u00e4nska bakgrund och hembygd i K\u00f6ykiniemi i Nordnorge. Varje semester g\u00f6r han den n\u00e4stan 200 mil l\u00e5nga resan till hemg\u00e5rden i Lakselvdalen. Kv\u00e4nernas historia i Norge str\u00e4cker sig tillbaka till 1500-talet, till de finnar som d\u00e5 bosatte sig i Nordnorge."
+            },
+            "stop" : "1510473600",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "new" : "0"
+         },
+         {
+            "new" : null,
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510473900",
+            "channel" : "svt2.svt.se",
+            "date" : "2017",
+            "start" : "1510473600",
+            "title" : {
+               "sv" : "Rapport"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            }
+         },
+         {
+            "title" : {
+               "sv" : "Smaker fr\u00e5n S\u00e1pmi"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "News"
+               ]
+            },
+            "start" : "1510473900",
+            "date" : "2017",
+            "desc" : {
+               "sv" : "Under ett \u00e5r f\u00f6ljer vi fyra starka matprofiler baserade i Sapmi. De ber\u00e4ttar om sin relation till naturen, maten och r\u00e5varorna de hittar d\u00e4r och tar oss med p\u00e5 ett \u00e4ventyr fyllt av livsfilosofi och smaker fr\u00e5n den samiska mattraditionen. Martin arbetar som k\u00f6kschef p\u00e5 en fine-dining restaurang i centrala Narvik och vill utveckla den samiska mattraditionen. Maret \u00e4r rensk\u00f6tare och driver vandrarhem och restaurang med samisk pr\u00e4gel p\u00e5 Lofoten. Greta och hennes dotter Linn bor och verkar i Jokkmokk d\u00e4r de driver ett v\u00e4lk\u00e4nt kaf\u00e9 med samisk inriktning."
+            },
+            "channel" : "svt2.svt.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510475700",
+            "new" : "0",
+            "episodeNum" : {
+               "xmltv_ns" : "0 . 0/6 .",
+               "onscreen" : "Del 1 av 6 s\u00e4song 1"
+            }
+         },
+         {
+            "date" : "2017",
+            "start" : "1510475700",
+            "category" : {
+               "en" : [
+                  "series",
+                  "News"
+               ]
+            },
+            "title" : {
+               "sv" : "Mark och Luther"
+            },
+            "episodeNum" : {
+               "onscreen" : "Del 4 av 4 s\u00e4song 1",
+               "xmltv_ns" : "0 . 3/4 ."
+            },
+            "new" : "0",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510477500",
+            "channel" : "svt2.svt.se",
+            "desc" : {
+               "sv" : "Mark Levengood ger sig ut p\u00e5 spaning efter sp\u00e5ren av Martin Luther, nu 500 \u00e5r efter hans reformation som startade 1517."
+            },
+            "subTitle" : {
+               "sv" : "Luther, familjen och reformationen i dag"
+            }
+         },
+         {
+            "start" : "1510477500",
+            "date" : "2017",
+            "title" : {
+               "sv" : "Gudstj\u00e4nst"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "Religion"
+               ]
+            },
+            "new" : "1",
+            "episodeNum" : {
+               "onscreen" : "Del 44 av 62 s\u00e4song 2017",
+               "xmltv_ns" : "2016 . 43/62 ."
+            },
+            "desc" : {
+               "sv" : "Med anledning av reformationsjubileet framf\u00f6rs fyra kantater skrivna av B Tommy Andersson utifr\u00e5n Luthers psalmer. Dirigent \u00e4r Stefan Parkman och gudstj\u00e4nsten leds av domprost Annica Anderbrant."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510480200"
+         },
+         {
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "title" : {
+               "sv" : "Sverige idag p\u00e5 romani chib/arli"
+            },
+            "start" : "1510480200",
+            "date" : "2017",
+            "desc" : {
+               "sv" : "Veckans viktigaste regionala nyheter p\u00e5 romani chib/arli. Svensk text."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510480500",
+            "channel" : "svt2.svt.se",
+            "new" : "0",
+            "episodeNum" : {
+               "onscreen" : "Del 31 av 40 s\u00e4song 2017",
+               "xmltv_ns" : "2016 . 30/40 ."
+            }
+         },
+         {
+            "channel" : "svt2.svt.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510480800",
+            "desc" : {
+               "sv" : "Veckans viktigaste regionala nyheter p\u00e5 romani chib/lovari."
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "2016 . 30/40 .",
+               "onscreen" : "Del 31 av 40 s\u00e4song 2017"
+            },
+            "new" : "0",
+            "title" : {
+               "sv" : "Sverige idag p\u00e5 romani chib/lovari"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "date" : "2017",
+            "start" : "1510480500"
+         },
+         {
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "Music"
+               ]
+            },
+            "title" : {
+               "sv" : "Gudomlig musik"
+            },
+            "date" : "2017",
+            "start" : "1510480800",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510484400",
+            "channel" : "svt2.svt.se",
+            "desc" : {
+               "sv" : "F\u00f6r 500 \u00e5r sedan h\u00e4nde det n\u00e5gonting som skulle f\u00f6r\u00e4ndra Europa och v\u00e5r musikkultur dramatiskt. Tidigare ok\u00e4nda klanger b\u00f6rjade anv\u00e4ndas och i och med reformationen s\u00e5 lyftes s\u00e5ngr\u00f6sten fram och fler och fler b\u00f6rjade att sj\u00e4lva spela instrument. Reformationen var en musikrevolution som spred sig \u00e4nda in i hemmen. En delvis blodig och skr\u00e4mmande historia d\u00e4r den f\u00f6re detta munken Martin Luther blev symbol f\u00f6r allt det nya. F\u00f6r Luther var, n\u00e4st efter Gud, musik det som han satte allra fr\u00e4mst. F\u00f6lj med p\u00e5 denna musikaliska resa av v\u00e5rt sp\u00e4nnande europeiska musikarv. Medverkar g\u00f6r Sveriges Radios symfoniorkester, Radiok\u00f6ren, Adolf Fredriks musikklasser samt solisterna Semmy Stahlhammer, kapellm\u00e4stare Hovkapellet, Katija Dragojevic, mezzosopran, Emelie Power, sopran, Beng-\u00c5ke Lundin, pianist, Kristina Ljunggren, sopran. Dirigenter: Andrew Manze, Peter Dijkstra, Lotta Gullstr\u00f6m och Daniel Harding."
+            },
+            "new" : "0"
+         },
+         {
+            "start" : "1510484400",
+            "date" : "2017",
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "title" : {
+               "sv" : "Rapport"
+            },
+            "new" : null,
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510484700"
+         },
+         {
+            "date" : "2017",
+            "start" : "1510484700",
+            "title" : {
+               "sv" : "Uppdrag granskning ? extra"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Politics",
+                  "Society"
+               ]
+            },
+            "episodeNum" : {
+               "onscreen" : "Del 16 av 17 s\u00e4song 18",
+               "xmltv_ns" : "17 . 15/17 ."
+            },
+            "new" : "0",
+            "stop" : "1510487400",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "desc" : {
+               "sv" : "Nytt internationellt avsl\u00f6jande, d\u00e4r sp\u00e5ren leder till n\u00e5gra av Sveriges n\u00e4ringslivstoppar och politiker p\u00e5 allra h\u00f6gsta internationella niv\u00e5."
+            }
+         },
+         {
+            "stop" : "1510488000",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "desc" : {
+               "sv" : "Dimma under olika \u00e5rstider ger skiftande st\u00e4mningar och f\u00e5r djur och natur att framtr\u00e4da i olika skepnader. Ett litet stycke svensk vardagsnatur i en film av H\u00e5kan Qvarnstr\u00f6m."
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "2 . 6/8 .",
+               "onscreen" : "Del 7 av 8 s\u00e4song 3"
+            },
+            "new" : null,
+            "title" : {
+               "sv" : "Dimmor"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Nature"
+               ]
+            },
+            "date" : "2014",
+            "start" : "1510487400"
+         },
+         {
+            "date" : "2017",
+            "credits" : {
+               "commentator" : [
+                  {
+                     "name" : "Johan Ejeborg"
+                  }
+               ]
+            },
+            "start" : "1510488000",
+            "category" : {
+               "en" : [
+                  "sports",
+                  "Motors"
+               ]
+            },
+            "title" : {
+               "sv" : "Motor: VM rallycross"
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "2016 . 11/15 .",
+               "onscreen" : "Del 12 av 15 s\u00e4song 2017"
+            },
+            "new" : "1",
+            "channel" : "svt2.svt.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510491600",
+            "desc" : {
+               "sv" : "Direkts\u00e4ndning fr\u00e5n den sista VM-delt\u00e4vlingen i rallycross i Killarney, Sydafrika. Expert: Jonas Kruse."
+            }
+         },
+         {
+            "title" : {
+               "sv" : "Hamlet p\u00e5 Galeasen"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Drama"
+               ]
+            },
+            "start" : "1510491600",
+            "date" : "2017",
+            "desc" : {
+               "sv" : "Pj\u00e4sernas pj\u00e4s, Hamlet, talar till allas hj\u00e4rtan och r\u00e4dslor. Denna nya och prisade upps\u00e4ttning har kallats b\u00e5de genial och skr\u00e4mmande. Bland skuggor och obarmh\u00e4rtiga svek lyfter sk\u00e5despelarduon Jens Ohlin och Hannes Meidal fram ett modernt och parallellt drama till de klassiska v\u00e4ndpunkterna. F\u00f6rest\u00e4llningen \u00e4r ett samarbete mellan Galeasen och Dramaten."
+            },
+            "channel" : "svt2.svt.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510498200",
+            "new" : "0"
+         },
+         {
+            "desc" : {
+               "sv" : "I en prisbel\u00f6nt animation f\u00f6ljer vi eleven Mr Ellis som flyr in i en fantasiv\u00e4rld under en s\u00e4rdeles tr\u00e5kig biologilektion. Hans anteckningar b\u00f6rjar leva ett alldeles eget liv. En film av Benjamin Wiessner."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510498500",
+            "new" : "0",
+            "title" : {
+               "sv" : "Anteckningar om biologi"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "Animation"
+               ]
+            },
+            "start" : "1510498200",
+            "date" : "2012"
+         },
+         {
+            "title" : {
+               "sv" : "Fars dag"
+            },
+            "category" : {
+               "en" : [
+                  "series"
+               ]
+            },
+            "date" : "2017",
+            "start" : "1510498500",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510498800",
+            "desc" : {
+               "sv" : "Vi uppm\u00e4rksammar fars dag genom n\u00e5gra h\u00e4lsningar till v\u00e4lf\u00f6rtj\u00e4nta pappor."
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "2016 . 0/3 .",
+               "onscreen" : "Del 1 av 3 s\u00e4song 2017"
+            },
+            "new" : null
+         },
+         {
+            "episodeNum" : {
+               "xmltv_ns" : "2016 . 30/40 .",
+               "onscreen" : "Del 31 av 40 s\u00e4song 2017"
+            },
+            "new" : "1",
+            "channel" : "svt2.svt.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510499100",
+            "desc" : {
+               "sv" : "Veckans viktigaste regionala nyheter p\u00e5 romani chib/kalderash."
+            },
+            "date" : "2017",
+            "start" : "1510498800",
+            "title" : {
+               "sv" : "Sverige idag p\u00e5 romani chib/kalderash"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            }
+         },
+         {
+            "title" : {
+               "sv" : "Rapport"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "date" : "2017",
+            "start" : "1510499100",
+            "stop" : "1510499400",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "new" : null
+         },
+         {
+            "new" : "1",
+            "episodeNum" : {
+               "onscreen" : "Del 31 av 40 s\u00e4song 2017",
+               "xmltv_ns" : "2016 . 30/40 ."
+            },
+            "desc" : {
+               "sv" : "Veckans viktigaste regionala nyheter, p\u00e5 me\u00e4nkieli. Svensk text."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510499700",
+            "channel" : "svt2.svt.se",
+            "start" : "1510499400",
+            "date" : "2017",
+            "title" : {
+               "sv" : "Sverige idag p\u00e5 me\u00e4nkieli"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            }
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "Special Interest"
+               ]
+            },
+            "title" : {
+               "sv" : "Plus"
+            },
+            "start" : "1510499700",
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "\u00c5sa Avdic",
+                     "role" : "Programledare"
+                  },
+                  {
+                     "role" : "Programledare",
+                     "name" : "Mathias Andersson"
+                  }
+               ],
+               "presenter" : [
+                  {
+                     "name" : "Inger Ljung Olsson"
+                  },
+                  {
+                     "name" : "Sanne Olsson"
+                  }
+               ]
+            },
+            "date" : "2017",
+            "desc" : {
+               "sv" : "Hur \u00f6verlever man med urusel ekonomi? Vanja Person med erfarenhet av att leva p\u00e5 existensminimum ger r\u00e5d. Experten Anders Andersson svarar p\u00e5 tittarnas fr\u00e5gor om privatekonomi."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510501500",
+            "channel" : "svt2.svt.se",
+            "subTitle" : {
+               "sv" : "Avsnitt 6"
+            },
+            "new" : "0",
+            "episodeNum" : {
+               "onscreen" : "Del 6 s\u00e4song 24",
+               "xmltv_ns" : "23 . 5 .",
+               "thetvdb.com" : "series/164841"
+            },
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=164841&seasonid=250931&id=2255171&lid=8"
+            ]
+         },
+         {
+            "new" : null,
+            "episodeNum" : {
+               "onscreen" : "Del 13 av 13 s\u00e4song 1",
+               "xmltv_ns" : "0 . 12/13 ."
+            },
+            "desc" : {
+               "sv" : "N\u00e4r du hittat k\u00e4rleken i Grekland, n\u00e4r den d\u00e4r stora aff\u00e4ren \u00e4r p\u00e5 v\u00e4g att g\u00e5 i l\u00e5s eller n\u00e4r du v\u00e4ntar ditt f\u00f6rsta barn. N\u00e4r du \u00e4r mitt uppe i en bergsspr\u00e4ngning eller kanske bara vill s\u00e4ga f\u00f6rl\u00e5t. Vem ringer du d\u00e5? Pappa. Dokument\u00e4r kortfilm av Martina Carlstedt och Ina Holmqvist."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510502400",
+            "start" : "1510501500",
+            "date" : "2017",
+            "title" : {
+               "sv" : "Jag ringer pappa"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Politics",
+                  "Society"
+               ]
+            }
+         },
+         {
+            "title" : {
+               "sv" : "Kortfilmsklubben - franska"
+            },
+            "category" : {
+               "en" : [
+                  "series"
+               ]
+            },
+            "date" : "2009",
+            "start" : "1510502400",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510503240",
+            "channel" : "svt2.svt.se",
+            "desc" : {
+               "sv" : "Qui de nous deux. Fransk kortfilm. F\u00f6rsta dejten \u00e4r aldrig l\u00e4tt, och om det \u00e4r dr\u00f6mtjejen som dykt upp blir det \u00e4nnu mer komplicerat. F\u00f6rest\u00e4ll dig att du dessutom \u00e4r pank. D\u00e5 g\u00e4ller det att vara uppfinningsrik. UR."
+            },
+            "episodeNum" : {
+               "onscreen" : "Del 76 av 84 s\u00e4song 2009",
+               "xmltv_ns" : "2008 . 75/84 ."
+            },
+            "new" : "0"
+         },
+         {
+            "episodeNum" : {
+               "xmltv_ns" : "2014 . 5/10 .",
+               "onscreen" : "Del 6 av 10 s\u00e4song 2015"
+            },
+            "new" : "0",
+            "stop" : "1510503840",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "desc" : {
+               "sv" : "Vita romana. Vad g\u00f6r ungdomar i Rom? Vilka f\u00f6rdomar finns det om romare? Margherita tar med programledaren Antonino Ognissanti p\u00e5 en vandringstur genom Italiens huvudstad. UR."
+            },
+            "date" : "2015",
+            "start" : "1510503240",
+            "category" : {
+               "en" : [
+                  "series"
+               ]
+            },
+            "title" : {
+               "sv" : "Dai, domanda!"
+            }
+         },
+         {
+            "date" : "2017",
+            "start" : "1510503840",
+            "category" : {
+               "en" : [
+                  "series"
+               ]
+            },
+            "title" : {
+               "sv" : "NO-land"
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "2016 . 15/20 .",
+               "onscreen" : "Del 16 av 20 s\u00e4song 2017"
+            },
+            "new" : "1",
+            "channel" : "svt2.svt.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510504200",
+            "desc" : {
+               "sv" : "Jordens skapelse. N\u00e4r tror man att jorden skapades, och hur s\u00e5g jorden ut d\u00e5? Vad \u00e4r en atmosf\u00e4r och varf\u00f6r \u00e4r den s\u00e5 viktig? UR."
+            }
+         },
+         {
+            "start" : "1510504200",
+            "date" : "2013",
+            "title" : {
+               "sv" : "En del av mig - Antonia"
+            },
+            "new" : "0",
+            "desc" : {
+               "sv" : "\"Jag k\u00e4nde mig v\u00e4ldigt liten, som en f\u00f6rlorare.\" Antonia ber\u00e4ttar om hur det var att v\u00e4xa upp som gravt h\u00f6rselskadad i en familj som inte beh\u00e4rskade teckenspr\u00e5k. Men ocks\u00e5 om sitt v\u00e4xande sj\u00e4lvf\u00f6rtroende och kampen f\u00f6r att f\u00f6rverkliga en dr\u00f6m. UR."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510506000"
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "Lifestyle"
+               ]
+            },
+            "title" : {
+               "sv" : "Profilerna"
+            },
+            "date" : "2017",
+            "start" : "1510506000",
+            "channel" : "svt2.svt.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510507800",
+            "desc" : {
+               "sv" : "Kocken Fredrik Lindvall lagar fisksoppa med saffran. Vineta \u00e4r boss f\u00f6r dagen och drillar de \u00f6vriga profilerna i teaterlekar och improvisationer och bjuder alla till bords f\u00f6r en kulinarisk m\u00e5ltid med samtal om kultur och sv\u00e5ra livsval."
+            },
+            "episodeNum" : {
+               "onscreen" : "Del 3 av 6 s\u00e4song 3",
+               "xmltv_ns" : "2 . 2/6 ."
+            },
+            "new" : "1"
+         },
+         {
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510509540",
+            "desc" : {
+               "sv" : "I 30 \u00e5r har den lilla antikbutiken legat p\u00e5 H\u00f6gbergsgatan i centrala Helsingfors, d\u00e4r den har blivit en samlingsplats f\u00f6r m\u00e4nniskor i kvarteret. Nu har det blivit dags f\u00f6r butiken att flytta till andra lokaler och f\u00f6r f\u00f6rest\u00e5ndaren Ritva \u00e4r det inte utan att r\u00f6r upp en del k\u00e4nslor."
+            },
+            "new" : "1",
+            "title" : {
+               "sv" : "Antikbutiken flyttar"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Lifestyle"
+               ]
+            },
+            "date" : "2016",
+            "start" : "1510507800"
+         },
+         {
+            "credits" : {
+               "director" : [
+                  {
+                     "name" : "John Downer"
+                  }
+               ]
+            },
+            "date" : "2017",
+            "start" : "1510509600",
+            "title" : {
+               "sv" : "V\u00e4rldens natur: Dold kamera bland djuren"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Documentary"
+               ]
+            },
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=322505&seasonid=695828&id=5939244&lid=8"
+            ],
+            "episodeNum" : {
+               "thetvdb.com" : "series/322505",
+               "onscreen" : "Del 4 s\u00e4song 1",
+               "xmltv_ns" : "0 . 3 ."
+            },
+            "new" : "1",
+            "subTitle" : {
+               "sv" : "Mischief"
+            },
+            "stop" : "1510512900",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "desc" : {
+               "sv" : "Det \u00e4r gott om rackartyg i djurens v\u00e4rld. Men brotten mot de oskrivna reglerna kan vara sv\u00e5ra att f\u00e5nga med kameran. Om man inte tar spionerna till hj\u00e4lp. D\u00e5 avsl\u00f6jas de tjuvaktiga pingvinerna, de olydiga vargungarna och den otrogna schimpansen."
+            }
+         },
+         {
+            "new" : null,
+            "episodeNum" : {
+               "xmltv_ns" : "0 . 11/13 .",
+               "onscreen" : "Del 12 av 13 s\u00e4song 1"
+            },
+            "desc" : {
+               "sv" : "N\u00e4r du hittat k\u00e4rleken i Grekland eller n\u00e4r du \u00e4r mitt uppe i en bergsspr\u00e4ngning - vem ringer du d\u00e5? Pappa. Dokument\u00e4r kortfilm av Martina Carlstedt och Ina Holmqvist."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510513200",
+            "channel" : "svt2.svt.se",
+            "start" : "1510512900",
+            "date" : "2017",
+            "category" : {
+               "en" : [
+                  "series",
+                  "Politics",
+                  "Society"
+               ]
+            },
+            "title" : {
+               "sv" : "Jag ringer pappa"
+            }
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "Politics",
+                  "Society"
+               ]
+            },
+            "title" : {
+               "sv" : "Min sanning: Jason \"Timbuktu\" Diakit\u00e9"
+            },
+            "credits" : {
+               "presenter" : [
+                  {
+                     "name" : "Anna Hedenmo"
+                  }
+               ]
+            },
+            "date" : "2017",
+            "start" : "1510513200",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510516800",
+            "channel" : "svt2.svt.se",
+            "desc" : {
+               "sv" : "Jason \"Timbuktu\" Diakit\u00e9 \u00e4r rapparen fr\u00e5n Lund som s\u00f6kte i sin egen sl\u00e4kthistoria. Ett samtal om r\u00f6tter och identitet."
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "9 . 0/6 .",
+               "onscreen" : "Del 1 av 6 s\u00e4song 10"
+            },
+            "new" : "1"
+         },
+         {
+            "new" : null,
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510517700",
+            "start" : "1510516800",
+            "date" : "2017",
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "title" : {
+               "sv" : "Aktuellt"
+            }
+         },
+         {
+            "channel" : "svt2.svt.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510520400",
+            "new" : "1",
+            "episodeNum" : {
+               "xmltv_ns" : "12 . 28/37 .",
+               "onscreen" : "Del 29 av 37 s\u00e4song 13"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Politics",
+                  "Society"
+               ]
+            },
+            "title" : {
+               "sv" : "Agenda"
+            },
+            "start" : "1510517700",
+            "date" : "2017"
+         },
+         {
+            "title" : {
+               "sv" : "Dokument utifr\u00e5n: Tysklands nya nazister"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Politics",
+                  "Society"
+               ]
+            },
+            "start" : "1510520400",
+            "date" : "2017",
+            "desc" : {
+               "sv" : "F\u00f6r f\u00f6rsta g\u00e5ngen sedan Tredje rikets fall tar ett h\u00f6gerpopulistiskt parti plats i tyska f\u00f6rbundsdagen. V\u00e5ldsamma fr\u00e4mlingsfientliga grupper attackerar flyktingf\u00f6rl\u00e4ggningar och renodlade nazister marscherar p\u00e5 gatorna. Hur oroliga ska vi vara f\u00f6r utvecklingen i Europas m\u00e4ktigaste land?"
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510523400",
+            "channel" : "svt2.svt.se",
+            "new" : "1"
+         },
+         {
+            "desc" : {
+               "sv" : "Yvonne Aronsson blev nykter alkoholist f\u00f6r n\u00e5gra \u00e5r sedan och i denna serie ber\u00e4ttar hon om sitt liv. Om att hon blev mamma v\u00e4ldigt ung och att hennes liv slogs i spillror n\u00e4r hon f\u00f6rstod att ett av hennes barn blivit utsatt f\u00f6r incest. Hon b\u00f6rjade att dricka. Efter flera brutna relationer tr\u00e4ffade hon en man som hon flyttade samman med. Men drickandet \u00f6kade och Yvonne blev brutalt misshandlad av sin sambo. I dag lever hon med sm\u00e4rtan och skammen \u00f6ver att ha svikit sina barn och nu delar hon med sig av sin historia s\u00e5 att fler ska v\u00e5ga prata om missbruk och misshandel."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510525200",
+            "channel" : "svt2.svt.se",
+            "new" : "1",
+            "episodeNum" : {
+               "onscreen" : "Del 3 av 4 s\u00e4song 1",
+               "xmltv_ns" : "0 . 2/4 ."
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Politics",
+                  "Society"
+               ]
+            },
+            "title" : {
+               "sv" : "Yvas historia"
+            },
+            "start" : "1510523400",
+            "date" : "2017"
+         },
+         {
+            "desc" : {
+               "sv" : "P\u00e5 F\u00e4r\u00f6arna har jakten p\u00e5 val och sj\u00f6f\u00e5gel f\u00f6tt generationer och f\u00f6rsett \u00f6borna med ett liv de \u00e4lskar, ett liv som de vill f\u00f6ra vidare till sina barn. Men i dag hotas denna tradition. Det \u00e4r inte kontroversen kring sj\u00e4lva jakten som hotar \u00f6bornas livsstil. Faran kommer fr\u00e5n valarna sj\u00e4lva. Prisbel\u00f6nt film av Mike Day."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "svt2.svt.se",
+            "stop" : "1510528500",
+            "new" : "0",
+            "category" : {
+               "en" : [
+                  "series",
+                  "Nature"
+               ]
+            },
+            "title" : {
+               "sv" : "Hotet fr\u00e5n havet"
+            },
+            "start" : "1510525200",
+            "date" : "2016"
+         },
+         {
+            "start" : "1510528500",
+            "date" : "2017",
+            "credits" : {
+               "presenter" : [
+                  {
+                     "name" : "Lena Scherman"
+                  }
+               ]
+            },
+            "title" : {
+               "sv" : "Korrespondenterna"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Politics",
+                  "Society"
+               ]
+            },
+            "new" : "0",
+            "episodeNum" : {
+               "onscreen" : "Del 5 av 10 s\u00e4song 19",
+               "xmltv_ns" : "18 . 4/10 ."
+            },
+            "subTitle" : {
+               "sv" : "Civilisationens tunna fernissa"
+            },
+            "desc" : {
+               "sv" : "N\u00e4r ett land pressas av starka makthavare \u00e4r m\u00e4nskliga r\u00e4ttigheter det f\u00f6rsta som f\u00e5r stryka p\u00e5 foten. Reportage fr\u00e5n Kongo, V\u00e4stbanken och Polen."
+            },
+            "stop" : "1510530300",
+            "channel" : "svt2.svt.se"
+         }
+      ]
+   }
+}

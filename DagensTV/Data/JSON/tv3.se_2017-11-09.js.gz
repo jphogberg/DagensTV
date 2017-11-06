@@ -1,0 +1,1627 @@
+{
+   "jsontv" : {
+      "programme" : [
+         {
+            "subTitle" : {
+               "sv" : "The Grumpy Guy"
+            },
+            "stop" : "1510187400",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "tv3.se",
+            "desc" : {
+               "sv" : "Jim blir sur n\u00e4r han f\u00e5r reda p\u00e5 att deras granne Julie har skrivit barnb\u00f6cker som \u00e4r baserade p\u00e5 honom."
+            },
+            "rating" : {
+               "stars" : "7 / 9"
+            },
+            "url" : [
+               "https://www.themoviedb.org/tv/1739/season/5/episode/17"
+            ],
+            "episodeNum" : {
+               "onscreen" : "Del 17 av 22 s\u00e4song 5",
+               "xmltv_ns" : "4 . 16/22 ."
+            },
+            "new" : "1",
+            "title" : {
+               "sv" : "Jims v\u00e4rld"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            },
+            "credits" : {
+               "writer" : [
+                  {
+                     "name" : "Sylvia Green"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Kimberly Williams-Paisley"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "role" : "Jim",
+                     "name" : "Jim Belushi"
+                  },
+                  {
+                     "role" : "Cheryl Mabel",
+                     "name" : "Courtney Thorne-Smith"
+                  },
+                  {
+                     "role" : "Andy",
+                     "name" : "Larry Joe Campbell"
+                  },
+                  {
+                     "name" : "Taylor Atelian",
+                     "role" : "Ruby"
+                  },
+                  {
+                     "name" : "Kimberly Williams-Paisley",
+                     "role" : "Dana"
+                  },
+                  {
+                     "name" : "Conner Rayburn",
+                     "role" : "Kyle"
+                  },
+                  {
+                     "name" : "Billi Bruno",
+                     "role" : "Gracie"
+                  },
+                  {
+                     "name" : "Julie Newmar"
+                  }
+               ]
+            },
+            "date" : "2006",
+            "start" : "1510185600",
+            "country" : [
+               "US"
+            ]
+         },
+         {
+            "url" : [
+               "https://www.themoviedb.org/tv/1739/season/5/episode/18"
+            ],
+            "new" : "1",
+            "episodeNum" : {
+               "onscreen" : "Del 18 av 22 s\u00e4song 5",
+               "xmltv_ns" : "4 . 17/22 ."
+            },
+            "subTitle" : {
+               "sv" : "Polite Jim"
+            },
+            "desc" : {
+               "sv" : "Jim tror att en av flickornas kompisars pappa \u00e4r hans egen far som l\u00e4mnade honom som barn."
+            },
+            "rating" : {
+               "stars" : "6.6 / 9"
+            },
+            "channel" : "tv3.se",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510188900",
+            "start" : "1510187400",
+            "country" : [
+               "US"
+            ],
+            "date" : "2006",
+            "credits" : {
+               "writer" : [
+                  {
+                     "name" : "Wil Fox"
+                  },
+                  {
+                     "name" : "Michael P Fox"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "role" : "Jim",
+                     "name" : "Jim Belushi"
+                  },
+                  {
+                     "role" : "Cheryl Mabel",
+                     "name" : "Courtney Thorne-Smith"
+                  },
+                  {
+                     "name" : "Larry Joe Campbell",
+                     "role" : "Andy"
+                  },
+                  {
+                     "role" : "Ruby",
+                     "name" : "Taylor Atelian"
+                  },
+                  {
+                     "role" : "Dana",
+                     "name" : "Kimberly Williams-Paisley"
+                  },
+                  {
+                     "role" : "Kyle",
+                     "name" : "Conner Rayburn"
+                  },
+                  {
+                     "name" : "Billi Bruno",
+                     "role" : "Gracie"
+                  },
+                  {
+                     "name" : "Jeanne Chinn"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Bob Koherr"
+                  }
+               ]
+            },
+            "title" : {
+               "sv" : "Jims v\u00e4rld"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            }
+         },
+         {
+            "title" : {
+               "sv" : "Navy NCIS"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Series"
+               ]
+            },
+            "date" : "2015",
+            "start" : "1510188900",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "tv3.se",
+            "stop" : "1510191600",
+            "desc" : {
+               "sv" : "S\u00e4songsfinalen avslutas med att NCIS, FBI och M16 samarbetar i en internationell jakt p\u00e5 en brittisk spion som rymt och som nu ger sig p\u00e5 nuvarande och f\u00f6redetta agenter."
+            },
+            "episodeNum" : {
+               "onscreen" : "Del 24 av 24 s\u00e4song 13",
+               "xmltv_ns" : "12 . 23/24 ."
+            },
+            "new" : "1"
+         },
+         {
+            "start" : "1510191600",
+            "country" : [
+               "US"
+            ],
+            "date" : "2010",
+            "credits" : {
+               "director" : [
+                  {
+                     "name" : "Chris Long"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "role" : "Patrick Jane",
+                     "name" : "Simon Baker"
+                  },
+                  {
+                     "name" : "Robin Tunney",
+                     "role" : "Teresa Lisbon"
+                  },
+                  {
+                     "name" : "Tim Kang",
+                     "role" : "Kimball Cho"
+                  },
+                  {
+                     "role" : "Wayne Rigsby",
+                     "name" : "Owain Yeoman"
+                  },
+                  {
+                     "name" : "Amanda Righetti",
+                     "role" : "Grace van Pelt"
+                  },
+                  {
+                     "name" : "Kevin Will",
+                     "role" : "Waiter"
+                  },
+                  {
+                     "role" : "Neighbour Lady",
+                     "name" : "Anne Gee Byrd"
+                  },
+                  {
+                     "name" : "Kathleen Wilhoite",
+                     "role" : "Margo"
+                  },
+                  {
+                     "role" : "Wesley Blankfein",
+                     "name" : "Cameron Van Cleave"
+                  },
+                  {
+                     "name" : "Stephen Sowan",
+                     "role" : "Dylan"
+                  },
+                  {
+                     "role" : "Ruth",
+                     "name" : "Carrie Finklea"
+                  },
+                  {
+                     "name" : "Jack Plotnick",
+                     "role" : "Brett Partridge"
+                  },
+                  {
+                     "name" : "Aunjanue Ellis",
+                     "role" : "Special Agent Madeline Hightower"
+                  },
+                  {
+                     "name" : "Leslie Hope",
+                     "role" : "Kristina Frye"
+                  }
+               ],
+               "writer" : [
+                  {
+                     "name" : "Bruno Heller"
+                  }
+               ]
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Mystery",
+                  "Drama"
+               ]
+            },
+            "title" : {
+               "sv" : "The Mentalist"
+            },
+            "new" : "1",
+            "episodeNum" : {
+               "xmltv_ns" : "1 . 22/23 .",
+               "onscreen" : "Del 23 av 23 s\u00e4song 2"
+            },
+            "url" : [
+               "https://www.themoviedb.org/tv/5920/season/2/episode/23"
+            ],
+            "desc" : {
+               "sv" : "CBI utereder ett mord som beg\u00e5tts av en Red John copycat. Patrick Jane \u00f6vertalar Hightower att inte l\u00e5ta Kristina Frye hj\u00e4lpa till med fallet, men Kristina f\u00f6rs\u00f6ker kontakta den riktige Red John via TV."
+            },
+            "stop" : "1510194300",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "tv3.se",
+            "subTitle" : {
+               "sv" : "Red Sky in the Morning"
+            }
+         },
+         {
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "tv3.se",
+            "stop" : "1510197000",
+            "desc" : {
+               "sv" : "De \u00e5tta deltagarna som ska m\u00f6ta sina v\u00e4rsta r\u00e4dslor anl\u00e4nder till Malta. Och de f\u00e5r en chockstart. De m\u00e5ste genast utmana sig sj\u00e4lva i en spektakul\u00e4r t\u00e4vling d\u00e4r de ska r\u00e4dda programledaren Frida Nordstrand. De tv\u00e5 svagaste i t\u00e4vlingen tvingas m\u00f6tas i en duell - genom att kl\u00e4ttra p\u00e5 en bom 104 meter \u00f6ver havet. Hur l\u00e5ngt \u00e4r deltagarna villiga att g\u00e5 d\u00e4r en av dem till utses till Sveriges modigaste och i slut\u00e4ndan vinna en halv miljon kronor."
+            },
+            "subTitle" : {
+               "sv" : "Episode 1"
+            },
+            "episodeNum" : {
+               "onscreen" : "Del 1 av 10 s\u00e4song 1",
+               "xmltv_ns" : "0 . 0/10 ."
+            },
+            "new" : "1",
+            "url" : [
+               "https://www.themoviedb.org/tv/71978/season/1/episode/1"
+            ],
+            "category" : {
+               "en" : [
+                  "series",
+                  "Series"
+               ]
+            },
+            "title" : {
+               "sv" : "Sveriges modigaste"
+            },
+            "date" : "2017",
+            "start" : "1510194300"
+         },
+         {
+            "country" : [
+               "US"
+            ],
+            "start" : "1510197000",
+            "credits" : {
+               "actor" : [
+                  {
+                     "role" : "Himself - Judge",
+                     "name" : "Gordon Ramsay"
+                  },
+                  {
+                     "role" : "Himself - Judge",
+                     "name" : "Graham Elliot"
+                  },
+                  {
+                     "role" : "Himself - Judge",
+                     "name" : "Joe Bastianich"
+                  }
+               ]
+            },
+            "date" : "2012",
+            "title" : {
+               "sv" : "Masterchef USA"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Reality"
+               ]
+            },
+            "url" : [
+               "https://www.themoviedb.org/tv/40290/season/3/episode/17"
+            ],
+            "new" : "0",
+            "episodeNum" : {
+               "xmltv_ns" : "2 . 16/20 .",
+               "onscreen" : "Del 17 av 20 s\u00e4song 3"
+            },
+            "subTitle" : {
+               "sv" : "Top 5 Complete"
+            },
+            "desc" : {
+               "sv" : "De fem \u00e5terst\u00e5ende deltagarna \u00e4r med om en \u00f6verraskande h\u00e4ndelse under en utmaning. Senare f\u00e5r kockarna i uppgift att \u00e5terskapa en av Graham Elliots signaturr\u00e4tter som han har serverat till president Obama i sin restaurang."
+            },
+            "rating" : {
+               "stars" : "7.6 / 9"
+            },
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "tv3.se",
+            "stop" : "1510199700"
+         },
+         {
+            "date" : "2006",
+            "credits" : {
+               "writer" : [
+                  {
+                     "name" : "Sylvia Green"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Kimberly Williams-Paisley"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "role" : "Jim",
+                     "name" : "Jim Belushi"
+                  },
+                  {
+                     "role" : "Cheryl Mabel",
+                     "name" : "Courtney Thorne-Smith"
+                  },
+                  {
+                     "name" : "Larry Joe Campbell",
+                     "role" : "Andy"
+                  },
+                  {
+                     "role" : "Ruby",
+                     "name" : "Taylor Atelian"
+                  },
+                  {
+                     "name" : "Kimberly Williams-Paisley",
+                     "role" : "Dana"
+                  },
+                  {
+                     "name" : "Conner Rayburn",
+                     "role" : "Kyle"
+                  },
+                  {
+                     "role" : "Gracie",
+                     "name" : "Billi Bruno"
+                  },
+                  {
+                     "name" : "Julie Newmar"
+                  }
+               ]
+            },
+            "start" : "1510199700",
+            "country" : [
+               "US"
+            ],
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            },
+            "title" : {
+               "sv" : "Jims v\u00e4rld"
+            },
+            "episodeNum" : {
+               "onscreen" : "Del 17 av 22 s\u00e4song 5",
+               "xmltv_ns" : "4 . 16/22 ."
+            },
+            "new" : "0",
+            "url" : [
+               "https://www.themoviedb.org/tv/1739/season/5/episode/17"
+            ],
+            "channel" : "tv3.se",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510200900",
+            "rating" : {
+               "stars" : "7 / 9"
+            },
+            "desc" : {
+               "sv" : "Jim blir sur n\u00e4r han f\u00e5r reda p\u00e5 att deras granne Julie har skrivit barnb\u00f6cker som \u00e4r baserade p\u00e5 honom."
+            },
+            "subTitle" : {
+               "sv" : "The Grumpy Guy"
+            }
+         },
+         {
+            "subTitle" : {
+               "sv" : "Polite Jim"
+            },
+            "rating" : {
+               "stars" : "6.6 / 9"
+            },
+            "desc" : {
+               "sv" : "Jim tror att en av flickornas kompisars pappa \u00e4r hans egen far som l\u00e4mnade honom som barn."
+            },
+            "channel" : "tv3.se",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510202100",
+            "url" : [
+               "https://www.themoviedb.org/tv/1739/season/5/episode/18"
+            ],
+            "new" : "0",
+            "episodeNum" : {
+               "onscreen" : "Del 18 av 22 s\u00e4song 5",
+               "xmltv_ns" : "4 . 17/22 ."
+            },
+            "title" : {
+               "sv" : "Jims v\u00e4rld"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            },
+            "country" : [
+               "US"
+            ],
+            "start" : "1510200900",
+            "date" : "2006",
+            "credits" : {
+               "director" : [
+                  {
+                     "name" : "Bob Koherr"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "name" : "Jim Belushi",
+                     "role" : "Jim"
+                  },
+                  {
+                     "name" : "Courtney Thorne-Smith",
+                     "role" : "Cheryl Mabel"
+                  },
+                  {
+                     "name" : "Larry Joe Campbell",
+                     "role" : "Andy"
+                  },
+                  {
+                     "role" : "Ruby",
+                     "name" : "Taylor Atelian"
+                  },
+                  {
+                     "name" : "Kimberly Williams-Paisley",
+                     "role" : "Dana"
+                  },
+                  {
+                     "name" : "Conner Rayburn",
+                     "role" : "Kyle"
+                  },
+                  {
+                     "name" : "Billi Bruno",
+                     "role" : "Gracie"
+                  },
+                  {
+                     "name" : "Jeanne Chinn"
+                  }
+               ],
+               "writer" : [
+                  {
+                     "name" : "Wil Fox"
+                  },
+                  {
+                     "name" : "Michael P Fox"
+                  }
+               ]
+            }
+         },
+         {
+            "credits" : {
+               "actor" : [
+                  {
+                     "role" : "Fran Fine",
+                     "name" : "Fran Drescher"
+                  },
+                  {
+                     "name" : "Charles Shaughnessy",
+                     "role" : "Maxwell Sheffield"
+                  },
+                  {
+                     "name" : "Daniel Davis",
+                     "role" : "Niles"
+                  },
+                  {
+                     "role" : "Chastity Claire Babcock",
+                     "name" : "Lauren Lane"
+                  },
+                  {
+                     "name" : "Nicholle Tom",
+                     "role" : "Maggie Sheffield"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Dorothy Lyman"
+                  }
+               ]
+            },
+            "date" : "1997",
+            "country" : [
+               "US"
+            ],
+            "start" : "1510202100",
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            },
+            "title" : {
+               "sv" : "Nanny"
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "3 . 16/26 .",
+               "onscreen" : "Del 17 av 26 s\u00e4song 4"
+            },
+            "new" : "0",
+            "url" : [
+               "https://www.themoviedb.org/tv/2352/season/4/episode/17"
+            ],
+            "stop" : "1510203540",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "tv3.se",
+            "desc" : {
+               "sv" : "Fran hittar n\u00e5got i tv\u00e4ttstugan som f\u00e5r henne att tro att Niles \u00e4r en m\u00f6rdare. Hon vill inte vara ensam hemma med honom och d\u00e4rf\u00f6r anklagar hon Maxwell f\u00f6r att tillbringa f\u00f6r lite tid med barnen. Maxwell tar hennes anklagelse p\u00e5 allvar och tar till hennes stora f\u00f6rtret med barnen p\u00e5 utflykt - och hon blir helt ensam hemma med Niles..."
+            },
+            "subTitle" : {
+               "sv" : "Samson, He Denied Her"
+            }
+         },
+         {
+            "country" : [
+               "US"
+            ],
+            "start" : "1510203600",
+            "date" : "1997",
+            "credits" : {
+               "director" : [
+                  {
+                     "name" : "Dorothy Lyman"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "name" : "Fran Drescher",
+                     "role" : "Fran Fine"
+                  },
+                  {
+                     "role" : "Maxwell Sheffield",
+                     "name" : "Charles Shaughnessy"
+                  },
+                  {
+                     "name" : "Daniel Davis",
+                     "role" : "Niles"
+                  },
+                  {
+                     "name" : "Lauren Lane",
+                     "role" : "Chastity Claire Babcock"
+                  },
+                  {
+                     "name" : "Nicholle Tom",
+                     "role" : "Maggie Sheffield"
+                  }
+               ]
+            },
+            "title" : {
+               "sv" : "Nanny"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            },
+            "url" : [
+               "https://www.themoviedb.org/tv/2352/season/4/episode/18"
+            ],
+            "new" : "1",
+            "episodeNum" : {
+               "onscreen" : "Del 18 av 26 s\u00e4song 4",
+               "xmltv_ns" : "3 . 17/26 ."
+            },
+            "subTitle" : {
+               "sv" : "The Facts of Lice"
+            },
+            "desc" : {
+               "sv" : "En kvinna ringer till Fran och s\u00e4ger att hon kanske \u00e4r hennes riktiga mor pga ett misstag p\u00e5 sjukhuset n\u00e4r Fran f\u00f6ddes. Eftersom damen bor p\u00e5 Manhattan b\u00f6rjar Fran genast dr\u00f6mma om rikedom. N\u00e4r de tr\u00e4ffas inser Fran dock att hon antagligen inte \u00e4r dotter till kvinnan, eftersom hon \u00e4r svart och Fran \u00e4r judinna..."
+            },
+            "channel" : "tv3.se",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510205400"
+         },
+         {
+            "start" : "1510205400",
+            "country" : [
+               "AU"
+            ],
+            "title" : {
+               "sv" : "Neighbours"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Drama"
+               ]
+            },
+            "new" : "1",
+            "episodeNum" : {
+               "xmltv_ns" : ". 226/240 .",
+               "onscreen" : "Del 227 av 240"
+            },
+            "desc" : {
+               "sv" : "Australiensisk s\u00e5popera d\u00e4r vi f\u00e5r f\u00f6lja livet och relationerna hos inv\u00e5narna p\u00e5 Ramsay Street i Erinsborough."
+            },
+            "stop" : "1510207200",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "tv3.se"
+         },
+         {
+            "title" : {
+               "sv" : "Aftonbladet morgon"
+            },
+            "category" : {
+               "en" : [
+                  "tvshow",
+                  "News"
+               ]
+            },
+            "date" : "2016",
+            "country" : [
+               "SE"
+            ],
+            "start" : "1510207200",
+            "channel" : "tv3.se",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510214400",
+            "desc" : {
+               "sv" : "Aftonbladet Morgon \u00e4r Sveriges rappaste nyhetsprogram som kastar dig direkt in i nyhetsfl\u00f6det. Med Aftonbladet Morgon h\u00e4nger du med i det senaste n\u00e4r det g\u00e4ller nyheter, sport, n\u00f6je och viralt. Sj\u00e4lvklart s\u00e4nder vi live vid stora nyhetsh\u00e4ndelser. V\u00e5ra programledare \u00e4r Maria Bjaring, Claes \u00c5keson och Karin Magnusson. Henrik Torehammar och Amie Bramme Sey sidkickar."
+            },
+            "new" : "1"
+         },
+         {
+            "date" : "2012",
+            "credits" : {
+               "actor" : [
+                  {
+                     "role" : "Himself - Judge",
+                     "name" : "Gordon Ramsay"
+                  },
+                  {
+                     "role" : "Himself - Judge",
+                     "name" : "Graham Elliot"
+                  },
+                  {
+                     "role" : "Himself - Judge",
+                     "name" : "Joe Bastianich"
+                  }
+               ]
+            },
+            "start" : "1510214400",
+            "country" : [
+               "US"
+            ],
+            "category" : {
+               "en" : [
+                  "series",
+                  "Reality"
+               ]
+            },
+            "title" : {
+               "sv" : "Masterchef USA"
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "2 . 17/20 .",
+               "onscreen" : "Del 18 av 20 s\u00e4song 3"
+            },
+            "new" : "1",
+            "url" : [
+               "https://www.themoviedb.org/tv/40290/season/3/episode/18"
+            ],
+            "channel" : "tv3.se",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510217700",
+            "desc" : {
+               "sv" : "Endast fyra hoppfulla deltagare \u00e5terst\u00e5r och m\u00e5ste samarbeta i lag n\u00e4r de g\u00f6r i ordning en gourmetm\u00e5ltid till tre v\u00e4rldsber\u00f6mda kockar: Daniel Boulud, Alain Ducasse och Guy Savoy. Det vinnande paret g\u00e5r till final, medan f\u00f6rlorarna m\u00e5ste genomg\u00e5 ett stresstest och tillaga en suffl\u00e9."
+            },
+            "rating" : {
+               "stars" : "7.6 / 9"
+            },
+            "subTitle" : {
+               "sv" : "Top 4 Compete"
+            }
+         },
+         {
+            "episodeNum" : {
+               "xmltv_ns" : "4 . 8 .",
+               "onscreen" : "Del 9 s\u00e4song 5"
+            },
+            "new" : "0",
+            "channel" : "tv3.se",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510221300",
+            "desc" : {
+               "sv" : "Margareta Svensson har fortfarande inte riktigt kommit \u00f6ver senaste tr\u00e4ffen hemma hos Gunilla Persson d\u00e4r hon fick se Erikas musikvideo. Inspirerad av Gunilla har Margareta skrivit en ny l\u00e5t \"Hollywood Hollyweird\" och tar i kv\u00e4llens avsnitt av Svenska Hollywoodfruar hj\u00e4lp av k\u00e4nda l\u00e5tskrivare f\u00f6r att slutf\u00f6ra den. Maria Montazami och hennes b\u00e4stis Mindy ska g\u00e5 p\u00e5 bibelskola. Vid 46 \u00e5rs \u00e5lder \u00f6ppnar Maria sitt hj\u00e4rta och ber\u00e4ttar att hon tror p\u00e5 Gud. De blir lite f\u00f6rsenade till m\u00f6tet eftersom Maria inte f\u00e5r klar sin paj i tid. Dessutom har hon fuskat med l\u00e4xan. N\u00e4r de v\u00e4l dyker upp har Maria och Mindy sitt fokus n\u00e5gon annanstans \u00e4n p\u00e5 bibelstudierna. Gunilla anlitade i f\u00f6rra avsnittet Dodde som ny v\u00e5rdare till mamma Iris. Men nu \u00e4r Dodde f\u00f6rkyld och Gunilla menar att det inneb\u00e4r en livsfara f\u00f6r mammans h\u00e4lsa. Dodde blir uppr\u00f6rd \u00f6ver anklagelserna och meningsutbytena blir hetsiga och slutar i t\u00e5rar. Gunilla skaffar dessutom en agent som ska f\u00e5 fart p\u00e5 hennes sk\u00e5despelarkarri\u00e4r. Tillsammans ska de styla Gunilla f\u00f6r en pl\u00e5tning med agenten s\u00e5gar Gunillas garderob. Isabel Adrian har sparkat sin assistent Susanne och \u00e4r supern\u00f6jd med sin nya rekrytering Gregory. Men n\u00e4r han f\u00f6rsover sig och dyker upp bakfull blir Isabel frustrerad. Margareta Svensson har skrivit en ny l\u00e5t \"Hollywood, Hollyweird\" med Gunilla Persson som inspirationsk\u00e4lla. Hon tar hj\u00e4lp av tv\u00e5 v\u00e4lrenommerade l\u00e5tskrivare f\u00e5r att f\u00e5 ihop l\u00e5ten. Avsnitt 9 av 10."
+            },
+            "date" : "2012",
+            "start" : "1510217700",
+            "title" : {
+               "sv" : "Svenska Hollywoodfruar"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Series"
+               ]
+            }
+         },
+         {
+            "start" : "1510221300",
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Patrick Grimlund"
+                  },
+                  {
+                     "name" : "Mathias Andersson"
+                  },
+                  {
+                     "name" : "Magnus Hedberg"
+                  },
+                  {
+                     "name" : "Charlie S\u00f6derberg"
+                  }
+               ]
+            },
+            "date" : "2006",
+            "title" : {
+               "sv" : "Lyxf\u00e4llan"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Reality"
+               ]
+            },
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=81847&seasonid=595721&id=4982330&lid=8"
+            ],
+            "new" : "0",
+            "episodeNum" : {
+               "xmltv_ns" : "16 . 11 .",
+               "onscreen" : "Del 12 s\u00e4song 17",
+               "thetvdb.com" : "series/81847"
+            },
+            "subTitle" : {
+               "sv" : "Johanna"
+            },
+            "desc" : {
+               "sv" : "Sm\u00e5barnsmamman Johanna i Stockholm har famnen \u00f6ppen f\u00f6r alla som beh\u00f6ver hj\u00e4lp. Hon har hund, kanin, katter, hamstrar och fiskar som hon f\u00f6rs\u00f6rjer. Hon har expojkv\u00e4nner som l\u00e5nar pengar utan att betala tillbaka. Hon har n\u00e4tshopping som sitt fritidsintresse. Men sj\u00e4lvklart r\u00e4cker inte hennes undersk\u00f6terskel\u00f6n till allt detta, utan hon m\u00e5ste ta korttidsl\u00e5n med h\u00f6ga r\u00e4ntor. Nu st\u00e5r hon p\u00e5 ruinens brant och oroar sig f\u00f6r att inte kunna f\u00f6rs\u00f6rja sin 6-\u00e5riga son. Avsnitt 12 av 12."
+            },
+            "stop" : "1510224900",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "tv3.se"
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "Series"
+               ]
+            },
+            "title" : {
+               "sv" : "I djurens tj\u00e4nst"
+            },
+            "start" : "1510224900",
+            "date" : "2017",
+            "desc" : {
+               "sv" : "I kv\u00e4llens avsnitt av I djurens tj\u00e4nst f\u00e5r vi tr\u00e4ffa katterna Cosmo och Idril som m\u00e5ste behandlas med ett radioaktivt \u00e4mne. Hunden Boss har slutat \u00e4ta och rasar i vikt. Vi f\u00e5r \u00e4ven tr\u00e4ffa det nyf\u00f6dda f\u00f6let the Real McLady som har f\u00e5tt en tuff start i livet."
+            },
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510226700",
+            "channel" : "tv3.se",
+            "new" : "0",
+            "episodeNum" : {
+               "xmltv_ns" : "0 . 17 .",
+               "onscreen" : "Del 18 s\u00e4song 1"
+            }
+         },
+         {
+            "date" : "2017",
+            "start" : "1510226700",
+            "category" : {
+               "en" : [
+                  "series",
+                  "Series"
+               ]
+            },
+            "title" : {
+               "sv" : "I djurens tj\u00e4nst"
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "0 . 18 .",
+               "onscreen" : "Del 19 s\u00e4song 1"
+            },
+            "new" : "1",
+            "stop" : "1510228500",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "tv3.se",
+            "desc" : {
+               "sv" : "I kv\u00e4llens avsnitt av I djurens tj\u00e4nst f\u00e5r vi tr\u00e4ffa hunden Mocca som lider av en sv\u00e5r och mycket sm\u00e4rtsam ledsjukdom. H\u00e4sten Aeger har problem med sina \u00f6ron och hundvalpen Rugi har vridit s\u00f6nder sitt ben."
+            }
+         },
+         {
+            "subTitle" : {
+               "sv" : "Sink Or Swim"
+            },
+            "desc" : {
+               "sv" : "Deltagarna ska i detta avsnitt skapa en kreation som ska visas i m\u00f6rker p\u00e5 Catwalken."
+            },
+            "channel" : "tv3.se",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510232100",
+            "url" : [
+               "https://www.themoviedb.org/tv/1685/season/15/episode/4"
+            ],
+            "new" : "0",
+            "episodeNum" : {
+               "xmltv_ns" : "14 . 3/15 .",
+               "onscreen" : "Del 4 av 15 s\u00e4song 15"
+            },
+            "title" : {
+               "sv" : "Project Runway"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Reality"
+               ]
+            },
+            "country" : [
+               "US"
+            ],
+            "start" : "1510228500",
+            "date" : "2016",
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Tim Gunn",
+                     "role" : "Himself - Mentor"
+                  },
+                  {
+                     "name" : "Heidi Klum",
+                     "role" : "Herself - Host"
+                  },
+                  {
+                     "role" : "Herself - Judge",
+                     "name" : "Nina Garcia"
+                  },
+                  {
+                     "name" : "Zac Posen",
+                     "role" : "Himself - Judge"
+                  }
+               ]
+            }
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "Reality",
+                  "Drama"
+               ]
+            },
+            "title" : {
+               "sv" : "The Real Housewives of Orange County"
+            },
+            "country" : [
+               "US"
+            ],
+            "start" : "1510232100",
+            "date" : "2012",
+            "desc" : {
+               "sv" : "I den sjunde s\u00e4songspremi\u00e4ren tar Vicky ut skilsm\u00e4ssa och har nu en ny man i sitt liv. Samtidigt skaffar Alexis ett nytt jobb som korrespondent, medan Tamra och Gretchen f\u00f6rs\u00f6ker komma \u00f6verens."
+            },
+            "stop" : "1510235700",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "tv3.se",
+            "subTitle" : {
+               "sv" : "Stranger Things Have Happened"
+            },
+            "new" : "1",
+            "episodeNum" : {
+               "onscreen" : "Del 1 av 23 s\u00e4song 7",
+               "xmltv_ns" : "6 . 0/23 ."
+            },
+            "url" : [
+               "https://www.themoviedb.org/tv/10222/season/7/episode/1"
+            ]
+         },
+         {
+            "start" : "1510235700",
+            "date" : "2012",
+            "title" : {
+               "sv" : "Svenska Hollywoodfruar"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Series"
+               ]
+            },
+            "new" : "1",
+            "episodeNum" : {
+               "xmltv_ns" : "4 . 9 .",
+               "onscreen" : "Del 10 s\u00e4song 5"
+            },
+            "desc" : {
+               "sv" : "Hollywoodfruarna ska m\u00f6tas f\u00f6r en pressfotografering i Los Angeles. Margareta Svensson tar tillf\u00e4llet i akt att spela upp sin l\u00e5t \"Hollywood, Hollyweird\" som \u00e4r inspirerad av Gunilla Persson. Gunilla k\u00e4nner sig f\u00f6rol\u00e4mpad och hamnar i en vild diskussion d\u00e4r \u00e4ven Isabel Adrian och Maria Montazami dras in i br\u00e5ket. Maria Montazami och hennes b\u00e4stis Mindy ska dressera sina valpar Molly och Chlo\u00e9. Men de smiter s\u00e5 fort de kommer ur bilen. Maria och Mindy m\u00e5 vara b\u00e4sta v\u00e4nner men de \u00e4lskar ocks\u00e5 att t\u00e4vla mot varandra s\u00e5 nu blir det att tjuvtr\u00e4na hemma med valparna. Gunilla ska fotograferas f\u00f6r de officiella bilderna som ska f\u00e5 fart p\u00e5 hennes sk\u00e5despelarkarri\u00e4r. Men Gunilla blir helt f\u00f6rf\u00e4rad \u00f6ver stylingen av hennes h\u00e5r. S\u00e5 det f\u00e5r bli en total make over f\u00f6r att hon ska k\u00e4nna igen sig. Maria ska h\u00e5lla ett v\u00e4lkomsttal p\u00e5 en filmfestival i Hollywood f\u00f6r en svensk film. Hon har inte \u00f6vat innan utan t\u00e4nker att allt \u00e4nd\u00e5 brukar l\u00f6sa sig. Men n\u00e4r hon v\u00e4l st\u00e5r p\u00e5 scenen blir det inte alls som hon har t\u00e4nkt sig och n\u00e5gra grodor hoppar ur munnen. Samtidigt, i en annan del av Hollywood, \u00e4r Gunilla p\u00e5 filmfestival ocks\u00e5 f\u00f6r att marknadsf\u00f6ra sig sj\u00e4lv. Men p\u00e5 v\u00e4gen dit f\u00e5r hon problem med bilen och drabbas av d\u00f6ds\u00e5ngest. Publicisten f\u00e5r sk\u00e4ll n\u00e4r de v\u00e4l kommer fram f\u00f6r att de missat pressuppb\u00e5det. Det har varit en turbulent s\u00e4song av Svenska Hollywoodfruar d\u00e4r Gunilla Persson, Margareta Svensson, Isabel Adrian och Maria Montazami d\u00e5 och d\u00e5 haft sina duster med varandra. I s\u00e4songsavslutningen kommer allt - och lite till - upp till ytan igen. Hollywoodfruarna m\u00f6ts f\u00f6r en pressfotografering i Los Angeles. Margareta Svensson tar tillf\u00e4llet i akt att spela upp sin l\u00e5t \"Hollywood, Hollyweird\" som \u00e4r inspirerad av Gunilla Persson. Gunilla k\u00e4nner sig f\u00f6rol\u00e4mpad och br\u00e5ket \u00e4r ett faktum. Avsnitt10 av 10."
+            },
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510239300",
+            "channel" : "tv3.se"
+         },
+         {
+            "title" : {
+               "sv" : "Lyxf\u00e4llan"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Reality"
+               ]
+            },
+            "start" : "1510239300",
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Patrick Grimlund"
+                  },
+                  {
+                     "name" : "Mathias Andersson"
+                  },
+                  {
+                     "name" : "Magnus Hedberg"
+                  },
+                  {
+                     "name" : "Charlie S\u00f6derberg"
+                  }
+               ]
+            },
+            "date" : "2006",
+            "subTitle" : {
+               "sv" : "Susanne och Daniel"
+            },
+            "desc" : {
+               "sv" : "I s\u00e4songspremi\u00e4ren av Lyxf\u00e4llan rycker Patrick Grimlund och Magnus Hedberg ut till Norrt\u00e4lje, d\u00e4r en sm\u00e5barnsfamilj bokstavligen dragit p\u00e5 sig skulder h\u00f6gt \u00f6ver taknocken. Bygget av dr\u00f6mhuset blev mycket dyrare \u00e4n vad Susanne och Daniel hade t\u00e4nkt sig. Det skenande skuldt\u00e5get rusar allt snabbare och ibland har de inte r\u00e5d att k\u00f6pa mat trots att b\u00e5da tv\u00e5 har jobb. N\u00e4r Susanne f\u00e5r h\u00f6ra hur stora deras skulder faktiskt \u00e4r blir chocken s\u00e5 stor att kroppen g\u00f6r uppror. Avsnitt 1 av 12."
+            },
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510243200",
+            "channel" : "tv3.se",
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=81847&seasonid=615417&id=5149587&lid=8"
+            ],
+            "new" : "1",
+            "episodeNum" : {
+               "thetvdb.com" : "series/81847",
+               "xmltv_ns" : "17 . 0 .",
+               "onscreen" : "Del 1 s\u00e4song 18"
+            }
+         },
+         {
+            "url" : [
+               "https://www.themoviedb.org/tv/1685/season/15/episode/5"
+            ],
+            "episodeNum" : {
+               "onscreen" : "Del 5 av 15 s\u00e4song 15",
+               "xmltv_ns" : "14 . 4/15 ."
+            },
+            "new" : "1",
+            "subTitle" : {
+               "sv" : "There's No \"i\" In \"team\""
+            },
+            "stop" : "1510246800",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "tv3.se",
+            "desc" : {
+               "sv" : "P\u00e5 en dag ska deltagarna designa en baddr\u00e4kt med tillh\u00f6rande kl\u00e4dsel. Vinnaren f\u00e5r sitt verk reproducerat och s\u00e5lt tillsammans med Heidi Klums baddr\u00e4ktskollektion."
+            },
+            "credits" : {
+               "actor" : [
+                  {
+                     "role" : "Himself - Mentor",
+                     "name" : "Tim Gunn"
+                  },
+                  {
+                     "name" : "Heidi Klum",
+                     "role" : "Herself - Host"
+                  },
+                  {
+                     "role" : "Herself - Judge",
+                     "name" : "Nina Garcia"
+                  },
+                  {
+                     "name" : "Zac Posen",
+                     "role" : "Himself - Judge"
+                  }
+               ]
+            },
+            "date" : "2016",
+            "country" : [
+               "US"
+            ],
+            "start" : "1510243200",
+            "title" : {
+               "sv" : "Project Runway"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Reality"
+               ]
+            }
+         },
+         {
+            "episodeNum" : {
+               "xmltv_ns" : "0 . 2/12 .",
+               "onscreen" : "Del 3 av 12 s\u00e4song 1"
+            },
+            "new" : "1",
+            "url" : [
+               "https://www.themoviedb.org/tv/105/season/1/episode/3"
+            ],
+            "channel" : "tv3.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510248600",
+            "desc" : {
+               "sv" : "Carrie blir hembjuden till ett par hon k\u00e4nner men blir chockad n\u00e4r mannen blottar sig f\u00f6r henne. Miranda best\u00e4mmer sig f\u00f6r att hitta en kille s\u00e5 att de p\u00e5 advokatbyr\u00e5n inte ska tro att hon \u00e4r lesbisk."
+            },
+            "subTitle" : {
+               "sv" : "Bay of Married Pigs"
+            },
+            "credits" : {
+               "actor" : [
+                  {
+                     "role" : "Carrie Bradshaw",
+                     "name" : "Sarah Jessica Parker"
+                  },
+                  {
+                     "name" : "Kim Cattrall",
+                     "role" : "Samantha Jones"
+                  },
+                  {
+                     "role" : "Miranda Hobbes",
+                     "name" : "Cynthia Nixon"
+                  },
+                  {
+                     "name" : "Kristin Davis",
+                     "role" : "Charlotte York"
+                  }
+               ]
+            },
+            "date" : "1998",
+            "start" : "1510246800",
+            "country" : [
+               "US"
+            ],
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            },
+            "title" : {
+               "sv" : "Sex and the City"
+            }
+         },
+         {
+            "new" : "1",
+            "episodeNum" : {
+               "xmltv_ns" : "0 . 3/12 .",
+               "onscreen" : "Del 4 av 12 s\u00e4song 1"
+            },
+            "url" : [
+               "https://www.themoviedb.org/tv/105/season/1/episode/4"
+            ],
+            "desc" : {
+               "sv" : "Tjejerna upplever f\u00f6r- och nackdelar med unga killar i 20-\u00e5rs\u00e5ldern..."
+            },
+            "channel" : "tv3.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510250400",
+            "subTitle" : {
+               "sv" : "Valley of the Twenty-Something Guys"
+            },
+            "country" : [
+               "US"
+            ],
+            "start" : "1510248600",
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Sarah Jessica Parker",
+                     "role" : "Carrie Bradshaw"
+                  },
+                  {
+                     "name" : "Kim Cattrall",
+                     "role" : "Samantha Jones"
+                  },
+                  {
+                     "name" : "Cynthia Nixon",
+                     "role" : "Miranda Hobbes"
+                  },
+                  {
+                     "role" : "Charlotte York",
+                     "name" : "Kristin Davis"
+                  }
+               ]
+            },
+            "date" : "1998",
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            },
+            "title" : {
+               "sv" : "Sex and the City"
+            }
+         },
+         {
+            "stop" : "1510254000",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "tv3.se",
+            "desc" : {
+               "sv" : "Fredriks lansering i Paris g\u00e5r som planerat \u00e4nda tills en annan ambiti\u00f6s m\u00e4klare f\u00f6rs\u00f6ker ta \u00f6ver. Ryan g\u00f6r ett riskfyllt karri\u00e4rsdrag och Luis g\u00f6r ett k\u00e4nslosamt avsl\u00f6jande om hans liv Paris."
+            },
+            "subTitle" : {
+               "sv" : "The French Connection"
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "5 . 11/12 .",
+               "onscreen" : "Del 12 av 12 s\u00e4song 6"
+            },
+            "new" : "1",
+            "url" : [
+               "https://www.themoviedb.org/tv/44100/season/6/episode/12"
+            ],
+            "category" : {
+               "en" : [
+                  "series",
+                  "Reality"
+               ]
+            },
+            "title" : {
+               "sv" : "Million Dollar Listing New York"
+            },
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Fredrik Eklund",
+                     "role" : "Himself"
+                  },
+                  {
+                     "name" : "Steve Gold",
+                     "role" : "Himself"
+                  },
+                  {
+                     "role" : "Himself",
+                     "name" : "Ryan Serhant"
+                  }
+               ]
+            },
+            "date" : "2017",
+            "country" : [
+               "US"
+            ],
+            "start" : "1510250400"
+         },
+         {
+            "date" : "2017",
+            "start" : "1510254000",
+            "title" : {
+               "sv" : "Leva utan att d\u00f6 - en film om diabetes"
+            },
+            "category" : {
+               "en" : [
+                  "movie",
+                  "Series"
+               ]
+            },
+            "new" : "1",
+            "channel" : "tv3.se",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510257600",
+            "desc" : {
+               "sv" : "Svensk dokument\u00e4rfilm fr\u00e5n 2017. Programledaren Peter Jihde m\u00f6ter m\u00e4nniskor som ber\u00e4ttar hur de hanterar sin diabetes, en sjukdom som varje dag kostar fem svenskar livet. Medverkar g\u00f6r familjer som vakar sina barn dygnet runt, k\u00e4ndisar som ber\u00e4ttar hur de brottas med sjukdomen och idrottsstj\u00e4rnor som mot alla odds kan tr\u00e4na p\u00e5 elitniv\u00e5. \u00d6vriga medverkande \u00e4r Molly Sand\u00e9n, Bo Holmstr\u00f6m, Fanny Lyckeke, Gladys del Pilar, Hasse Andersson, Tina Mehrafzoon samt diabetesforskaren Viveca Gyberg."
+            }
+         },
+         {
+            "date" : "2017",
+            "start" : "1510257600",
+            "category" : {
+               "en" : [
+                  "series",
+                  "Series"
+               ]
+            },
+            "title" : {
+               "sv" : "Ensam mamma s\u00f6ker"
+            },
+            "episodeNum" : {
+               "onscreen" : "Del 4 s\u00e4song 9",
+               "xmltv_ns" : "8 . 3 ."
+            },
+            "new" : "1",
+            "stop" : "1510261200",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "tv3.se",
+            "desc" : {
+               "sv" : "Det b\u00f6rjar n\u00e4rma sig slutet p\u00e5 sommarhusvistelsen. Beatrice har en mysig dejt i en vink\u00e4llare. Hos Johanna b\u00f6rjar svartsjuka visa sig hos killarna n\u00e4r den f\u00f6rsta kyssen delas ut. \u00c4ven hos Jenny b\u00f6rjar de f\u00f6rsta k\u00e4nslorna att stiga till ytan och inte blir det lugnare av att det \u00e5terigen \u00e4r dags f\u00f6r val."
+            }
+         },
+         {
+            "title" : {
+               "sv" : "Hassel"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Crime",
+                  "Drama"
+               ]
+            },
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Ola Rapace",
+                     "role" : "Roland Hassel"
+                  },
+                  {
+                     "name" : "Wilma Lid\u00e9n",
+                     "role" : "Vida Bergman"
+                  },
+                  {
+                     "role" : "Daniela Bergman",
+                     "name" : "Aliette Opheim"
+                  },
+                  {
+                     "name" : "Jens Hult\u00e9n",
+                     "role" : "Leon Forsberg"
+                  },
+                  {
+                     "role" : "Thomas Meyer",
+                     "name" : "Shanti Roney"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Amir Chamdin"
+                  }
+               ],
+               "writer" : [
+                  {
+                     "name" : "Morgan Jensen"
+                  }
+               ]
+            },
+            "date" : "2017",
+            "start" : "1510261200",
+            "subTitle" : {
+               "sv" : "Episode 4"
+            },
+            "channel" : "tv3.se",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510264800",
+            "desc" : {
+               "sv" : "Sp\u00e5ren pekar nu mot Jovan \"Bosco\" Boscovic som \u00e4r en \u00f6k\u00e4nd yrkeskriminell nattklubbs\u00e4gare fr\u00e5n Balkan. Tydligen spelar n\u00e5gra komprometterande bilder en avg\u00f6rande roll i utredningen."
+            },
+            "url" : [
+               "https://www.themoviedb.org/tv/68360/season/1/episode/4"
+            ],
+            "episodeNum" : {
+               "onscreen" : "Del 4 av 10 s\u00e4song 1",
+               "xmltv_ns" : "0 . 3/10 ."
+            },
+            "new" : "0"
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "Reality"
+               ]
+            },
+            "title" : {
+               "sv" : "Million Dollar Listing New York"
+            },
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Fredrik Eklund",
+                     "role" : "Himself"
+                  },
+                  {
+                     "role" : "Himself",
+                     "name" : "Steve Gold"
+                  },
+                  {
+                     "role" : "Himself",
+                     "name" : "Ryan Serhant"
+                  }
+               ]
+            },
+            "date" : "2017",
+            "start" : "1510264800",
+            "country" : [
+               "US"
+            ],
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "stop" : "1510268400",
+            "channel" : "tv3.se",
+            "desc" : {
+               "sv" : "Fredriks lansering i Paris g\u00e5r som planerat \u00e4nda tills en annan ambiti\u00f6s m\u00e4klare f\u00f6rs\u00f6ker ta \u00f6ver. Ryan g\u00f6r ett riskfyllt karri\u00e4rsdrag och Luis g\u00f6r ett k\u00e4nslosamt avsl\u00f6jande om hans liv Paris."
+            },
+            "subTitle" : {
+               "sv" : "The French Connection"
+            },
+            "episodeNum" : {
+               "onscreen" : "Del 12 av 12 s\u00e4song 6",
+               "xmltv_ns" : "5 . 11/12 ."
+            },
+            "new" : "0",
+            "url" : [
+               "https://www.themoviedb.org/tv/44100/season/6/episode/12"
+            ]
+         },
+         {
+            "subTitle" : {
+               "sv" : "False Positive"
+            },
+            "desc" : {
+               "sv" : "Lily och Marshall f\u00e5r chockerande nyheter som har stor inverkan p\u00e5 g\u00e4nget. Ted b\u00f6rjar sin tj\u00e4nstg\u00f6ring som marsalk p\u00e5 en gammal v\u00e4ns br\u00f6llop."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "tv3.se",
+            "stop" : "1510270200",
+            "url" : [
+               "https://www.themoviedb.org/tv/1100/season/6/episode/12"
+            ],
+            "new" : "1",
+            "episodeNum" : {
+               "xmltv_ns" : "5 . 11/24 .",
+               "onscreen" : "Del 12 av 24 s\u00e4song 6"
+            },
+            "title" : {
+               "sv" : "How I Met Your Mother"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            },
+            "country" : [
+               "US"
+            ],
+            "start" : "1510268400",
+            "date" : "2010",
+            "credits" : {
+               "writer" : [
+                  {
+                     "name" : "Craig Gerard"
+                  },
+                  {
+                     "name" : "Matthew Zinman"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Pamela Fryman"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "name" : "Alyson Hannigan",
+                     "role" : "Lily Aldrin"
+                  },
+                  {
+                     "name" : "Jason Segel",
+                     "role" : "Marshall Eriksen"
+                  },
+                  {
+                     "name" : "Cobie Smulders",
+                     "role" : "Robin Scherbatsky"
+                  },
+                  {
+                     "name" : "Neil Patrick Harris",
+                     "role" : "Barney Stinson"
+                  },
+                  {
+                     "name" : "Josh Radnor",
+                     "role" : "Ted Mosby"
+                  },
+                  {
+                     "name" : "Ben Vereen"
+                  },
+                  {
+                     "name" : "Alex Trebek"
+                  },
+                  {
+                     "name" : "Melissa Molinaro"
+                  }
+               ]
+            }
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            },
+            "title" : {
+               "sv" : "How I Met Your Mother"
+            },
+            "credits" : {
+               "director" : [
+                  {
+                     "name" : "Pamela Fryman"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "name" : "Alyson Hannigan",
+                     "role" : "Lily Aldrin"
+                  },
+                  {
+                     "name" : "Jason Segel",
+                     "role" : "Marshall Eriksen"
+                  },
+                  {
+                     "name" : "Cobie Smulders",
+                     "role" : "Robin Scherbatsky"
+                  },
+                  {
+                     "role" : "Barney Stinson",
+                     "name" : "Neil Patrick Harris"
+                  },
+                  {
+                     "role" : "Ted Mosby",
+                     "name" : "Josh Radnor"
+                  },
+                  {
+                     "name" : "Suzie Plakson"
+                  },
+                  {
+                     "name" : "Alexis Denisof"
+                  },
+                  {
+                     "role" : "Marvin Eriksen Sr.",
+                     "name" : "Bill Fagerbakke"
+                  }
+               ]
+            },
+            "date" : "2011",
+            "start" : "1510270200",
+            "country" : [
+               "US"
+            ],
+            "channel" : "tv3.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510272000",
+            "desc" : {
+               "sv" : "Lily och Marshall \u00e4r oroliga att de inte kan f\u00e5 barn och best\u00e4mmer sig f\u00f6r att tr\u00e4ffa en specialist. Robin b\u00f6rjar p\u00e5 sitt nya jobb."
+            },
+            "subTitle" : {
+               "sv" : "Bad News"
+            },
+            "episodeNum" : {
+               "onscreen" : "Del 13 av 24 s\u00e4song 6",
+               "xmltv_ns" : "5 . 12/24 ."
+            },
+            "new" : "1",
+            "url" : [
+               "https://www.themoviedb.org/tv/1100/season/6/episode/13"
+            ]
+         }
+      ]
+   }
+}

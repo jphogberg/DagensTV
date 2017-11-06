@@ -1,0 +1,1154 @@
+{
+   "jsontv" : {
+      "programme" : [
+         {
+            "new" : "1",
+            "episodeNum" : {
+               "xmltv_ns" : "3 . 2 .",
+               "onscreen" : "Del 3 s\u00e4song 4",
+               "thetvdb.com" : "series/164861"
+            },
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=164861&seasonid=474135&id=4169670&lid=8"
+            ],
+            "desc" : {
+               "sv" : "Brandmannen Micke p\u00e5 Br\u00e4nnkyrka station \u00e5ker p\u00e5 larm om kraftig r\u00f6kutveckling p\u00e5 en tunnelbanestation. P\u00e5 plats visar det sig att en person \u00e4r kvar inne i den r\u00f6kfyllda stationen. Polisen Antonio i V\u00e4ster\u00e5s f\u00e5r br\u00e5ttom n\u00e4r ett vittne h\u00f6r en kvinna ropa p\u00e5 hj\u00e4lp och sedan dras in i en l\u00e4genhet. I en liten norrl\u00e4ndsk by har en man ramlat tv\u00e5 meter och f\u00e5tt en akut hj\u00e4rnbl\u00f6dning. Narkosl\u00e4karen Magnus beger sig till platsen och de enorma avst\u00e5nden i Norrland g\u00f6r akutsjukv\u00e5rden till en stor utmaning."
+            },
+            "channel" : "tv4.se",
+            "stop" : "1510192800",
+            "subTitle" : {
+               "sv" : "Avsnitt 3"
+            },
+            "start" : "1510188900",
+            "date" : "2010",
+            "category" : {
+               "en" : [
+                  "series",
+                  "Documentary",
+                  "Reality"
+               ]
+            },
+            "title" : {
+               "sv" : "112 - p\u00e5 liv och d\u00f6d"
+            }
+         },
+         {
+            "desc" : {
+               "sv" : "Jessica kommer till unds\u00e4ttning n\u00e4r en n\u00e4ra v\u00e4n blir inblandad i st\u00f6lden av en ov\u00e4rderlig relik fr\u00e5n Egypten och ett mord."
+            },
+            "stop" : "1510196400",
+            "channel" : "tv4.se",
+            "subTitle" : {
+               "sv" : "The Scent of Murder"
+            },
+            "new" : "0",
+            "episodeNum" : {
+               "xmltv_ns" : "10 . 11/21 .",
+               "onscreen" : "Del 12 av 21 s\u00e4song 11"
+            },
+            "url" : [
+               "https://www.themoviedb.org/tv/484/season/11/episode/12"
+            ],
+            "category" : {
+               "en" : [
+                  "series",
+                  "Mystery",
+                  "Crime",
+                  "Drama"
+               ]
+            },
+            "title" : {
+               "sv" : "Mord och inga visor"
+            },
+            "start" : "1510192800",
+            "date" : "1995",
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Len Cariou"
+                  },
+                  {
+                     "name" : "Angela Lansbury",
+                     "role" : "Jessica Fletcher"
+                  },
+                  {
+                     "name" : "Melanie Smith"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Anthony Pullen Shaw"
+                  }
+               ],
+               "writer" : [
+                  {
+                     "name" : "Laurence Heath"
+                  }
+               ]
+            }
+         },
+         {
+            "episodeNum" : {
+               "xmltv_ns" : "2 . 12 .",
+               "onscreen" : "Del 13 s\u00e4song 3"
+            },
+            "new" : "0",
+            "stop" : "1510200600",
+            "channel" : "tv4.se",
+            "desc" : {
+               "sv" : "Londonborna Gary och Shahine s\u00f6ker efter ett semesterhem i Limousinomr\u00e5det i Frankrike och tar hj\u00e4lp av Sarah."
+            },
+            "date" : "2016",
+            "start" : "1510196400",
+            "category" : {
+               "en" : [
+                  "series",
+                  "Lifestyle"
+               ]
+            },
+            "title" : {
+               "sv" : "En plats i solen: SommarsoI"
+            }
+         },
+         {
+            "date" : "2015",
+            "start" : "1510200600",
+            "category" : {
+               "en" : [
+                  "series",
+                  "Cooking"
+               ]
+            },
+            "title" : {
+               "sv" : "Halv \u00e5tta hos mig"
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "15 . 38 .",
+               "onscreen" : "Del 39 s\u00e4song 16"
+            },
+            "new" : "1",
+            "stop" : "1510202700",
+            "channel" : "tv4.se",
+            "desc" : {
+               "sv" : "Den tredje v\u00e4rden i Norrt\u00e4lje att bjuda p\u00e5 grillmiddag \u00e4r Ewa. Hon grillar mignon och havskr\u00e4ftor. Till efterr\u00e4tt blir det flamberade jordgubbar."
+            }
+         },
+         {
+            "desc" : {
+               "sv" : "Direkts\u00e4nt morgonprogram. Nyheter varvas med f\u00f6rdjupande diskussioner, bevakning av de senaste trenderna, personliga intervjuer, kultur och sport. Programledare m\u00e5ndag till onsdag \u00e4r Tilde de Paula och Peter Jihde och p\u00e5 torsdagar leds det av Jenny Str\u00f6mstedt och Steffo T\u00f6rnquist."
+            },
+            "channel" : "tv4.se",
+            "stop" : "1510218000",
+            "new" : "1",
+            "episodeNum" : {
+               "xmltv_ns" : "2015 . 314/450 .",
+               "onscreen" : "Del 315 av 450 s\u00e4song 2016"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "News"
+               ]
+            },
+            "title" : {
+               "sv" : "Nyhetsmorgon"
+            },
+            "start" : "1510202700",
+            "date" : "2016"
+         },
+         {
+            "desc" : {
+               "sv" : "Svenskt aktualitetsprogram fr\u00e5n 2017. Malou von Sivers bjuder p\u00e5 l\u00e5nga intervjuer, starka ber\u00e4ttelser, nyfikna fr\u00e5gor och engagerande diskussioner och teman som tar upp allt fr\u00e5n stamcellsforskning till k\u00e4rlek i dag. Det blir politik, medicin, h\u00e4lsa och kultur i en halsbrytande blandning."
+            },
+            "channel" : "tv4.se",
+            "stop" : "1510225200",
+            "new" : "1",
+            "episodeNum" : {
+               "xmltv_ns" : "23 . 23/50 .",
+               "onscreen" : "Del 24 av 50 s\u00e4song 24"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Documentary"
+               ]
+            },
+            "title" : {
+               "sv" : "Malou efter tio"
+            },
+            "start" : "1510218000",
+            "date" : "2017"
+         },
+         {
+            "new" : "1",
+            "episodeNum" : {
+               "xmltv_ns" : "30 . 188 .",
+               "onscreen" : "Del 189 s\u00e4song 31"
+            },
+            "desc" : {
+               "sv" : "Debbie kr\u00e4ver att f\u00e5 veta sanningen. Laurel tar p\u00e5 sig f\u00f6r mycket. Priya f\u00e5r \u00f6verraskande nyheter."
+            },
+            "stop" : "1510227000",
+            "channel" : "tv4.se",
+            "start" : "1510225200",
+            "date" : "2016",
+            "credits" : {
+               "actor" : [
+                  {
+                     "role" : "Debbie Dingle",
+                     "name" : "Charley Webb"
+                  },
+                  {
+                     "name" : "Charlotte Bellamy",
+                     "role" : "Laurel Thomas"
+                  },
+                  {
+                     "role" : "Priya Kotecha",
+                     "name" : "Fiona Wade"
+                  },
+                  {
+                     "name" : "Caroline Mitchell"
+                  }
+               ],
+               "producer" : [
+                  {
+                     "name" : "Iain MacLeod"
+                  },
+                  {
+                     "name" : "John Whiston"
+                  }
+               ]
+            },
+            "title" : {
+               "sv" : "Hem till g\u00e5rden"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Drama"
+               ]
+            }
+         },
+         {
+            "title" : {
+               "sv" : "Rena rama Rolf: Skumma pengar"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            },
+            "date" : "1994",
+            "credits" : {
+               "actor" : [
+                  {
+                     "role" : "Rolf Mjunstedt",
+                     "name" : "Lasse Brandeby"
+                  },
+                  {
+                     "role" : "Bettan Mjunstedt",
+                     "name" : "Carina Broberg"
+                  },
+                  {
+                     "name" : "Karolina Rahm",
+                     "role" : "Ina Lind"
+                  },
+                  {
+                     "role" : "Nisse Lind",
+                     "name" : "Robert Gustafsson"
+                  },
+                  {
+                     "name" : "Inger Hayman",
+                     "role" : "Hj\u00f6rdis Eriksson"
+                  },
+                  {
+                     "name" : "Weiron Holmberg",
+                     "role" : "Masthuggarbr\u00f6dernas ordf\u00f6rande"
+                  },
+                  {
+                     "role" : "Arne Westin",
+                     "name" : "Roland Janson"
+                  },
+                  {
+                     "role" : "Svea Mjunstedt",
+                     "name" : "Lena Brogren"
+                  }
+               ]
+            },
+            "start" : "1510227000",
+            "stop" : "1510228800",
+            "channel" : "tv4.se",
+            "desc" : {
+               "sv" : "Rolf f\u00e5r tag p\u00e5 en v\u00e4ska full med pengar. Men det han inte vet \u00e4r att det \u00e4r falska sedlar som n\u00e5gra skurkar tryckt upp."
+            },
+            "episodeNum" : {
+               "onscreen" : "Del 4 av 15 s\u00e4song 1",
+               "xmltv_ns" : "0 . 3/15 ."
+            },
+            "new" : "1"
+         },
+         {
+            "subTitle" : {
+               "sv" : "Episode Seven"
+            },
+            "desc" : {
+               "sv" : "Matthew f\u00e5r tillbaka k\u00e4nslan i sina ben och annonserar att han och Lavinia snart ska gifta sig. Ethel konfronterar sitt barns farf\u00f6r\u00e4ldrar. Branson och Sybil rymmer. Carlyle f\u00f6rs\u00f6ker f\u00e5 Anna att spionera p\u00e5 Mary."
+            },
+            "channel" : "tv4.se",
+            "stop" : "1510232400",
+            "url" : [
+               "https://www.themoviedb.org/tv/33907/season/2/episode/7"
+            ],
+            "new" : "1",
+            "episodeNum" : {
+               "xmltv_ns" : "1 . 6/8 .",
+               "onscreen" : "Del 7 av 8 s\u00e4song 2"
+            },
+            "title" : {
+               "sv" : "Downton Abbey"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Drama"
+               ]
+            },
+            "start" : "1510228800",
+            "credits" : {
+               "producer" : [
+                  {
+                     "name" : "Liz Trubridge"
+                  },
+                  {
+                     "name" : "Gareth Neame"
+                  },
+                  {
+                     "name" : "Julian Fellowes"
+                  },
+                  {
+                     "name" : "Rebecca Eaton"
+                  }
+               ],
+               "writer" : [
+                  {
+                     "name" : "Julian Fellowes"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "role" : "Ethel Parks",
+                     "name" : "Amy Nuttall"
+                  },
+                  {
+                     "role" : "Sarah O'Brien",
+                     "name" : "Siobhan Finneran"
+                  },
+                  {
+                     "role" : "Matthew Crawley",
+                     "name" : "Dan Stevens"
+                  },
+                  {
+                     "name" : "Brendan Coyle",
+                     "role" : "John Bates"
+                  },
+                  {
+                     "role" : "Mrs. Hughes",
+                     "name" : "Phyllis Logan"
+                  },
+                  {
+                     "name" : "Laura Carmichael",
+                     "role" : "Edith Crawley"
+                  },
+                  {
+                     "name" : "Jim Carter",
+                     "role" : "Mr. Carson"
+                  },
+                  {
+                     "role" : "Violet Crawley",
+                     "name" : "Maggie Smith"
+                  },
+                  {
+                     "role" : "Mary Crawley",
+                     "name" : "Michelle Dockery"
+                  },
+                  {
+                     "role" : "Anna Smith",
+                     "name" : "Joanne Froggatt"
+                  },
+                  {
+                     "role" : "Mrs. Patmore",
+                     "name" : "Lesley Nicol"
+                  },
+                  {
+                     "name" : "Hugh Bonneville",
+                     "role" : "Robert Crawley"
+                  },
+                  {
+                     "role" : "Cora Crawley",
+                     "name" : "Elizabeth McGovern"
+                  },
+                  {
+                     "role" : "Daisy Mason",
+                     "name" : "Sophie McShera"
+                  },
+                  {
+                     "name" : "Rob James-Collier",
+                     "role" : "Thomas Barrow"
+                  },
+                  {
+                     "name" : "Jessica Brown Findlay",
+                     "role" : "Sybil Crawley"
+                  },
+                  {
+                     "role" : "Isobel Crawley",
+                     "name" : "Penelope Wilton"
+                  },
+                  {
+                     "role" : "Tom Branson",
+                     "name" : "Allen Leech"
+                  },
+                  {
+                     "role" : "Horace Bryant",
+                     "name" : "Kevin McNally"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "James Strong"
+                  }
+               ]
+            },
+            "date" : "2011"
+         },
+         {
+            "date" : "1995",
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Len Cariou"
+                  },
+                  {
+                     "name" : "Angela Lansbury",
+                     "role" : "Jessica Fletcher"
+                  },
+                  {
+                     "name" : "Lee Meriwether"
+                  },
+                  {
+                     "name" : "Eric Pierpoint"
+                  },
+                  {
+                     "name" : "Jeri Ryan"
+                  },
+                  {
+                     "name" : "James Read"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Jerry Jameson"
+                  }
+               ]
+            },
+            "start" : "1510232400",
+            "category" : {
+               "en" : [
+                  "series",
+                  "Mystery",
+                  "Crime",
+                  "Drama"
+               ]
+            },
+            "title" : {
+               "sv" : "Mord och inga visor"
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "10 . 12/21 .",
+               "onscreen" : "Del 13 av 21 s\u00e4song 11"
+            },
+            "new" : "1",
+            "url" : [
+               "https://www.themoviedb.org/tv/484/season/11/episode/13"
+            ],
+            "stop" : "1510235700",
+            "channel" : "tv4.se",
+            "desc" : {
+               "sv" : "Jessica utreder ett mord inom operav\u00e4rlden d\u00e4r en soprano h\u00f6r en r\u00f6st som hotar henne till livet en dimmig kv\u00e4ll i Genoa."
+            },
+            "subTitle" : {
+               "sv" : "Death 'n Denial"
+            }
+         },
+         {
+            "episodeNum" : {
+               "xmltv_ns" : "27 . 8 .",
+               "onscreen" : "Del 9 s\u00e4song 28"
+            },
+            "new" : "1",
+            "stop" : "1510239300",
+            "channel" : "tv4.se",
+            "desc" : {
+               "sv" : "Michael och experterna bes\u00f6ker Manderston d\u00e4r de bland annat v\u00e4rderar f\u00f6rem\u00e5l fr\u00e5n drottning Victorias hush\u00e5ll. Dessutom dyker det upp en ovanlig kakburk."
+            },
+            "date" : "2005",
+            "start" : "1510235700",
+            "category" : {
+               "en" : [
+                  "series",
+                  "Documentary"
+               ]
+            },
+            "title" : {
+               "sv" : "Antiques roadshow"
+            }
+         },
+         {
+            "new" : "1",
+            "episodeNum" : {
+               "xmltv_ns" : "2 . 13 .",
+               "onscreen" : "Del 14 s\u00e4song 3"
+            },
+            "desc" : {
+               "sv" : "Frankofilerna Madeline och Andy fr\u00e5n Portsmouth s\u00f6ker efter ett semesterhem i Charente i v\u00e4stra Frankrike."
+            },
+            "channel" : "tv4.se",
+            "stop" : "1510242900",
+            "start" : "1510239300",
+            "date" : "2016",
+            "category" : {
+               "en" : [
+                  "series",
+                  "Lifestyle"
+               ]
+            },
+            "title" : {
+               "sv" : "En plats i solen: SommarsoI"
+            }
+         },
+         {
+            "start" : "1510242900",
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Joanna Gaines"
+                  },
+                  {
+                     "name" : "Chip Gaines"
+                  }
+               ]
+            },
+            "date" : "2016",
+            "title" : {
+               "sv" : "Fixer Upper"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Reality"
+               ]
+            },
+            "url" : [
+               "https://www.themoviedb.org/tv/60911/season/3/episode/18"
+            ],
+            "new" : "1",
+            "episodeNum" : {
+               "onscreen" : "Del 18 av 18 s\u00e4song 3",
+               "xmltv_ns" : "2 . 17/18 ."
+            },
+            "subTitle" : {
+               "sv" : "A Home for Hospitality"
+            },
+            "desc" : {
+               "sv" : "Det \u00e4r dags f\u00f6r Chip och Joanna att \u00f6ppna Magnolia Silos. Samtidigt tar de sig an att renovera huset d\u00e4r f\u00f6rest\u00e5ndarna till bed and breakfastet ska bo."
+            },
+            "stop" : "1510246500",
+            "channel" : "tv4.se"
+         },
+         {
+            "subTitle" : {
+               "sv" : "Avsnitt 20"
+            },
+            "desc" : {
+               "sv" : "Poliserna Nicolai och Simon p\u00e5 \u00c5land skyndar sig till en hamn d\u00e4r en man ska ligga medvetsl\u00f6s. Janne fr\u00e5n Farsta brandstation tar hand om en markbrand. \u00c5m\u00e5lspoliserna Gunilla och Anssi s\u00f6ker efter en f\u00f6rsvunnen man."
+            },
+            "stop" : "1510249800",
+            "channel" : "tv4.se",
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=164861&seasonid=595994&id=5018089&lid=8"
+            ],
+            "new" : "1",
+            "episodeNum" : {
+               "onscreen" : "Del 20 s\u00e4song 10",
+               "xmltv_ns" : "9 . 19 .",
+               "thetvdb.com" : "series/164861"
+            },
+            "title" : {
+               "sv" : "112 - p\u00e5 liv och d\u00f6d"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Documentary",
+                  "Reality"
+               ]
+            },
+            "start" : "1510246500",
+            "date" : "2010"
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "Series"
+               ]
+            },
+            "title" : {
+               "sv" : "Keno"
+            },
+            "start" : "1510249800",
+            "date" : "2017",
+            "desc" : {
+               "sv" : "Redovisning av dagens Kenodragning."
+            },
+            "channel" : "tv4.se",
+            "stop" : "1510250400",
+            "new" : "1",
+            "episodeNum" : {
+               "onscreen" : "Del 313 av 365 s\u00e4song 2017",
+               "xmltv_ns" : "2016 . 312/365 ."
+            }
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "News"
+               ]
+            },
+            "title" : {
+               "sv" : "Nyheterna"
+            },
+            "start" : "1510250400",
+            "date" : "2017",
+            "desc" : {
+               "sv" : "Nyheter fr\u00e5n TV4. Varje nyhetss\u00e4ndning profileras av ett huvudankare. Anna Lindmarker, Anders Kraft Ulrika Nilsson, Peter Lindgren och Bengt Magnusson leder TV4Nyheterna under vardagar och helger."
+            },
+            "channel" : "tv4.se",
+            "stop" : "1510251300",
+            "new" : "1",
+            "episodeNum" : {
+               "onscreen" : "Del 218 av 255 s\u00e4song 2017",
+               "xmltv_ns" : "2016 . 217/255 ."
+            }
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "Sports"
+               ]
+            },
+            "title" : {
+               "sv" : "Sporten"
+            },
+            "date" : "2017",
+            "start" : "1510251300",
+            "stop" : "1510251600",
+            "channel" : "tv4.se",
+            "desc" : {
+               "sv" : "Sportnyheter."
+            },
+            "episodeNum" : {
+               "onscreen" : "Del 218 av 255 s\u00e4song 2017",
+               "xmltv_ns" : "2016 . 217/255 ."
+            },
+            "new" : "1"
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "News"
+               ]
+            },
+            "title" : {
+               "sv" : "V\u00e4dret"
+            },
+            "start" : "1510251600",
+            "date" : "2017",
+            "desc" : {
+               "sv" : "V\u00e4derprognos."
+            },
+            "channel" : "tv4.se",
+            "stop" : "1510252200",
+            "new" : "1",
+            "episodeNum" : {
+               "onscreen" : "Del 218 av 255 s\u00e4song 2017",
+               "xmltv_ns" : "2016 . 217/255 ."
+            }
+         },
+         {
+            "episodeNum" : {
+               "xmltv_ns" : "18 . 47 .",
+               "onscreen" : "Del 48 s\u00e4song 19"
+            },
+            "new" : "1",
+            "channel" : "tv4.se",
+            "stop" : "1510254000",
+            "desc" : {
+               "sv" : "Finalen i Falun h\u00e5lls hemma hos Jenny. Hon bjuder p\u00e5 en jordn\u00e4ra meny som best\u00e5r av n\u00e4sselsoppa, lammstek med egenodlade gr\u00f6nsaker och pavlova. Efter m\u00e5ltiden avsl\u00f6jas vem av de fyra amat\u00f6rkockarna som kammar hem vinsten."
+            },
+            "date" : "2016",
+            "start" : "1510252200",
+            "category" : {
+               "en" : [
+                  "series",
+                  "Cooking"
+               ]
+            },
+            "title" : {
+               "sv" : "Halv \u00e5tta hos mig"
+            }
+         },
+         {
+            "new" : "1",
+            "episodeNum" : {
+               "onscreen" : "Del 9 s\u00e4song 4",
+               "xmltv_ns" : "3 . 8 ."
+            },
+            "desc" : {
+               "sv" : "Mamma Carina och dottern Jana t\u00e4vlar. Fr\u00e5gan \u00e4r om de kommer komma \u00f6verens n\u00e4r de st\u00e4lls inf\u00f6r att gissa r\u00e4tt p\u00e5 dyrgripen. Karin har laddat galleriet med flodp\u00e4rlor, en majblomma och Ingmar Bergmans skinnjacka."
+            },
+            "channel" : "tv4.se",
+            "stop" : "1510257600",
+            "start" : "1510254000",
+            "date" : "2017",
+            "category" : {
+               "en" : [
+                  "series",
+                  "Entertainment"
+               ]
+            },
+            "title" : {
+               "sv" : "Bytt \u00e4r bytt"
+            }
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "Drama"
+               ]
+            },
+            "title" : {
+               "sv" : "Syrror"
+            },
+            "date" : "2016",
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Celie Sparre",
+                     "role" : "Iris"
+                  },
+                  {
+                     "role" : "Julia",
+                     "name" : "Marall Nasiri"
+                  },
+                  {
+                     "name" : "Tanja Lorentzon",
+                     "role" : "Malin"
+                  },
+                  {
+                     "role" : "Carina",
+                     "name" : "Jeanette Holmgren"
+                  },
+                  {
+                     "role" : "Max Hansen",
+                     "name" : "Henrik Norl\u00e9n"
+                  },
+                  {
+                     "name" : "Bengt Braskered",
+                     "role" : "Jonas Hedqvist"
+                  },
+                  {
+                     "name" : "Anton Lundqvist",
+                     "role" : "Claes-Petter Holmstr\u00f6m"
+                  },
+                  {
+                     "role" : "Paul Orre",
+                     "name" : "Jonas Malmsj\u00f6"
+                  },
+                  {
+                     "name" : "Erik Johansson",
+                     "role" : "Alexander Ahlgren"
+                  }
+               ]
+            },
+            "start" : "1510257600",
+            "stop" : "1510261200",
+            "channel" : "tv4.se",
+            "desc" : {
+               "sv" : "Malin och Jonas f\u00e5r en chock n\u00e4r den nya akutl\u00e4karen presenteras. En buss med ett flickfotbollslag r\u00e5kar ut f\u00f6r en trafikolycka och sjukhuset f\u00f6rs\u00e4tts i katastrofl\u00e4ge. Julia vill att f\u00f6rh\u00e5llandet med Max ska bli mer seri\u00f6st."
+            },
+            "episodeNum" : {
+               "onscreen" : "Del 6 s\u00e4song 2",
+               "xmltv_ns" : "1 . 5 ."
+            },
+            "new" : "1"
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "News"
+               ]
+            },
+            "title" : {
+               "sv" : "Nyheterna"
+            },
+            "start" : "1510261200",
+            "date" : "2017",
+            "desc" : {
+               "sv" : "Nyheter fr\u00e5n TV4. Varje nyhetss\u00e4ndning profileras av ett huvudankare. Anna Lindmarker, Anders Kraft, Ulrika Nilsson, Peter Lindgren och Bengt Magnusson leder TV4Nyheterna under vardagar och helger."
+            },
+            "channel" : "tv4.se",
+            "stop" : "1510263000",
+            "new" : "1",
+            "episodeNum" : {
+               "xmltv_ns" : "2016 . 142/168 .",
+               "onscreen" : "Del 143 av 168 s\u00e4song 2017"
+            }
+         },
+         {
+            "title" : {
+               "sv" : "Ekonominyheterna"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "News"
+               ]
+            },
+            "date" : "2017",
+            "start" : "1510263000",
+            "channel" : "tv4.se",
+            "stop" : "1510263300",
+            "desc" : {
+               "sv" : "Ekonominyheter."
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "2016 . 142/168 .",
+               "onscreen" : "Del 143 av 168 s\u00e4song 2017"
+            },
+            "new" : "1"
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "Sports"
+               ]
+            },
+            "title" : {
+               "sv" : "Sporten"
+            },
+            "start" : "1510263300",
+            "date" : "2017",
+            "desc" : {
+               "sv" : "Sportnyheter."
+            },
+            "stop" : "1510264200",
+            "channel" : "tv4.se",
+            "new" : "1",
+            "episodeNum" : {
+               "onscreen" : "Del 143 av 168 s\u00e4song 2017",
+               "xmltv_ns" : "2016 . 142/168 ."
+            }
+         },
+         {
+            "start" : "1510264200",
+            "date" : "2017",
+            "category" : {
+               "en" : [
+                  "series",
+                  "News"
+               ]
+            },
+            "title" : {
+               "sv" : "V\u00e4dret"
+            },
+            "new" : "1",
+            "episodeNum" : {
+               "onscreen" : "Del 143 av 168 s\u00e4song 2017",
+               "xmltv_ns" : "2016 . 142/168 ."
+            },
+            "desc" : {
+               "sv" : "V\u00e4derprognos."
+            },
+            "channel" : "tv4.se",
+            "stop" : "1510264800"
+         },
+         {
+            "title" : {
+               "sv" : "Hawaii Five-0"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Action",
+                  "Crime",
+                  "Drama"
+               ]
+            },
+            "start" : "1510264800",
+            "credits" : {
+               "director" : [
+                  {
+                     "name" : "James Wilcox"
+                  },
+                  {
+                     "name" : "Maja Vrvilo"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "name" : "Jorge Garcia",
+                     "role" : "Jerry Ortega"
+                  },
+                  {
+                     "role" : "Lou Grover",
+                     "name" : "Chi McBride"
+                  },
+                  {
+                     "role" : "Steve McGarrett",
+                     "name" : "Alex O'Loughlin"
+                  },
+                  {
+                     "role" : "Danny \"Danno\" Williams",
+                     "name" : "Scott Caan"
+                  },
+                  {
+                     "name" : "Daniel Dae Kim",
+                     "role" : "Chin Ho Kelly"
+                  },
+                  {
+                     "name" : "Grace Park",
+                     "role" : "Kono Kalakaua"
+                  },
+                  {
+                     "role" : "Dr. Max Bergman",
+                     "name" : "Masi Oka"
+                  },
+                  {
+                     "name" : "Calico Cooper",
+                     "role" : "jane miller"
+                  }
+               ]
+            },
+            "date" : "2015",
+            "subTitle" : {
+               "sv" : "Ua helele'i ka hoku (Fallen Star)"
+            },
+            "desc" : {
+               "sv" : "Teamet utreder mordet p\u00e5 en Elvisimitat\u00f6r som d\u00f6dades under ett konvent som h\u00f6lls till Elvis \u00e4ra. Chin tvingas ta tag i ett personligt \u00e4rende."
+            },
+            "stop" : "1510268100",
+            "channel" : "tv4.se",
+            "url" : [
+               "https://www.themoviedb.org/tv/32798/season/5/episode/21"
+            ],
+            "new" : "1",
+            "episodeNum" : {
+               "xmltv_ns" : "4 . 20/25 .",
+               "onscreen" : "Del 21 av 25 s\u00e4song 5"
+            }
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "Crime",
+                  "Drama"
+               ]
+            },
+            "title" : {
+               "sv" : "Law & Order: Special Victims Unit"
+            },
+            "date" : "2005",
+            "credits" : {
+               "director" : [
+                  {
+                     "name" : "Jean de Segonzac"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "name" : "Christopher Meloni",
+                     "role" : "Elliot Stabler"
+                  },
+                  {
+                     "name" : "Diane Neal",
+                     "role" : "Casey Novak"
+                  },
+                  {
+                     "role" : "George Huang",
+                     "name" : "BD Wong"
+                  },
+                  {
+                     "role" : "Donald Cragen",
+                     "name" : "Dann Florek"
+                  },
+                  {
+                     "role" : "Fin Tutuola",
+                     "name" : "Ice-T"
+                  },
+                  {
+                     "name" : "Richard Belzer",
+                     "role" : "John Munch"
+                  },
+                  {
+                     "name" : "Mariska Hargitay",
+                     "role" : "Olivia Benson"
+                  },
+                  {
+                     "name" : "Matt Malloy"
+                  },
+                  {
+                     "name" : "Shuler Hensley"
+                  },
+                  {
+                     "name" : "Alex Cranmer"
+                  },
+                  {
+                     "name" : "Tamara Tunie"
+                  },
+                  {
+                     "name" : "Michael Drayer"
+                  },
+                  {
+                     "name" : "Jessica Dunphy"
+                  },
+                  {
+                     "name" : "Joel de la Fuente"
+                  },
+                  {
+                     "name" : "Hayden Panettiere",
+                     "role" : "Angela Agnelli"
+                  },
+                  {
+                     "name" : "Peter Hermann"
+                  },
+                  {
+                     "name" : "Aaron Staton"
+                  }
+               ]
+            },
+            "start" : "1510268100",
+            "channel" : "tv4.se",
+            "stop" : "1510271700",
+            "desc" : {
+               "sv" : "En grupp scouter som \u00e4r ute p\u00e5 stj\u00e4rnsk\u00e5dning uppt\u00e4cker en d\u00f6d kropp p\u00e5 ett hustak. Det visar sig vara en 15-\u00e5rig prostituerad flicka som satt ut sina annonser p\u00e5 internet. Vid obduktionen uppt\u00e4cker man att flickan var hiv-smittad, vilket g\u00f6r det viktigt f\u00f6r utredarna att f\u00e5 tag p\u00e5 hennes kunder."
+            },
+            "subTitle" : {
+               "sv" : "Hooked"
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "5 . 14/23 .",
+               "onscreen" : "Del 15 av 23 s\u00e4song 6"
+            },
+            "new" : "1",
+            "url" : [
+               "https://www.themoviedb.org/tv/2734/season/6/episode/15"
+            ]
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "Mystery",
+                  "Drama"
+               ]
+            },
+            "title" : {
+               "sv" : "Brottskod: F\u00f6rsvunnen"
+            },
+            "start" : "1510271700",
+            "credits" : {
+               "writer" : [
+                  {
+                     "name" : "Diego Gutierrez"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "name" : "Poppy Montgomery",
+                     "role" : "Samantha Spade"
+                  },
+                  {
+                     "role" : "Elena Delgado",
+                     "name" : "Roselyn S\u00e1nchez"
+                  },
+                  {
+                     "name" : "Enrique Murciano"
+                  },
+                  {
+                     "role" : "Jack Malone",
+                     "name" : "Anthony LaPaglia"
+                  },
+                  {
+                     "name" : "Eric Close",
+                     "role" : "Martin Fitzgerald"
+                  },
+                  {
+                     "name" : "Marianne Jean-Baptiste"
+                  },
+                  {
+                     "name" : "Darcy Rose Byrnes"
+                  },
+                  {
+                     "name" : "Anthony Azizi"
+                  },
+                  {
+                     "name" : "Frank Grillo"
+                  },
+                  {
+                     "name" : "Tim Russ"
+                  },
+                  {
+                     "name" : "Adam Nelson"
+                  },
+                  {
+                     "name" : "Ryan Alosio"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Peter Markle"
+                  }
+               ]
+            },
+            "date" : "2007",
+            "desc" : {
+               "sv" : "En flygledare f\u00f6rsvinner och teamet misst\u00e4nker att det kan ha koppling till en flygkrasch."
+            },
+            "rating" : {
+               "stars" : "7.3 / 9"
+            },
+            "channel" : "tv4.se",
+            "stop" : "1510275300",
+            "subTitle" : {
+               "sv" : "Tail Spin"
+            },
+            "new" : "1",
+            "episodeNum" : {
+               "xmltv_ns" : "4 . 11/24 .",
+               "onscreen" : "Del 12 av 24 s\u00e4song 5"
+            },
+            "url" : [
+               "https://www.themoviedb.org/tv/2593/season/5/episode/12"
+            ]
+         }
+      ]
+   }
+}

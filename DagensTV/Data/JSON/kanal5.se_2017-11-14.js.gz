@@ -1,0 +1,2079 @@
+{
+   "jsontv" : {
+      "programme" : [
+         {
+            "title" : {
+               "sv" : "Criminal Minds"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Drama"
+               ]
+            },
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Kirsten Vangsness",
+                     "role" : "Penelope Garcia"
+                  },
+                  {
+                     "name" : "Jennifer Love Hewitt",
+                     "role" : "Kate Callahan"
+                  },
+                  {
+                     "name" : "Shemar Moore",
+                     "role" : "Derek Morgan"
+                  },
+                  {
+                     "name" : "Rachel Nichols",
+                     "role" : "Ashley Seaver"
+                  },
+                  {
+                     "role" : "Jason Gideon",
+                     "name" : "Mandy Patinkin"
+                  },
+                  {
+                     "name" : "Jeanne Tripplehorn",
+                     "role" : "Alex Blake"
+                  },
+                  {
+                     "name" : "Joe Mantegna",
+                     "role" : "David Rossi"
+                  },
+                  {
+                     "name" : "Thomas Gibson",
+                     "role" : "Aaron Hotchner"
+                  },
+                  {
+                     "name" : "Paget Brewster",
+                     "role" : "Emily Prentiss"
+                  },
+                  {
+                     "name" : "Matthew Gray Gubler",
+                     "role" : "Dr. Spencer Reid"
+                  },
+                  {
+                     "name" : "A.J. Cook",
+                     "role" : "Jennifer Jareau"
+                  },
+                  {
+                     "role" : "Elle Greenaway",
+                     "name" : "Lola Glaudini"
+                  },
+                  {
+                     "name" : "Gracie Kathryn Murdoch"
+                  },
+                  {
+                     "name" : "Steve Heller"
+                  },
+                  {
+                     "name" : "Josh Clark"
+                  },
+                  {
+                     "name" : "Anne Marie Howard"
+                  },
+                  {
+                     "name" : "Rachel Grow"
+                  },
+                  {
+                     "name" : "Jane Lynch"
+                  },
+                  {
+                     "name" : "Elizabeth Liang"
+                  },
+                  {
+                     "name" : "Jeff Marchelletta"
+                  },
+                  {
+                     "name" : "Joey Nader"
+                  },
+                  {
+                     "name" : "Martha Boles"
+                  },
+                  {
+                     "name" : "Sabrina Gennarino"
+                  },
+                  {
+                     "name" : "Andrew Elvis Miller"
+                  },
+                  {
+                     "name" : "Adrian N. Roberts"
+                  },
+                  {
+                     "name" : "Brian Appel"
+                  },
+                  {
+                     "name" : "Amanda Bernero"
+                  },
+                  {
+                     "name" : "Charley Ro"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Gloria Muzio"
+                  }
+               ],
+               "writer" : [
+                  {
+                     "name" : "Edward Allen Bernero"
+                  }
+               ]
+            },
+            "date" : "2005",
+            "start" : "1510620900",
+            "subTitle" : {
+               "sv" : "The Fisher King (2)"
+            },
+            "stop" : "1510623900",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "kanal5.se",
+            "rating" : {
+               "stars" : "7.1 / 9"
+            },
+            "desc" : {
+               "sv" : "F\u00f6r att f\u00f6rs\u00f6ka r\u00e4dda psykopatens senaste offer f\u00f6ljer teamet de ledtr\u00e5dar som var och en av dem f\u00e5tt av m\u00f6rdaren. Gideon vill inte att det ska bli personligt och jobbar som om det vare en vanlig utredning."
+            },
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=75710&seasonid=16339&id=307948&lid=8"
+            ],
+            "episodeNum" : {
+               "thetvdb.com" : "series/75710",
+               "xmltv_ns" : "1 . 0 .",
+               "onscreen" : "Del 1 s\u00e4song 2"
+            },
+            "new" : "0"
+         },
+         {
+            "subTitle" : {
+               "sv" : "Miami Finals"
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510629000",
+            "channel" : "kanal5.se",
+            "desc" : {
+               "sv" : "Vi f\u00f6ljer kvalen och regionsfinalerna n\u00e4r de duktiga atleterna gallras fr\u00e5n de riktigt duktiga. Till sist \u00e4r bara de som kunnat hantera banan kvar i den stora finalen i Las Vegas. Bland de som ger sig p\u00e5 banan finns wrestlare, gymnaster och olympier."
+            },
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=212411&seasonid=527880&id=4917199&lid=8"
+            ],
+            "episodeNum" : {
+               "onscreen" : "Del 9 s\u00e4song 6",
+               "xmltv_ns" : "5 . 8 .",
+               "thetvdb.com" : "series/212411"
+            },
+            "new" : "0",
+            "title" : {
+               "sv" : "American Ninja Warrior"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Reality",
+                  "Special Interest"
+               ]
+            },
+            "date" : "2009",
+            "credits" : {
+               "presenter" : [
+                  {
+                     "name" : "Matt Iseman"
+                  },
+                  {
+                     "name" : "Jenn Brown"
+                  },
+                  {
+                     "name" : "Akbar Gbaja-Biamila"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "role" : "Reporter",
+                     "name" : "Kristine Leahy"
+                  },
+                  {
+                     "name" : "Kristen Wiig",
+                     "role" : "Reporter"
+                  },
+                  {
+                     "name" : "Jenn Brown",
+                     "role" : "Reporter"
+                  },
+                  {
+                     "role" : "Host",
+                     "name" : "Jonny Moseley"
+                  },
+                  {
+                     "name" : "Jimmy Smith",
+                     "role" : "Host"
+                  },
+                  {
+                     "role" : "Host",
+                     "name" : "Akbar Gbaja-Biamila"
+                  },
+                  {
+                     "role" : "Host",
+                     "name" : "Mike O'Malley"
+                  },
+                  {
+                     "role" : "Reporter",
+                     "name" : "Angela Sun"
+                  },
+                  {
+                     "role" : "Host",
+                     "name" : "Blair Herter"
+                  },
+                  {
+                     "name" : "Alison Haislip",
+                     "role" : "Host"
+                  },
+                  {
+                     "role" : "Host",
+                     "name" : "Matt Iseman"
+                  }
+               ]
+            },
+            "start" : "1510623900"
+         },
+         {
+            "new" : "0",
+            "episodeNum" : {
+               "thetvdb.com" : "series/276415",
+               "xmltv_ns" : "0 . 0 .",
+               "onscreen" : "Del 1 s\u00e4song 1"
+            },
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=276415&seasonid=570644&id=4745032&lid=8"
+            ],
+            "desc" : {
+               "sv" : "Guy f\u00f6rs\u00f6ker, med hj\u00e4lp av slipstreaming, att sl\u00e5 det brittiska hastighetsrekordet p\u00e5 cykel: otroliga 165 km/h. Brittiska olympiacyklisten Laura Trott hj\u00e4lper honom att komma i form."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510632000",
+            "channel" : "kanal5.se",
+            "subTitle" : {
+               "sv" : "Britain's Fastest Cyclist"
+            },
+            "start" : "1510629000",
+            "date" : "2013",
+            "credits" : {
+               "presenter" : [
+                  {
+                     "name" : "Guy Martin"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "name" : "Guy Martin"
+                  }
+               ]
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Documentary",
+                  "Special Interest"
+               ]
+            },
+            "title" : {
+               "sv" : "Speed with Guy Martin"
+            }
+         },
+         {
+            "credits" : {
+               "guest" : [
+                  {
+                     "name" : "Nicole Kidman"
+                  }
+               ],
+               "presenter" : [
+                  {
+                     "name" : "Ellen DeGeneres"
+                  }
+               ]
+            },
+            "date" : "2016",
+            "start" : "1510632000",
+            "title" : {
+               "sv" : "Ellen DeGeneres Show"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Talkshow"
+               ]
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "13 . 99 .",
+               "onscreen" : "Del 100 s\u00e4song 14"
+            },
+            "new" : "0",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510634400",
+            "channel" : "kanal5.se",
+            "desc" : {
+               "sv" : "En blandning av k\u00e4ndisintervjuer, musikframtr\u00e4danden och humor. Ellen dansar och delar med sig av sitt eget liv och vad hon alltid velat uppn\u00e5."
+            }
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            },
+            "title" : {
+               "sv" : "Dr Ken"
+            },
+            "start" : "1510634400",
+            "date" : "2015",
+            "credits" : {
+               "writer" : [
+                  {
+                     "name" : "Mike Sikowitz"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "role" : "Dr. Julie Dobbs",
+                     "name" : "Kate Simses"
+                  },
+                  {
+                     "name" : "Ken Jeong",
+                     "role" : "Dr. Ken"
+                  },
+                  {
+                     "role" : "Allison",
+                     "name" : "Suzy Nakamura"
+                  },
+                  {
+                     "name" : "Albert Tsai",
+                     "role" : "Dave"
+                  },
+                  {
+                     "name" : "Jonathan Slavin",
+                     "role" : "Clark"
+                  },
+                  {
+                     "role" : "Molly",
+                     "name" : "Krista Marie Yu"
+                  },
+                  {
+                     "role" : "Pat",
+                     "name" : "Dave Foley"
+                  },
+                  {
+                     "name" : "Tisha Campbell-Martin",
+                     "role" : "Damona"
+                  },
+                  {
+                     "name" : "Thai Douglas"
+                  },
+                  {
+                     "name" : "Jack Impellizzeri"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Rob Schiller"
+                  }
+               ]
+            },
+            "desc" : {
+               "sv" : "Dr Ken \u00e4r en lysande l\u00e4kare som alltid anstr\u00e4nger sig att vara en duktig yrkesman, en god make och en bra pappa. Tyv\u00e4rr dras han med vissa sociala brister och har en tendens att driva folk till vansinne. Lyckligtvis \u00e4r hans fru terapeut till yrket."
+            },
+            "stop" : "1510635600",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "kanal5.se",
+            "subTitle" : {
+               "sv" : "Ken Cries Foul"
+            },
+            "new" : "0",
+            "episodeNum" : {
+               "thetvdb.com" : "series/295557",
+               "xmltv_ns" : "0 . 8 .",
+               "onscreen" : "Del 9 s\u00e4song 1"
+            },
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=295557&seasonid=625713&id=5377007&lid=8"
+            ]
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy",
+                  "Drama"
+               ]
+            },
+            "title" : {
+               "sv" : "Gilmore Girls"
+            },
+            "date" : "2000",
+            "credits" : {
+               "writer" : [
+                  {
+                     "name" : "Amy Sherman-Palladino"
+                  },
+                  {
+                     "name" : "Daniel Palladino"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "role" : "Luke Danes",
+                     "name" : "Scott Patterson"
+                  },
+                  {
+                     "role" : "Lorelai Gilmore",
+                     "name" : "Lauren Graham"
+                  },
+                  {
+                     "role" : "Kirk Gleason",
+                     "name" : "Sean Gunn"
+                  },
+                  {
+                     "role" : "Jason Stiles",
+                     "name" : "Chris Eigeman"
+                  },
+                  {
+                     "name" : "Melissa McCarthy",
+                     "role" : "Sookie St. James"
+                  },
+                  {
+                     "name" : "Yanic Truesdale",
+                     "role" : "Michel Gerard"
+                  },
+                  {
+                     "name" : "Edward Herrmann",
+                     "role" : "Richard Gilmore"
+                  },
+                  {
+                     "name" : "Liza Weil",
+                     "role" : "Paris Geller"
+                  },
+                  {
+                     "role" : "Lane Kim",
+                     "name" : "Keiko Agena"
+                  },
+                  {
+                     "name" : "Kelly Bishop",
+                     "role" : "Emily Gilmore"
+                  },
+                  {
+                     "name" : "Sally Struthers",
+                     "role" : "Babette Dell"
+                  },
+                  {
+                     "name" : "Matt Czuchry",
+                     "role" : "Logan Huntzberger"
+                  },
+                  {
+                     "role" : "Miss Patty",
+                     "name" : "Liz Torres"
+                  },
+                  {
+                     "role" : "Dean Forester",
+                     "name" : "Jared Padalecki"
+                  },
+                  {
+                     "name" : "David Sutcliffe",
+                     "role" : "Christopher Hayden"
+                  },
+                  {
+                     "name" : "Jackson Douglas",
+                     "role" : "Jackson Matthew Belleville"
+                  },
+                  {
+                     "name" : "Milo Ventimiglia",
+                     "role" : "Jess Mariano"
+                  },
+                  {
+                     "name" : "Alexis Bledel",
+                     "role" : "Rory Gilmore"
+                  },
+                  {
+                     "role" : "Max Medina",
+                     "name" : "Scott Cohen"
+                  },
+                  {
+                     "name" : "Tanc Sade"
+                  },
+                  {
+                     "name" : "Michael Winters"
+                  },
+                  {
+                     "name" : "Joe Pernice"
+                  },
+                  {
+                     "name" : "Yo La Tengo"
+                  },
+                  {
+                     "name" : "Sonic Youth"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Amy Sherman-Palladino"
+                  },
+                  {
+                     "name" : "Scott Patterson"
+                  },
+                  {
+                     "name" : "Lauren Graham"
+                  },
+                  {
+                     "name" : "Kelly Bishop"
+                  },
+                  {
+                     "name" : "Edward Herrmann"
+                  },
+                  {
+                     "name" : "Alexis Bledel"
+                  },
+                  {
+                     "name" : "Matt Czuchry"
+                  }
+               ]
+            },
+            "start" : "1510635600",
+            "video" : {
+               "aspect" : "4:3"
+            },
+            "channel" : "kanal5.se",
+            "stop" : "1510638600",
+            "rating" : {
+               "stars" : "6.7 / 9"
+            },
+            "desc" : {
+               "sv" : "Stars Hollow \u00f6versk\u00f6ljs av musiker n\u00e4r nyheten sprider sig att stadens gatumusikant har f\u00e5tt ett genombrott. Lorelai beslutar att det var fel att l\u00e5ta Luke skjuta upp br\u00f6llopet och hon st\u00e4ller ett t\u00e5rfyllt ultimatum."
+            },
+            "subTitle" : {
+               "sv" : "Partings"
+            },
+            "episodeNum" : {
+               "thetvdb.com" : "series/76568",
+               "xmltv_ns" : "5 . 21 .",
+               "onscreen" : "Del 22 s\u00e4song 6"
+            },
+            "new" : "0",
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=76568&seasonid=10759&id=306958&lid=8"
+            ]
+         },
+         {
+            "subTitle" : {
+               "sv" : "Chapter Twenty"
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "kanal5.se",
+            "stop" : "1510641900",
+            "desc" : {
+               "sv" : "Jane \u00e4r fast besluten att g\u00f6ra vad som \u00e4r b\u00e4st f\u00f6r barnet, s\u00e4rskilt n\u00e4r hon och Rafael f\u00e5r veta att barnet ligger i s\u00e4tesbjudning. Xo forts\u00e4tter att f\u00f6rs\u00f6ka be Rogelio om urs\u00e4kt men det \u00e4r en rej\u00e4l uppf\u00f6rsbacke."
+            },
+            "rating" : {
+               "stars" : "7.3 / 9"
+            },
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=281621&seasonid=585759&id=5161316&lid=8"
+            ],
+            "episodeNum" : {
+               "xmltv_ns" : "0 . 19 .",
+               "onscreen" : "Del 20 s\u00e4song 1",
+               "thetvdb.com" : "series/281621"
+            },
+            "new" : "0",
+            "title" : {
+               "sv" : "Jane the Virgin"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy",
+                  "Drama",
+                  "Soap"
+               ]
+            },
+            "date" : "2014",
+            "credits" : {
+               "writer" : [
+                  {
+                     "name" : "Corinne Brinkerhoff"
+                  },
+                  {
+                     "name" : "Paul Sciarrotta"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Debbie Allen"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "role" : "Petra Solano",
+                     "name" : "Yael Grobglas"
+                  },
+                  {
+                     "role" : "Mateo",
+                     "name" : ""
+                  },
+                  {
+                     "name" : "Bridget Regan",
+                     "role" : "Rose Solano"
+                  },
+                  {
+                     "name" : "Ivonne Coll",
+                     "role" : "Alba Villanueva"
+                  },
+                  {
+                     "role" : "Rogelio de la Vega",
+                     "name" : "Jaime Camil"
+                  },
+                  {
+                     "role" : "Anezka",
+                     "name" : "Yael Grobglas"
+                  },
+                  {
+                     "role" : "Rafael Solano",
+                     "name" : "Justin Baldoni"
+                  },
+                  {
+                     "role" : "Xiomara Villanueva",
+                     "name" : "Andrea Navedo"
+                  },
+                  {
+                     "name" : "Brett Dier",
+                     "role" : "Michael Cordero Jr."
+                  },
+                  {
+                     "name" : "Megan Ketch",
+                     "role" : "Susanna Barnett"
+                  },
+                  {
+                     "role" : "Narrator",
+                     "name" : "Anthony Mendez"
+                  },
+                  {
+                     "name" : "Gina Rodriguez",
+                     "role" : "Jane Villanueva"
+                  }
+               ]
+            },
+            "start" : "1510638600"
+         },
+         {
+            "date" : "2015",
+            "credits" : {
+               "writer" : [
+                  {
+                     "name" : "Paul O'Toole"
+                  },
+                  {
+                     "name" : "Andy St. Clair"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Beth McCarthy-Miller"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "name" : "Kate Simses",
+                     "role" : "Dr. Julie Dobbs"
+                  },
+                  {
+                     "name" : "Ken Jeong",
+                     "role" : "Dr. Ken"
+                  },
+                  {
+                     "role" : "Allison",
+                     "name" : "Suzy Nakamura"
+                  },
+                  {
+                     "role" : "Dave",
+                     "name" : "Albert Tsai"
+                  },
+                  {
+                     "role" : "Clark",
+                     "name" : "Jonathan Slavin"
+                  },
+                  {
+                     "name" : "Krista Marie Yu",
+                     "role" : "Molly"
+                  },
+                  {
+                     "name" : "Dave Foley",
+                     "role" : "Pat"
+                  },
+                  {
+                     "role" : "Damona",
+                     "name" : "Tisha Campbell-Martin"
+                  },
+                  {
+                     "name" : "Lance Barber"
+                  }
+               ]
+            },
+            "start" : "1510641900",
+            "title" : {
+               "sv" : "Dr Ken"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            },
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=295557&seasonid=625713&id=5390797&lid=8"
+            ],
+            "episodeNum" : {
+               "onscreen" : "Del 10 s\u00e4song 1",
+               "xmltv_ns" : "0 . 9 .",
+               "thetvdb.com" : "series/295557"
+            },
+            "new" : "0",
+            "subTitle" : {
+               "sv" : "The Master Scheduler"
+            },
+            "channel" : "kanal5.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510643400",
+            "desc" : {
+               "sv" : "Dr Ken \u00e4r en lysande l\u00e4kare som alltid anstr\u00e4nger sig att vara en duktig yrkesman, en god make och en bra pappa. Tyv\u00e4rr dras han med vissa sociala brister och har en tendens att driva folk till vansinne. Lyckligtvis \u00e4r hans fru terapeut till yrket."
+            }
+         },
+         {
+            "start" : "1510643400",
+            "date" : "2008",
+            "category" : {
+               "en" : [
+                  "series",
+                  "Reality"
+               ]
+            },
+            "title" : {
+               "sv" : "Real Housewives of New York"
+            },
+            "new" : "0",
+            "episodeNum" : {
+               "thetvdb.com" : "series/84669",
+               "onscreen" : "Del 16 s\u00e4song 7",
+               "xmltv_ns" : "6 . 15 ."
+            },
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=84669&seasonid=615176&id=5284066&lid=7"
+            ],
+            "desc" : {
+               "sv" : "H\u00e4r m\u00f6ter vi n\u00e5gra f\u00f6rm\u00f6gna kvinnor i New Yorks high society som pendlar mellan New York och sommarst\u00e4llet i lyxiga Hamptons. De \u00e4gnar det mesta av sin tid \u00e5t intriger, modevisningar, botoxbehandlingar, v\u00e4lg\u00f6renhetsgalor och barnens privatskolor."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510647000",
+            "channel" : "kanal5.se",
+            "subTitle" : {
+               "sv" : "Awfully Charitable"
+            }
+         },
+         {
+            "new" : "0",
+            "episodeNum" : {
+               "xmltv_ns" : "7 . 7 .",
+               "onscreen" : "Del 8 s\u00e4song 8",
+               "thetvdb.com" : "series/98481"
+            },
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=98481&seasonid=604079&id=5232221&lid=8"
+            ],
+            "desc" : {
+               "sv" : "G\u00e4nget fr\u00e5n Jeopardy bes\u00f6ker Texas Children's Hospital, och Jen f\u00e5r presentera en ledtr\u00e5d. N\u00e4r Jen \u00e5ker till San Diego i jobbet f\u00e5r Bill vara mamma under en l\u00e5ng helg."
+            },
+            "stop" : "1510650600",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "kanal5.se",
+            "start" : "1510647000",
+            "credits" : {
+               "actor" : [
+                  {
+                     "role" : "Bill Klein",
+                     "name" : "Bill Klein"
+                  },
+                  {
+                     "name" : "Zoey Klein",
+                     "role" : "Zoey Klein"
+                  },
+                  {
+                     "name" : "Will Klein",
+                     "role" : "Will Klein"
+                  },
+                  {
+                     "role" : "Jen Arnold",
+                     "name" : "Jen Arnold"
+                  }
+               ]
+            },
+            "date" : "2009",
+            "category" : {
+               "en" : [
+                  "series",
+                  "Reality"
+               ]
+            },
+            "title" : {
+               "sv" : "The Little Couple"
+            }
+         },
+         {
+            "title" : {
+               "sv" : "Grey's Anatomy"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Drama"
+               ]
+            },
+            "start" : "1510650600",
+            "date" : "2005",
+            "credits" : {
+               "writer" : [
+                  {
+                     "name" : "Tony Phelan"
+                  },
+                  {
+                     "name" : "Joan Rater"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Allison Liddi-Brown"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "role" : "Heather Brooks",
+                     "name" : "Tina Majorino"
+                  },
+                  {
+                     "role" : "Lucy Fields",
+                     "name" : "Rachael Taylor"
+                  },
+                  {
+                     "name" : "Justin Chambers",
+                     "role" : "Alex Karev"
+                  },
+                  {
+                     "role" : "Leah Murphy",
+                     "name" : "Tessa Ferrer"
+                  },
+                  {
+                     "name" : "Loretta Devine",
+                     "role" : "Adele Webber"
+                  },
+                  {
+                     "name" : "Geena Davis",
+                     "role" : "Nicole Herman"
+                  },
+                  {
+                     "name" : "Debbie Allen",
+                     "role" : "Catherine Avery"
+                  },
+                  {
+                     "role" : "Erica Hahn",
+                     "name" : "Brooke Smith"
+                  },
+                  {
+                     "name" : "Kate Walsh",
+                     "role" : "Addison Forbes Montgomery"
+                  },
+                  {
+                     "role" : "Maggie Pierce",
+                     "name" : "Kelly McCreary"
+                  },
+                  {
+                     "role" : "Preston Burke",
+                     "name" : "Isaiah Washington"
+                  },
+                  {
+                     "role" : "Derek Shepherd",
+                     "name" : "Patrick Dempsey"
+                  },
+                  {
+                     "role" : "Teddy Altman",
+                     "name" : "Kim Raver"
+                  },
+                  {
+                     "role" : "Isaac Cross",
+                     "name" : "Joe Adler"
+                  },
+                  {
+                     "role" : "Miranda Bailey",
+                     "name" : "Chandra Wilson"
+                  },
+                  {
+                     "role" : "George O'Malley",
+                     "name" : "T.R. Knight"
+                  },
+                  {
+                     "name" : "Sarah Drew",
+                     "role" : "April Kepner"
+                  },
+                  {
+                     "role" : "Richard Webber",
+                     "name" : "James Pickens Jr."
+                  },
+                  {
+                     "name" : "Jason George",
+                     "role" : "Ben Warren"
+                  },
+                  {
+                     "role" : "Stephanie Edwards",
+                     "name" : "Jerrika Hinton"
+                  },
+                  {
+                     "role" : "Jo Wilson",
+                     "name" : "Camilla Luddington"
+                  },
+                  {
+                     "name" : "Samantha Sloyan",
+                     "role" : "Penelope \"Penny\" Blake"
+                  },
+                  {
+                     "role" : "Andrew DeLuca",
+                     "name" : "Giacomo Gianniotti"
+                  },
+                  {
+                     "role" : "Arizona Robbins",
+                     "name" : "Jessica Capshaw"
+                  },
+                  {
+                     "name" : "Kevin McKidd",
+                     "role" : "Owen Hunt"
+                  },
+                  {
+                     "name" : "Eric Dane",
+                     "role" : "Mark Sloan"
+                  },
+                  {
+                     "role" : "Isobel \"Izzie\" Stevens",
+                     "name" : "Katherine Heigl"
+                  },
+                  {
+                     "role" : "Alexandra \"Lexie\" Grey",
+                     "name" : "Chyler Leigh"
+                  },
+                  {
+                     "role" : "Calliope \"Callie\" Torres",
+                     "name" : "Sara Ramirez"
+                  },
+                  {
+                     "name" : "Sandra Oh",
+                     "role" : "Cristina Yang"
+                  },
+                  {
+                     "name" : "Gaius Charles",
+                     "role" : "Shane Ross"
+                  },
+                  {
+                     "role" : "Nathan Riggs",
+                     "name" : "Martin Henderson"
+                  },
+                  {
+                     "role" : "Sadie Harris",
+                     "name" : "Melissa George"
+                  },
+                  {
+                     "role" : "Henry Burton",
+                     "name" : "Scott Foley"
+                  },
+                  {
+                     "role" : "Jackson Avery",
+                     "name" : "Jesse Williams"
+                  },
+                  {
+                     "name" : "Ellen Pompeo",
+                     "role" : "Meredith Grey"
+                  },
+                  {
+                     "name" : "Caterina Scorsone",
+                     "role" : "Amelia Shepherd"
+                  }
+               ]
+            },
+            "subTitle" : {
+               "sv" : "Adrift and at Peace"
+            },
+            "rating" : {
+               "stars" : "6.6 / 9"
+            },
+            "desc" : {
+               "sv" : "Adrift and at Peace."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510654200",
+            "channel" : "kanal5.se",
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=73762&seasonid=268581&id=3112871&lid=8"
+            ],
+            "new" : "0",
+            "episodeNum" : {
+               "thetvdb.com" : "series/73762",
+               "xmltv_ns" : "6 . 9 .",
+               "onscreen" : "Del 10 s\u00e4song 7"
+            }
+         },
+         {
+            "episodeNum" : {
+               "xmltv_ns" : "6 . 10 .",
+               "onscreen" : "Del 11 s\u00e4song 7",
+               "thetvdb.com" : "series/73762"
+            },
+            "new" : "0",
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=73762&seasonid=268581&id=3271231&lid=8"
+            ],
+            "channel" : "kanal5.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510657800",
+            "desc" : {
+               "sv" : "En bev\u00e4pnad man \u00f6ppnar eld p\u00e5 en lokal skola och det v\u00e4ller in patienter p\u00e5 sjukhuset, trots att personalens egna s\u00e5r inte har l\u00e4kt, och Arizona f\u00e5r inget varmt v\u00e4lkomnande."
+            },
+            "rating" : {
+               "stars" : "6.7 / 9"
+            },
+            "subTitle" : {
+               "sv" : "Disarm"
+            },
+            "date" : "2005",
+            "credits" : {
+               "writer" : [
+                  {
+                     "name" : "Krista Vernoff"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "role" : "Heather Brooks",
+                     "name" : "Tina Majorino"
+                  },
+                  {
+                     "name" : "Rachael Taylor",
+                     "role" : "Lucy Fields"
+                  },
+                  {
+                     "name" : "Justin Chambers",
+                     "role" : "Alex Karev"
+                  },
+                  {
+                     "name" : "Tessa Ferrer",
+                     "role" : "Leah Murphy"
+                  },
+                  {
+                     "role" : "Adele Webber",
+                     "name" : "Loretta Devine"
+                  },
+                  {
+                     "name" : "Geena Davis",
+                     "role" : "Nicole Herman"
+                  },
+                  {
+                     "name" : "Debbie Allen",
+                     "role" : "Catherine Avery"
+                  },
+                  {
+                     "name" : "Brooke Smith",
+                     "role" : "Erica Hahn"
+                  },
+                  {
+                     "name" : "Kate Walsh",
+                     "role" : "Addison Forbes Montgomery"
+                  },
+                  {
+                     "role" : "Maggie Pierce",
+                     "name" : "Kelly McCreary"
+                  },
+                  {
+                     "name" : "Isaiah Washington",
+                     "role" : "Preston Burke"
+                  },
+                  {
+                     "name" : "Patrick Dempsey",
+                     "role" : "Derek Shepherd"
+                  },
+                  {
+                     "name" : "Kim Raver",
+                     "role" : "Teddy Altman"
+                  },
+                  {
+                     "role" : "Isaac Cross",
+                     "name" : "Joe Adler"
+                  },
+                  {
+                     "name" : "Chandra Wilson",
+                     "role" : "Miranda Bailey"
+                  },
+                  {
+                     "role" : "George O'Malley",
+                     "name" : "T.R. Knight"
+                  },
+                  {
+                     "name" : "Sarah Drew",
+                     "role" : "April Kepner"
+                  },
+                  {
+                     "role" : "Richard Webber",
+                     "name" : "James Pickens Jr."
+                  },
+                  {
+                     "role" : "Ben Warren",
+                     "name" : "Jason George"
+                  },
+                  {
+                     "name" : "Jerrika Hinton",
+                     "role" : "Stephanie Edwards"
+                  },
+                  {
+                     "role" : "Jo Wilson",
+                     "name" : "Camilla Luddington"
+                  },
+                  {
+                     "role" : "Penelope \"Penny\" Blake",
+                     "name" : "Samantha Sloyan"
+                  },
+                  {
+                     "name" : "Giacomo Gianniotti",
+                     "role" : "Andrew DeLuca"
+                  },
+                  {
+                     "name" : "Jessica Capshaw",
+                     "role" : "Arizona Robbins"
+                  },
+                  {
+                     "name" : "Kevin McKidd",
+                     "role" : "Owen Hunt"
+                  },
+                  {
+                     "role" : "Mark Sloan",
+                     "name" : "Eric Dane"
+                  },
+                  {
+                     "name" : "Katherine Heigl",
+                     "role" : "Isobel \"Izzie\" Stevens"
+                  },
+                  {
+                     "role" : "Alexandra \"Lexie\" Grey",
+                     "name" : "Chyler Leigh"
+                  },
+                  {
+                     "role" : "Calliope \"Callie\" Torres",
+                     "name" : "Sara Ramirez"
+                  },
+                  {
+                     "name" : "Sandra Oh",
+                     "role" : "Cristina Yang"
+                  },
+                  {
+                     "role" : "Shane Ross",
+                     "name" : "Gaius Charles"
+                  },
+                  {
+                     "name" : "Martin Henderson",
+                     "role" : "Nathan Riggs"
+                  },
+                  {
+                     "role" : "Sadie Harris",
+                     "name" : "Melissa George"
+                  },
+                  {
+                     "role" : "Henry Burton",
+                     "name" : "Scott Foley"
+                  },
+                  {
+                     "role" : "Jackson Avery",
+                     "name" : "Jesse Williams"
+                  },
+                  {
+                     "role" : "Meredith Grey",
+                     "name" : "Ellen Pompeo"
+                  },
+                  {
+                     "role" : "Amelia Shepherd",
+                     "name" : "Caterina Scorsone"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Debbie Allen"
+                  }
+               ]
+            },
+            "start" : "1510654200",
+            "category" : {
+               "en" : [
+                  "series",
+                  "Drama"
+               ]
+            },
+            "title" : {
+               "sv" : "Grey's Anatomy"
+            }
+         },
+         {
+            "desc" : {
+               "sv" : "En blandning av k\u00e4ndisintervjuer, musikframtr\u00e4danden och humor. Ellen dansar och delar med sig av sitt eget liv och vad hon alltid velat uppn\u00e5."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510661100",
+            "channel" : "kanal5.se",
+            "new" : "0",
+            "episodeNum" : {
+               "xmltv_ns" : "13 . 100 .",
+               "onscreen" : "Del 101 s\u00e4song 14"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Talkshow"
+               ]
+            },
+            "title" : {
+               "sv" : "Ellen DeGeneres Show"
+            },
+            "start" : "1510657800",
+            "credits" : {
+               "presenter" : [
+                  {
+                     "name" : "Ellen DeGeneres"
+                  }
+               ],
+               "guest" : [
+                  {
+                     "name" : "Tim McGraw"
+                  },
+                  {
+                     "name" : "Faith Hill"
+                  }
+               ]
+            },
+            "date" : "2016"
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "Reality"
+               ]
+            },
+            "title" : {
+               "sv" : "Real Housewives of New York"
+            },
+            "date" : "2008",
+            "start" : "1510661100",
+            "stop" : "1510664400",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "kanal5.se",
+            "desc" : {
+               "sv" : "H\u00e4r m\u00f6ter vi n\u00e5gra f\u00f6rm\u00f6gna kvinnor i New Yorks high society som pendlar mellan New York och sommarst\u00e4llet i lyxiga Hamptons. De \u00e4gnar det mesta av sin tid \u00e5t intriger, modevisningar, botoxbehandlingar, v\u00e4lg\u00f6renhetsgalor och barnens privatskolor."
+            },
+            "subTitle" : {
+               "sv" : "London Calling"
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "6 . 16 .",
+               "onscreen" : "Del 17 s\u00e4song 7",
+               "thetvdb.com" : "series/84669"
+            },
+            "new" : "0",
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=84669&seasonid=615176&id=5285514&lid=7"
+            ]
+         },
+         {
+            "desc" : {
+               "sv" : "Claes Claesson har bjudit in Anders \u00d6fverg\u00e5rd p\u00e5 traditionellt g\u00e4ddfiske i Karlskrona sk\u00e4rg\u00e5rd. Anders har fiskat sen han var liten, men aldrig f\u00e5tt napp. Claes och Anders t\u00e4vlingsinstinkter kommer snart fram och det blir gnabb, skratt och k\u00e4nslor."
+            },
+            "channel" : "kanal5.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510668000",
+            "new" : "0",
+            "episodeNum" : {
+               "onscreen" : "Del 1 s\u00e4song 1",
+               "xmltv_ns" : "0 . 0 ."
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Series"
+               ]
+            },
+            "title" : {
+               "sv" : "Fiskefeber"
+            },
+            "start" : "1510664400",
+            "date" : "2016",
+            "credits" : {
+               "guest" : [
+                  {
+                     "name" : "Anders \u00d6fverg\u00e5rd"
+                  }
+               ],
+               "presenter" : [
+                  {
+                     "name" : "Claes Claesson"
+                  }
+               ]
+            }
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "Reality"
+               ]
+            },
+            "title" : {
+               "sv" : "The Little Couple"
+            },
+            "start" : "1510668000",
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Bill Klein",
+                     "role" : "Bill Klein"
+                  },
+                  {
+                     "role" : "Zoey Klein",
+                     "name" : "Zoey Klein"
+                  },
+                  {
+                     "name" : "Will Klein",
+                     "role" : "Will Klein"
+                  },
+                  {
+                     "name" : "Jen Arnold",
+                     "role" : "Jen Arnold"
+                  }
+               ]
+            },
+            "date" : "2009",
+            "desc" : {
+               "sv" : "Jen och Bill tar med Zoey p\u00e5 hennes f\u00f6rsta danslektion. Familjen deltar i en kinesisk lykta-festival."
+            },
+            "stop" : "1510671600",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "kanal5.se",
+            "new" : "0",
+            "episodeNum" : {
+               "thetvdb.com" : "series/98481",
+               "xmltv_ns" : "7 . 8 .",
+               "onscreen" : "Del 9 s\u00e4song 8"
+            },
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=98481&seasonid=604079&id=5232222&lid=8"
+            ]
+         },
+         {
+            "credits" : {
+               "presenter" : [
+                  {
+                     "name" : "Sofia Wistam"
+                  },
+                  {
+                     "name" : "Johnnie Krigstr\u00f6m"
+                  },
+                  {
+                     "name" : "Mattias S\u00e4rnholm"
+                  }
+               ]
+            },
+            "date" : "2011",
+            "start" : "1510671600",
+            "title" : {
+               "sv" : "Sofias \u00e4nglar"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Home",
+                  "Nature",
+                  "Reality"
+               ]
+            },
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=225481&seasonid=484279&id=4254836&lid=8"
+            ],
+            "episodeNum" : {
+               "thetvdb.com" : "series/225481",
+               "xmltv_ns" : "1 . 2 .",
+               "onscreen" : "Del 3 s\u00e4song 2"
+            },
+            "new" : "0",
+            "subTitle" : {
+               "sv" : "Avsnitt 3: Sofias \u00e4nglar stillar Elisabeths oro"
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "kanal5.se",
+            "stop" : "1510675200",
+            "desc" : {
+               "sv" : "Elisabeth bor med sin man och sina tre s\u00f6ner i ett hus utanf\u00f6r Stockholm. Elisabeth har br\u00f6stcancer och inte l\u00e5ngt kvar. Hon k\u00e4nner oro f\u00f6r hur familjen ska klara sig, s\u00e4rskilt yngste sonen Joel som har en CP-skada."
+            }
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "Documentary"
+               ]
+            },
+            "title" : {
+               "sv" : "Tunnelbanan"
+            },
+            "start" : "1510675200",
+            "date" : "2012",
+            "desc" : {
+               "sv" : "P\u00e5 centralstationen h\u00e4rjar tv\u00e5 r\u00e5nare och Danne och Amin tar upp jakten. Arbetsledaren Sk\u00e5ne larmas till ett stort tjejslagsm\u00e5l vid Slussen. Nemo och Rickard \u00e4r f\u00f6rst p\u00e5 olycksplatsen d\u00e4r en bil totalkraschat in i en bergv\u00e4gg."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510678800",
+            "channel" : "kanal5.se",
+            "subTitle" : {
+               "sv" : "Jakt p\u00e5 r\u00e5nare"
+            },
+            "new" : "0",
+            "episodeNum" : {
+               "thetvdb.com" : "series/255533",
+               "xmltv_ns" : "2 . 10 .",
+               "onscreen" : "Del 11 s\u00e4song 3"
+            },
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=255533&seasonid=572600&id=4823719&lid=8"
+            ]
+         },
+         {
+            "category" : {
+               "en" : [
+                  "series",
+                  "Reality"
+               ]
+            },
+            "title" : {
+               "sv" : "Ullared"
+            },
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Peter Wahlbeck"
+                  }
+               ]
+            },
+            "date" : "2009",
+            "start" : "1510678800",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "kanal5.se",
+            "stop" : "1510682400",
+            "desc" : {
+               "sv" : "Komikern Peter Wahlbeck och hans son har tagit in p\u00e5 campingen f\u00f6r att s\u00e4lja lite grejer. Han gjorde Ullared k\u00e4nt med sin l\u00e5t om Ullared 1994. Ungkarlen Morgan lever ensam i ett stort hus och filosoferar kring det h\u00e4r med att vara ensam."
+            },
+            "subTitle" : {
+               "sv" : "Peter Wahlbeck campar"
+            },
+            "episodeNum" : {
+               "xmltv_ns" : "0 . 1 .",
+               "onscreen" : "Del 2 s\u00e4song 1",
+               "thetvdb.com" : "series/122371"
+            },
+            "new" : "0",
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=122371&seasonid=140531&id=1285261&lid=8"
+            ]
+         },
+         {
+            "new" : "0",
+            "episodeNum" : {
+               "onscreen" : "Del 10 s\u00e4song 10",
+               "xmltv_ns" : "9 . 9 ."
+            },
+            "desc" : {
+               "sv" : "Leonard och Sheldon hamnar i krig n\u00e4r de ska f\u00f6rdela tillh\u00f6righeterna fr\u00e5n l\u00e4genheten. Stuart ber att f\u00e5 flytta in hos Howard och Bernadette och f\u00f6rs\u00f6ker konkurrera ut Raj."
+            },
+            "stop" : "1510684500",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "kanal5.se",
+            "start" : "1510682400",
+            "date" : "2016",
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Kaley Cuoco"
+                  },
+                  {
+                     "name" : "Jim Parsons"
+                  },
+                  {
+                     "name" : "Johnny Galecki"
+                  },
+                  {
+                     "name" : "Simon Helberg"
+                  },
+                  {
+                     "name" : "Kunal Nayyar"
+                  },
+                  {
+                     "name" : "Mayim Bialik"
+                  },
+                  {
+                     "name" : "Melissa Rauch"
+                  },
+                  {
+                     "name" : "Christopher Lloyd"
+                  }
+               ]
+            },
+            "title" : {
+               "sv" : "The Big Bang Theory"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            }
+         },
+         {
+            "title" : {
+               "sv" : "The Big Bang Theory"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            },
+            "start" : "1510684500",
+            "date" : "2016",
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Kaley Cuoco"
+                  },
+                  {
+                     "name" : "Jim Parsons"
+                  },
+                  {
+                     "name" : "Johnny Galecki"
+                  },
+                  {
+                     "name" : "Simon Helberg"
+                  },
+                  {
+                     "name" : "Kunal Nayyar"
+                  },
+                  {
+                     "name" : "Mayim Bialik"
+                  },
+                  {
+                     "name" : "Melissa Rauch"
+                  }
+               ]
+            },
+            "desc" : {
+               "sv" : "Amys f\u00f6rhoppning om ett f\u00f6delsedagsfirande sl\u00e5s i spillror n\u00e4r Howard och Bernadette \u00e5ker till BB."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "kanal5.se",
+            "stop" : "1510686000",
+            "new" : "0",
+            "episodeNum" : {
+               "onscreen" : "Del 11 s\u00e4song 10",
+               "xmltv_ns" : "9 . 10 ."
+            }
+         },
+         {
+            "episodeNum" : {
+               "xmltv_ns" : "0 . 5 .",
+               "onscreen" : "Del 6 s\u00e4song 1"
+            },
+            "new" : "1",
+            "channel" : "kanal5.se",
+            "stop" : "1510689600",
+            "desc" : {
+               "sv" : "Privatpersoner larmar om misst\u00e4nkt alkohol- och drogp\u00e5verkade personer och en d\u00f6dlig olycka intr\u00e4ffar. Poliserna stoppar ett sl\u00e4p som visar sig vara stulet. N\u00e4r Byron var sju \u00e5r blev han p\u00e5k\u00f6rd och sv\u00e4vade mellan liv och d\u00f6d. Hans f\u00f6r\u00e4ldrar ber\u00e4ttar."
+            },
+            "date" : "2017",
+            "start" : "1510686000",
+            "category" : {
+               "en" : [
+                  "series",
+                  "Documentary"
+               ]
+            },
+            "title" : {
+               "sv" : "Trafikpoliserna"
+            }
+         },
+         {
+            "date" : "2017",
+            "credits" : {
+               "guest" : [
+                  {
+                     "name" : "Swati Kapila"
+                  },
+                  {
+                     "name" : "Brian Posehn"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "name" : "Kaley Cuoco"
+                  },
+                  {
+                     "name" : "Jim Parsons"
+                  },
+                  {
+                     "name" : "Mayim Bialik"
+                  },
+                  {
+                     "name" : "Melissa Rauch"
+                  },
+                  {
+                     "name" : "Simon Helberg"
+                  },
+                  {
+                     "name" : "Kunal Nayyar"
+                  },
+                  {
+                     "name" : "Johnny Galecki"
+                  }
+               ]
+            },
+            "start" : "1510689600",
+            "title" : {
+               "sv" : "The Big Bang Theory"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            },
+            "episodeNum" : {
+               "onscreen" : "Del 7 s\u00e4song 11",
+               "xmltv_ns" : "10 . 6 ."
+            },
+            "new" : "1",
+            "stop" : "1510691400",
+            "channel" : "kanal5.se",
+            "desc" : {
+               "sv" : "Sheldon och Bert samarbetar p\u00e5 ett forskningsprojekt, trots att Sheldon tycker att det \u00e4r pinsamt. Penny och Bernadette ger Raj goda r\u00e5d om hur han ska sk\u00f6ta f\u00f6rh\u00e5llandet med Ruchi."
+            }
+         },
+         {
+            "start" : "1510691400",
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Anna Faris"
+                  },
+                  {
+                     "name" : "Allison Janney"
+                  },
+                  {
+                     "name" : "Matt Jones"
+                  },
+                  {
+                     "name" : "Sadie Calvano"
+                  }
+               ]
+            },
+            "date" : "2016",
+            "title" : {
+               "sv" : "Mom"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            },
+            "new" : "1",
+            "episodeNum" : {
+               "onscreen" : "Del 14 s\u00e4song 4",
+               "xmltv_ns" : "3 . 13 ."
+            },
+            "desc" : {
+               "sv" : "Bonnie har f\u00e5tt hj\u00e4rtat krossat och \u00e4r f\u00f6rtvivlad och driver alla till vansinne, och Christy ser ingen annan utv\u00e4g \u00e4n att be Adam att ta henne tillbaka."
+            },
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "kanal5.se",
+            "stop" : "1510693200"
+         },
+         {
+            "new" : "1",
+            "episodeNum" : {
+               "xmltv_ns" : "6 . 47 .",
+               "onscreen" : "Del 48 s\u00e4song 7"
+            },
+            "desc" : {
+               "sv" : "Filip och Fredrik bjuder p\u00e5 en egen blandning av nyheter, humor och allvar. Inget \u00e4r f\u00f6r stort eller litet f\u00f6r att analyseras p\u00e5 flanellograf eller utredas i en nyhetspanel. Direkts\u00e4nt med de b\u00e4sta g\u00e4sterna, ov\u00e4ntade analyser och galna nyheter."
+            },
+            "channel" : "kanal5.se",
+            "stop" : "1510696800",
+            "start" : "1510693200",
+            "credits" : {
+               "presenter" : [
+                  {
+                     "name" : "Filip Hammar"
+                  },
+                  {
+                     "name" : "Fredrik Wikingsson"
+                  }
+               ]
+            },
+            "date" : "2017",
+            "title" : {
+               "sv" : "Breaking News med Filip & Fredrik"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Talkshow"
+               ]
+            }
+         },
+         {
+            "title" : {
+               "sv" : "The Big Bang Theory"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            },
+            "start" : "1510696800",
+            "date" : "2016",
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Kaley Cuoco"
+                  },
+                  {
+                     "name" : "Jim Parsons"
+                  },
+                  {
+                     "name" : "Johnny Galecki"
+                  },
+                  {
+                     "name" : "Simon Helberg"
+                  },
+                  {
+                     "name" : "Kunal Nayyar"
+                  },
+                  {
+                     "name" : "Mayim Bialik"
+                  },
+                  {
+                     "name" : "Melissa Rauch"
+                  },
+                  {
+                     "name" : "Christopher Lloyd"
+                  }
+               ]
+            },
+            "desc" : {
+               "sv" : "Leonard och Sheldon hamnar i krig n\u00e4r de ska f\u00f6rdela tillh\u00f6righeterna fr\u00e5n l\u00e4genheten. Stuart ber att f\u00e5 flytta in hos Howard och Bernadette och f\u00f6rs\u00f6ker konkurrera ut Raj."
+            },
+            "stop" : "1510698300",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "kanal5.se",
+            "new" : "0",
+            "episodeNum" : {
+               "xmltv_ns" : "9 . 9 .",
+               "onscreen" : "Del 10 s\u00e4song 10"
+            }
+         },
+         {
+            "episodeNum" : {
+               "onscreen" : "Del 11 s\u00e4song 10",
+               "xmltv_ns" : "9 . 10 ."
+            },
+            "new" : "0",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "kanal5.se",
+            "stop" : "1510700100",
+            "desc" : {
+               "sv" : "Amys f\u00f6rhoppning om ett f\u00f6delsedagsfirande sl\u00e5s i spillror n\u00e4r Howard och Bernadette \u00e5ker till BB."
+            },
+            "date" : "2016",
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Kaley Cuoco"
+                  },
+                  {
+                     "name" : "Jim Parsons"
+                  },
+                  {
+                     "name" : "Johnny Galecki"
+                  },
+                  {
+                     "name" : "Simon Helberg"
+                  },
+                  {
+                     "name" : "Kunal Nayyar"
+                  },
+                  {
+                     "name" : "Mayim Bialik"
+                  },
+                  {
+                     "name" : "Melissa Rauch"
+                  }
+               ]
+            },
+            "start" : "1510698300",
+            "title" : {
+               "sv" : "The Big Bang Theory"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Comedy"
+               ]
+            }
+         },
+         {
+            "episodeNum" : {
+               "onscreen" : "Del 11 s\u00e4song 12",
+               "xmltv_ns" : "11 . 10 ."
+            },
+            "new" : "0",
+            "channel" : "kanal5.se",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "stop" : "1510703700",
+            "desc" : {
+               "sv" : "Catherines v\u00e4n Lauras man Mark d\u00f6ljer stora hemligheter bakom sitt framg\u00e5ngsrika internationella f\u00f6retag, inte minst en grupp m\u00f6rdare som undanr\u00f6jer alla som kommer hans skumma aff\u00e4rer p\u00e5 sp\u00e5ren, och det inkluderar \u00e4ven Laura sj\u00e4lv."
+            },
+            "credits" : {
+               "actor" : [
+                  {
+                     "name" : "Ted Danson"
+                  },
+                  {
+                     "name" : "Marg Helgenberger"
+                  },
+                  {
+                     "name" : "Jorja Fox"
+                  },
+                  {
+                     "name" : "George Eads"
+                  },
+                  {
+                     "name" : "Paul Guilfoyle"
+                  },
+                  {
+                     "name" : "Eric Szmanda"
+                  },
+                  {
+                     "name" : "Kevin Dobson"
+                  },
+                  {
+                     "name" : "Titus Welliver"
+                  }
+               ]
+            },
+            "date" : "2011",
+            "start" : "1510700100",
+            "title" : {
+               "sv" : "CSI"
+            },
+            "category" : {
+               "en" : [
+                  "series",
+                  "Drama"
+               ]
+            }
+         },
+         {
+            "rating" : {
+               "stars" : "6.6 / 9"
+            },
+            "desc" : {
+               "sv" : "En pojke som f\u00f6rsvann ett \u00e5r tidigare dyker upp till f\u00f6rs\u00e4ljning p\u00e5 en porrsida p\u00e5 internet och Gideon och teamet m\u00e5ste hitta pojken innan det \u00e4r f\u00f6rsent."
+            },
+            "stop" : "1510707300",
+            "video" : {
+               "aspect" : "16:9"
+            },
+            "channel" : "kanal5.se",
+            "subTitle" : {
+               "sv" : "P911"
+            },
+            "new" : "0",
+            "episodeNum" : {
+               "onscreen" : "Del 2 s\u00e4song 2",
+               "xmltv_ns" : "1 . 1 .",
+               "thetvdb.com" : "series/75710"
+            },
+            "url" : [
+               "http://thetvdb.com/?tab=episode&seriesid=75710&seasonid=16339&id=307949&lid=8"
+            ],
+            "category" : {
+               "en" : [
+                  "series",
+                  "Drama"
+               ]
+            },
+            "title" : {
+               "sv" : "Criminal Minds"
+            },
+            "start" : "1510703700",
+            "credits" : {
+               "writer" : [
+                  {
+                     "name" : "Simon Mirren"
+                  }
+               ],
+               "director" : [
+                  {
+                     "name" : "Adam Davidson"
+                  }
+               ],
+               "actor" : [
+                  {
+                     "name" : "Kirsten Vangsness",
+                     "role" : "Penelope Garcia"
+                  },
+                  {
+                     "role" : "Kate Callahan",
+                     "name" : "Jennifer Love Hewitt"
+                  },
+                  {
+                     "name" : "Shemar Moore",
+                     "role" : "Derek Morgan"
+                  },
+                  {
+                     "role" : "Ashley Seaver",
+                     "name" : "Rachel Nichols"
+                  },
+                  {
+                     "name" : "Mandy Patinkin",
+                     "role" : "Jason Gideon"
+                  },
+                  {
+                     "role" : "Alex Blake",
+                     "name" : "Jeanne Tripplehorn"
+                  },
+                  {
+                     "role" : "David Rossi",
+                     "name" : "Joe Mantegna"
+                  },
+                  {
+                     "role" : "Aaron Hotchner",
+                     "name" : "Thomas Gibson"
+                  },
+                  {
+                     "name" : "Paget Brewster",
+                     "role" : "Emily Prentiss"
+                  },
+                  {
+                     "role" : "Dr. Spencer Reid",
+                     "name" : "Matthew Gray Gubler"
+                  },
+                  {
+                     "role" : "Jennifer Jareau",
+                     "name" : "A.J. Cook"
+                  },
+                  {
+                     "name" : "Lola Glaudini",
+                     "role" : "Elle Greenaway"
+                  },
+                  {
+                     "name" : "David Pevsner"
+                  },
+                  {
+                     "name" : "Tisha Terrasini Banker"
+                  },
+                  {
+                     "name" : "Dig Wayne"
+                  },
+                  {
+                     "name" : "Laura Leyva"
+                  },
+                  {
+                     "name" : "John Rubinstein"
+                  },
+                  {
+                     "name" : "Mary Page Keller"
+                  },
+                  {
+                     "name" : "Daryl Sabara"
+                  },
+                  {
+                     "name" : "Jonathan Runyon"
+                  },
+                  {
+                     "name" : "Elizabeth Hendrickson"
+                  },
+                  {
+                     "name" : "Jodi Lyn O'Keefe"
+                  },
+                  {
+                     "name" : "Michael Len"
+                  }
+               ]
+            },
+            "date" : "2005"
+         }
+      ]
+   }
+}
