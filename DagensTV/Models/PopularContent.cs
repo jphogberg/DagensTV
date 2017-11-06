@@ -16,10 +16,9 @@ namespace DagensTV.Models
     {
         public int Id { get; set; }
         public string ImgUrl { get; set; }
-        public string ImgTitle { get; set; }
         public string Icon { get; set; }
-        public Nullable<int> ChannelId { get; set; }
+        public Nullable<int> ScheduleId { get; set; }
     
-        public virtual Channel Channel { get; set; }
+        public virtual Schedule Schedule { get; set; }
     }
 }

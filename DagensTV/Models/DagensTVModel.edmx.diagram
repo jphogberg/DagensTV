@@ -16,7 +16,7 @@
         <EntityTypeShape EntityType="DagensTVModel.Role" Width="1.5" PointX="10.875" PointY="6.625" />
         <AssociationConnector Association="DagensTVModel.FK_Person_Role" />
         <EntityTypeShape EntityType="DagensTVModel.PopularContent" Width="1.5" PointX="3" PointY="7.125" />
-        <AssociationConnector Association="DagensTVModel.FK_PopularContent_ToTable" />
+        <AssociationConnector Association="DagensTVModel.FK_PopularContent_ToTable1" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
