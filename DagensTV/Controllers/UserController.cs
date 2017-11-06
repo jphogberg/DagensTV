@@ -33,8 +33,20 @@ namespace DagensTV.Controllers
                 Person.activeUser.mySettings.Add(item.MyPage);
             }
 
-            
+           
 
+
+            var dbSettingsID = db.Settings.Where(x => x.PersonId == Person.activeUser.Id);
+            if(dbSettingsID == null)
+            {
+                
+
+                db.Settings.Add(Person.activeUser.Settings);
+            }
+            else
+            {
+                //update
+            }
 
             return View();
         }

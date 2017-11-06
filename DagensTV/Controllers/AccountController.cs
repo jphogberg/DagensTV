@@ -56,6 +56,7 @@ namespace DagensTV.Controllers
                             roleId = p.RoleId.GetValueOrDefault();
                             Person.activeUser.Username = p.Username;
                             Person.activeUser.Password = p.Password;
+                            Person.activeUser.Id = p.Id;
                         }
                     }
 
