@@ -11,7 +11,7 @@
             <ul>
                 @foreach (var show in channel.Schedules)
                     {
-                    <li>
+                    <li class="@show.IsActive">
                         <span class="start-time">@show.StartTime.Value.ToShortTimeString()</span><div class="@show.CategoryTag">
                             <span class="title" title="@show.ShowName"><a onclick="ShowInfo(@show.Id)">@show.ShowName</a></span><br>
                             <span class="genre">@show.MovieGenre</span><span class="rating @show.StarImage"> @show.ImdbRating</span>
