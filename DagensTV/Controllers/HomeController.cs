@@ -102,6 +102,12 @@ namespace DagensTV.Controllers
 
             return PartialView("_Overlay");
         }
+
+        public ActionResult ActiveShow()
+        {
+
+            return View();
+        }
         #endregion
 
         #region Popular Content
