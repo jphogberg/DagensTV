@@ -31,7 +31,7 @@
         @Html.Label("Steg 2: Fyll i fälten")<br /><br />
         <div class="form-group">
             @Html.Label("Bildens URL")<br />
-            @Html.TextBoxFor(x => Model.ImgUrl)
+            @Html.EditorFor(x => Model.ImgUrl, new { htmlAttributes = new { @class = "form-control" } })
             @Html.HiddenFor(x => Model.ImgUrl)
             @*<label for="img-title">Bildens titel:</label>
             <input type="text" class="form-control" id="img-title" value="">
@@ -41,7 +41,7 @@
 
         <div class="form-group">
             @Html.Label("Nyhetspuffens namn")<br />
-            @Html.TextBoxFor(x => Model.Name)
+            @Html.EditorFor(x => Model.Name, new { htmlAttributes = new { @class = "form-control" } })
             @Html.HiddenFor(x => Model.Name)
             @*<label for="img-url">Bildens url:</label>
             <input type="text" class="form-control" id="img-url" value="skavlan">*@
@@ -49,7 +49,7 @@
 
         <div class="form-group">
             @Html.Label("Ikon  (ex: mdi mdi-movie)")<br/>
-            @Html.TextBoxFor(x => Model.Icon)
+            @Html.EditorFor(x => Model.Icon, new { htmlAttributes = new { @class = "form-control" } })
             @Html.HiddenFor(x => Model.Icon)
             @*<label for="img-icon">Bildens ikon:</label>
             <input type="text" class="form-control" id="img-icon">*@
