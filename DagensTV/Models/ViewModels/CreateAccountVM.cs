@@ -20,7 +20,5 @@ namespace DagensTV.Models.ViewModels
         [Required(ErrorMessage = "Fyll i ett lösenord")]
         public string Password { get; set; }
 
-     
-
     }
 }
