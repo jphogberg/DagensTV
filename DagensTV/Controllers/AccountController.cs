@@ -51,10 +51,9 @@ namespace DagensTV.Controllers
             }
             else
             {
-               
                 db.Person.Add(p);
                 db.SaveChanges();
-                //ViewBag.Message("Ditt konto är nu skapat!");
+                //ViewBag.Message("Ditt konto är nu skapat, vänligen logga in!");
                 return RedirectToAction("Index", "Home");
             }
         }
@@ -92,8 +91,6 @@ namespace DagensTV.Controllers
                         }
                     }
 
-                 
-
                     if (roleId == 1)
                     {
                         return RedirectToAction("Index", "Admin");
@@ -106,7 +103,6 @@ namespace DagensTV.Controllers
                 else
                 {
                     ModelState.AddModelError("", "Felaktigt användarnamn eller lösenord.");
-                    
                 }
             }
             return View();
