@@ -8,7 +8,10 @@
     <h1>Skapa konto</h1>
 </div><br />
 <hr /><br />
-
+@if (ViewBag.Message != null)
+{
+<span>@ViewBag.Message</span>
+}
 
 @using (Html.BeginForm("SetAccount", "Account", FormMethod.Post))
 {

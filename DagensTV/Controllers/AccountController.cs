@@ -31,23 +31,32 @@ namespace DagensTV.Controllers
             p.Password = model.Password;
             p.RoleId = 2;
 
+
             var checkUsers = db.Person.ToList();
+            bool exists = false;
             foreach(var item in checkUsers)
             {
-                if(p.Username == item.Username && p.Password == item.Password)
+                if(p.Username.Trim() == item.Username.Trim() 
+                    && p.Password.Trim() == item.Password.Trim())
                 {
-                    //något felmeddelande om att usern redan existerar
-                    break;
-                }
-                else
-                {
-                    db.Person.Add(p);
-                    db.SaveChanges();
+                    exists = true;
                     break;
                 }
             }
 
-            return View();
+            if (exists)
+            {
+                //ViewBag.Message("Kontot är upptaget!");
+                return View("CreateAccount");
+            }
+            else
+            {
+               
+                db.Person.Add(p);
+                db.SaveChanges();
+                //ViewBag.Message("Ditt konto är nu skapat!");
+                return RedirectToAction("Index", "Home");
+            }
         }
 
 
