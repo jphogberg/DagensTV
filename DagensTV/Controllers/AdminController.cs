@@ -56,6 +56,10 @@ namespace DagensTV.Controllers
         [HttpPost]
         public ActionResult GetForm(PopVM model)
         {
+            //får en PopVM med två listor
+            //uppdatera db.PopularContent
+            //var används PopVM.Name????
+            //ladda upp de nya nyhetspuffarna på startsidan
 
 
 
