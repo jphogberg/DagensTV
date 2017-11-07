@@ -23,7 +23,7 @@
             <ul class="dropdown-menu" role="menu" aria-labelledby="menu-pop">
                 @foreach (var item in Model.Popular)
                 {
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">@item.Id</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">@item.Name</a></li>
                 }
             </ul>
         </div><br /><br /><br />
@@ -55,9 +55,9 @@
             </button>
 
             <ul class="dropdown-menu" role="menu" aria-labelledby="menu-pop">
-                @foreach (var pop in Model.Schedules)
+                @foreach (var pop in Model.Channels)
                 {
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">@pop.ChannelName</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">@pop.Name</a></li>
                 }
             </ul>
         </div>

@@ -23,6 +23,7 @@ namespace DagensTV.Controllers
         [HttpPost]
         public ActionResult SetAccount(CreateAccountVM model)
         {
+            
             //Valideringen funkar ej
             Person p = new Person();
             p.Firstname = model.Firstname;

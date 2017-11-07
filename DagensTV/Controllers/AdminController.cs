@@ -27,7 +27,9 @@ namespace DagensTV.Controllers
 
             //Behöver göra om hämtningen från db = tilldela pop.popular med <popularContent>
             //och pop.schedules med <scheduleVM>
-            var popularContent = db.PopularContent.OrderBy(s => s.Id).Select(x => new PopVM
+
+            //pop.Schedule = db.Schedule.Select(x => x.F);
+            pop.Popular = db.PopularContent.OrderBy(s => s.Id).Select(x => new PopVM
             {
                 Id = x.Id,
                 ImgUrl = x.ImgUrl,
@@ -38,18 +40,19 @@ namespace DagensTV.Controllers
                 {
                     Id = schedule.Id,
                     StartTime = schedule.StartTime,
-                    ChannelId = schedule.ChannelId,
                     ChannelName = schedule.Channel.Name,
-                    ShowName = schedule.Show.Name
+                    ShowName = schedule.Show.Name,
+                    ChannelId = schedule.ChannelId
                 }).ToList()
             });
 
-            foreach(var item in popularContent)
-            {
-                pop.Popular.AddRange(item.Popular);
-            }
+            pop.Channels = db.Channel.ToList();
+            //foreach(var item in popularContent)
+            //{
+            //    pop.Popular.AddRange(item.Popular);
+            //}
 
-            
+
             return View(pop);
         }
 

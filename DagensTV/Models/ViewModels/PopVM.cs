@@ -17,7 +17,9 @@ namespace DagensTV.Models.ViewModels
         public Nullable<int> ScheduleId { get; set; }
 
         public List<ScheduleVM> Schedules = new List<ScheduleVM>();
+        //public List<Schedule> Schedule = new List<Schedule>();
 
-        public List<PopularContent> Popular = new List<PopularContent>();
+        public IQueryable<PopVM> Popular { get; set; }
+        public List<Channel> Channels = new List<Channel>();
     }
 }
