@@ -23,7 +23,29 @@ namespace DagensTV.Controllers
         [HttpPost]
         public ActionResult SetAccount(CreateAccountVM model)
         {
+            //Valideringen funkar ej
+            Person p = new Person();
+            p.Firstname = model.Firstname;
+            p.Lastname = model.Lastname;
+            p.Username = model.Username;
+            p.Password = model.Password;
+            p.RoleId = 2;
 
+            var checkUsers = db.Person.ToList();
+            foreach(var item in checkUsers)
+            {
+                if(p.Username == item.Username && p.Password == item.Password)
+                {
+                    //något felmeddelande om att usern redan existerar
+                    break;
+                }
+                else
+                {
+                    db.Person.Add(p);
+                    db.SaveChanges();
+                    break;
+                }
+            }
 
             return View();
         }
