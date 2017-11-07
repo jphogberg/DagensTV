@@ -1,4 +1,4 @@
-﻿@model IEnumerable<DagensTV.Models.ViewModels.PopVM>
+﻿@model DagensTV.Models.ViewModels.PopVM
 @{
     ViewBag.Title = "Index";
     ViewBag.Current = "Admin";
@@ -19,28 +19,35 @@
             </button>
 
             <ul class="dropdown-menu" role="menu" aria-labelledby="menu-pop">
-                @foreach (var item in Model)
+                @foreach (var item in Model.Popular)
                 {
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">@item.Name</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">@item.Id</a></li>
                 }
             </ul>
         </div><br /><br />
 
 
         <div class="form-group">
-            <label for="img-title">Bildens titel:</label>
-            <input type="text" class="form-control" id="img-title">
+            @Html.TextBoxFor(x => Model.ImgUrl)
+            @Html.HiddenFor(x => Model.ImgUrl)
+            @*<label for="img-title">Bildens titel:</label>
+            <input type="text" class="form-control" id="img-title" value="">
             @Html.TextBox("Title")
+            @Html.Hidden("ImgTitle")*@
         </div>
 
         <div class="form-group">
-            <label for="img-url">Bildens url:</label>
-            <input type="text" class="form-control" id="img-url">
+            @Html.TextBoxFor(x => Model.Name)
+            @Html.HiddenFor(x => Model.Name)
+            @*<label for="img-url">Bildens url:</label>
+            <input type="text" class="form-control" id="img-url" value="skavlan">*@
         </div>
 
         <div class="form-group">
-            <label for="img-icon">Bildens ikon:</label>
-            <input type="text" class="form-control" id="img-icon">
+            @Html.TextBoxFor(x => Model.Icon)
+            @Html.HiddenFor(x => Model.Icon)
+            @*<label for="img-icon">Bildens ikon:</label>
+            <input type="text" class="form-control" id="img-icon">*@
         </div><br /><br />
 
         <div class="dropdown">
@@ -50,12 +57,12 @@
             </button>
 
             <ul class="dropdown-menu" role="menu" aria-labelledby="menu-pop">
-                @foreach (var pop in Model)
+                @foreach (var pop in Model.Schedules)
                 {
-                    foreach (var schedule in pop.Schedules)
-                    {
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">@schedule.ChannelName</a></li>
-                    }
+                    //foreach (var schedule in pop.Schedules)
+                    //{
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">@pop.ChannelName</a></li>
+                    @*}*@
                 }
             </ul>
         </div>
@@ -64,11 +71,7 @@
         <br /><br />
 
         <input type="submit" value="Lägg till" class="btn btn-success" />
-        @*<input type="submit" value="Redigera" class="btn btn-warning" />
-        <input type="submit" value="Ta bort" class="btn btn-danger" />*@
-        @*<button type="button" class="btn btn-success">Lägg till</button>
-        <button type="button" class="btn btn-warning">Redigera</button>
-        <button type="button" class="btn btn-danger">Ta bort</button>*@
+       
     </div>
 
 }

@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace DagensTV.Controllers
 {
-    
+
     public class AdminController : Controller
     {
         DagensTVEntities db = new DagensTVEntities();
@@ -18,6 +18,8 @@ namespace DagensTV.Controllers
         [HttpGet]
         public ActionResult Index()
         {
+            PopVM pop = new PopVM();
+
             var popularContent = db.PopularContent.OrderBy(s => s.Id).Select(x => new PopVM
             {
                 Id = x.Id,
@@ -35,13 +37,19 @@ namespace DagensTV.Controllers
                 }).ToList()
             });
 
-            return View(popularContent);
+            foreach(var item in popularContent)
+            {
+                pop.Popular.AddRange(item.Popular);
+            }
+
+            
+            return View(pop);
         }
 
         [HttpPost]
         public ActionResult GetForm(PopVM model)
         {
-           
+
 
 
             return View();
