@@ -18,8 +18,15 @@ namespace DagensTV.Controllers
         [HttpGet]
         public ActionResult Index()
         {
+            /*Byggt om PopVM så att den bara består av EN modell med två listor i.
+             EN modell gör att jag kan nå propertiesarna genom @html.helpers för textboxarna.
+             Listorna för att kunna fylla comboboxarna.
+             Need to fill the lists correctly though.......*/
+
             PopVM pop = new PopVM();
 
+            //Behöver göra om hämtningen från db = tilldela pop.popular med <popularContent>
+            //och pop.schedules med <scheduleVM>
             var popularContent = db.PopularContent.OrderBy(s => s.Id).Select(x => new PopVM
             {
                 Id = x.Id,
