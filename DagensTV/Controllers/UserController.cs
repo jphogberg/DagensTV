@@ -20,6 +20,19 @@ namespace DagensTV.Controllers
         [HttpGet]
         public ActionResult MyPage()
         {
+            Settings mySet = new Settings();
+            mySet = db.Settings.SingleOrDefault(x => x.PersonId == Person.activeUser.Id);
+
+            //Person.activeUser.mySettings.Add(mySet.Svt1);
+
+
+
+            //var channels = db.Channel.ToList();
+            //foreach(var item in channels)
+            //{
+            //    item.MyPage
+            //}
+
             return View(db.Channel.ToList());
         }
 
@@ -28,27 +41,40 @@ namespace DagensTV.Controllers
         {
             var myChannels = channels.ToList();
 
-            foreach(var item in myChannels)
+            foreach (var item in myChannels)
             {
                 Person.activeUser.mySettings.Add(item.MyPage);
             }
 
-           
+            Settings s = new Settings();
+            s.Svt1 = Person.activeUser.mySettings[0];
+            s.Svt2 = Person.activeUser.mySettings[1];
+            s.Tv3 = Person.activeUser.mySettings[2];
+            s.Tv4 = Person.activeUser.mySettings[3];
+            s.Kanal5 = Person.activeUser.mySettings[4];
+            s.PersonId = Person.activeUser.Id;
 
 
-            var dbSettingsID = db.Settings.Where(x => x.PersonId == Person.activeUser.Id);
-            if(dbSettingsID == null)
+            var dbSettings = db.Settings.ToList(); 
+            foreach(var item in dbSettings)
             {
-                
-
-                db.Settings.Add(Person.activeUser.Settings);
+                if(item.PersonId == Person.activeUser.Id)
+                {
+                    Settings sUpdate = new Settings();
+                    sUpdate = db.Settings.SingleOrDefault(x => x.Id == item.Id);
+                    sUpdate = s;
+                    db.SaveChanges();
+                    break;
+                }
+                else
+                {
+                    db.Settings.Add(s);
+                    db.SaveChanges();
+                    break;
+                }
             }
-            else
-            {
-                //update
-            }
 
-            return View();
+            return RedirectToAction("Index", "Home");
         }
     }
 }

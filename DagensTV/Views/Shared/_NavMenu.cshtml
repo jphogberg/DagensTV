@@ -20,14 +20,13 @@
                         <a href="@Url.Action("Login", "Account")" class="menuLink mdi mdi-settings">Inställningar</a>
                     </li>
                 }
-                @User.Identity.Name
-                @if (User.IsInRole("Redaktör"))
+                @*@if (User.IsInRole("Redaktör"))
                 {
                     <li>
                         <a href="@Url.Action("Index", "Admin")" class="menuLink mdi mdi-settings"
                            id="@(ViewBag.Current == "Index" ? "current" : "")">Admin</a>
                     </li>
-                }
+                }*@
                 @*<li class="menuLink" id="search-large">
                         <form>
                             <input class="searchbox ui-widget" type="search" name="search" placeholder="" title="Sök...">
