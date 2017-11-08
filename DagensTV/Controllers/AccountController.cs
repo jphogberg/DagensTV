@@ -78,6 +78,8 @@ namespace DagensTV.Controllers
         {
             if (ModelState.IsValid)
             {
+                //return Redirect(ReturnUrl) om fler länkar i nav
+
                 if (dbo.CheckUser(model.Username, model.Password))
                 {
                     FormsAuthentication.SetAuthCookie(model.Username, false);
@@ -93,7 +95,8 @@ namespace DagensTV.Controllers
                             Person.activeUser.Username = p.Username;
                             Person.activeUser.Password = p.Password;
                             Person.activeUser.Id = p.Id;
-                            //Person.activeUser.RoleId = p.RoleId;
+                            Person.activeUser.RoleId = p.RoleId;
+                            Person.activeUser.RoleName = p.RoleName;
                         }
                     }
 

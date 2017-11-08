@@ -1,6 +1,7 @@
 ﻿using DagensTV.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
@@ -24,6 +25,13 @@ namespace DagensTV.Data
             }
         }
 
+        public bool IsInRole(string userName, string roleName)
+        {
+            var role = db.Person
+                .Where(x => x.Username.Equals(userName))
+                .Include(x => x.Role).Where(x => x.Role.Name.Equals(roleName));
+            return role.Any();
+        }
 
     }
 }

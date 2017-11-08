@@ -1,4 +1,5 @@
-﻿using DagensTV.Models;
+﻿using DagensTV.Authority;
+using DagensTV.Models;
 using DagensTV.Models.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -9,13 +10,13 @@ using System.Web.Mvc;
 
 namespace DagensTV.Controllers
 {
-
+    [AuthorizeRoles("Redaktör")]
     public class AdminController : Controller
     {
         DagensTVEntities db = new DagensTVEntities();
 
         // GET: Admin
-        [Authorize]
+        
         [HttpGet]
         public ActionResult Index()
         {
