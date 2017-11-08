@@ -23,39 +23,44 @@ namespace DagensTV.Controllers
         [HttpPost]
         public ActionResult SetAccount(CreateAccountVM model)
         {
-            
-            //Valideringen funkar ej
-            Person p = new Person();
-            p.Firstname = model.Firstname;
-            p.Lastname = model.Lastname;
-            p.Username = model.Username;
-            p.Password = model.Password;
-            p.RoleId = 2;
-
-
-            var checkUsers = db.Person.ToList();
-            bool exists = false;
-            foreach(var item in checkUsers)
+            if (ModelState.IsValid)
             {
-                if(p.Username.Trim() == item.Username.Trim() 
-                    && p.Password.Trim() == item.Password.Trim())
+                Person p = new Person();
+                p.Firstname = model.Firstname;
+                p.Lastname = model.Lastname;
+                p.Username = model.Username;
+                p.Password = model.Password;
+                p.RoleId = 2;
+
+                var checkUsers = db.Person.ToList();
+                bool exists = false;
+                foreach (var item in checkUsers)
                 {
-                    exists = true;
-                    break;
+                    if (p.Username.Trim() == item.Username.Trim()
+                        && p.Password.Trim() == item.Password.Trim())
+                    {
+                        exists = true;
+                        break;
+                    }
                 }
-            }
 
-            if (exists)
-            {
-                //ViewBag.Message("Kontot är upptaget!");
-                return View("CreateAccount");
+                if (exists)
+                {
+                    //ViewBag.Message("Kontot är upptaget!");
+                    return View("CreateAccount");
+                }
+                else
+                {
+                    db.Person.Add(p);
+                    db.SaveChanges();
+                    //ViewBag.Message("Ditt konto är nu skapat, vänligen logga in!");
+                    return RedirectToAction("Index", "Home");
+                }
             }
             else
             {
-                db.Person.Add(p);
-                db.SaveChanges();
-                //ViewBag.Message("Ditt konto är nu skapat, vänligen logga in!");
-                return RedirectToAction("Index", "Home");
+                ModelState.AddModelError("", "Alla fält måste fyllas i!");
+                return View("CreateAccount");
             }
         }
 
@@ -63,7 +68,7 @@ namespace DagensTV.Controllers
         // GET: Account
         public ActionResult Login()
         {
-            
+
             return View("Login");
         }
 
@@ -73,12 +78,12 @@ namespace DagensTV.Controllers
         {
             if (ModelState.IsValid)
             {
-                if(dbo.CheckUser(model.Username, model.Password))
+                if (dbo.CheckUser(model.Username, model.Password))
                 {
                     FormsAuthentication.SetAuthCookie(model.Username, false);
 
                     var persons = db.Person.ToList();
-                    
+
                     var roleId = 0;
                     foreach (var p in persons)
                     {

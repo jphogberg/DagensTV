@@ -13,62 +13,87 @@
 {
     <div class="col-md-offset-2 col-md-10">
 
-        @Html.Label("Steg 1: Välj nyhetspuff för att redigera/byta ut")<br /><br />
-        <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="menu-pop" data-toggle="dropdown">
-                Nyhetspuffar
-                <span class="caret"></span>
-            </button>
+        @Html.Label("Steg 1: Välj befintlig")<br /><br />
+        @Html.DropDownList("Id", (IEnumerable<SelectListItem>)ViewBag.Pops)<br /><br /><br />
 
-            <ul class="dropdown-menu" role="menu" aria-labelledby="menu-pop">
-                @foreach (var item in Model.Popular)
-                {
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">@item.Name</a></li>
-                }
-            </ul>
-        </div><br /><br /><br />
+        @Html.Label("Steg 2: Välj ny")<br /><br />
+        @Html.DropDownList("ScheduleId", (IEnumerable<SelectListItem>)ViewBag.Schedule)
+        @Html.HiddenFor(x => Model.ScheduleId)<br /><br /><br />
 
-        @Html.Label("Steg 2: Fyll i fälten")<br /><br />
+      
+
+
+
+        @*@Html.DropDownListFor(m => m.Popular,
+            new SelectList(Enum.GetValues(typeof(DagensTV.Models.ViewModels.PopVM.PopularContent))),
+            "Välj nyhetspuff")*@
+        @*<div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="menu-pop" data-toggle="dropdown">
+                    Nyhetspuffar
+                    <span class="caret"></span>
+                </button>
+
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu-pop">
+                    @foreach (var item in Model.Popular)
+                    {
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">@item.Name</a></li>
+                    }
+
+                </ul>
+
+            </div><br /><br /><br />*@
+
+
+
+
+
+
         <div class="form-group">
-            @Html.Label("Bildens URL")<br />
+            @Html.Label("Bild (ex bild.jpg)")<br />
             @Html.EditorFor(x => Model.ImgUrl, new { htmlAttributes = new { @class = "form-control" } })
             @Html.HiddenFor(x => Model.ImgUrl)
         </div>
 
-        <div class="form-group">
+        @*<div class="form-group">
             @Html.Label("Nyhetspuffens namn")<br />
             @Html.EditorFor(x => Model.Name, new { htmlAttributes = new { @class = "form-control" } })
             @Html.HiddenFor(x => Model.Name)
         </div>
 
+        @Html.Label("Steg 3: Ange ikontyp (valfritt)")<br /><br />
         <div class="form-group">
             @Html.Label("Ikon  (ex: mdi mdi-movie)")<br />
             @Html.EditorFor(x => Model.Icon, new { htmlAttributes = new { @class = "form-control" } })
             @Html.HiddenFor(x => Model.Icon)
-        </div><br /><br />
+        </div><br /><br />*@
 
-        @Html.Label("Steg 3: Välj kanal")<br /><br />
-        <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="menu-pop" data-toggle="dropdown">
-                Kanaler
-                <span class="caret"></span>
-            </button>
 
-            <ul class="dropdown-menu" role="menu" aria-labelledby="menu-pop">
-                @foreach (var pop in Model.Channels)
-                {
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">@pop.Name</a></li>
-                }
-            </ul>
-        </div>
-        <br /><br />
+        @*<div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="menu-pop" data-toggle="dropdown">
+                    Kanaler
+                    <span class="caret"></span>
+                </button>
+
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu-pop">
+                    @foreach (var pop in Model.Channels)
+                    {
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">@pop.Name</a></li>
+                    }
+                </ul>
+            </div>
+            <br /><br />*@
 
         <input type="submit" value="Spara" class="btn btn-success" />
 
+       
+        @Html.ActionLink("Stäng", "", "Home/Index", null, null)
     </div>
 
 }
 
+@*<div class="col-md-offset-6 col-md-6">
+    <input type="submit" class="btn btn-success" onclick="@Url.Action("index", "Family")" value="Stäng" />
+</div>*@
 
 
 
@@ -92,44 +117,40 @@
 
 
 
+    @*@using (Html.BeginForm("GetForm", "Admin", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
 
-
-
-
-@*@using (Html.BeginForm("GetForm", "Admin", FormMethod.Post))
-    {
-        @Html.AntiForgeryToken()
-
-        <div class="col-md-offset-2 col-md-10">
-            <div class="form">
-                <div class="form-group">
-                    @Html.Label(Model.ImgTitle)
-                    @Html.TextBoxFor(m => m.ImgTitle)
-                    <label for="img-title">Bildens titel:</label>
-                    <input type="text" class="form-control" id="img-title">
-                </div>
-
-                <div class="form-group">
-                    @Html.Label(Model.ImgUrl)
-                    @Html.TextBoxFor(m => m.ImgUrl)
-                    <label for="img-url">Bildens url:</label>
-                    <input type="text" class="form-control" id="img-url">
-                </div>
-
-                <div class="form-group">
-                    @Html.Label(Model.Icon)
-                    @Html.TextBoxFor(m => m.Icon)
-                    <label for="img-icon">Bildens ikon:</label>
-                    <input type="text" class="form-control" id="img-icon">
-                </div>
-
-                <div class="form-group">
-                    <div class="col-md-offset-2">
-                        <input type="submit" value="Spara" class="btn btn-success" />
+            <div class="col-md-offset-2 col-md-10">
+                <div class="form">
+                    <div class="form-group">
+                        @Html.Label(Model.ImgTitle)
+                        @Html.TextBoxFor(m => m.ImgTitle)
+                        <label for="img-title">Bildens titel:</label>
+                        <input type="text" class="form-control" id="img-title">
                     </div>
+
+                    <div class="form-group">
+                        @Html.Label(Model.ImgUrl)
+                        @Html.TextBoxFor(m => m.ImgUrl)
+                        <label for="img-url">Bildens url:</label>
+                        <input type="text" class="form-control" id="img-url">
+                    </div>
+
+                    <div class="form-group">
+                        @Html.Label(Model.Icon)
+                        @Html.TextBoxFor(m => m.Icon)
+                        <label for="img-icon">Bildens ikon:</label>
+                        <input type="text" class="form-control" id="img-icon">
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2">
+                            <input type="submit" value="Spara" class="btn btn-success" />
+                        </div>
+                    </div>
+
                 </div>
-
             </div>
-        </div>
 
-    }*@
+        }*@

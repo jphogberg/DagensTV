@@ -9,9 +9,12 @@ namespace DagensTV.Models.ViewModels
     public class PopVM
     {
         public int Id { get; set; }
+
+        [Required(ErrorMessage ="Välj en bild")]
         public string ImgUrl { get; set; }
         public string Name { get; set; }
         public string Icon { get; set; }
+
 
         [Display(Name = "Nyhetspuffar")]
         public Nullable<int> ScheduleId { get; set; }
@@ -21,5 +24,8 @@ namespace DagensTV.Models.ViewModels
 
         public IQueryable<PopVM> Popular { get; set; }
         public List<Channel> Channels = new List<Channel>();
+
+        
     }
 }
+

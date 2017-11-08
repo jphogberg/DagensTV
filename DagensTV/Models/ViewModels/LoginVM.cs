@@ -8,10 +8,10 @@ namespace DagensTV.Models.ViewModels
 {
     public class LoginVM
     {
-        [Required]
+        [Required(ErrorMessage ="Vänligen kontrollera")]
         public string Username { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Vänligen kontrollera")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
     }

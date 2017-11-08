@@ -2,6 +2,7 @@
 using DagensTV.Models.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -29,29 +30,48 @@ namespace DagensTV.Controllers
             //och pop.schedules med <scheduleVM>
 
             //pop.Schedule = db.Schedule.Select(x => x.F);
-            pop.Popular = db.PopularContent.OrderBy(s => s.Id).Select(x => new PopVM
-            {
-                Id = x.Id,
-                ImgUrl = x.ImgUrl,
-                Name = x.Schedule.Show.Name,
-                Icon = x.Icon,
-                ScheduleId = x.ScheduleId,
-                Schedules = db.Schedule.Where(s => s.Id == x.ScheduleId).Select(schedule => new ScheduleVM
-                {
-                    Id = schedule.Id,
-                    StartTime = schedule.StartTime,
-                    ChannelName = schedule.Channel.Name,
-                    ShowName = schedule.Show.Name,
-                    ChannelId = schedule.ChannelId
-                }).ToList()
-            });
+            //pop.Popular = db.PopularContent.OrderBy(s => s.Id).Select(x => new PopVM
+            //{
+            //    Id = x.Id,
+            //    ImgUrl = x.ImgUrl,
+            //    Name = x.Schedule.Show.Name,
+            //    Icon = x.Icon,
+            //    ScheduleId = x.ScheduleId,
+            //    Schedules = db.Schedule.Where(s => s.Id == x.ScheduleId).Select(schedule => new ScheduleVM
+            //    {
+            //        Id = schedule.Id,
+            //        StartTime = schedule.StartTime,
+            //        ChannelName = schedule.Channel.Name,
+            //        ShowName = schedule.Show.Name,
+            //        ChannelId = schedule.ChannelId
+            //    }).ToList()
+            //});
 
             pop.Channels = db.Channel.ToList();
-            //foreach(var item in popularContent)
-            //{
-            //    pop.Popular.AddRange(item.Popular);
-            //}
+           
+            IEnumerable<SelectListItem> popular = db.PopularContent
+              .Select(c => new SelectListItem
+              {
+                  Value = c.Id.ToString(),
+                  Text = c.Schedule.Show.Name,
+              });
+            ViewBag.Pops = popular;
 
+            IEnumerable<SelectListItem> schedules = db.Schedule
+             .Select(c => new SelectListItem
+             {
+                 Value = c.Id.ToString(),
+                 Text = c.Show.Name
+             });
+            ViewBag.Schedule = schedules;
+
+            //IEnumerable<SelectListItem> channel = db.Channel
+            //  .Select(c => new SelectListItem
+            //  {
+            //      Value = c.Id.ToString(),
+            //      Text = c.Name
+            //  });
+            //ViewBag.Channels = channel;
 
             return View(pop);
         }
@@ -59,14 +79,26 @@ namespace DagensTV.Controllers
         [HttpPost]
         public ActionResult GetForm(PopVM model)
         {
-            //får en PopVM med två listor
-            //uppdatera db.PopularContent
-            //var används PopVM.Name????
-            //ladda upp de nya nyhetspuffarna på startsidan
+            if (ModelState.IsValid)
+            {
+                int popular = model.Id;
 
+                PopularContent pc = new PopularContent();
 
+                pc = db.PopularContent.Find(popular);
+                pc.ScheduleId = model.ScheduleId;
+                pc.ImgUrl = "img/" + model.ImgUrl;
+                pc.Icon = "mdi mdi-television";
 
-            return View();
+                db.Entry(pc).State = EntityState.Modified;
+                db.SaveChanges();
+            }
+            else
+            {
+                ModelState.AddModelError("", "En bild måste anges!");
+            }
+
+            return RedirectToAction("Index", "Admin");
         }
     }
 }
