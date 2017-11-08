@@ -10,15 +10,18 @@
             @foreach (var item in Model)
             {
                 <figure class="pop-img">
-                    <img src="@item.ImgUrl" title="@item.Name" alt="@item.Name">
-                    @foreach (var show in item.Schedules)
-                    {
-                        <figcaption>
-                            @show.ShowName<br /><i class="@item.Icon"></i> @show.ChannelName
-                        </figcaption>
-                    }                    
+                    <a onclick="ShowInfo(@item.ScheduleId)">
+                        <img src="@item.ImgUrl" title="@item.Name" alt="@item.Name">
+
+                        @foreach (var show in item.Schedules)
+                        {
+                            <figcaption>
+                                @show.ShowName<br /><i class="@item.Icon"></i> @show.ChannelName
+                            </figcaption>
+                        }
+                    </a>
                 </figure>
-            }                     
+            }
         </section>
-    }    
+    }
 </div>
