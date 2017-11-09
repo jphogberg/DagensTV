@@ -17,11 +17,12 @@
         <AssociationConnector Association="DagensTVModel.FK_Person_Role" />
         <EntityTypeShape EntityType="DagensTVModel.PopularContent" Width="1.5" PointX="7.75" PointY="1" />
         <AssociationConnector Association="DagensTVModel.FK_PopularContent_ToTable1" />
-        <EntityTypeShape EntityType="DagensTVModel.MyFavorites" Width="1.5" PointX="0.75" PointY="4.625" />
         <AssociationConnector Association="DagensTVModel.MyChannels1" />
         <AssociationConnector Association="DagensTVModel.MyFavorites1" />
         <EntityTypeShape EntityType="DagensTVModel.MyChannels" Width="1.5" PointX="7.875" PointY="5" />
         <AssociationConnector Association="DagensTVModel.FK_Table_ToTable_1" />
+        <EntityTypeShape EntityType="DagensTVModel.MyFavorites" Width="1.5" PointX="0.75" PointY="3.875" />
+        <AssociationConnector Association="DagensTVModel.FK_MyFavorites_ToShow" />
         </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

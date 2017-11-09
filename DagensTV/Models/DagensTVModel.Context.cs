@@ -33,5 +33,6 @@ namespace DagensTV.Models
         public virtual DbSet<Role> Role { get; set; }
         public virtual DbSet<PopularContent> PopularContent { get; set; }
         public virtual DbSet<MyChannels> MyChannels { get; set; }
+        public virtual DbSet<MyFavorites> MyFavorites { get; set; }
     }
 }

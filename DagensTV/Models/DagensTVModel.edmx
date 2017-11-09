@@ -31,6 +31,14 @@
           <Property Name="PersonId" Type="int" Nullable="false" />
           <Property Name="ChannelId" Type="int" Nullable="false" />
         </EntityType>
+        <EntityType Name="MyFavorites">
+          <Key>
+            <PropertyRef Name="PersonId" />
+            <PropertyRef Name="ShowId" />
+          </Key>
+          <Property Name="PersonId" Type="int" Nullable="false" />
+          <Property Name="ShowId" Type="int" Nullable="false" />
+        </EntityType>
         <EntityType Name="Person">
           <Key>
             <PropertyRef Name="Id" />
@@ -117,6 +125,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_MyFavorites_ToShow">
+          <End Role="Show" Type="Self.Show" Multiplicity="1" />
+          <End Role="MyFavorites" Type="Self.MyFavorites" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Show">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MyFavorites">
+              <PropertyRef Name="ShowId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_Person_Role">
           <End Role="Role" Type="Self.Role" Multiplicity="0..1" />
           <End Role="Person" Type="Self.Person" Multiplicity="*" />
@@ -157,6 +177,7 @@
           <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Channel" EntityType="Self.Channel" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="MyChannels" EntityType="Self.MyChannels" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MyFavorites" EntityType="Self.MyFavorites" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Person" EntityType="Self.Person" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="PopularContent" EntityType="Self.PopularContent" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
@@ -173,6 +194,10 @@
           <AssociationSet Name="FK_MyChannels_ToChannel" Association="Self.FK_MyChannels_ToChannel">
             <End Role="Channel" EntitySet="Channel" />
             <End Role="MyChannels" EntitySet="MyChannels" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MyFavorites_ToShow" Association="Self.FK_MyFavorites_ToShow">
+            <End Role="Show" EntitySet="Show" />
+            <End Role="MyFavorites" EntitySet="MyFavorites" />
           </AssociationSet>
           <AssociationSet Name="FK_Person_Role" Association="Self.FK_Person_Role">
             <End Role="Role" EntitySet="Role" />
@@ -239,6 +264,7 @@
           <Property Name="MovieGenre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="ImdbRating" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
           <Property Name="RatingIcon" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="MyFavorites" Relationship="DagensTVModel.FK_MyFavorites_ToShow" FromRole="Show" ToRole="MyFavorites" />
         </EntityType>
         <Association Name="FK_Show_ToTable">
           <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
@@ -308,6 +334,11 @@
           <AssociationSet Name="FK_Table_ToTable_1" Association="DagensTVModel.FK_Table_ToTable_1">
             <End Role="Channel" EntitySet="Channel" />
             <End Role="MyChannels" EntitySet="MyChannels" />
+          </AssociationSet>
+          <EntitySet Name="MyFavorites" EntityType="DagensTVModel.MyFavorites" />
+          <AssociationSet Name="FK_MyFavorites_ToShow" Association="DagensTVModel.FK_MyFavorites_ToShow">
+            <End Role="Show" EntitySet="Show" />
+            <End Role="MyFavorites" EntitySet="MyFavorites" />
           </AssociationSet>
         </EntityContainer>
         <EntityType Name="Person">
@@ -382,6 +413,27 @@
             </Principal>
             <Dependent Role="MyChannels">
               <PropertyRef Name="ChannelId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="MyFavorites">
+          <Key>
+            <PropertyRef Name="PersonId" />
+            <PropertyRef Name="ShowId" />
+          </Key>
+          <Property Name="PersonId" Type="Int32" Nullable="false" />
+          <Property Name="ShowId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Show" Relationship="DagensTVModel.FK_MyFavorites_ToShow" FromRole="MyFavorites" ToRole="Show" />
+        </EntityType>
+        <Association Name="FK_MyFavorites_ToShow">
+          <End Type="DagensTVModel.Show" Role="Show" Multiplicity="1" />
+          <End Type="DagensTVModel.MyFavorites" Role="MyFavorites" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Show">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MyFavorites">
+              <PropertyRef Name="ShowId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -470,6 +522,14 @@
             <EntityTypeMapping TypeName="DagensTVModel.MyChannels">
               <MappingFragment StoreEntitySet="MyChannels">
                 <ScalarProperty Name="ChannelId" ColumnName="ChannelId" />
+                <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MyFavorites">
+            <EntityTypeMapping TypeName="DagensTVModel.MyFavorites">
+              <MappingFragment StoreEntitySet="MyFavorites">
+                <ScalarProperty Name="ShowId" ColumnName="ShowId" />
                 <ScalarProperty Name="PersonId" ColumnName="PersonId" />
               </MappingFragment>
             </EntityTypeMapping>
