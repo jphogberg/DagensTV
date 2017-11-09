@@ -19,15 +19,15 @@ namespace DagensTV.Controllers
 
         #region Main               
         public ActionResult Index(string date)
-        {            
-            //dbo.GetShowsFromJson(date);
-            //dbo.GetScheduleFromJson(date);
-
+        {
             if (date == null)
             {
                 var today = DateTime.Now;
                 date = today.ToShortDateString();
-            }            
+            }
+
+            dbo.GetShowsFromJson(date);
+            dbo.GetScheduleFromJson(date);
 
             if (Person.activeUser.Id != 0)
             {

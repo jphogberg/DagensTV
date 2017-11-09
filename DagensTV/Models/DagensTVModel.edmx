@@ -38,6 +38,7 @@
           </Key>
           <Property Name="PersonId" Type="int" Nullable="false" />
           <Property Name="ShowId" Type="int" Nullable="false" />
+          <Property Name="Style" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Person">
           <Key>
@@ -424,6 +425,7 @@
           <Property Name="PersonId" Type="Int32" Nullable="false" />
           <Property Name="ShowId" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Show" Relationship="DagensTVModel.FK_MyFavorites_ToShow" FromRole="MyFavorites" ToRole="Show" />
+          <Property Name="Style" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <Association Name="FK_MyFavorites_ToShow">
           <End Type="DagensTVModel.Show" Role="Show" Multiplicity="1" />
@@ -529,6 +531,7 @@
           <EntitySetMapping Name="MyFavorites">
             <EntityTypeMapping TypeName="DagensTVModel.MyFavorites">
               <MappingFragment StoreEntitySet="MyFavorites">
+                <ScalarProperty Name="Style" ColumnName="Style" />
                 <ScalarProperty Name="ShowId" ColumnName="ShowId" />
                 <ScalarProperty Name="PersonId" ColumnName="PersonId" />
               </MappingFragment>

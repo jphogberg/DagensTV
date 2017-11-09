@@ -31,7 +31,5 @@ namespace DagensTV.Models
         public virtual ICollection<Schedule> Schedule { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MyChannels> MyChannels { get; set; }
-
-
     }
 }
