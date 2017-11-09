@@ -18,7 +18,6 @@ namespace DagensTV.Models
         public Show()
         {
             this.Schedule = new HashSet<Schedule>();
-            this.Person = new HashSet<Person>();
         }
     
         public int Id { get; set; }
@@ -31,7 +30,5 @@ namespace DagensTV.Models
         public virtual Category Category { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Schedule> Schedule { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Person> Person { get; set; }
     }
 }

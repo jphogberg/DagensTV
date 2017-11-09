@@ -23,22 +23,6 @@
           <Property Name="MyPage" Type="bit" Nullable="false" />
           <Property Name="DownloadPath" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
-        <EntityType Name="MyChannels">
-          <Key>
-            <PropertyRef Name="PersonId" />
-            <PropertyRef Name="ChannelId" />
-          </Key>
-          <Property Name="PersonId" Type="int" Nullable="false" />
-          <Property Name="ChannelId" Type="int" Nullable="false" />
-        </EntityType>
-        <EntityType Name="MyFavorites">
-          <Key>
-            <PropertyRef Name="PersonId" />
-            <PropertyRef Name="ShowId" />
-          </Key>
-          <Property Name="PersonId" Type="int" Nullable="false" />
-          <Property Name="ShowId" Type="int" Nullable="false" />
-        </EntityType>
         <EntityType Name="Person">
           <Key>
             <PropertyRef Name="Id" />
@@ -72,11 +56,12 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="StartTime" Type="datetime" />
-          <Property Name="Duration" Type="int" />
+          <Property Name="StartTime" Type="datetime" Nullable="false" />
+          <Property Name="Duration" Type="int" Nullable="false" />
           <Property Name="Resume" Type="varchar(max)" />
           <Property Name="ChannelId" Type="int" />
           <Property Name="ShowId" Type="int" />
+          <Property Name="EndTime" Type="datetime" Nullable="false" />
         </EntityType>
         <EntityType Name="Settings">
           <Key>
@@ -185,59 +170,9 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Table_Person">
-          <End Role="Person" Type="Self.Person" Multiplicity="1" />
-          <End Role="MyFavorites" Type="Self.MyFavorites" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Person">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="MyFavorites">
-              <PropertyRef Name="PersonId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Table_Show">
-          <End Role="Show" Type="Self.Show" Multiplicity="1" />
-          <End Role="MyFavorites" Type="Self.MyFavorites" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Show">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="MyFavorites">
-              <PropertyRef Name="ShowId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Table_ToTable">
-          <End Role="Person" Type="Self.Person" Multiplicity="1" />
-          <End Role="MyChannels" Type="Self.MyChannels" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Person">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="MyChannels">
-              <PropertyRef Name="PersonId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Table_ToTable_1">
-          <End Role="Channel" Type="Self.Channel" Multiplicity="1" />
-          <End Role="MyChannels" Type="Self.MyChannels" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Channel">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="MyChannels">
-              <PropertyRef Name="ChannelId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="DagensTVModelStoreContainer">
           <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Channel" EntityType="Self.Channel" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="MyChannels" EntityType="Self.MyChannels" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="MyFavorites" EntityType="Self.MyFavorites" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Person" EntityType="Self.Person" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="PopularContent" EntityType="Self.PopularContent" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
@@ -272,22 +207,6 @@
             <End Role="Category" EntitySet="Category" />
             <End Role="Show" EntitySet="Show" />
           </AssociationSet>
-          <AssociationSet Name="FK_Table_Person" Association="Self.FK_Table_Person">
-            <End Role="Person" EntitySet="Person" />
-            <End Role="MyFavorites" EntitySet="MyFavorites" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Table_Show" Association="Self.FK_Table_Show">
-            <End Role="Show" EntitySet="Show" />
-            <End Role="MyFavorites" EntitySet="MyFavorites" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Table_ToTable" Association="Self.FK_Table_ToTable">
-            <End Role="Person" EntitySet="Person" />
-            <End Role="MyChannels" EntitySet="MyChannels" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Table_ToTable_1" Association="Self.FK_Table_ToTable_1">
-            <End Role="Channel" EntitySet="Channel" />
-            <End Role="MyChannels" EntitySet="MyChannels" />
-          </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -312,21 +231,21 @@
           <Property Name="LogoFilePath" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="MyPage" Type="Boolean" Nullable="false" />
           <Property Name="DownloadPath" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="Person" Relationship="DagensTVModel.MyChannels" FromRole="Channel" ToRole="Person" />
         </EntityType>
         <EntityType Name="Schedule">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="StartTime" Type="DateTime" Precision="3" />
-          <Property Name="Duration" Type="Int32" />
+          <Property Name="StartTime" Type="DateTime" Precision="3" Nullable="false" />
+          <Property Name="Duration" Type="Int32" Nullable="false" />
           <Property Name="Resume" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="ChannelId" Type="Int32" />
           <Property Name="ShowId" Type="Int32" />
           <NavigationProperty Name="Channel" Relationship="Self.FK_Listing_ToTable" FromRole="Schedule" ToRole="Channel" />
           <NavigationProperty Name="Show" Relationship="Self.FK_Listing_ToTable_1" FromRole="Schedule" ToRole="Show" />
           <NavigationProperty Name="PopularContent" Relationship="DagensTVModel.FK_PopularContent_ToTable1" FromRole="Schedule" ToRole="PopularContent" />
+          <Property Name="EndTime" Type="DateTime" Nullable="false" Precision="3" />
         </EntityType>
         <EntityType Name="Show">
           <Key>
@@ -340,7 +259,6 @@
           <Property Name="MovieGenre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="ImdbRating" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
           <Property Name="RatingIcon" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="Person" Relationship="DagensTVModel.MyFavorites" FromRole="Show" ToRole="Person" />
         </EntityType>
         <Association Name="FK_Show_ToTable">
           <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
@@ -415,14 +333,6 @@
             <End Role="Person" EntitySet="Person" />
             <End Role="Settings" EntitySet="Settings" />
           </AssociationSet>
-          <AssociationSet Name="MyChannels" Association="DagensTVModel.MyChannels">
-            <End Role="Person" EntitySet="Person" />
-            <End Role="Channel" EntitySet="Channel" />
-          </AssociationSet>
-          <AssociationSet Name="MyFavorites" Association="DagensTVModel.MyFavorites">
-            <End Role="Person" EntitySet="Person" />
-            <End Role="Show" EntitySet="Show" />
-          </AssociationSet>
         </EntityContainer>
         <EntityType Name="Person">
           <Key>
@@ -438,8 +348,6 @@
           <Property Name="SettingsId" Type="Int32" />
           <NavigationProperty Name="Settings" Relationship="DagensTVModel.FK_Person_ToTable" FromRole="Person" ToRole="Settings" />
           <NavigationProperty Name="Settings1" Relationship="DagensTVModel.FK_Settings_ToTable" FromRole="Person" ToRole="Settings" />
-          <NavigationProperty Name="Channel" Relationship="DagensTVModel.MyChannels" FromRole="Person" ToRole="Channel" />
-          <NavigationProperty Name="Show" Relationship="DagensTVModel.MyFavorites" FromRole="Person" ToRole="Show" />
         </EntityType>
         <EntityType Name="Role">
           <Key>
@@ -521,14 +429,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="MyChannels">
-          <End Type="DagensTVModel.Person" Role="Person" Multiplicity="*" />
-          <End Type="DagensTVModel.Channel" Role="Channel" Multiplicity="*" />
-        </Association>
-        <Association Name="MyFavorites">
-          <End Type="DagensTVModel.Person" Role="Person" Multiplicity="*" />
-          <End Type="DagensTVModel.Show" Role="Show" Multiplicity="*" />
-        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -558,6 +458,7 @@
           <EntitySetMapping Name="Schedule">
             <EntityTypeMapping TypeName="DagensTVModel.Schedule">
               <MappingFragment StoreEntitySet="Schedule">
+                <ScalarProperty Name="EndTime" ColumnName="EndTime" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="StartTime" ColumnName="StartTime" />
                 <ScalarProperty Name="Duration" ColumnName="Duration" />
@@ -623,23 +524,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <AssociationSetMapping Name="MyChannels" TypeName="DagensTVModel.MyChannels" StoreEntitySet="MyChannels">
-            <EndProperty Name="Channel">
-              <ScalarProperty Name="Id" ColumnName="ChannelId" />
-            </EndProperty>
-            <EndProperty Name="Person">
-              <ScalarProperty Name="Id" ColumnName="PersonId" />
-            </EndProperty>
-          </AssociationSetMapping>
-          <AssociationSetMapping Name="MyFavorites" TypeName="DagensTVModel.MyFavorites" StoreEntitySet="MyFavorites">
-            <EndProperty Name="Show">
-              <ScalarProperty Name="Id" ColumnName="ShowId" />
-            </EndProperty>
-            <EndProperty Name="Person">
-              <ScalarProperty Name="Id" ColumnName="PersonId" />
-            </EndProperty>
-          </AssociationSetMapping>
-        </EntityContainerMapping>
+          </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
   </edmx:Runtime>

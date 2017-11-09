@@ -96,41 +96,50 @@ $('.show-calendar').click(function () {
 });
 
 /* Testar local storage*/
-$(document).ready(function () {
+//$(document).ready(function () {
 
-    $("#save-local").click(function (e) {
-        e.preventDefault();
+//    $("#save-local").click(function (e) {
+//        e.preventDefault();
 
-        localStorage.clear();
+//        localStorage.clear();
 
-        var listContents = [];
-        $("#myList").each(function () {
-            listContents.push(this.innerHTML);
-        })
-        localStorage.setItem('myChannelList', JSON.stringify(listContents));
-    });
+//        var listContents = [];
+//        $("#ItemList").each(function () {
+//            listContents.push(this.innerHTML);
+//        })
+//        localStorage.setItem('myChannelList', JSON.stringify(listContents));
+//    });
 
-    //$("#clearAll").click(function (e) {
-    //    e.preventDefault();
-    //    localStorage.clear();
-    //    location.reload();
-    //});
+//    //$("#clearAll").click(function (e) {
+//    //    e.preventDefault();
+//    //    localStorage.clear();
+//    //    location.reload();
+//    //});
 
-    loadMyChannelList();
+//    loadMyChannelList();
 
-    function loadToDo() {
-        if (localStorage.getItem('todoList')) {
-            var listContents = JSON.parse(localStorage.getItem('todoList'));
-            $("ul").each(function (i) {
-                this.innerHTML = listContents[i];
-            })
-        }
-    }
-});
+//    function loadMyChannelList() {
+//        if (localStorage.getItem('myChannelList')) {
+//            var listContents = JSON.parse(localStorage.getItem('myChannelList'));
+//            $("#ItemList").each(function (i) {
+//                this.innerHTML = listContents[i];
+//            })
+//        }
+//    }
+//});
 /*Testar om det finns något sparat*/
-if (!localStorage.getItem('bgcolor')) {
-    populateStorage();
-} else {
-    Storage.clear();
-    populateStorage();
-}
+//if (!localStorage.getItem('myChannelList')) {
+//    populateStorage();
+//} else {
+//    Storage.clear();
+//    populateStorage();
+//}
+
+$('#save-local').on('click', function () {
+    var ckeckedChannels, arrMyChannels = [];
+    $('#save-local').each(function () { // run through each of the checkboxes
+        ckeckedChannels = { id: $(this).attr('id'), value: $(this).prop('checked') };
+        arrMyChannels.push(fav);
+    })
+    localStorage.setItem("myChannels", JSON.stringify(favs));
+});
