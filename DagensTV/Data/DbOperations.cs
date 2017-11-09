@@ -15,6 +15,13 @@ namespace DagensTV.Data
         private DagensTVEntities db = new DagensTVEntities();
 
         #region User
+
+        public IEnumerable<Person> GetAllPersons()
+        {
+            var allUsers = db.Person.ToList();
+            return allUsers;
+        }
+
         public bool CheckUser(string username, string password)
         {
             var user = db.Person.Where(
@@ -236,5 +243,6 @@ namespace DagensTV.Data
 
 
         #endregion
+
     }
 }

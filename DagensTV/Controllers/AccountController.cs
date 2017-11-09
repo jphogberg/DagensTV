@@ -25,16 +25,18 @@ namespace DagensTV.Controllers
         {
             if (ModelState.IsValid)
             {
+                #region Get user input
                 Person p = new Person();
                 p.Firstname = model.Firstname;
                 p.Lastname = model.Lastname;
                 p.Username = model.Username;
                 p.Password = model.Password;
                 p.RoleId = 2;
+                #endregion
 
-                var checkUsers = db.Person.ToList();
+                #region Set Account
                 bool exists = false;
-                foreach (var item in checkUsers)
+                foreach (var item in dbo.GetAllPersons())
                 {
                     if (p.Username.Trim() == item.Username.Trim()
                         && p.Password.Trim() == item.Password.Trim())
@@ -46,16 +48,16 @@ namespace DagensTV.Controllers
 
                 if (exists)
                 {
-                    //ViewBag.Message("Kontot är upptaget!");
+                    TempData["userExists"] = "Användarnamnet finns redan!";
                     return View("CreateAccount");
                 }
                 else
                 {
                     db.Person.Add(p);
                     db.SaveChanges();
-                    //ViewBag.Message("Ditt konto är nu skapat, vänligen logga in!");
                     return RedirectToAction("Index", "Home");
                 }
+                #endregion
             }
             else
             {
@@ -68,7 +70,6 @@ namespace DagensTV.Controllers
         // GET: Account
         public ActionResult Login()
         {
-
             return View("Login");
         }
 
@@ -78,16 +79,13 @@ namespace DagensTV.Controllers
         {
             if (ModelState.IsValid)
             {
-                //return Redirect(ReturnUrl) om fler länkar i nav
-
+                #region Login
                 if (dbo.CheckUser(model.Username, model.Password))
                 {
                     FormsAuthentication.SetAuthCookie(model.Username, false);
 
-                    var persons = db.Person.ToList();
-
                     var roleId = 0;
-                    foreach (var p in persons)
+                    foreach (var p in dbo.GetAllPersons())
                     {
                         if (p.Username.Trim().Equals(model.Username))
                         {
@@ -113,6 +111,7 @@ namespace DagensTV.Controllers
                 {
                     ModelState.AddModelError("", "Felaktigt användarnamn eller lösenord.");
                 }
+                #endregion
             }
             return View();
         }
