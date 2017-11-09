@@ -209,8 +209,8 @@ namespace DagensTV.Data
             foreach (var trueCh in list)
             {
                 foreach (var item in oldList)
-                {
-                    if (item.PersonId == Person.activeUser.Id && item.ChannelId != trueCh.ChannelId)
+                { //!db.Show.Any(s => s.Name == sh.Name)
+                    if (!db.MyChannels.Any(c => c.ChannelId == trueCh.ChannelId && c.PersonId == Person.activeUser.Id))
                     {
                         db.MyChannels.Add(trueCh);
                         db.SaveChanges();
@@ -222,7 +222,7 @@ namespace DagensTV.Data
        
         public void UpdateFalseChannels(List<MyChannels> list)
         {
-            var oldList = db.MyChannels.ToList();
+            var oldList = db.MyChannels.Where(x => x.PersonId == Person.activeUser.Id).ToList();
 
             foreach (var falseCh in list)
             {

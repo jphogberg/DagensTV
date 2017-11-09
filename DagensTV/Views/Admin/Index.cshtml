@@ -25,7 +25,7 @@
         <div class="form-group">
             @Html.Label("Bildens namn inkl filformat")<br />
             @Html.EditorFor(x => Model.ImgUrl, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.ImgUrl, "*obligatoriskt", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.ImgUrl, "*obligatiriskt", new { @class = "text-danger" })
             @Html.HiddenFor(x => Model.ImgUrl)
         </div><br /><br />
 
