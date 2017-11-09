@@ -15,9 +15,9 @@ namespace DagensTV.Controllers
 
         #region Main
         public ActionResult Index()
-        {            
+        {
             var today = new DateTime(2017, 11, 09, 06, 00, 00); //Hårdkodat tills vidare så att den tror vi är på 9e idag
-            
+
             var channelList = db.Channel.Select(x => new ChannelVM
             {
                 Id = x.Id,
@@ -41,21 +41,34 @@ namespace DagensTV.Controllers
                 }).ToList()
             });
 
-            // Används inte ännu
-            //var date = DateTime.Now;
-            //var dates = new List<string>
-            //{
-            //    date.ToShortDateString(),
-            //    date.AddDays(1).ToShortDateString(),
-            //    date.AddDays(2).ToShortDateString(),
-            //    date.AddDays(3).ToShortDateString(),
-            //    date.AddDays(4).ToShortDateString(),
-            //    date.AddDays(5).ToShortDateString(),
-            //    date.AddDays(6).ToShortDateString(),
-            //};
 
-            return View(channelList);
-        }
+            //var filteredList;
+            foreach (var channel in channelList)
+            {
+                foreach (var myChannel in Person.activeUser.myChannels)
+                {
+                    if (channel.Id == myChannel.Id)
+                    {
+                    }
+                }
+            }
+
+
+                // Används inte ännu
+                //var date = DateTime.Now;
+                //var dates = new List<string>
+                //{
+                //    date.ToShortDateString(),
+                //    date.AddDays(1).ToShortDateString(),
+                //    date.AddDays(2).ToShortDateString(),
+                //    date.AddDays(3).ToShortDateString(),
+                //    date.AddDays(4).ToShortDateString(),
+                //    date.AddDays(5).ToShortDateString(),
+                //    date.AddDays(6).ToShortDateString(),
+                //};
+
+                return View(channelList);
+            }
 
         [ActionName("FilterSchedule")]
         public ActionResult Index(string Filter)

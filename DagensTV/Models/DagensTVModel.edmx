@@ -23,6 +23,14 @@
           <Property Name="MyPage" Type="bit" Nullable="false" />
           <Property Name="DownloadPath" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
+        <EntityType Name="MyChannels">
+          <Key>
+            <PropertyRef Name="PersonId" />
+            <PropertyRef Name="ChannelId" />
+          </Key>
+          <Property Name="PersonId" Type="int" Nullable="false" />
+          <Property Name="ChannelId" Type="int" Nullable="false" />
+        </EntityType>
         <EntityType Name="Person">
           <Key>
             <PropertyRef Name="Id" />
@@ -170,9 +178,22 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_Table_ToTable_1">
+          <End Role="Channel" Type="Self.Channel" Multiplicity="1" />
+          <End Role="MyChannels" Type="Self.MyChannels" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Channel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MyChannels">
+              <PropertyRef Name="ChannelId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="DagensTVModelStoreContainer">
           <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Channel" EntityType="Self.Channel" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MyChannels" EntityType="Self.MyChannels" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Person" EntityType="Self.Person" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="PopularContent" EntityType="Self.PopularContent" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
@@ -207,6 +228,10 @@
             <End Role="Category" EntitySet="Category" />
             <End Role="Show" EntitySet="Show" />
           </AssociationSet>
+          <AssociationSet Name="FK_Table_ToTable_1" Association="Self.FK_Table_ToTable_1">
+            <End Role="Channel" EntitySet="Channel" />
+            <End Role="MyChannels" EntitySet="MyChannels" />
+          </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -231,6 +256,7 @@
           <Property Name="LogoFilePath" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="MyPage" Type="Boolean" Nullable="false" />
           <Property Name="DownloadPath" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="MyChannels" Relationship="DagensTVModel.FK_Table_ToTable_1" FromRole="Channel" ToRole="MyChannels" />
         </EntityType>
         <EntityType Name="Schedule">
           <Key>
@@ -333,6 +359,11 @@
             <End Role="Person" EntitySet="Person" />
             <End Role="Settings" EntitySet="Settings" />
           </AssociationSet>
+          <EntitySet Name="MyChannels" EntityType="DagensTVModel.MyChannels" />
+          <AssociationSet Name="FK_Table_ToTable_1" Association="DagensTVModel.FK_Table_ToTable_1">
+            <End Role="Channel" EntitySet="Channel" />
+            <End Role="MyChannels" EntitySet="MyChannels" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="Person">
           <Key>
@@ -429,6 +460,27 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityType Name="MyChannels">
+          <Key>
+            <PropertyRef Name="PersonId" />
+            <PropertyRef Name="ChannelId" />
+          </Key>
+          <Property Name="PersonId" Type="Int32" Nullable="false" />
+          <Property Name="ChannelId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Channel" Relationship="DagensTVModel.FK_Table_ToTable_1" FromRole="MyChannels" ToRole="Channel" />
+        </EntityType>
+        <Association Name="FK_Table_ToTable_1">
+          <End Type="DagensTVModel.Channel" Role="Channel" Multiplicity="1" />
+          <End Type="DagensTVModel.MyChannels" Role="MyChannels" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Channel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MyChannels">
+              <PropertyRef Name="ChannelId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -521,6 +573,14 @@
                 <ScalarProperty Name="Svt2" ColumnName="Svt2" />
                 <ScalarProperty Name="Svt1" ColumnName="Svt1" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MyChannels">
+            <EntityTypeMapping TypeName="DagensTVModel.MyChannels">
+              <MappingFragment StoreEntitySet="MyChannels">
+                <ScalarProperty Name="ChannelId" ColumnName="ChannelId" />
+                <ScalarProperty Name="PersonId" ColumnName="PersonId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
