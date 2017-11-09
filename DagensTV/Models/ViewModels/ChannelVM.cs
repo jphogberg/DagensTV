@@ -12,5 +12,6 @@ namespace DagensTV.Models.ViewModels
         public string ImgUrl { get; set; }
 
         public List<ScheduleVM> Schedules { get; set; }
+        public List<MyChannels> MyChannels { get; set; }
     }
 }

@@ -24,7 +24,8 @@ namespace DagensTV.Models
         public string RoleName { get; set; }
 
         public static Person activeUser = new Person();
-        public List<Channel> myChannels = new List<Channel>();        
+        public List<Channel> myChannels = new List<Channel>();
+        public List<MyChannels> myChannelsList { get; set; }
 
         public virtual Role Role { get; set; }
     }

@@ -209,7 +209,7 @@ namespace DagensTV.Data
             foreach (var trueCh in list)
             {
                 foreach (var item in oldList)
-                { //!db.Show.Any(s => s.Name == sh.Name)
+                {
                     if (!db.MyChannels.Any(c => c.ChannelId == trueCh.ChannelId && c.PersonId == Person.activeUser.Id))
                     {
                         db.MyChannels.Add(trueCh);
@@ -299,9 +299,9 @@ namespace DagensTV.Data
         public IQueryable<ChannelVM> GetSchedule(string date, int id)
         {
             var dt = DateTime.Parse(date);
-            var myChannels = db.MyChannels.Where(x => x.PersonId == id);
-
-            var schedule = db.Channel.Select(x => new ChannelVM
+            List<int> myChannels = db.MyChannels.Where(x => x.PersonId == id).Select(c => c.ChannelId).ToList();
+                                                                  
+            var schedule = db.Channel.Where(c => myChannels.Contains(c.Id)).Select(x => new ChannelVM
             {
                 Id = x.Id,
                 Name = x.Name,
@@ -321,8 +321,7 @@ namespace DagensTV.Data
                     IsActive = sc.StartTime < DateTime.Now && sc.EndTime > DateTime.Now
                 }).ToList()
             });
-
-            return schedule;
+            return schedule;            
         }
 
         public IQueryable<ChannelVM> FilterScheduleByCategory(string category)
