@@ -1,5 +1,4 @@
 ﻿@model IList<DagensTV.Models.Show>
-
 @{
     ViewBag.Title = "Inställningar";
     ViewBag.Current = "MyPage";
@@ -15,20 +14,19 @@
             for (var i = 0; i < Model.Count; i++)
             {
                 <section class="my-channelList">
-                    <ul id="ItemList">
-                        @*<li id="@i-cb">
+                    <ul id="myPrograms">
+                        <li id="@i-cb">
                             @Html.HiddenFor(x => x[i].Id)
                             @Html.HiddenFor(x => x[i].Name)
-                            @Html.HiddenFor(x => x[i].LogoFilePath)
-                            @Html.CheckBoxFor(x => x[i].MyPage, new { id = "chbx" + i })
-
-                            <img src="../@Model[i].LogoFilePath" class="channel" title="@Model[i].Name" alt="@Model[i].Name"><span id="channel-name"> @Model[i].Name</span>
-                        </li>*@
+                            @Html.HiddenFor(x => x[i].CategoryId)
+                            @Html.CheckBoxFor(x => x[i].MyProgram, new { id = "chbx" + i })
+                            <span> @Model[i].Name</span>
+                        </li>
                     </ul>
                 </section>
             }
             <div class="channel-picker-submit">
-                <input id="save-local" type="submit" value="Spara kanalval" class="btn btn-success">
+                <input id="save-local" type="submit" value="Spara programval" class="btn btn-success">
             </div>
         }
     }

@@ -76,7 +76,7 @@ namespace DagensTV.Controllers
         {
 
 
-            return View();
+            return PartialView("_MyFavorites", db.Show.ToList());
         }
     }
 }
