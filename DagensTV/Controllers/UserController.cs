@@ -88,19 +88,19 @@ namespace DagensTV.Controllers
             List<MyFavorites> trueList = new List<MyFavorites>();
             List<MyFavorites> falseList = new List<MyFavorites>();
 
-            foreach (var c in myShows)
+            foreach (var s in myShows)
             {
-                if (c.MyProgram == true)
+                if (s.MyProgram == true)
                 {
                     mf = new MyFavorites();
-                    mf.ShowId = c.Id;
+                    mf.ShowId = s.Id;
                     mf.PersonId = Person.activeUser.Id;
                     trueList.Add(mf);
                 }
-                if (c.MyProgram == false)
+                if (s.MyProgram == false)
                 {
                     mf = new MyFavorites();
-                    mf.ShowId = c.Id;
+                    mf.ShowId = s.Id;
                     mf.PersonId = Person.activeUser.Id;
                     falseList.Add(mf);
                 }
