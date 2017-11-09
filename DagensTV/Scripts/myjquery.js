@@ -123,7 +123,8 @@ elements.each(function (i, obj) {
 
 })
 
-///* Local storage*/
+///* Local storage*//
+/* Lagrar checkboxarnas värden i localStorage */
 //$('#save-local').on('click', function () {
 //    var chb, mySettings = [];
 //    $("[id^=chbx]").each(function () {

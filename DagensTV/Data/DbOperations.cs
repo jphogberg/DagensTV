@@ -396,6 +396,7 @@ namespace DagensTV.Data
                     IsActive = sc.StartTime < DateTime.Now && sc.EndTime > DateTime.Now
                 }).ToList()
             });
+
             return schedule;            
         }
 
