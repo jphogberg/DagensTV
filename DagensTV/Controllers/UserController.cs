@@ -22,8 +22,6 @@ namespace DagensTV.Controllers
         {
             var channelList = db.Channel.ToList();
 
-           
-            
             return View(channelList);
         }
 
@@ -33,40 +31,130 @@ namespace DagensTV.Controllers
 
             var myChannels = channels.ToList();
             MyChannels mc;
+            List<MyChannels> trueList = new List<MyChannels>();
+            List<MyChannels> falseList = new List<MyChannels>();
+            //List<MyChannels> myNewChannels = new List<MyChannels>();
 
-            List<MyChannels> myNewChannels = new List<MyChannels>();
-            foreach(var c in myChannels)
+            foreach (var c in myChannels)
             {
-                if (c.MyPage == true) //Med eller utan false??
+                if (c.MyPage == true)
+                {
+                    //kolla om den finns i db, om ej lägg till
+                    mc = new MyChannels();
+                    mc.ChannelId = c.Id;
+                    mc.PersonId = Person.activeUser.Id;
+                    trueList.Add(mc);
+                    //myNewChannels.Add(mc);
+                }
+                if (c.MyPage == false)
                 {
                     mc = new MyChannels();
                     mc.ChannelId = c.Id;
                     mc.PersonId = Person.activeUser.Id;
-                    myNewChannels.Add(mc);
+                    falseList.Add(mc);
+                    //myNewChannels.Add(mc);
                 }
+                //om ja ta bort
             }
 
+            var oldList = db.MyChannels.ToList();
 
-            var dbList = db.MyChannels.ToList();
-
-            foreach (var item in dbList)
+            if (oldList.Count > 0)
             {
-                if (item.PersonId == Person.activeUser.Id)
+                foreach (var item in oldList)
                 {
-                    //Update
-
-
-
-
-                }
-                else
-                {
-                    //Add new settings to db
-                    foreach (var c in myNewChannels)
+                    if (item.PersonId == Person.activeUser.Id)
                     {
-                        db.MyChannels.Add(c);
-                        db.SaveChanges();
+                        foreach (var trueCh in trueList)
+                        {
+                            if (item.ChannelId == trueCh.ChannelId)
+                            {
+                                db.MyChannels.Remove(item);
+                            }
+                            else
+                            {
+                                db.MyChannels.Add(item);
+                                db.SaveChanges();
+                            }
+                        }
+
+                        foreach (var falseCh in falseList)
+                        {
+                            if (item.ChannelId == falseCh.ChannelId)
+                            {
+                                db.MyChannels.Remove(item);
+                            }
+                            else
+                            {
+                                db.MyChannels.Add(item);
+                                db.SaveChanges();
+                            }
+                        }
                     }
+                    else
+                    {
+                        //Add new settings to db
+                        foreach (var c in trueList)
+                        {
+                            db.MyChannels.Add(c);
+                            db.SaveChanges();
+                           
+                        }
+                        break;
+                    }
+                }
+
+
+
+
+                //List<MyChannels> myNewChannels = new List<MyChannels>();
+                //List<MyChannels> myOldChannels = new List<MyChannels>();
+                //var dbList = db.MyChannels.ToList();
+
+                //MyChannels myOld;
+
+                //List<MyChannels> myOldChannels = new List<MyChannels>();
+
+
+                //foreach (var item in dbList)
+                //{
+                //    if (item.PersonId == Person.activeUser.Id)
+                //    {
+                //        //Update
+                //        var oldlist = db.MyChannels.Where(x => x.PersonId == Person.activeUser.Id);
+
+                //        foreach(var i in oldlist)
+                //        {
+                //            myOldChannels.Add(i);
+                //        }
+
+                //        break;
+                //    }
+                //}
+
+
+
+                //foreach (var item in dbList)
+                //{
+                //    if (item.PersonId != Person.activeUser.Id)
+                //    {
+                //        //Add new settings to db
+                //        foreach (var c in myNewChannels)
+                //        {
+                //            db.MyChannels.Add(c);
+                //            db.SaveChanges();
+                //        }
+                //        break;
+                //    }
+                //}
+            }
+            else
+            {
+                //Add new settings to db
+                foreach (var c in trueList)
+                {
+                    db.MyChannels.Add(c);
+                    db.SaveChanges();
                 }
             }
             //foreach(var item in myChannels)
@@ -77,41 +165,41 @@ namespace DagensTV.Controllers
             //    }
             //}
 
-            var list = db.MyChannels.ToList();
+            //var list = db.MyChannels.ToList();
 
-            foreach (var item in list)
-            {
-                if (item.PersonId == Person.activeUser.Id)
-                {
-                    //MyChannels mc = new MyChannels();
-                    //var dbMyC = db.MyChannels.Where(x => x.PersonId == Person.activeUser.Id && x.ChannelId == item.ChannelId);
+            //foreach (var item in list)
+            //{
+            //    if (item.PersonId == Person.activeUser.Id)
+            //    {
+            //        //MyChannels mc = new MyChannels();
+            //        //var dbMyC = db.MyChannels.Where(x => x.PersonId == Person.activeUser.Id && x.ChannelId == item.ChannelId);
 
-                    //foreach (var row in dbMyC)
-                    //{
-                    //    mc.PersonId = row.PersonId;
-                    //    mc.ChannelId = row.ChannelId;
+            //        //foreach (var row in dbMyC)
+            //        //{
+            //        //    mc.PersonId = row.PersonId;
+            //        //    mc.ChannelId = row.ChannelId;
 
-                    //}
-                    ////int prevouseId = previousSetting.
-                    ////Update previous settings
-                    //MyChannels mcUpdate = new MyChannels();
-                    //mcUpdate = db.Settings.Find(mc.PersonId && mc.ChannelId);
-                    //mcUpdate.Svt1 = userSetting.Svt1;
-                   
-                    //sUpdate.PersonId = Person.activeUser.Id;
+            //        //}
+            //        ////int prevouseId = previousSetting.
+            //        ////Update previous settings
+            //        //MyChannels mcUpdate = new MyChannels();
+            //        //mcUpdate = db.Settings.Find(mc.PersonId && mc.ChannelId);
+            //        //mcUpdate.Svt1 = userSetting.Svt1;
 
-                    //db.Entry(sUpdate).State = EntityState.Modified;
-                    //db.SaveChanges();
-                    //break;
-                }
-                else
-                {
-                    //Insert first time settings
-                    //db.MyChannels.Add(userSetting);
-                    //db.SaveChanges();
-                    //break;
-                }
-            }
+            //        //sUpdate.PersonId = Person.activeUser.Id;
+
+            //        //db.Entry(sUpdate).State = EntityState.Modified;
+            //        //db.SaveChanges();
+            //        //break;
+            //    }
+            //    else
+            //    {
+            //        //Insert first time settings
+            //        //db.MyChannels.Add(userSetting);
+            //        //db.SaveChanges();
+            //        //break;
+            //    }
+            //}
 
             ////Extract only bool values
             //foreach (var item in myChannels)
