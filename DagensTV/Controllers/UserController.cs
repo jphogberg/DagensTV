@@ -71,5 +71,54 @@ namespace DagensTV.Controllers
 
             return RedirectToAction("Index", "Home");
         }
+
+        public ActionResult MyFavorites()
+        {
+            return PartialView("_MyFavorites", db.Show.ToList());
+        }
+
+        [HttpPost]
+        public ActionResult MyFavorites(IEnumerable<Show> shows)
+        {
+            #region Get user input
+            var myShows = shows.ToList();
+            MyFavorites mf;
+            List<MyFavorites> trueList = new List<MyFavorites>();
+            List<MyFavorites> falseList = new List<MyFavorites>();
+
+            foreach (var s in myShows)
+            {
+                if (s.MyProgram == true)
+                {
+                    mf = new MyFavorites();
+                    mf.ShowId = s.Id;
+                    mf.PersonId = Person.activeUser.Id;
+                    trueList.Add(mf);
+                }
+                if (s.MyProgram == false)
+                {
+                    mf = new MyFavorites();
+                    mf.ShowId = s.Id;
+                    mf.PersonId = Person.activeUser.Id;
+                    falseList.Add(mf);
+                }
+            }
+            #endregion
+
+            #region Set MyFavorites
+            bool hasMyFavorites = dbo.CheckUserHasMyFavorites();
+            if (hasMyFavorites)
+            {
+                dbo.UpdateTrueShows(trueList);
+                dbo.UpdateFalseShows(falseList);
+            }
+            else
+            {
+                dbo.AddNewUserFavoritesSettings(trueList);
+            }
+            #endregion
+
+            return RedirectToAction("MyPage", "User");
+        }
     }
 }
