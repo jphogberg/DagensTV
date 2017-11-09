@@ -4,95 +4,94 @@
     ViewBag.Current = "Admin";
 }
 
-<div class="col-md-offset-2 col-md-10">
-    <h1>Hantera nyhetspuffar</h1>
-</div><br />
-<hr /><br /><br />
+<div class="content-wrapper">
+    <span id="admin-info">Hantera nyhetspuffar</span>
+    <hr />
 
-@using (Html.BeginForm("GetForm", "Admin", FormMethod.Post))
-{
-    @Html.AntiForgeryToken()
-
-    <div class="col-md-offset-2 col-md-10">
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })<br />
-        @Html.Label("Steg 1: Välj befintlig")<br /><br />
-        @Html.DropDownList("Id", (IEnumerable<SelectListItem>)ViewBag.Pops)<br /><br /><br />
-
-        @Html.Label("Steg 2: Välj ny")<br /><br />
-        @Html.DropDownList("ScheduleId", (IEnumerable<SelectListItem>)ViewBag.Schedule)
-        @Html.HiddenFor(x => Model.ScheduleId)<br /><br /><br />
-
-        <div class="form-group">
-            @Html.Label("Bildens namn inkl filformat")<br />
-            @Html.EditorFor(x => Model.ImgUrl, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.ImgUrl, "*obligatiriskt", new { @class = "text-danger" })
-            @Html.HiddenFor(x => Model.ImgUrl)
-        </div><br /><br />
-
-        <input type="submit" value="Spara" class="btn btn-success" />
-
-        @Html.ActionLink("Klar", "Index", "Home")
-    </div>
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@*@using (Html.BeginForm("GetForm", "Admin", FormMethod.Post))
+    @using (Html.BeginForm("GetForm", "Admin", FormMethod.Post))
     {
         @Html.AntiForgeryToken()
 
-        <div class="col-md-offset-2 col-md-10">
-            <div class="form">
-                <div class="form-group">
-                    @Html.Label(Model.ImgTitle)
-                    @Html.TextBoxFor(m => m.ImgTitle)
-                    <label for="img-title">Bildens titel:</label>
-                    <input type="text" class="form-control" id="img-title">
-                </div>
+        <div class="col-md-12">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })<br />
+            @Html.Label("Steg 1: Välj befintlig")<br /><br />
+            @Html.DropDownList("Id", (IEnumerable<SelectListItem>)ViewBag.Pops)<br /><br /><br />
 
-                <div class="form-group">
-                    @Html.Label(Model.ImgUrl)
-                    @Html.TextBoxFor(m => m.ImgUrl)
-                    <label for="img-url">Bildens url:</label>
-                    <input type="text" class="form-control" id="img-url">
-                </div>
+            @Html.Label("Steg 2: Välj ny")<br /><br />
+            @Html.DropDownList("ScheduleId", (IEnumerable<SelectListItem>)ViewBag.Schedule)
+            @Html.HiddenFor(x => Model.ScheduleId)<br /><br /><br />
 
-                <div class="form-group">
-                    @Html.Label(Model.Icon)
-                    @Html.TextBoxFor(m => m.Icon)
-                    <label for="img-icon">Bildens ikon:</label>
-                    <input type="text" class="form-control" id="img-icon">
-                </div>
+            <div class="form-group">
+                @Html.Label("Bildens namn inkl filformat")<br />
+                @Html.EditorFor(x => Model.ImgUrl, new { htmlAttributes = new { @class = "form-control", @placeholder="image.jpg" } })
+                @Html.ValidationMessageFor(model => model.ImgUrl, "* Obligatoriskt", new { @class = "text-danger" })
+                @Html.HiddenFor(x => Model.ImgUrl)
+            </div><br /><br />
 
-                <div class="form-group">
-                    <div class="col-md-offset-2">
-                        <input type="submit" value="Spara" class="btn btn-success" />
-                    </div>
-                </div>
+            <input type="submit" value="Spara" class="btn btn-success" />
 
-            </div>
+            @Html.ActionLink("Klar", "Index", "Home", null, new { @class = "btn btn-info" } )
         </div>
+    }
+</div>
 
-    }*@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @*@using (Html.BeginForm("GetForm", "Admin", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="col-md-offset-2 col-md-10">
+                <div class="form">
+                    <div class="form-group">
+                        @Html.Label(Model.ImgTitle)
+                        @Html.TextBoxFor(m => m.ImgTitle)
+                        <label for="img-title">Bildens titel:</label>
+                        <input type="text" class="form-control" id="img-title">
+                    </div>
+
+                    <div class="form-group">
+                        @Html.Label(Model.ImgUrl)
+                        @Html.TextBoxFor(m => m.ImgUrl)
+                        <label for="img-url">Bildens url:</label>
+                        <input type="text" class="form-control" id="img-url">
+                    </div>
+
+                    <div class="form-group">
+                        @Html.Label(Model.Icon)
+                        @Html.TextBoxFor(m => m.Icon)
+                        <label for="img-icon">Bildens ikon:</label>
+                        <input type="text" class="form-control" id="img-icon">
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2">
+                            <input type="submit" value="Spara" class="btn btn-success" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        }*@

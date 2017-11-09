@@ -19,7 +19,7 @@ namespace DagensTV.Controllers
 
         // GET: Admin
         
-        [HttpGet]
+        [HttpGet]        
         public ActionResult Index()
         {
             #region Set PopVM
