@@ -357,6 +357,15 @@ figure figcaption {
 
 /* --- Main content --- */
 
+#schedule-date {
+    font: 2em 'Roboto Condensed', sans-serif;
+    line-height: 1.6em;
+    font-weight: 700;    
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #193441;
+}
+
 .content-wrapper {	
 	width: 66%;	
 	margin: 0 auto;	

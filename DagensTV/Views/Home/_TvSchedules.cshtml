@@ -2,10 +2,10 @@
 
 @if (ViewBag.Date != null)
 {
-    foreach (var date in ViewBag.Date)
-    {
-        <span class="schedule-date">@date</span>
-    }
+    var date = ViewBag.Date;
+    <div>
+        <span id="schedule-date">@date</span>
+    </div>
 }
 
 <div class="clear"></div>

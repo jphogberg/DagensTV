@@ -19,22 +19,38 @@ namespace DagensTV.Controllers
 
         #region Main               
         public ActionResult Index(string date)
-        {
+        {            
+            //dbo.GetShowsFromJson(date);
+            //dbo.GetScheduleFromJson(date);
+
             if (date == null)
             {
                 var today = DateTime.Now;
                 date = today.ToShortDateString();
-            }
-
-            ViewBag.Date = date;
+            }            
 
             if (Person.activeUser.Id != 0)
             {
                 return View(dbo.GetSchedule(date, Person.activeUser.Id));
-            }
+            }            
 
-            //dbo.GetShowsFromJson(date);
-            //dbo.GetScheduleFromJson(date);
+            if (date == DateTime.Now.ToShortDateString())
+            {
+                var dateText = "Dagens tv-tablå";
+                ViewBag.Date = dateText;
+            }
+            else if (date == DateTime.Now.AddDays(1).ToShortDateString())
+            {
+                var dateText = "Tv-tablå imorgon";
+                ViewBag.Date = dateText;
+            }
+            else
+            {
+                var dateParse = DateTime.Parse(date).DayOfWeek;
+                var day = new System.Globalization.CultureInfo("sv-SE").DateTimeFormat.GetDayName(dateParse);
+                var dateText = "Tv-tablå för " + day;
+                ViewBag.Date = dateText;
+            }            
 
             return View(dbo.GetSchedule(date));
         }
