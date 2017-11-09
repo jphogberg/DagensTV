@@ -35,19 +35,6 @@ $(".category-filter").click(function () {
     });
 });
 
-
-/* Göm placeholder vid focus */
-$(function () {
-    $('.searchbox').data('holder', $('.searchbox').attr('placeholder'));
-
-    $('.searchbox').focusin(function () {
-        $(this).attr('placeholder', '');
-    });
-    $('.searchbox').focusout(function () {
-        $(this).attr('placeholder', $(this).data('holder'));
-    });
-});
-
 /* Stäng overlay med escape */
 $(document).bind('keydown', function (e) {
     if (e.which === 27) {
@@ -55,23 +42,38 @@ $(document).bind('keydown', function (e) {
     }
 });
 
+/* Göm placeholder vid focus */
+/* Utkommenterat då vi inte använder sökfunktionen */
+//$(function () {
+//    $('.searchbox').data('holder', $('.searchbox').attr('placeholder'));
+
+//    $('.searchbox').focusin(function () {
+//        $(this).attr('placeholder', '');
+//    });
+//    $('.searchbox').focusout(function () {
+//        $(this).attr('placeholder', $(this).data('holder'));
+//    });
+//});
+
 /* Visa meddelande om programmet */
-$('.searchbox').keypress(function (e) {    
-    if (e.keyCode === 13) {
-        showSearchResult();
-        e.preventDefault();
-    }    
-});
+/* Utkommenterat då vi inte använder sökfunktionen */
+//$('.searchbox').keypress(function (e) {    
+//    if (e.keyCode === 13) {
+//        showSearchResult();
+//        e.preventDefault();
+//    }    
+//});
 
 /* Ändra placeholder i sökrutan för responsiva designen */
-$(function () {
-    $(window).on("resize", function (e) {
-        var w = e.target.innerWidth;
-        $("input[type=search]").attr("placeholder", function () {
-            return (w > 1 && w < 1279) ? "Sök" : "";
-        });
-    }).resize();
-});
+/* Utkommenterat då vi inte använder sökfunktionen */
+//$(function () {
+//    $(window).on("resize", function (e) {
+//        var w = e.target.innerWidth;
+//        $("input[type=search]").attr("placeholder", function () {
+//            return (w > 1 && w < 1279) ? "Sök" : "";
+//        });
+//    }).resize();
+//});
 
 /* Toggla dropdown menyerna i SubNav för responsiva designen */
 $('.category-filter').click(function () {
@@ -96,10 +98,35 @@ $('.show-calendar').click(function () {
     $("#nav-second-calendar").toggle();
 });
 
-///* Testar local storage*/
+/* Progressbar */
+/* Ej fungerande som den skall */
+var now, nowMS, startStr, startMS, endStr, endMS, percentage, pbarsAmount, channelsAmount, percentage;
+elements = $(".channel-class .active-programme #progressbar");
+elements.each(function (i, obj) {
+
+    pbarsAmount = document.getElementsByClassName("active-programme");
+    channelsAmount = document.getElementsByClassName("channel-class");
+
+    now = new Date();
+    nowMS = now.getTime();
+    startStr = $(this).data('start');
+    startMS = Date.parse(startStr);
+    endStr = $(this).data('end');
+    endMS = Date.parse(endStr);
+
+    percentage = Math.round(((nowMS - startMS) / (endMS - startMS)) * 100);
+
+    console.log(startStr)
+    $(".active-programme [class*=track-time]").progressbar({
+        value: parseInt(percentage)
+    })
+
+})
+
+///* Local storage*/
 //$('#save-local').on('click', function () {
 //    var chb, mySettings = [];
-//    $("[id^=chbx]").each(function () { // run through each of the checkboxes
+//    $("[id^=chbx]").each(function () {
 //        chb = { id: $(this).attr('id'), value: $(this).prop('checked') };
 //        mySettings.push(chb);
 //    });

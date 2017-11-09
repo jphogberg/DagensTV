@@ -58,7 +58,7 @@ namespace DagensTV
 
             bundles.Add(new ScriptBundle("~/bundles/myJS").Include(
                       "~/Scripts/myjquery.js",
-                      "~/Scripts/autocomplete.js",
+                      //"~/Scripts/autocomplete.js",
                       "~/Scripts/myjscript.js"));
 
             bundles.Add(new StyleBundle("~/Content/myCSS").Include(
