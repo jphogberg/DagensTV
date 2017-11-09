@@ -266,7 +266,7 @@ namespace DagensTV.Data
             return exists;
         }
 
-        public void AddNewUserSettings(List<MyFavorites> list)
+        public void AddNewUserFavoritesSettings(List<MyFavorites> list)
         {
             foreach (var trueSh in list)
             {
@@ -275,7 +275,7 @@ namespace DagensTV.Data
             }
         }
 
-        public void UpdateTrueChannels(List<MyFavorites> list)
+        public void UpdateTrueShows(List<MyFavorites> list)
         {
             var oldList = db.MyFavorites.ToList();
 
@@ -293,7 +293,7 @@ namespace DagensTV.Data
             }
         }
 
-        public void UpdateFalseChannels(List<MyFavorites> list)
+        public void UpdateFalseShows(List<MyFavorites> list)
         {
             var oldList = db.MyFavorites.Where(x => x.PersonId == Person.activeUser.Id).ToList();
 

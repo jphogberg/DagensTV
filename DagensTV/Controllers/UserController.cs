@@ -74,8 +74,6 @@ namespace DagensTV.Controllers
 
         public ActionResult MyFavorites()
         {
-
-
             return PartialView("_MyFavorites", db.Show.ToList());
         }
 
@@ -111,12 +109,12 @@ namespace DagensTV.Controllers
             bool hasMyFavorites = dbo.CheckUserHasMyFavorites();
             if (hasMyFavorites)
             {
-                dbo.UpdateTrueChannels(trueList);
-                dbo.UpdateFalseChannels(falseList);
+                dbo.UpdateTrueShows(trueList);
+                dbo.UpdateFalseShows(falseList);
             }
             else
             {
-                dbo.AddNewUserSettings(trueList);
+                dbo.AddNewUserFavoritesSettings(trueList);
             }
             #endregion
 
