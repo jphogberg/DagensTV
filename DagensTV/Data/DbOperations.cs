@@ -345,6 +345,7 @@ namespace DagensTV.Data
         public IQueryable<ChannelVM> GetSchedule(string date)
         {
             var dt = DateTime.Parse(date);
+            var ts = new TimeSpan(05, 30, 00); 
 
             var schedule = db.Channel.Select(x => new ChannelVM
             {
