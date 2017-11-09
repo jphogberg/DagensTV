@@ -11,7 +11,7 @@ using System.Web;
 
 namespace DagensTV.Data
 {
-    public class DbOperations
+    public class DbOperations 
     {
         private DagensTVEntities db = new DagensTVEntities();
 
