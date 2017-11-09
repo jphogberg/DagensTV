@@ -406,6 +406,14 @@ figure figcaption {
     border-radius: 0;
 }
 
+.generic .ui-progressbar-value {
+    background: #858585;
+    display: block;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+}
+
 .reality .ui-progressbar-value {
     background: #ec8ac7;
     border: none;

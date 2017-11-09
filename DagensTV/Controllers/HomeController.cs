@@ -6,24 +6,38 @@ using System.Web;
 using System.Web.Mvc;
 using DagensTV.Models;
 using DagensTV.Models.ViewModels;
+using Newtonsoft.Json;
+using System.Net;
+using DagensTV.Data;
 
 namespace DagensTV.Controllers
 {
     public class HomeController : Controller
     {
         DagensTVEntities db = new DagensTVEntities();
+        DbOperations dbo = new DbOperations();
 
-        #region Main
-        public ActionResult Index()
+        #region Main       
+        [Route("Home/Index/{date:datetime}")]
+        public ActionResult Index(string date)
         {
-            var today = new DateTime(2017, 11, 09, 06, 00, 00); //Hårdkodat tills vidare så att den tror vi är på 9e idag
+            if (date == null)
+            {
+                var today = DateTime.Now;
+                date = today.ToShortDateString();
+            }
+
+            //dbo.GetShows(date);
+            //dbo.GetSchedule(date);
+
+            var dt = DateTime.Parse(date);
 
             var channelList = db.Channel.Select(x => new ChannelVM
             {
                 Id = x.Id,
                 Name = x.Name,
                 ImgUrl = x.LogoFilePath,
-                Schedules = db.Schedule.Where(s => s.ChannelId == x.Id/* && s.StartTime.Value.Day == today.Day*//* && DbFunctions.AddMinutes(s.StartTime, s.Duration) > DateTime.Now*/).Select(schedule => new ScheduleVM
+                Schedules = db.Schedule.Where(s => s.ChannelId == x.Id && s.StartTime.Day == dt.Day).Select(schedule => new ScheduleVM
                 {
                     Id = schedule.Id,
                     StartTime = schedule.StartTime,
@@ -41,59 +55,45 @@ namespace DagensTV.Controllers
                 }).ToList()
             });
 
+            // Används inte ännu
+            //var date = DateTime.Now;
+            //var dates = new List<string>
+            //{
+            //    date.ToShortDateString(),
+            //    date.AddDays(1).ToShortDateString(),
+            //    date.AddDays(2).ToShortDateString(),
+            //    date.AddDays(3).ToShortDateString(),
+            //    date.AddDays(4).ToShortDateString(),
+            //    date.AddDays(5).ToShortDateString(),
+            //    date.AddDays(6).ToShortDateString(),
+            //};
 
-            //var filteredList; from MyChannels
-            
-            foreach (var channel in channelList)
-            {
-                foreach (var myChannel in Person.activeUser.myChannels)
-                {
-                    if (channel.Id == myChannel.Id)
-                    {
-                    }
-                }
-            }
-
-
-                // Används inte ännu
-                //var date = DateTime.Now;
-                //var dates = new List<string>
-                //{
-                //    date.ToShortDateString(),
-                //    date.AddDays(1).ToShortDateString(),
-                //    date.AddDays(2).ToShortDateString(),
-                //    date.AddDays(3).ToShortDateString(),
-                //    date.AddDays(4).ToShortDateString(),
-                //    date.AddDays(5).ToShortDateString(),
-                //    date.AddDays(6).ToShortDateString(),
-                //};
-
-                return View(channelList);
-            }
-
-        [ActionName("FilterSchedule")]
-        public ActionResult Index(string Filter)
-        {
-            var filterList = db.Channel.Select(x => new ChannelVM
-            {
-                Id = x.Id,
-                Name = x.Name,
-                ImgUrl = x.LogoFilePath,
-                Schedules = db.Schedule.Where(s => s.ChannelId == x.Id && s.Show.Category.Name.Contains(Filter)).Select(schedule => new ScheduleVM
-                {
-                    Id = schedule.Id,
-                    StartTime = schedule.StartTime,
-                    ChannelId = schedule.ChannelId,
-                    ShowName = schedule.Show.Name,
-                    CategoryTag = schedule.Show.Category.Tag,
-                    MovieGenre = schedule.Show.MovieGenre,
-                    ImdbRating = schedule.Show.ImdbRating,
-                    StarImage = schedule.Show.RatingIcon
-                }).ToList()
-            });
-
-            return PartialView("_TvSchedules", filterList);
+            return View(channelList);
         }
+
+        //[ActionName("FilterSchedule")]
+        //public ActionResult Index(string Filter)
+        //{
+        //    var filterList = db.Channel.Select(x => new ChannelVM
+        //    {
+        //        Id = x.Id,
+        //        Name = x.Name,
+        //        ImgUrl = x.LogoFilePath,
+        //        Schedules = db.Schedule.Where(s => s.ChannelId == x.Id && s.Show.Category.Name.Contains(Filter)).Select(schedule => new ScheduleVM
+        //        {
+        //            Id = schedule.Id,
+        //            StartTime = schedule.StartTime,
+        //            ChannelId = schedule.ChannelId,
+        //            ShowName = schedule.Show.Name,
+        //            CategoryTag = schedule.Show.Category.Tag,
+        //            MovieGenre = schedule.Show.MovieGenre,
+        //            ImdbRating = schedule.Show.ImdbRating,
+        //            StarImage = schedule.Show.RatingIcon
+        //        }).ToList()
+        //    });
+
+        //    return PartialView("_TvSchedules", filterList);
+        //}
 
         public ActionResult ShowInfo(int Id)
         {
