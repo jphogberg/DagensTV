@@ -6,24 +6,34 @@ using System.Web;
 using System.Web.Mvc;
 using DagensTV.Models;
 using DagensTV.Models.ViewModels;
+using Newtonsoft.Json;
+using System.Net;
+using DagensTV.Data;
 
 namespace DagensTV.Controllers
 {
     public class HomeController : Controller
     {
         DagensTVEntities db = new DagensTVEntities();
+        DbOperations dbo = new DbOperations();
 
-        #region Main
+        #region Main       
+
         public ActionResult Index()
-        {            
-            var today = new DateTime(2017, 11, 09, 06, 00, 00); //Hårdkodat tills vidare så att den tror vi är på 9e idag
-            
+        {
+            //var today = new DateTime(2017, 11, 09); //Hårdkodat tills vidare så att den tror vi är på 9e idag
+            var today = DateTime.Now;
+            string idag = today.ToShortDateString();
+
+            dbo.GetShows(idag);
+            dbo.GetSchedule(idag);
+
             var channelList = db.Channel.Select(x => new ChannelVM
             {
                 Id = x.Id,
                 Name = x.Name,
                 ImgUrl = x.LogoFilePath,
-                Schedules = db.Schedule.Where(s => s.ChannelId == x.Id/* && s.StartTime.Value.Day == today.Day*//* && DbFunctions.AddMinutes(s.StartTime, s.Duration) > DateTime.Now*/).Select(schedule => new ScheduleVM
+                Schedules = db.Schedule.Where(s => s.ChannelId == x.Id && s.StartTime.Day == today.Day/* && DbFunctions.AddMinutes(s.StartTime, s.Duration) > DateTime.Now*/).Select(schedule => new ScheduleVM
                 {
                     Id = schedule.Id,
                     StartTime = schedule.StartTime,

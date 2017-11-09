@@ -12,13 +12,11 @@ namespace DagensTV.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class PopularContent
+    public partial class MyChannels
     {
-        public int Id { get; set; }
-        public string ImgUrl { get; set; }
-        public string Icon { get; set; }
-        public Nullable<int> ScheduleId { get; set; }
+        public int PersonId { get; set; }
+        public int ChannelId { get; set; }
     
-        public virtual Schedule Schedule { get; set; }
+        public virtual Channel Channel { get; set; }
     }
 }
