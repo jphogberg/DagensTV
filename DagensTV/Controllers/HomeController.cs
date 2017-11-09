@@ -42,7 +42,8 @@ namespace DagensTV.Controllers
             });
 
 
-            //var filteredList;
+            //var filteredList; from MyChannels
+            
             foreach (var channel in channelList)
             {
                 foreach (var myChannel in Person.activeUser.myChannels)
