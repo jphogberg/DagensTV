@@ -2,8 +2,8 @@
 {
     foreach (var item in ViewBag.ScheduleList)
     {
-        <h2>@item.ShowName<span class="category-name"> (@item.CategoryName)</span></h2>
-            <h6>@item.StartTime.ToShortTimeString() - @item.EndTime.ToShortTimeString() @item.ChannelName</h6>
-            <p>@item.Resume</p>
+        <h1>@item.ShowName</h1>
+            <h6 id="overlay-text">@item.StartTime.ToShortDateString(), @item.StartTime.ToShortTimeString() - @item.EndTime.ToShortTimeString() <span id="overlay-channelname">@item.ChannelName</span></h6>
+            <p id="overlay-resume">@item.Resume</p>
     }
 }

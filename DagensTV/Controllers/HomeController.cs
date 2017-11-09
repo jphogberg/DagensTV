@@ -26,6 +26,8 @@ namespace DagensTV.Controllers
                 date = today.ToShortDateString();
             }
 
+            ViewBag.Date = date;
+
             if (Person.activeUser.Id != 0)
             {
                 return View(dbo.GetSchedule(date, Person.activeUser.Id));

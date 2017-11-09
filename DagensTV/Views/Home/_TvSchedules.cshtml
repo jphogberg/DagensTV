@@ -1,5 +1,15 @@
 ﻿@model IQueryable<DagensTV.Models.ViewModels.ChannelVM>
 
+@if (ViewBag.Date != null)
+{
+    foreach (var date in ViewBag.Date)
+    {
+        <span class="schedule-date">@date</span>
+    }
+}
+
+<div class="clear"></div>
+
 @if (Model != null)
 {
     foreach (var channel in Model)
@@ -11,17 +21,17 @@
             <ul id="@channel.Name" class="channel-class">
                 @{int i = 1;}
                 @foreach (var show in channel.Schedules)
-                    {
+                {
                     <li class="@(show.HasPassed? "passed-programme" : "") @(show.IsActive?"active-programme":"")">
                         <span class="start-time">@show.StartTime.ToShortTimeString()</span><div class="@show.CategoryTag">
                             <span class="title" title="@show.ShowName"><a onclick="ShowInfo(@show.Id)">@show.ShowName</a></span><br>
                             <span class="genre">@show.MovieGenre</span><span class="rating @show.StarImage"> @show.ImdbRating</span>
-                        </div>                        
-                        <div id="progressbar" class="@i-track-time @show.CategoryTag" data-start="@show.StartTime" data-end="@show.EndTime"></div>                        
+                        </div>
+                        <div id="progressbar" class="@i-track-time @show.CategoryTag" data-start="@show.StartTime" data-end="@show.EndTime"></div>
                     </li>
                     i++;
                 }
             </ul>
         </section>
-    }
-}
+                        }
+                    }

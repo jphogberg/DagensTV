@@ -632,11 +632,12 @@ a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
     height: 100%;
     overflow: auto;    
 	background-color: #000;
-    background-color: rgba(0,0,0,0.4); 
+    background-color: rgba(0,0,0,0.4);
 }
 
-.category-name {
-    font-size: 0.7em;
+#overlay-channelname {    
+    margin-left: 5%;
+    font-weight: 400;
 }
 
 .overlay-content {
@@ -648,7 +649,7 @@ a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
 	height: auto;
 	color: #193441;
 	text-align: center;
-	box-shadow: 5px 5px 3px #193441;	
+	box-shadow: 5px 5px 3px #193441;
 }
 .closebtn {
     color: #193441;
@@ -665,6 +666,15 @@ a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
 
 #overlay-value {
 	color: #193441;
+}
+
+#overlay-text {
+    font-size: .9em;
+}
+
+#overlay-resume {
+    font-size: .9em;
+    font-weight: 300;
 }
 
 /* --- Footer --- */
