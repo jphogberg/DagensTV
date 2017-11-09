@@ -197,9 +197,6 @@
     <Compile Include="Models\Schedule.cs">
       <DependentUpon>DagensTVModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Settings.cs">
-      <DependentUpon>DagensTVModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\Show.cs">
       <DependentUpon>DagensTVModel.tt</DependentUpon>
     </Compile>

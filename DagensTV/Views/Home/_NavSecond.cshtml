@@ -4,9 +4,11 @@
         <input type="checkbox" id="show-calendar" role="button">
         <ul id="nav-second-calendar" class="nav-second-caledar">
             <li><span class="nav-category">På TV</span></li>
+            <!--<li>@Html.ActionLink("IDAG", ViewContext.RouteData.Values["action"].ToString(), "Home", new { date = DateTime.Today.ToShortDateString() }, null) </li>
+            <li><a href="@Url.Action("Index", "Home")" class="calendar-filter" id="@(ViewBag.Current == "Home" ? "current" : "")">Idag</a></li>-->
             <li><a class="calendar-filter" tabindex="1" title="Idag">Idag</a></li>
-            <li><a class="calendar-filter" tabindex="1" title="Imorgon">Imorgon</a></li>
-            <li><a class="calendar-filter" tabindex="1" title="Lördag">Lördag</a></li>
+            <li><a class="calendar-filter" tabindex="1" title="Imorgon">Imorgon</a></li>            
+            <li><a href="" class="calendar-filter" tabindex="1" title="Lördag">Lördag</a></li>
             <li><a class="calendar-filter" tabindex="1" title="Söndag">Söndag</a></li>
             <li><a class="calendar-filter" tabindex="1" title="Måndag">Måndag</a></li>
             <li><a class="calendar-filter" tabindex="1" title="Tisdag">Tisdag</a></li>

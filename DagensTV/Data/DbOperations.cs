@@ -1,4 +1,5 @@
 ﻿using DagensTV.Models;
+using DagensTV.Models.ViewModels;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -46,7 +47,7 @@ namespace DagensTV.Data
         /// det vi använt oss av för att styla kategorier i tablå-vyn
         /// </summary>
         /// <param name="date"></param>
-        public void GetShows(string date)
+        public void GetShowsFromJson(string date)
         {
             List<Channel> c = db.Channel.ToList();
             Show sh;
@@ -55,8 +56,8 @@ namespace DagensTV.Data
                 foreach (var cha in c)
                 {
                     string showList = wc.DownloadString("http://json.xmltv.se/" + cha.DownloadPath + "_" + date + ".js.gz");
-                    dynamic response = JsonConvert.DeserializeObject(showList);                    
-                    
+                    dynamic response = JsonConvert.DeserializeObject(showList);
+
                     foreach (var item in response.jsontv.programme)
                     {
                         sh = new Show()
@@ -65,7 +66,7 @@ namespace DagensTV.Data
                         };
 
                         if (!db.Show.Any(s => s.Name == sh.Name))
-                        {                            
+                        {
                             try
                             {
                                 db.Show.Add(sh);
@@ -94,7 +95,7 @@ namespace DagensTV.Data
             }
         }
 
-        public void GetSchedule(string date)
+        public void GetScheduleFromJson(string date)
         {
             List<Channel> c = db.Channel.ToList();
             Schedule sc;
@@ -236,5 +237,64 @@ namespace DagensTV.Data
 
 
         #endregion
+
+        public IQueryable<ChannelVM> GetSchedule(string date)
+        {
+            var dt = DateTime.Parse(date);
+
+            var schedule = db.Channel.Select(x => new ChannelVM
+            {
+                Id = x.Id,
+                Name = x.Name,
+                ImgUrl = x.LogoFilePath,
+                Schedules = db.Schedule.Where(s => s.ChannelId == x.Id && s.StartTime.Day == dt.Day).Select(sc => new ScheduleVM
+                {
+                    Id = sc.Id,
+                    StartTime = sc.StartTime,
+                    Duration = sc.Duration,
+                    EndTime = sc.EndTime,
+                    ShowName = sc.Show.Name,
+                    CategoryTag = sc.Show.Category.Tag,
+                    MovieGenre = sc.Show.MovieGenre,
+                    ImdbRating = sc.Show.ImdbRating,
+                    StarImage = sc.Show.RatingIcon,
+                    HasPassed = sc.EndTime < DateTime.Now,
+                    IsActive = sc.StartTime < DateTime.Now && sc.EndTime > DateTime.Now
+                }).ToList()
+            });
+
+            return schedule;
+        }
+
+        public IQueryable<ChannelVM> FilterScheduleByCategory(string category)
+        {
+            var dt = DateTime.Now;
+            //var dt = DateTime.Parse(date);
+
+            var filter = db.Channel.Select(x => new ChannelVM
+            {
+                Id = x.Id,
+                Name = x.Name,
+                ImgUrl = x.LogoFilePath,
+                Schedules = db.Schedule.Where(s => s.ChannelId == x.Id && s.StartTime.Day == dt.Day && s.Show.Category.Name.Contains(category)).Select(sc => new ScheduleVM
+                {
+                    Id = sc.Id,
+                    StartTime = sc.StartTime,
+                    ChannelId = sc.ChannelId,
+                    ShowName = sc.Show.Name,
+                    CategoryTag = sc.Show.Category.Tag,
+                    MovieGenre = sc.Show.MovieGenre,
+                    ImdbRating = sc.Show.ImdbRating,
+                    StarImage = sc.Show.RatingIcon
+                }).ToList()
+            });
+
+            return filter;
+        }
+
+        public List<Category> GetCategories()
+        {
+            return db.Category.ToList();
+        }
     }
 }
