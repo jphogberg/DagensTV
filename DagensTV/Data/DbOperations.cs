@@ -55,7 +55,7 @@ namespace DagensTV.Data
         /// </summary>
         /// <param name="date"></param>
         public void GetShowsFromJson(string date)
-        {
+        {            
             List<Channel> c = db.Channel.ToList();
             Show sh;
             using (var wc = new WebClient())
@@ -103,7 +103,7 @@ namespace DagensTV.Data
         }
 
         public void GetScheduleFromJson(string date)
-        {
+        {            
             List<Channel> c = db.Channel.ToList();
             Schedule sc;
             using (var wc = new WebClient())
