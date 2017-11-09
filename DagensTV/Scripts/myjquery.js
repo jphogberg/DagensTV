@@ -95,51 +95,23 @@ $('.show-calendar').click(function () {
     $("#nav-second-calendar").toggle();
 });
 
-/* Testar local storage*/
-//$(document).ready(function () {
-
-//    $("#save-local").click(function (e) {
-//        e.preventDefault();
-
-//        localStorage.clear();
-
-//        var listContents = [];
-//        $("#ItemList").each(function () {
-//            listContents.push(this.innerHTML);
-//        })
-//        localStorage.setItem('myChannelList', JSON.stringify(listContents));
+///* Testar local storage*/
+//$('#save-local').on('click', function () {
+//    var chb, mySettings = [];
+//    $("[id^=chbx]").each(function () { // run through each of the checkboxes
+//        chb = { id: $(this).attr('id'), value: $(this).prop('checked') };
+//        mySettings.push(chb);
 //    });
+//    localStorage.setItem("mySettings", JSON.stringify(mySettings));
+//});
 
-//    //$("#clearAll").click(function (e) {
-//    //    e.preventDefault();
-//    //    localStorage.clear();
-//    //    location.reload();
-//    //});
+//$(document).ready(function () {
+//    var chbox = JSON.parse(localStorage.getItem('mySettings'));
+//    if (!chbox.length) { return };
+//    console.debug(chbox);
 
-//    loadMyChannelList();
-
-//    function loadMyChannelList() {
-//        if (localStorage.getItem('myChannelList')) {
-//            var listContents = JSON.parse(localStorage.getItem('myChannelList'));
-//            $("#ItemList").each(function (i) {
-//                this.innerHTML = listContents[i];
-//            })
-//        }
+//    for (var i = 0; i < chbox.length; i++) {
+//        console.debug(chbox[i].value == 'on');
+//        $('#' + chbox[i].id).prop('checked', chbox[i].value);
 //    }
 //});
-/*Testar om det finns något sparat*/
-//if (!localStorage.getItem('myChannelList')) {
-//    populateStorage();
-//} else {
-//    Storage.clear();
-//    populateStorage();
-//}
-
-$('#save-local').on('click', function () {
-    var ckeckedChannels, arrMyChannels = [];
-    $('#save-local').each(function () { // run through each of the checkboxes
-        ckeckedChannels = { id: $(this).attr('id'), value: $(this).prop('checked') };
-        arrMyChannels.push(fav);
-    })
-    localStorage.setItem("myChannels", JSON.stringify(favs));
-});

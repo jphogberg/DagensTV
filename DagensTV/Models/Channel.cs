@@ -18,6 +18,7 @@ namespace DagensTV.Models
         public Channel()
         {
             this.Schedule = new HashSet<Schedule>();
+            this.MyChannels = new HashSet<MyChannels>();
         }
     
         public int Id { get; set; }
@@ -28,5 +29,7 @@ namespace DagensTV.Models
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Schedule> Schedule { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<MyChannels> MyChannels { get; set; }
     }
 }
