@@ -23,6 +23,7 @@ var ShowInfo = function (id) {
 /* Filtera tablån efter vald kategori */
 $(".category-filter").click(function () {
     var filter = $(this).attr('title');
+    //var date = $(".start-time").text();
     $.ajax({
 
         type: "GET",
