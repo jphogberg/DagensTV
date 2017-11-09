@@ -345,6 +345,7 @@ namespace DagensTV.Data
         public IQueryable<ChannelVM> GetSchedule(string date)
         {
             var dt = DateTime.Parse(date);
+            var ts = new TimeSpan(05, 30, 00); // Används inte än, skulle vilja få till att tablåerna går från 05:30:00 en dag till 05:30:00 nmästa men...
 
             var schedule = db.Channel.Select(x => new ChannelVM
             {
@@ -373,8 +374,9 @@ namespace DagensTV.Data
         public IQueryable<ChannelVM> GetSchedule(string date, int id)
         {
             var dt = DateTime.Parse(date);
-            List<int> myChannels = db.MyChannels.Where(x => x.PersonId == id).Select(c => c.ChannelId).ToList();
-                                                                  
+            var myChannels = db.MyChannels.Where(x => x.PersonId == id).Select(c => c.ChannelId).ToList();
+            var myFavorites = db.MyFavorites.Where(x => x.PersonId == id).Select(s => s.ShowId).ToList();
+                       
             var schedule = db.Channel.Where(c => myChannels.Contains(c.Id)).Select(x => new ChannelVM
             {
                 Id = x.Id,
@@ -386,22 +388,38 @@ namespace DagensTV.Data
                     StartTime = sc.StartTime,
                     Duration = sc.Duration,
                     EndTime = sc.EndTime,
+                    ShowId = sc.ShowId,
                     ShowName = sc.Show.Name,
                     CategoryTag = sc.Show.Category.Tag,
                     MovieGenre = sc.Show.MovieGenre,
                     ImdbRating = sc.Show.ImdbRating,
                     StarImage = sc.Show.RatingIcon,
                     HasPassed = sc.EndTime < DateTime.Now,
-                    IsActive = sc.StartTime < DateTime.Now && sc.EndTime > DateTime.Now
+                    IsActive = sc.StartTime < DateTime.Now && sc.EndTime > DateTime.Now                    
                 }).ToList()
             });
+
+            // Försök att visa favoritprogram, hann inte längre än så
+            //foreach (var s in schedule)
+            //{
+            //    foreach (var sc in s.Schedules)
+            //    {
+            //        foreach (var mf in myFavorites)
+            //        {
+            //            if (mf.Equals(sc.ShowId))
+            //            {
+            //                sc.FavShow = mf;
+            //            }
+            //        }
+            //    }
+            //}
+
             return schedule;            
         }
 
-        public IQueryable<ChannelVM> FilterScheduleByCategory(string category)
-        {
-            var dt = DateTime.Now;
-            //var dt = DateTime.Parse(date);
+        public IQueryable<ChannelVM> FilterScheduleByCategory(string category, string date)
+        {            
+            var dt = DateTime.Parse(date);
 
             var filter = db.Channel.Select(x => new ChannelVM
             {
