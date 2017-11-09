@@ -20,7 +20,10 @@ namespace DagensTV.Models
         public string Username { get; set; }
         public string Password { get; set; }
         public Nullable<int> RoleId { get; set; }
-    
+        public string RoleName { get; set; }
+
+        public static Person activeUser = new Person();
+
         public virtual Role Role { get; set; }
     }
 }
