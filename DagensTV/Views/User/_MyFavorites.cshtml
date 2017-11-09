@@ -1,11 +1,7 @@
 ﻿@model IList<DagensTV.Models.Show>
-@{
-    ViewBag.Title = "Inställningar";
-    ViewBag.Current = "MyPage";
-}
 
-<div class="content-wrapper">
-    <span id="my-channels-info">Mina favoritprogram</span>
+
+    <span id="my-favorites-info">Mina favoritprogram</span>
     <hr />
     @using (Html.BeginForm("MyFavorites", "User", FormMethod.Post))
     {
@@ -30,6 +26,6 @@
             </div>
         }
     }
-</div>
+
 
 
