@@ -1,0 +1,37 @@
+﻿@model IList<DagensTV.Models.Show>
+
+@{
+    ViewBag.Title = "Inställningar";
+    ViewBag.Current = "MyPage";
+}
+
+<div class="content-wrapper">
+    <span id="my-channels-info">Mina favoritprogram</span>
+    <hr />
+    @using (Html.BeginForm())
+    {
+        if (Model != null)
+        {
+            for (var i = 0; i < Model.Count; i++)
+            {
+                <section class="my-channelList">
+                    <ul id="ItemList">
+                        @*<li id="@i-cb">
+                            @Html.HiddenFor(x => x[i].Id)
+                            @Html.HiddenFor(x => x[i].Name)
+                            @Html.HiddenFor(x => x[i].LogoFilePath)
+                            @Html.CheckBoxFor(x => x[i].MyPage, new { id = "chbx" + i })
+
+                            <img src="../@Model[i].LogoFilePath" class="channel" title="@Model[i].Name" alt="@Model[i].Name"><span id="channel-name"> @Model[i].Name</span>
+                        </li>*@
+                    </ul>
+                </section>
+            }
+            <div class="channel-picker-submit">
+                <input id="save-local" type="submit" value="Spara kanalval" class="btn btn-success">
+            </div>
+        }
+    }
+</div>
+
+

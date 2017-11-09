@@ -71,5 +71,12 @@ namespace DagensTV.Controllers
 
             return RedirectToAction("Index", "Home");
         }
+
+        public ActionResult MyFavorites()
+        {
+
+
+            return View();
+        }
     }
 }
