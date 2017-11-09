@@ -66,11 +66,11 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Svt1" Type="bit" />
-          <Property Name="Svt2" Type="bit" />
-          <Property Name="Tv3" Type="bit" />
-          <Property Name="Tv4" Type="bit" />
-          <Property Name="Kanal5" Type="bit" />
+          <Property Name="Svt1" Type="bit" Nullable="false" />
+          <Property Name="Svt2" Type="bit" Nullable="false" />
+          <Property Name="Tv3" Type="bit" Nullable="false" />
+          <Property Name="Tv4" Type="bit" Nullable="false" />
+          <Property Name="Kanal5" Type="bit" Nullable="false" />
           <Property Name="PersonId" Type="int" />
         </EntityType>
         <EntityType Name="Show">
@@ -392,11 +392,11 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Svt1" Type="Boolean" />
-          <Property Name="Svt2" Type="Boolean" />
-          <Property Name="Tv3" Type="Boolean" />
-          <Property Name="Tv4" Type="Boolean" />
-          <Property Name="Kanal5" Type="Boolean" />
+          <Property Name="Svt1" Type="Boolean" Nullable="false" />
+          <Property Name="Svt2" Type="Boolean" Nullable="false" />
+          <Property Name="Tv3" Type="Boolean" Nullable="false" />
+          <Property Name="Tv4" Type="Boolean" Nullable="false" />
+          <Property Name="Kanal5" Type="Boolean" Nullable="false" />
           <Property Name="PersonId" Type="Int32" />
           <NavigationProperty Name="Person" Relationship="DagensTVModel.FK_Person_ToTable" FromRole="Settings" ToRole="Person" />
           <NavigationProperty Name="Person1" Relationship="DagensTVModel.FK_Settings_ToTable" FromRole="Settings" ToRole="Person" />

@@ -27,6 +27,9 @@ namespace DagensTV.Models
         public string Password { get; set; }
         public Nullable<int> RoleId { get; set; }
         public Nullable<int> SettingsId { get; set; }
+
+        public static Person activeUser = new Person();
+        public List<bool> mySettings { get; set; }
     
         public virtual Role Role { get; set; }
         public virtual Settings Settings { get; set; }

@@ -26,12 +26,11 @@ namespace DagensTV.Controllers
         [HttpPost]
         public ActionResult MyPage(IEnumerable<Channel> channels)
         {
-            Person p = (Person)Session["loggedInUser"];
-            var myChannels = channels;
+            var myChannels = channels.ToList();
 
-            foreach(var item in channels)
+            foreach(var item in myChannels)
             {
-                //Person.activeUser.myChannels.Add(item.MyPage);
+                Person.activeUser.mySettings.Add(item.MyPage);
             }
 
             
