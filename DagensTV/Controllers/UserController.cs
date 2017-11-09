@@ -9,6 +9,7 @@ using System.Web.Mvc;
 using DagensTV.Models;
 using DagensTV.Models.ViewModels;
 using DagensTV.Authority;
+using DagensTV.Data;
 
 namespace DagensTV.Controllers
 {
@@ -16,7 +17,7 @@ namespace DagensTV.Controllers
     public class UserController : Controller
     {
         private DagensTVEntities db = new DagensTVEntities();
-
+        private DbOperations dbo = new DbOperations();
         // GET: User
         public ActionResult MyPage()
         {
@@ -33,18 +34,15 @@ namespace DagensTV.Controllers
             MyChannels mc;
             List<MyChannels> trueList = new List<MyChannels>();
             List<MyChannels> falseList = new List<MyChannels>();
-            //List<MyChannels> myNewChannels = new List<MyChannels>();
 
             foreach (var c in myChannels)
             {
                 if (c.MyPage == true)
                 {
-                    //kolla om den finns i db, om ej lägg till
                     mc = new MyChannels();
                     mc.ChannelId = c.Id;
                     mc.PersonId = Person.activeUser.Id;
                     trueList.Add(mc);
-                    //myNewChannels.Add(mc);
                 }
                 if (c.MyPage == false)
                 {
@@ -52,52 +50,21 @@ namespace DagensTV.Controllers
                     mc.ChannelId = c.Id;
                     mc.PersonId = Person.activeUser.Id;
                     falseList.Add(mc);
-                    //myNewChannels.Add(mc);
                 }
-                //om ja ta bort
             }
 
-            //bool - kolla om pers finns i db
 
-            var oldList = db.MyChannels.ToList();
+            bool hasMyChannels = dbo.CheckUserHasMyChannels();
 
-            foreach(var trueCh in trueList)
+            if (hasMyChannels)
             {
-                foreach(var item in oldList)
-                {
-                    if(item.PersonId == Person.activeUser.Id && item.ChannelId != trueCh.ChannelId)
-                    {
-                        db.MyChannels.Add(trueCh);
-                        db.SaveChanges();
-                        
-                    }
-                    break;
-                }
+                dbo.UpdateTrueChannels(trueList);
+                dbo.UpdateFalseChannels(falseList);
             }
-
-            foreach (var falseCh in falseList)
+            else
             {
-                foreach (var item in oldList)
-                {
-                    if (item.PersonId == Person.activeUser.Id && item.ChannelId == falseCh.ChannelId)
-                    {
-                        var myOld = db.MyChannels.Where(x => x.PersonId == Person.activeUser.Id && x.ChannelId == item.ChannelId);
-                        foreach (var oldKey in myOld)
-                        {
-                            db.MyChannels.Remove(oldKey);
-                            break;
-                        }
-                        db.SaveChanges();
-                    }
-                }
+                dbo.AddNewUserSettings(trueList);
             }
-            //jämför true list med db
-            //om finns i true men ej i db = add
-            //om finns i false och i db = remove
-            //om finns i true och db = nada
-            //om i false men ej i db = nada
-
-
            
 
             return RedirectToAction("Index", "Home");

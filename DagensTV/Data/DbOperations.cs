@@ -14,6 +14,7 @@ namespace DagensTV.Data
     {
         private DagensTVEntities db = new DagensTVEntities();
 
+        #region User
         public bool CheckUser(string username, string password)
         {
             var user = db.Person.Where(
@@ -35,6 +36,8 @@ namespace DagensTV.Data
                 .Include(x => x.Role).Where(x => x.Role.Name.Equals(roleName));
             return role.Any();
         }
+
+        #endregion
 
         #region JSON
         /// <summary>
@@ -159,6 +162,79 @@ namespace DagensTV.Data
                 }
             }
         }
+        #endregion
+
+        #region MyChannels
+
+        public bool CheckUserHasMyChannels()
+        {
+            bool exists = false;
+            MyChannels uc = new MyChannels();
+
+            var userHas = db.MyChannels.Where(x => x.PersonId == Person.activeUser.Id);
+            foreach(var i in userHas)
+            {
+                uc = i;
+                break;
+            }
+            
+            if(uc.PersonId != 0)
+            {
+                exists = true;
+            }
+            return exists;
+        }
+
+        public void AddNewUserSettings(List<MyChannels> list)
+        {
+            foreach(var trueCh in list)
+            {
+                db.MyChannels.Add(trueCh);
+                db.SaveChanges();
+            }
+        }
+
+        public void UpdateTrueChannels(List<MyChannels> list)
+        {
+            var oldList = db.MyChannels.ToList();
+
+            foreach (var trueCh in list)
+            {
+                foreach (var item in oldList)
+                {
+                    if (item.PersonId == Person.activeUser.Id && item.ChannelId != trueCh.ChannelId)
+                    {
+                        db.MyChannels.Add(trueCh);
+                        db.SaveChanges();
+                    }
+                    break;
+                }
+            }
+        }
+       
+        public void UpdateFalseChannels(List<MyChannels> list)
+        {
+            var oldList = db.MyChannels.ToList();
+
+            foreach (var falseCh in list)
+            {
+                foreach (var item in oldList)
+                {
+                    if (item.PersonId == Person.activeUser.Id && item.ChannelId == falseCh.ChannelId)
+                    {
+                        var myOld = db.MyChannels.Where(x => x.PersonId == Person.activeUser.Id && x.ChannelId == item.ChannelId);
+                        foreach (var oldKey in myOld)
+                        {
+                            db.MyChannels.Remove(oldKey);
+                            break;
+                        }
+                        db.SaveChanges();
+                    }
+                }
+            }
+        }
+
+
         #endregion
     }
 }
