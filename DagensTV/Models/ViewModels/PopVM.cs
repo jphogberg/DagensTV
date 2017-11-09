@@ -10,17 +10,15 @@ namespace DagensTV.Models.ViewModels
     {
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage =" ")]
         public string ImgUrl { get; set; }
         public string Name { get; set; }
         public string Icon { get; set; }
-
 
         [Display(Name = "Nyhetspuffar")]
         public Nullable<int> ScheduleId { get; set; }
 
         public List<ScheduleVM> Schedules = new List<ScheduleVM>();
-        //public List<Schedule> Schedule = new List<Schedule>();
 
         public IQueryable<PopVM> Popular { get; set; }
         public List<Channel> Channels = new List<Channel>();

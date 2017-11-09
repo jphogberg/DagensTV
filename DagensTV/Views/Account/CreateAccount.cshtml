@@ -8,7 +8,7 @@
     <h1>Skapa konto</h1>
 </div><br />
 <hr /><br />
-@TempData["userExists"].ToString()
+@*@TempData["userExists"].ToString()*@
 
 @using (Html.BeginForm("SetAccount", "Account", FormMethod.Post))
 {
@@ -17,6 +17,7 @@
     <div class="form-horizontal">
         <div class="form-group">
             <div class="col-md-offset-2 col-md-4">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })<br />
                 @Html.LabelFor(model => model.Firstname, htmlAttributes: new { @class = "control-label" })
             </div>
             <div class="col-md-offset-2 col-md-10">
