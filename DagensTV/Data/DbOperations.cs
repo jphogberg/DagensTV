@@ -16,6 +16,13 @@ namespace DagensTV.Data
         private DagensTVEntities db = new DagensTVEntities();
 
         #region User
+
+        public IEnumerable<Person> GetAllPersons()
+        {
+            var allUsers = db.Person.ToList();
+            return allUsers;
+        }
+
         public bool CheckUser(string username, string password)
         {
             var user = db.Person.Where(
@@ -47,7 +54,7 @@ namespace DagensTV.Data
         /// det vi använt oss av för att styla kategorier i tablå-vyn
         /// </summary>
         /// <param name="date"></param>
-        public void GetShowsFromJson(string date)
+        public void GetShows(string date)
         {
             List<Channel> c = db.Channel.ToList();
             Show sh;
@@ -56,8 +63,8 @@ namespace DagensTV.Data
                 foreach (var cha in c)
                 {
                     string showList = wc.DownloadString("http://json.xmltv.se/" + cha.DownloadPath + "_" + date + ".js.gz");
-                    dynamic response = JsonConvert.DeserializeObject(showList);
-
+                    dynamic response = JsonConvert.DeserializeObject(showList);                    
+                    
                     foreach (var item in response.jsontv.programme)
                     {
                         sh = new Show()
@@ -66,7 +73,7 @@ namespace DagensTV.Data
                         };
 
                         if (!db.Show.Any(s => s.Name == sh.Name))
-                        {
+                        {                            
                             try
                             {
                                 db.Show.Add(sh);
@@ -95,7 +102,7 @@ namespace DagensTV.Data
             }
         }
 
-        public void GetScheduleFromJson(string date)
+        public void GetSchedule(string date)
         {
             List<Channel> c = db.Channel.ToList();
             Schedule sc;
@@ -238,63 +245,29 @@ namespace DagensTV.Data
 
         #endregion
 
-        public IQueryable<ChannelVM> GetSchedule(string date)
+        #region Admin
+
+        public List<Channel> GetAllChannels()
         {
-            var dt = DateTime.Parse(date);
-
-            var schedule = db.Channel.Select(x => new ChannelVM
-            {
-                Id = x.Id,
-                Name = x.Name,
-                ImgUrl = x.LogoFilePath,
-                Schedules = db.Schedule.Where(s => s.ChannelId == x.Id && s.StartTime.Day == dt.Day).Select(sc => new ScheduleVM
-                {
-                    Id = sc.Id,
-                    StartTime = sc.StartTime,
-                    Duration = sc.Duration,
-                    EndTime = sc.EndTime,
-                    ShowName = sc.Show.Name,
-                    CategoryTag = sc.Show.Category.Tag,
-                    MovieGenre = sc.Show.MovieGenre,
-                    ImdbRating = sc.Show.ImdbRating,
-                    StarImage = sc.Show.RatingIcon,
-                    HasPassed = sc.EndTime < DateTime.Now,
-                    IsActive = sc.StartTime < DateTime.Now && sc.EndTime > DateTime.Now
-                }).ToList()
-            });
-
-            return schedule;
+            var allChannels = db.Channel.ToList();
+            return allChannels;
         }
 
-        public IQueryable<ChannelVM> FilterScheduleByCategory(string category)
+        public void UpdatePopularContent(PopVM model)
         {
-            var dt = DateTime.Now;
-            //var dt = DateTime.Parse(date);
+            int popular = model.Id;
+            PopularContent pc = new PopularContent();
 
-            var filter = db.Channel.Select(x => new ChannelVM
-            {
-                Id = x.Id,
-                Name = x.Name,
-                ImgUrl = x.LogoFilePath,
-                Schedules = db.Schedule.Where(s => s.ChannelId == x.Id && s.StartTime.Day == dt.Day && s.Show.Category.Name.Contains(category)).Select(sc => new ScheduleVM
-                {
-                    Id = sc.Id,
-                    StartTime = sc.StartTime,
-                    ChannelId = sc.ChannelId,
-                    ShowName = sc.Show.Name,
-                    CategoryTag = sc.Show.Category.Tag,
-                    MovieGenre = sc.Show.MovieGenre,
-                    ImdbRating = sc.Show.ImdbRating,
-                    StarImage = sc.Show.RatingIcon
-                }).ToList()
-            });
+            pc = db.PopularContent.Find(popular);
+            pc.ScheduleId = model.ScheduleId;
+            pc.ImgUrl = "img/" + model.ImgUrl;
+            pc.Icon = "mdi mdi-television";
 
-            return filter;
+            db.Entry(pc).State = EntityState.Modified;
+            db.SaveChanges();
         }
 
-        public List<Category> GetCategories()
-        {
-            return db.Category.ToList();
-        }
+        #endregion
+
     }
 }

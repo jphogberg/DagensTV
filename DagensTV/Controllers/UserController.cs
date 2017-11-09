@@ -18,6 +18,7 @@ namespace DagensTV.Controllers
     {
         private DagensTVEntities db = new DagensTVEntities();
         private DbOperations dbo = new DbOperations();
+
         // GET: User
         public ActionResult MyPage()
         {
@@ -30,6 +31,7 @@ namespace DagensTV.Controllers
         public ActionResult MyPage(IEnumerable<Channel> channels)
         {
 
+            #region Get user input
             var myChannels = channels.ToList();
             MyChannels mc;
             List<MyChannels> trueList = new List<MyChannels>();
@@ -52,10 +54,10 @@ namespace DagensTV.Controllers
                     falseList.Add(mc);
                 }
             }
+            #endregion
 
-
+            #region Set MyChannels
             bool hasMyChannels = dbo.CheckUserHasMyChannels();
-
             if (hasMyChannels)
             {
                 dbo.UpdateTrueChannels(trueList);
@@ -65,7 +67,7 @@ namespace DagensTV.Controllers
             {
                 dbo.AddNewUserSettings(trueList);
             }
-           
+            #endregion
 
             return RedirectToAction("Index", "Home");
         }

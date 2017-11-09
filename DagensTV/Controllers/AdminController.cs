@@ -1,4 +1,5 @@
 ﻿using DagensTV.Authority;
+using DagensTV.Data;
 using DagensTV.Models;
 using DagensTV.Models.ViewModels;
 using System;
@@ -14,42 +15,17 @@ namespace DagensTV.Controllers
     public class AdminController : Controller
     {
         DagensTVEntities db = new DagensTVEntities();
+        DbOperations dbo = new DbOperations();
 
         // GET: Admin
         
         [HttpGet]
         public ActionResult Index()
         {
-            /*Byggt om PopVM så att den bara består av EN modell med två listor i.
-             EN modell gör att jag kan nå propertiesarna genom @html.helpers för textboxarna.
-             Listorna för att kunna fylla comboboxarna.
-             Need to fill the lists correctly though.......*/
-
+            #region Set PopVM
             PopVM pop = new PopVM();
+            pop.Channels.AddRange(dbo.GetAllChannels());
 
-            //Behöver göra om hämtningen från db = tilldela pop.popular med <popularContent>
-            //och pop.schedules med <scheduleVM>
-
-            //pop.Schedule = db.Schedule.Select(x => x.F);
-            //pop.Popular = db.PopularContent.OrderBy(s => s.Id).Select(x => new PopVM
-            //{
-            //    Id = x.Id,
-            //    ImgUrl = x.ImgUrl,
-            //    Name = x.Schedule.Show.Name,
-            //    Icon = x.Icon,
-            //    ScheduleId = x.ScheduleId,
-            //    Schedules = db.Schedule.Where(s => s.Id == x.ScheduleId).Select(schedule => new ScheduleVM
-            //    {
-            //        Id = schedule.Id,
-            //        StartTime = schedule.StartTime,
-            //        ChannelName = schedule.Channel.Name,
-            //        ShowName = schedule.Show.Name,
-            //        ChannelId = schedule.ChannelId
-            //    }).ToList()
-            //});
-
-            pop.Channels = db.Channel.ToList();
-           
             IEnumerable<SelectListItem> popular = db.PopularContent
               .Select(c => new SelectListItem
               {
@@ -65,14 +41,7 @@ namespace DagensTV.Controllers
                  Text = c.Show.Name
              });
             ViewBag.Schedule = schedules;
-
-            //IEnumerable<SelectListItem> channel = db.Channel
-            //  .Select(c => new SelectListItem
-            //  {
-            //      Value = c.Id.ToString(),
-            //      Text = c.Name
-            //  });
-            //ViewBag.Channels = channel;
+            #endregion
 
             return View(pop);
         }
@@ -82,17 +51,11 @@ namespace DagensTV.Controllers
         {
             if (ModelState.IsValid)
             {
-                int popular = model.Id;
+                #region Update
 
-                PopularContent pc = new PopularContent();
+                dbo.UpdatePopularContent(model);
 
-                pc = db.PopularContent.Find(popular);
-                pc.ScheduleId = model.ScheduleId;
-                pc.ImgUrl = "img/" + model.ImgUrl;
-                pc.Icon = "mdi mdi-television";
-
-                db.Entry(pc).State = EntityState.Modified;
-                db.SaveChanges();
+                #endregion
             }
             else
             {
