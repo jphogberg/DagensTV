@@ -249,8 +249,7 @@ namespace DagensTV.Data
 
         public List<Channel> GetAllChannels()
         {
-            var allChannels = db.Channel.ToList();
-            return allChannels;
+            return db.Channel.ToList();            
         }
 
         public void UpdatePopularContent(PopVM model)
@@ -280,6 +279,36 @@ namespace DagensTV.Data
                 ImgUrl = x.LogoFilePath,
                 Schedules = db.Schedule.Where(s => s.ChannelId == x.Id && s.StartTime.Day == dt.Day).Select(sc => new ScheduleVM
                 {
+                    Id = sc.Id,
+                    StartTime = sc.StartTime,
+                    Duration = sc.Duration,
+                    EndTime = sc.EndTime,
+                    ShowName = sc.Show.Name,
+                    CategoryTag = sc.Show.Category.Tag,
+                    MovieGenre = sc.Show.MovieGenre,
+                    ImdbRating = sc.Show.ImdbRating,
+                    StarImage = sc.Show.RatingIcon,
+                    HasPassed = sc.EndTime < DateTime.Now,
+                    IsActive = sc.StartTime < DateTime.Now && sc.EndTime > DateTime.Now
+                }).ToList()
+            });
+
+            return schedule;
+        }
+
+        public IQueryable<ChannelVM> GetSchedule(string date, int id)
+        {
+            var dt = DateTime.Parse(date);
+            var myChannels = db.MyChannels.Where(x => x.PersonId == id);
+
+            var schedule = db.Channel.Select(x => new ChannelVM
+            {
+                Id = x.Id,
+                Name = x.Name,
+                ImgUrl = x.LogoFilePath,
+                Schedules = db.Schedule.Where(s => s.ChannelId == x.Id && s.StartTime.Day == dt.Day).Select(sc => new ScheduleVM
+                {
+                    Id = sc.Id,
                     StartTime = sc.StartTime,
                     Duration = sc.Duration,
                     EndTime = sc.EndTime,
@@ -308,6 +337,7 @@ namespace DagensTV.Data
                 ImgUrl = x.LogoFilePath,
                 Schedules = db.Schedule.Where(s => s.ChannelId == x.Id && s.StartTime.Day == dt.Day && s.Show.Category.Name.Contains(category)).Select(sc => new ScheduleVM
                 {
+                    Id = sc.Id,
                     StartTime = sc.StartTime,
                     ChannelId = sc.ChannelId,
                     ShowName = sc.Show.Name,
