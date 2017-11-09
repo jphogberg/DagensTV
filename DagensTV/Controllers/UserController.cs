@@ -13,7 +13,7 @@ using DagensTV.Data;
 
 namespace DagensTV.Controllers
 {
-    [AuthorizeRoles("Användare")]
+    [AuthorizeRoles("Användare", "Redaktör")]
     public class UserController : Controller
     {
         private DagensTVEntities db = new DagensTVEntities();

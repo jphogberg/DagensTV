@@ -4,67 +4,66 @@
     ViewBag.Current = "Create";
 }
 
-<div class="col-md-offset-2 col-md-10">
-    <h1>Skapa konto</h1>
-</div><br />
-<hr /><br />
-@*@TempData["userExists"].ToString()*@
+<div class="content-wrapper">
+    <span id="create-info">Skapa konto</span>
+    <hr />
 
-@using (Html.BeginForm("SetAccount", "Account", FormMethod.Post))
-{
-    @Html.AntiForgeryToken()
+    @using (Html.BeginForm("SetAccount", "Account", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
 
-    <div class="form-horizontal">
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-4">
-                @Html.ValidationSummary(true, "", new { @class = "text-danger" })<br />
-                @Html.LabelFor(model => model.Firstname, htmlAttributes: new { @class = "control-label" })
+        <div class="form-horizontal">
+            <div class="form-group">
+                <div class="col-md-12">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })<br />
+                    @Html.LabelFor(model => model.Firstname, "Förnamn", htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-12">
+                    @Html.EditorFor(model => model.Firstname, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Firstname, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(m => m.Firstname)
+                </div>
             </div>
-            <div class="col-md-offset-2 col-md-10">
-                @Html.EditorFor(model => model.Firstname, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Firstname, "", new { @class = "text-danger" })
-                @Html.HiddenFor(m => m.Firstname)
+
+            <div class="form-group">
+                <div class="col-md-12">
+                    @Html.LabelFor(model => model.Lastname, "Efternamn", htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-12">
+                    @Html.EditorFor(model => model.Lastname, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Lastname, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(m => m.Lastname)
+                </div>
             </div>
+
+            <div class="form-group">
+                <div class="col-md-12">
+                    @Html.LabelFor(model => model.Username, "Användarnamn", htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-12">
+                    @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(m => m.Username)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-12">
+                    @Html.LabelFor(model => model.Password, "Lösenord", htmlAttributes: new { @class = "control-label com-md-2" })
+                </div>
+                <div class="col-md-12">
+                    @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(m => m.Password)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-12">
+                    <input type="submit" value="Skapa konto" class="btn btn-success" />
+                </div>
+            </div>
+
         </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-4">
-                @Html.LabelFor(model => model.Lastname, htmlAttributes: new { @class = "control-label" })
-            </div>
-            <div class="col-md-offset-2 col-md-10">
-                @Html.EditorFor(model => model.Lastname, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Lastname, "", new { @class = "text-danger" })
-                @Html.HiddenFor(m => m.Lastname)
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-4">
-                @Html.LabelFor(model => model.Username, htmlAttributes: new { @class = "control-label" })
-            </div>
-            <div class="col-md-offset-2 col-md-10">
-                @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
-                @Html.HiddenFor(m => m.Username)
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-4">
-                @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label com-md-2" })
-            </div>
-            <div class="col-md-offset-2 col-md-10">
-                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
-                @Html.HiddenFor(m => m.Password)
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-3">
-                <input type="submit" value="Skapa konto" class="btn btn-success" />
-            </div>
-        </div>
-
-    </div>
-}
+    }
+</div>
