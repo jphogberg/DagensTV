@@ -8,16 +8,16 @@
             <img src="@channel.ImgUrl" class="channel" title="@channel.Name" alt="@channel.Name">
             <span>@channel.Name</span>
 
-            <ul>
+            <ul id="@channel.Name" class="channel-class">
                 @{int i = 1;}
                 @foreach (var show in channel.Schedules)
                     {
-                    <li class="track-time @(show.HasPassed? "passed-programme" : "") @(show.IsActive?"active-programme":"")" data-start="@show.StartTime" data-end="@show.EndTime">
+                    <li class="@(show.HasPassed? "passed-programme" : "") @(show.IsActive?"active-programme":"")">
                         <span class="start-time">@show.StartTime.ToShortTimeString()</span><div class="@show.CategoryTag">
                             <span class="title" title="@show.ShowName"><a onclick="ShowInfo(@show.Id)">@show.ShowName</a></span><br>
                             <span class="genre">@show.MovieGenre</span><span class="rating @show.StarImage"> @show.ImdbRating</span>
-                        </div>
-                        <div id="progressbar" class="@show.CategoryTag"></div>                        
+                        </div>                        
+                        <div id="progressbar" class="@i-track-time @show.CategoryTag" data-start="@show.StartTime" data-end="@show.EndTime"></div>                        
                     </li>
                     i++;
                 }

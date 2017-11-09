@@ -386,6 +386,18 @@ figure figcaption {
     margin: 0;
 }
 
+#progress-container {
+    width: 500px;
+    border: 1px solid black;
+    height: 20px;
+}
+
+#progress {
+    height: 100%;
+    width: 0%;
+    background-color: green
+}
+
 .news .ui-progressbar-value {
     background: #858585;
     display: block;
