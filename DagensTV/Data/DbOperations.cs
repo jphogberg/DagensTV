@@ -1,4 +1,5 @@
 ﻿using DagensTV.Models;
+using DagensTV.Models.ViewModels;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -241,6 +242,30 @@ namespace DagensTV.Data
             }
         }
 
+
+        #endregion
+
+        #region Admin
+
+        public List<Channel> GetAllChannels()
+        {
+            var allChannels = db.Channel.ToList();
+            return allChannels;
+        }
+
+        public void UpdatePopularContent(PopVM model)
+        {
+            int popular = model.Id;
+            PopularContent pc = new PopularContent();
+
+            pc = db.PopularContent.Find(popular);
+            pc.ScheduleId = model.ScheduleId;
+            pc.ImgUrl = "img/" + model.ImgUrl;
+            pc.Icon = "mdi mdi-television";
+
+            db.Entry(pc).State = EntityState.Modified;
+            db.SaveChanges();
+        }
 
         #endregion
 
