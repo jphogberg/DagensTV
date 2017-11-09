@@ -23,12 +23,12 @@ namespace DagensTV.Controllers
         {
             if (date == null)
             {
-                var today = DateTime.Now.AddDays(7);
+                var today = DateTime.Now;
                 date = today.ToShortDateString();
             }
 
-            //dbo.GetShows(date);
-            //dbo.GetSchedule(date);
+            dbo.GetShows(date);
+            dbo.GetSchedule(date);
 
             var dt = DateTime.Parse(date);
 
