@@ -27,7 +27,6 @@ namespace DagensTV.Models
         public string MovieGenre { get; set; }
         public string ImdbRating { get; set; }
         public string RatingIcon { get; set; }
-        public bool MyProgram { get; set; }
     
         public virtual Category Category { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

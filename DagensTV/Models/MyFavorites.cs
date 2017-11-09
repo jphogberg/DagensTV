@@ -16,6 +16,7 @@ namespace DagensTV.Models
     {
         public int PersonId { get; set; }
         public int ShowId { get; set; }
+        public string Style { get; set; }
     
         public virtual Show Show { get; set; }
     }
