@@ -7,7 +7,7 @@
 <div class="content-wrapper">
     <span id="my-channels-info">Mina favoritprogram</span>
     <hr />
-    @using (Html.BeginForm())
+    @using (Html.BeginForm("MyFavorites", "User", FormMethod.Post))
     {
         if (Model != null)
         {
@@ -26,7 +26,7 @@
                 </section>
             }
             <div class="channel-picker-submit">
-                <input id="save-local" type="submit" value="Spara programval" class="btn btn-success">
+                <input id="save-tolocal" type="submit" value="Spara programval" class="btn btn-success">
             </div>
         }
     }

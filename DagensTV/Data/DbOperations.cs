@@ -245,6 +245,78 @@ namespace DagensTV.Data
 
         #endregion
 
+        #region MyFavorites
+
+        public bool CheckUserHasMyFavorites()
+        {
+            bool exists = false;
+            MyFavorites uf = new MyFavorites();
+
+            var userHas = db.MyFavorites.Where(x => x.PersonId == Person.activeUser.Id);
+            foreach (var i in userHas)
+            {
+                uf = i;
+                break;
+            }
+
+            if (uf.PersonId != 0)
+            {
+                exists = true;
+            }
+            return exists;
+        }
+
+        public void AddNewUserSettings(List<MyFavorites> list)
+        {
+            foreach (var trueSh in list)
+            {
+                db.MyFavorites.Add(trueSh);
+                db.SaveChanges();
+            }
+        }
+
+        public void UpdateTrueChannels(List<MyFavorites> list)
+        {
+            var oldList = db.MyFavorites.ToList();
+
+            foreach (var trueSh in list)
+            {
+                foreach (var item in oldList)
+                {
+                    if (!db.MyFavorites.Any(s => s.ShowId == trueSh.ShowId && s.PersonId == Person.activeUser.Id))
+                    {
+                        db.MyFavorites.Add(trueSh);
+                        db.SaveChanges();
+                    }
+                    break;
+                }
+            }
+        }
+
+        public void UpdateFalseChannels(List<MyFavorites> list)
+        {
+            var oldList = db.MyFavorites.Where(x => x.PersonId == Person.activeUser.Id).ToList();
+
+            foreach (var falseCh in list)
+            {
+                foreach (var item in oldList)
+                {
+                    if (item.PersonId == Person.activeUser.Id && item.ShowId == falseCh.ShowId)
+                    {
+                        var myOld = db.MyFavorites.Where(x => x.PersonId == Person.activeUser.Id && x.ShowId == item.ShowId);
+                        foreach (var oldKey in myOld)
+                        {
+                            db.MyFavorites.Remove(oldKey);
+                            break;
+                        }
+                        db.SaveChanges();
+                    }
+                }
+            }
+        }
+
+        #endregion
+
         #region Admin
 
         public List<Channel> GetAllChannels()
