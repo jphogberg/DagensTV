@@ -27,8 +27,8 @@ namespace DagensTV.Controllers
                 date = today.ToShortDateString();
             }
 
-            dbo.GetShows(date);
-            dbo.GetSchedule(date);
+            //dbo.GetShows(date);
+            //dbo.GetSchedule(date);
 
             var dt = DateTime.Parse(date);
 
