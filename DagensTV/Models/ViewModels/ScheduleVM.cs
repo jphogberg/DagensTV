@@ -8,9 +8,9 @@ namespace DagensTV.Models.ViewModels
     public class ScheduleVM
     {
         public int Id { get; set; }
-        public Nullable<DateTime> StartTime { get; set; }
-        public Nullable<DateTime> EndTime { get; set; }
-        public Nullable<int> Duration { get; set; }        
+        public DateTime StartTime { get; set; }
+        public DateTime EndTime { get; set; }
+        public int Duration { get; set; }        
         public string Resume { get; set; }
         public Nullable<int> ChannelId { get; set; }
         public Nullable<int> ShowId { get; set; }

@@ -20,9 +20,10 @@
     @Styles.Render("~/Content/myCSS")
     <!-- Material Design Icons -->
     @Styles.Render("~/icons")
+    <script src="~/Scripts/moment.js"></script>
 </head>
 <body>
-    @Html.Partial("_Navmenu")    
+    @Html.Partial("_Navmenu")
     @RenderBody()
 
     <!-- Bootstrap Modal som visas när man klickar på ett program i tablån -->
@@ -30,12 +31,13 @@
         <div class="modal-dialog">
             <div class="modal-content">
 
-                <div class="modal-header"> <!-- Todo: lägg till kategori-färg på divens nedre kant -->
-                    <a class="closebtn" data-dismiss="modal">&times;</a> 
+                <div class="modal-header">
+                    <!-- Todo: lägg till kategori-färg på divens nedre kant -->
+                    <a class="closebtn" data-dismiss="modal">&times;</a>
                     <img src="../img/placeholder.jpg" />
                 </div>
-                <div class="modal-body" id="overlay-body">  
-                    
+                <div class="modal-body" id="overlay-body">
+
                 </div>
 
             </div>
@@ -51,14 +53,14 @@
             </p>
         </div>
     </div>
-    
+
     <footer>
         <section>
             <h3>
-                &copy;<a href="mailto:pahg1601@student.miun.se"> Patrik Högberg</a> & 
-                <a href="mailto:lipe1604@student.miun.se">Linda Pettersson</a> @DateTime.Now.Year                
+                &copy;<a href="mailto:pahg1601@student.miun.se"> Patrik Högberg</a> &
+                <a href="mailto:lipe1604@student.miun.se">Linda Pettersson</a> @DateTime.Now.Year
             </h3>
-        </section>        
+        </section>
     </footer>
 
     @Scripts.Render("~/bundles/jquery")

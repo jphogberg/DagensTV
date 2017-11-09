@@ -104,7 +104,7 @@ header {
     opacity: 1;
 }
 
-nav.menu {
+.menu {
 	text-align: center;
 	padding: 0 0 20px 0;
 	overflow: hidden;
@@ -368,13 +368,86 @@ figure figcaption {
 
 .active-programme .start-time {
     font-weight: 700;
-    font-size: 0.95em;
+    font-size: 0.94em;
 }
 
 .active-programme a {
     font-weight: 700;
     font-size: 1.3em;
     opacity: 1;
+}
+
+#progressbar {
+    display: none;
+    background: #FCFFF5;
+    border-radius: 0;
+    border: none;
+    width: 92%;
+    margin: 0;
+}
+
+.news .ui-progressbar-value {
+    background: #858585;
+    display: block;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+}
+
+.reality .ui-progressbar-value {
+    background: #ec8ac7;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+}
+
+.tvshow .ui-progressbar-value {
+    background: #f5a623;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+}
+
+.movie .ui-progressbar-value {
+    background: #aa60c4;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+}
+
+.culture .ui-progressbar-value {
+    background: #4b92eb;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+}
+
+.documentary .ui-progressbar-value {
+    background: #f3594b;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+}
+
+.sports .ui-progressbar-value {
+    background: #49b3cd;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+}
+
+.children .ui-progressbar-value {
+    background: pink;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+}
+
+.active-programme #progressbar {
+    display: block;
+    height: 7px;
+    margin-top: 5px;
+    padding: 0;
 }
 
 section {
@@ -427,13 +500,6 @@ section span {
 	display: none;
 }
 
-/* -- Progressbar -- */
-
-#progressbar {
-    display: block;
-    width: 92%;    
-}
-
 /* --- Program type --- */
 
 section .start-time {
@@ -472,20 +538,20 @@ div .rating {
 }
 
 .generic, .reality, .sports, .tvshow, .movie, .culture, .documentary, .news, .children {
-	display: inline-block;
-	border-left-style: solid;
-	border-left-width: 2px;
-	padding-left: 8px;
-	border-color: #858585;
-	margin-left: 4px;	
-	height: 17px;	
-	width: 76%;
-	overflow: hidden;
-	vertical-align: top;
-	text-overflow: ellipsis;
+    display: inline-block;
+    border-left-style: solid;
+    border-left-width: 2px;
+    padding-left: 8px;
+    border-color: #858585;
+    margin-left: 4px;
+    height: 17px;
+    width: 76%;
+    overflow: hidden;
+    vertical-align: top;
+    text-overflow: ellipsis;
 }
 .reality {
-	border-color: #ec8ac7;
+    border-color: #ec8ac7;
 }
 .tvshow {
 	border-color: #f5a623;
@@ -864,8 +930,7 @@ footer section {
         background: #193441;
     }
 
-    .show-genre, .show-calendar {
-        display: flex;
+    .show-genre, .show-calendar {        
         font-size: 1em;
         display: table-cell;
         background-color: #2f4854;

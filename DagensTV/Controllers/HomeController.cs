@@ -15,8 +15,9 @@ namespace DagensTV.Controllers
 
         #region Main
         public ActionResult Index()
-        {
+        {            
             var today = new DateTime(2017, 11, 09, 06, 00, 00); //Hårdkodat tills vidare så att den tror vi är på 9e idag
+            
             var channelList = db.Channel.Select(x => new ChannelVM
             {
                 Id = x.Id,
@@ -26,7 +27,8 @@ namespace DagensTV.Controllers
                 {
                     Id = schedule.Id,
                     StartTime = schedule.StartTime,
-                    EndTime = DbFunctions.AddMinutes(schedule.StartTime, schedule.Duration),
+                    Duration = schedule.Duration,
+                    EndTime = (DateTime)DbFunctions.AddMinutes(schedule.StartTime, schedule.Duration),
                     ChannelId = schedule.ChannelId,
                     ShowId = schedule.Show.Id,
                     ShowName = schedule.Show.Name,
@@ -84,7 +86,8 @@ namespace DagensTV.Controllers
             List<ScheduleVM> scheduleList = db.Schedule.Where(x => x.Id == Id).Select(x => new ScheduleVM
             {
                 StartTime = x.StartTime,
-                EndTime = DbFunctions.AddMinutes(x.StartTime, x.Duration),
+                EndTime = (DateTime)DbFunctions.AddMinutes(x.StartTime, x.Duration),
+                //EndTime = DbFunctions.AddMinutes(x.StartTime, x.Duration),
                 ChannelName = x.Channel.Name,
                 ShowName = x.Show.Name,
                 Resume = x.Resume,

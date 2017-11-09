@@ -21,8 +21,8 @@ namespace DagensTV.Models
         }
     
         public int Id { get; set; }
-        public Nullable<System.DateTime> StartTime { get; set; }
-        public Nullable<int> Duration { get; set; }
+        public System.DateTime StartTime { get; set; }
+        public int Duration { get; set; }        
         public string Resume { get; set; }
         public Nullable<int> ChannelId { get; set; }
         public Nullable<int> ShowId { get; set; }

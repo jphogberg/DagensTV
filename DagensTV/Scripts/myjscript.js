@@ -26,3 +26,19 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 };
+
+/* Progressbar */
+var startStr = $('.track-time').data('start');
+var endStr = $('.track-time').data('end');
+
+now = moment();
+var startTime = moment(startStr);
+var endTime = moment(endStr);
+var percentage = (now - startTime) / (endTime - startTime) * 100;
+console.log(percentage)
+
+$(function () {
+    $(".active-programme #progressbar").progressbar({
+        value: percentage
+    });
+});
