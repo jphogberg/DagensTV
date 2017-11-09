@@ -26,6 +26,7 @@ namespace DagensTV.Controllers
         [HttpPost]
         public ActionResult MyPage(IEnumerable<Channel> channels)
         {
+            Person p = (Person)Session["loggedInUser"];
             var myChannels = channels;
 
             foreach(var item in channels)

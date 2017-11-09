@@ -16,13 +16,13 @@ namespace DagensTV.Controllers
         #region Main
         public ActionResult Index()
         {
-            var today = new DateTime(2017, 11, 09); //Hårdkodat tills vidare så att den tror vi är på 9e idag
+            var today = new DateTime(2017, 11, 09, 06, 00, 00); //Hårdkodat tills vidare så att den tror vi är på 9e idag
             var channelList = db.Channel.Select(x => new ChannelVM
             {
                 Id = x.Id,
                 Name = x.Name,
                 ImgUrl = x.LogoFilePath,
-                Schedules = db.Schedule.Where(s => s.ChannelId == x.Id && s.StartTime.Value.Day == today.Day/* && DbFunctions.AddMinutes(s.StartTime, s.Duration) > DateTime.Now*/).Select(schedule => new ScheduleVM
+                Schedules = db.Schedule.Where(s => s.ChannelId == x.Id/* && s.StartTime.Value.Day == today.Day*//* && DbFunctions.AddMinutes(s.StartTime, s.Duration) > DateTime.Now*/).Select(schedule => new ScheduleVM
                 {
                     Id = schedule.Id,
                     StartTime = schedule.StartTime,
@@ -34,23 +34,23 @@ namespace DagensTV.Controllers
                     MovieGenre = schedule.Show.MovieGenre,
                     ImdbRating = schedule.Show.ImdbRating,
                     StarImage = schedule.Show.RatingIcon,
-                    HasPassed = DbFunctions.AddMinutes(schedule.StartTime, schedule.Duration) > DateTime.Now,
-                    IsActive = DbFunctions.AddMinutes(schedule.StartTime, schedule.Duration) == DateTime.Now
+                    HasPassed = DbFunctions.AddMinutes(schedule.StartTime, schedule.Duration) < DateTime.Now,
+                    IsActive = schedule.StartTime < DateTime.Now && DbFunctions.AddMinutes(schedule.StartTime, schedule.Duration) > DateTime.Now
                 }).ToList()
             });
 
             // Används inte ännu
-            var date = DateTime.Now;
-            var dates = new List<string>
-            {
-                date.ToShortDateString(),
-                date.AddDays(1).ToShortDateString(),
-                date.AddDays(2).ToShortDateString(),
-                date.AddDays(3).ToShortDateString(),
-                date.AddDays(4).ToShortDateString(),
-                date.AddDays(5).ToShortDateString(),
-                date.AddDays(6).ToShortDateString(),
-            };
+            //var date = DateTime.Now;
+            //var dates = new List<string>
+            //{
+            //    date.ToShortDateString(),
+            //    date.AddDays(1).ToShortDateString(),
+            //    date.AddDays(2).ToShortDateString(),
+            //    date.AddDays(3).ToShortDateString(),
+            //    date.AddDays(4).ToShortDateString(),
+            //    date.AddDays(5).ToShortDateString(),
+            //    date.AddDays(6).ToShortDateString(),
+            //};
 
             return View(channelList);
         }
