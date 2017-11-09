@@ -7,14 +7,14 @@
 <div class="col-md-offset-2 col-md-10">
     <h1>Hantera nyhetspuffar</h1>
 </div><br />
-<hr /><br />
+<hr /><br /><br />
 
 @using (Html.BeginForm("GetForm", "Admin", FormMethod.Post))
 {
     @Html.AntiForgeryToken()
 
     <div class="col-md-offset-2 col-md-10">
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })<br />
+        @Html.ValidationSummary(true, "En bild måste anges!", new { @class = "text-danger" })<br />
         @Html.Label("Steg 1: Välj befintlig")<br /><br />
         @Html.DropDownList("Id", (IEnumerable<SelectListItem>)ViewBag.Pops)<br /><br /><br />
 
@@ -22,7 +22,7 @@
         @Html.DropDownList("ScheduleId", (IEnumerable<SelectListItem>)ViewBag.Schedule)
         @Html.HiddenFor(x => Model.ScheduleId)<br /><br /><br />
 
-      
+
 
 
 
@@ -48,21 +48,22 @@
         <div class="form-group">
             @Html.Label("Bildens namn inkl filformat")<br />
             @Html.EditorFor(x => Model.ImgUrl, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.ImgUrl, "", new { @class = "text-danger" })
             @Html.HiddenFor(x => Model.ImgUrl)
-        </div>
+        </div><br /><br />
 
         @*<div class="form-group">
-            @Html.Label("Nyhetspuffens namn")<br />
-            @Html.EditorFor(x => Model.Name, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.HiddenFor(x => Model.Name)
-        </div>
+                @Html.Label("Nyhetspuffens namn")<br />
+                @Html.EditorFor(x => Model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.HiddenFor(x => Model.Name)
+            </div>
 
-        @Html.Label("Steg 3: Ange ikontyp (valfritt)")<br /><br />
-        <div class="form-group">
-            @Html.Label("Ikon  (ex: mdi mdi-movie)")<br />
-            @Html.EditorFor(x => Model.Icon, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.HiddenFor(x => Model.Icon)
-        </div><br /><br />*@
+            @Html.Label("Steg 3: Ange ikontyp (valfritt)")<br /><br />
+            <div class="form-group">
+                @Html.Label("Ikon  (ex: mdi mdi-movie)")<br />
+                @Html.EditorFor(x => Model.Icon, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.HiddenFor(x => Model.Icon)
+            </div><br /><br />*@
 
 
         @*<div class="dropdown">
@@ -82,15 +83,15 @@
 
         <input type="submit" value="Spara" class="btn btn-success" />
 
-       
+
         @Html.ActionLink("Klar", "Index", "Home")
     </div>
 
 }
 
 @*<div class="col-md-offset-6 col-md-6">
-    <input type="submit" class="btn btn-success" onclick="@Url.Action("index", "Family")" value="Stäng" />
-</div>*@
+        <input type="submit" class="btn btn-success" onclick="@Url.Action("index", "Family")" value="Stäng" />
+    </div>*@
 
 
 
@@ -114,40 +115,40 @@
 
 
 
-    @*@using (Html.BeginForm("GetForm", "Admin", FormMethod.Post))
-        {
-            @Html.AntiForgeryToken()
+@*@using (Html.BeginForm("GetForm", "Admin", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
 
-            <div class="col-md-offset-2 col-md-10">
-                <div class="form">
-                    <div class="form-group">
-                        @Html.Label(Model.ImgTitle)
-                        @Html.TextBoxFor(m => m.ImgTitle)
-                        <label for="img-title">Bildens titel:</label>
-                        <input type="text" class="form-control" id="img-title">
-                    </div>
-
-                    <div class="form-group">
-                        @Html.Label(Model.ImgUrl)
-                        @Html.TextBoxFor(m => m.ImgUrl)
-                        <label for="img-url">Bildens url:</label>
-                        <input type="text" class="form-control" id="img-url">
-                    </div>
-
-                    <div class="form-group">
-                        @Html.Label(Model.Icon)
-                        @Html.TextBoxFor(m => m.Icon)
-                        <label for="img-icon">Bildens ikon:</label>
-                        <input type="text" class="form-control" id="img-icon">
-                    </div>
-
-                    <div class="form-group">
-                        <div class="col-md-offset-2">
-                            <input type="submit" value="Spara" class="btn btn-success" />
-                        </div>
-                    </div>
-
+        <div class="col-md-offset-2 col-md-10">
+            <div class="form">
+                <div class="form-group">
+                    @Html.Label(Model.ImgTitle)
+                    @Html.TextBoxFor(m => m.ImgTitle)
+                    <label for="img-title">Bildens titel:</label>
+                    <input type="text" class="form-control" id="img-title">
                 </div>
-            </div>
 
-        }*@
+                <div class="form-group">
+                    @Html.Label(Model.ImgUrl)
+                    @Html.TextBoxFor(m => m.ImgUrl)
+                    <label for="img-url">Bildens url:</label>
+                    <input type="text" class="form-control" id="img-url">
+                </div>
+
+                <div class="form-group">
+                    @Html.Label(Model.Icon)
+                    @Html.TextBoxFor(m => m.Icon)
+                    <label for="img-icon">Bildens ikon:</label>
+                    <input type="text" class="form-control" id="img-icon">
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2">
+                        <input type="submit" value="Spara" class="btn btn-success" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    }*@

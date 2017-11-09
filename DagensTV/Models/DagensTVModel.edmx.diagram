@@ -6,21 +6,24 @@
     <edmx:Diagrams>
       <Diagram DiagramId="1c60a1d3c519444e8431bf771d83a6c9" Name="Diagram1">
         <EntityTypeShape EntityType="DagensTVModel.Category" Width="1.5" PointX="0.875" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="DagensTVModel.Channel" Width="1.5" PointX="7.625" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="DagensTVModel.Schedule" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DagensTVModel.Channel" Width="1.5" PointX="5.625" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DagensTVModel.Schedule" Width="1.5" PointX="5.625" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="DagensTVModel.Show" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <AssociationConnector Association="DagensTVModel.FK_Show_ToTable" ManuallyRouted="false" />
         <AssociationConnector Association="DagensTVModel.FK_Listing_ToTable" ManuallyRouted="false" />
         <AssociationConnector Association="DagensTVModel.FK_Listing_ToTable_1" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="DagensTVModel.Person" Width="1.5" PointX="10.5" PointY="5.875" />
-        <EntityTypeShape EntityType="DagensTVModel.Role" Width="1.5" PointX="10.5" PointY="3.625" />
+        <EntityTypeShape EntityType="DagensTVModel.Person" Width="1.5" PointX="2.875" PointY="4.875" />
+        <EntityTypeShape EntityType="DagensTVModel.Role" Width="1.5" PointX="0.5" PointY="6.625" />
         <AssociationConnector Association="DagensTVModel.FK_Person_Role" />
-        <EntityTypeShape EntityType="DagensTVModel.PopularContent" Width="1.5" PointX="5.125" PointY="4.875" />
+        <EntityTypeShape EntityType="DagensTVModel.PopularContent" Width="1.5" PointX="7.75" PointY="1" />
         <AssociationConnector Association="DagensTVModel.FK_PopularContent_ToTable1" />
-        <EntityTypeShape EntityType="DagensTVModel.Settings" Width="1.5" PointX="8" PointY="6.375" />
+        <EntityTypeShape EntityType="DagensTVModel.Settings" Width="1.5" PointX="4.25" PointY="9.125" />
         <AssociationConnector Association="DagensTVModel.FK_Person_ToTable" />
         <AssociationConnector Association="DagensTVModel.FK_Settings_ToTable" />
-      </Diagram>
+        <EntityTypeShape EntityType="DagensTVModel.MyFavorites" Width="1.5" PointX="0.75" PointY="4.625" />
+        <AssociationConnector Association="DagensTVModel.MyChannels1" />
+        <AssociationConnector Association="DagensTVModel.MyFavorites1" />
+        </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

@@ -10,7 +10,7 @@ namespace DagensTV.Models.ViewModels
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage ="Välj en bild")]
+        [Required]
         public string ImgUrl { get; set; }
         public string Name { get; set; }
         public string Icon { get; set; }
