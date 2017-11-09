@@ -22,6 +22,7 @@
         <AssociationConnector Association="DagensTVModel.MyFavorites1" />
         <EntityTypeShape EntityType="DagensTVModel.MyChannels" Width="1.5" PointX="7.875" PointY="5" />
         <AssociationConnector Association="DagensTVModel.FK_Table_ToTable_1" />
+        <AssociationConnector Association="DagensTVModel.FK_MyFavorites_ToShow" />
         </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

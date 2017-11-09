@@ -185,6 +185,9 @@
     <Compile Include="Models\MyChannels.cs">
       <DependentUpon>DagensTVModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\MyFavorites.cs">
+      <DependentUpon>DagensTVModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Person.cs">
       <DependentUpon>DagensTVModel.tt</DependentUpon>
     </Compile>
