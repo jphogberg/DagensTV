@@ -93,7 +93,7 @@ namespace DagensTV.Data
 
         public void GetSchedule(string date)
         {
-            IList<Channel> c = db.Channel.ToList();
+            List<Channel> c = db.Channel.ToList();
             Schedule sc;
             using (var wc = new WebClient())
             {
