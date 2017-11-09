@@ -48,7 +48,7 @@ namespace DagensTV.Controllers
 
                 if (exists)
                 {
-                    TempData["userExists"] = "Användarnamnet finns redan!";
+                    ModelState.AddModelError(string.Empty, "Användarnamnet finns redan!");
                     return View("CreateAccount");
                 }
                 else
@@ -61,7 +61,7 @@ namespace DagensTV.Controllers
             }
             else
             {
-                ModelState.AddModelError("", "Alla fält måste fyllas i!");
+                ModelState.AddModelError(string.Empty, "Alla fält måste fyllas i!");
                 return View("CreateAccount");
             }
         }

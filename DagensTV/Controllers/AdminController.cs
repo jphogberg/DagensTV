@@ -59,7 +59,7 @@ namespace DagensTV.Controllers
             }
             else
             {
-                ModelState.AddModelError("", "En bild måste anges!");
+                ModelState.AddModelError(string.Empty, "En bild måste anges!");
             }
 
             return RedirectToAction("Index", "Admin");

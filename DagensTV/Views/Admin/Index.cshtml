@@ -14,7 +14,7 @@
     @Html.AntiForgeryToken()
 
     <div class="col-md-offset-2 col-md-10">
-        @Html.ValidationSummary(true, "En bild måste anges!", new { @class = "text-danger" })<br />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })<br />
         @Html.Label("Steg 1: Välj befintlig")<br /><br />
         @Html.DropDownList("Id", (IEnumerable<SelectListItem>)ViewBag.Pops)<br /><br /><br />
 
@@ -25,7 +25,7 @@
         <div class="form-group">
             @Html.Label("Bildens namn inkl filformat")<br />
             @Html.EditorFor(x => Model.ImgUrl, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.ImgUrl, "", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.ImgUrl, "*obligatoriskt", new { @class = "text-danger" })
             @Html.HiddenFor(x => Model.ImgUrl)
         </div><br /><br />
 
