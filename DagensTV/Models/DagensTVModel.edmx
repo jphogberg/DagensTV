@@ -75,7 +75,7 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="Name" Type="varchar(max)" />
           <Property Name="CategoryId" Type="int" />
           <Property Name="MovieGenre" Type="varchar" MaxLength="50" />
           <Property Name="ImdbRating" Type="nchar" MaxLength="10" />
@@ -102,6 +102,18 @@
             </Principal>
             <Dependent Role="Schedule">
               <PropertyRef Name="ShowId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MyChannels_ToChannel">
+          <End Role="Channel" Type="Self.Channel" Multiplicity="1" />
+          <End Role="MyChannels" Type="Self.MyChannels" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Channel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MyChannels">
+              <PropertyRef Name="ChannelId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -141,18 +153,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Table_ToTable_1">
-          <End Role="Channel" Type="Self.Channel" Multiplicity="1" />
-          <End Role="MyChannels" Type="Self.MyChannels" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Channel">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="MyChannels">
-              <PropertyRef Name="ChannelId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="DagensTVModelStoreContainer">
           <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Channel" EntityType="Self.Channel" Schema="dbo" store:Type="Tables" />
@@ -170,6 +170,10 @@
             <End Role="Show" EntitySet="Show" />
             <End Role="Schedule" EntitySet="Schedule" />
           </AssociationSet>
+          <AssociationSet Name="FK_MyChannels_ToChannel" Association="Self.FK_MyChannels_ToChannel">
+            <End Role="Channel" EntitySet="Channel" />
+            <End Role="MyChannels" EntitySet="MyChannels" />
+          </AssociationSet>
           <AssociationSet Name="FK_Person_Role" Association="Self.FK_Person_Role">
             <End Role="Role" EntitySet="Role" />
             <End Role="Person" EntitySet="Person" />
@@ -181,10 +185,6 @@
           <AssociationSet Name="FK_Show_ToTable" Association="Self.FK_Show_ToTable">
             <End Role="Category" EntitySet="Category" />
             <End Role="Show" EntitySet="Show" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Table_ToTable_1" Association="Self.FK_Table_ToTable_1">
-            <End Role="Channel" EntitySet="Channel" />
-            <End Role="MyChannels" EntitySet="MyChannels" />
           </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -232,7 +232,7 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="CategoryId" Type="Int32" />
           <NavigationProperty Name="Category" Relationship="Self.FK_Show_ToTable" FromRole="Show" ToRole="Category" />
           <NavigationProperty Name="Schedule" Relationship="Self.FK_Listing_ToTable_1" FromRole="Show" ToRole="Schedule" />
