@@ -94,3 +94,43 @@ $('.show-genre').click(function () {
 $('.show-calendar').click(function () {
     $("#nav-second-calendar").toggle();
 });
+
+/* Testar local storage*/
+$(document).ready(function () {
+
+    $("#save-local").click(function (e) {
+        e.preventDefault();
+
+        localStorage.clear();
+
+        var listContents = [];
+        $("#myList").each(function () {
+            listContents.push(this.innerHTML);
+        })
+        localStorage.setItem('myChannelList', JSON.stringify(listContents));
+    });
+
+    //$("#clearAll").click(function (e) {
+    //    e.preventDefault();
+    //    localStorage.clear();
+    //    location.reload();
+    //});
+
+    loadMyChannelList();
+
+    function loadToDo() {
+        if (localStorage.getItem('todoList')) {
+            var listContents = JSON.parse(localStorage.getItem('todoList'));
+            $("ul").each(function (i) {
+                this.innerHTML = listContents[i];
+            })
+        }
+    }
+});
+/*Testar om det finns något sparat*/
+if (!localStorage.getItem('bgcolor')) {
+    populateStorage();
+} else {
+    Storage.clear();
+    populateStorage();
+}

@@ -21,11 +21,11 @@ namespace DagensTV.Models
         }
     
         public int Id { get; set; }
-        public Nullable<bool> Svt1 { get; set; }
-        public Nullable<bool> Svt2 { get; set; }
-        public Nullable<bool> Tv3 { get; set; }
-        public Nullable<bool> Tv4 { get; set; }
-        public Nullable<bool> Kanal5 { get; set; }
+        public bool Svt1 { get; set; }
+        public bool Svt2 { get; set; }
+        public bool Tv3 { get; set; }
+        public bool Tv4 { get; set; }
+        public bool Kanal5 { get; set; }
         public Nullable<int> PersonId { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

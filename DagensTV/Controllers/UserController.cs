@@ -20,20 +20,15 @@ namespace DagensTV.Controllers
         // GET: User
         public ActionResult MyPage()
         {
-            Settings mySet = new Settings();
-            mySet = db.Settings.SingleOrDefault(x => x.PersonId == Person.activeUser.Id);
+            MyPageVM mp = new MyPageVM();
 
-            //Person.activeUser.mySettings.Add(mySet.Svt1);
+            Settings mySet = db.Settings.SingleOrDefault(x => x.PersonId == Person.activeUser.Id);
+            var channelList = db.Channel.ToList();
 
-
-
-            //var channels = db.Channel.ToList();
-            //foreach(var item in channels)
-            //{
-            //    item.MyPage
-            //}
-
-            return View(db.Channel.ToList());
+            mp.MySettings = mySet;
+            mp.Channels.AddRange(channelList);
+            
+            return View(mp);
         }
 
         [HttpPost]
@@ -58,15 +53,15 @@ namespace DagensTV.Controllers
             userSetting.PersonId = Person.activeUser.Id;
 
 
-            var dbSettings = db.Settings.ToList(); 
-            foreach(var item in dbSettings)
+            var dbSettings = db.Settings.ToList();
+            foreach (var item in dbSettings)
             {
-                if(item.PersonId == Person.activeUser.Id)
+                if (item.PersonId == Person.activeUser.Id)
                 {
                     Settings p = new Settings();
                     var pr = db.Settings.Where(x => x.PersonId == Person.activeUser.Id);
 
-                    foreach(var dj in pr)
+                    foreach (var dj in pr)
                     {
                         p.Id = dj.Id;
 

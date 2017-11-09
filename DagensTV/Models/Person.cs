@@ -18,6 +18,8 @@ namespace DagensTV.Models
         public Person()
         {
             this.Settings1 = new HashSet<Settings>();
+            this.Channel = new HashSet<Channel>();
+            this.Show = new HashSet<Show>();
         }
     
         public int Id { get; set; }
@@ -27,6 +29,7 @@ namespace DagensTV.Models
         public string Password { get; set; }
         public Nullable<int> RoleId { get; set; }
         public Nullable<int> SettingsId { get; set; }
+
         public string RoleName { get; set; }
 
         public static Person activeUser = new Person();
@@ -37,5 +40,9 @@ namespace DagensTV.Models
         public virtual Settings Settings { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Settings> Settings1 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Channel> Channel { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Show> Show { get; set; }
     }
 }

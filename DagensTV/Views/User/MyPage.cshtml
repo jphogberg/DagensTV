@@ -1,4 +1,4 @@
-﻿@model IList<DagensTV.Models.Channel>
+﻿@model DagensTV.Models.ViewModels.MyPageVM
 
 @{
     ViewBag.Title = "Inställningar";
@@ -12,16 +12,16 @@
 {
     if (Model != null)
     {
-        
-        for (var i = 0; i < Model.Count; i++)
+
+        for (var i = 0; i < Model.Channels.Count; i++)
         {
             <section class="my-channelList">
-                <ul id="ItemList">
+                <ul id="myList">
                     <li>
-                        @Html.HiddenFor(x => x[i].Id)
-                        @Html.HiddenFor(x => x[i].Name)
+                        @Html.HiddenFor(x => Model.Channels)
+                        @Html.HiddenFor(x => x.Name)
                         @Html.HiddenFor(x => x[i].LogoFilePath)
-                        @Html.CheckBoxFor(x => x[i].MyPage)
+                        @Html.CheckBoxFor(x => Model.MySettings.[i].)
                         
                         <img src="../@Model[i].LogoFilePath" class="channel" title="@Model[i].Name" alt="@Model[i].Name"><span id="channel-name"> @Model[i].Name</span>
                     </li>
@@ -29,8 +29,25 @@
             </section>
         }
         <div class="channel-picker-submit">
-            <input type="submit" value="Spara kanalval" class="btn btn-success">
+            <input id="save-local" type="submit" value="Spara kanalval" class="btn btn-success">
         </div>
     }
 }
 </div>
+
+
+@*for (var i = 0; i < Model.Count; i++)
+        {
+<section class="my-channelList">
+    <ul id="ItemList">
+        <li>
+            @Html.HiddenFor(x => x[i].Id)
+            @Html.HiddenFor(x => x[i].Name)
+            @Html.HiddenFor(x => x[i].LogoFilePath)
+            @Html.CheckBoxFor(x => x[i].MyPage)
+
+            <img src="../@Model[i].LogoFilePath" class="channel" title="@Model[i].Name" alt="@Model[i].Name"><span id="channel-name"> @Model[i].Name</span>
+        </li>
+    </ul>
+</section>
+        }*@

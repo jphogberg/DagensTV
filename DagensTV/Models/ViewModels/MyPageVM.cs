@@ -8,5 +8,6 @@ namespace DagensTV.Models.ViewModels
     public class MyPageVM
     {
         public List<Channel> Channels { get; set; }
+        public Settings MySettings { get; set; }
     }
 }
