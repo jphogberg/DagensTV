@@ -74,6 +74,7 @@ namespace DagensTV.Controllers
 
         public ActionResult MyFavorites()
         {
+            //var allShows
             return PartialView("_MyFavorites", db.Show.ToList());
         }
 
@@ -93,6 +94,7 @@ namespace DagensTV.Controllers
                     mf = new MyFavorites();
                     mf.ShowId = s.Id;
                     mf.PersonId = Person.activeUser.Id;
+                    mf.Style = "myfavorite-show";
                     trueList.Add(mf);
                 }
                 if (s.MyProgram == false)
@@ -100,6 +102,7 @@ namespace DagensTV.Controllers
                     mf = new MyFavorites();
                     mf.ShowId = s.Id;
                     mf.PersonId = Person.activeUser.Id;
+                    mf.Style = "";
                     falseList.Add(mf);
                 }
             }
