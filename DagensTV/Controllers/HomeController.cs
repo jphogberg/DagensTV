@@ -17,8 +17,7 @@ namespace DagensTV.Controllers
         DagensTVEntities db = new DagensTVEntities();
         DbOperations dbo = new DbOperations();
 
-        #region Main       
-        [Route("Home/Index/{date:datetime}")]
+        #region Main               
         public ActionResult Index(string date)
         {
             if (date == null)
@@ -27,73 +26,23 @@ namespace DagensTV.Controllers
                 date = today.ToShortDateString();
             }
 
-            //dbo.GetShows(date);
-            //dbo.GetSchedule(date);
+            //dbo.GetShowsFromJson(date);
+            //dbo.GetScheduleFromJson(date);                               
 
-            var dt = DateTime.Parse(date);
-
-            var channelList = db.Channel.Select(x => new ChannelVM
-            {
-                Id = x.Id,
-                Name = x.Name,
-                ImgUrl = x.LogoFilePath,
-                Schedules = db.Schedule.Where(s => s.ChannelId == x.Id && s.StartTime.Day == dt.Day).Select(schedule => new ScheduleVM
-                {
-                    Id = schedule.Id,
-                    StartTime = schedule.StartTime,
-                    Duration = schedule.Duration,
-                    EndTime = (DateTime)DbFunctions.AddMinutes(schedule.StartTime, schedule.Duration),
-                    ChannelId = schedule.ChannelId,
-                    ShowId = schedule.Show.Id,
-                    ShowName = schedule.Show.Name,
-                    CategoryTag = schedule.Show.Category.Tag,
-                    MovieGenre = schedule.Show.MovieGenre,
-                    ImdbRating = schedule.Show.ImdbRating,
-                    StarImage = schedule.Show.RatingIcon,
-                    HasPassed = DbFunctions.AddMinutes(schedule.StartTime, schedule.Duration) < DateTime.Now,
-                    IsActive = schedule.StartTime < DateTime.Now && DbFunctions.AddMinutes(schedule.StartTime, schedule.Duration) > DateTime.Now
-                }).ToList()
-            });
-
-            // Används inte ännu
-            //var date = DateTime.Now;
-            //var dates = new List<string>
-            //{
-            //    date.ToShortDateString(),
-            //    date.AddDays(1).ToShortDateString(),
-            //    date.AddDays(2).ToShortDateString(),
-            //    date.AddDays(3).ToShortDateString(),
-            //    date.AddDays(4).ToShortDateString(),
-            //    date.AddDays(5).ToShortDateString(),
-            //    date.AddDays(6).ToShortDateString(),
-            //};
-
-            return View(channelList);
+            return View(dbo.GetSchedule(date));
         }
 
-        //[ActionName("FilterSchedule")]
-        //public ActionResult Index(string Filter)
-        //{
-        //    var filterList = db.Channel.Select(x => new ChannelVM
-        //    {
-        //        Id = x.Id,
-        //        Name = x.Name,
-        //        ImgUrl = x.LogoFilePath,
-        //        Schedules = db.Schedule.Where(s => s.ChannelId == x.Id && s.Show.Category.Name.Contains(Filter)).Select(schedule => new ScheduleVM
-        //        {
-        //            Id = schedule.Id,
-        //            StartTime = schedule.StartTime,
-        //            ChannelId = schedule.ChannelId,
-        //            ShowName = schedule.Show.Name,
-        //            CategoryTag = schedule.Show.Category.Tag,
-        //            MovieGenre = schedule.Show.MovieGenre,
-        //            ImdbRating = schedule.Show.ImdbRating,
-        //            StarImage = schedule.Show.RatingIcon
-        //        }).ToList()
-        //    });
+        [ActionName("FilterSchedule")]
+        public ActionResult Index(string Filter, string date)
+        {
+            if (date == null)
+            {
+                var today = DateTime.Now;
+                date = today.ToShortDateString();
+            }
 
-        //    return PartialView("_TvSchedules", filterList);
-        //}
+            return PartialView("_TvSchedules", dbo.FilterScheduleByCategory(Filter));
+        }
 
         public ActionResult ShowInfo(int Id)
         {
