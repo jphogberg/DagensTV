@@ -268,6 +268,8 @@ namespace DagensTV.Data
 
         #endregion
 
+        #region Schedule
+
         public IQueryable<ChannelVM> GetSchedule(string date)
         {
             var dt = DateTime.Parse(date);
@@ -354,6 +356,6 @@ namespace DagensTV.Data
         {
             return db.Category.ToList();
         }
-
+        #endregion
     }
 }
