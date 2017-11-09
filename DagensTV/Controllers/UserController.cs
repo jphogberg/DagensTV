@@ -83,7 +83,7 @@ namespace DagensTV.Controllers
         public ActionResult MyFavorites(IEnumerable<Show> shows)
         {
             #region Get user input
-            var myShows = db.Show.ToList();
+            var myShows = shows.ToList();
             MyFavorites mf;
             List<MyFavorites> trueList = new List<MyFavorites>();
             List<MyFavorites> falseList = new List<MyFavorites>();
