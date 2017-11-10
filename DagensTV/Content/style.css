@@ -370,8 +370,8 @@ figure figcaption {
     font-weight: 700;
 }
 
-.myfavorite-show:hover {
-    font-size: 1.1em;
+.myfavorite-info {
+    font-size: .6em;
 }
 
 .content-wrapper {
@@ -650,6 +650,10 @@ a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
     overflow: auto;    
 	background-color: #000;
     background-color: rgba(0,0,0,0.4);
+}
+
+.hidden-info {
+    display: none;
 }
 
 #overlay-channelname {    

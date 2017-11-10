@@ -439,11 +439,28 @@ namespace DagensTV.Data
             });
 
             return filter;
-        }
+        }      
 
-        public List<Category> GetCategories()
+        public List<ScheduleVM> ShowInfo(int id)
         {
-            return db.Category.ToList();
+            var myFavorites = db.MyFavorites.Where(x => x.PersonId == Person.activeUser.Id).Select(s => s.ShowId).ToList();
+
+            var scheduleList = db.Schedule.Where(x => x.Id == id).Select(x => new ScheduleVM
+            {
+                StartTime = x.StartTime,
+                EndTime = (DateTime)DbFunctions.AddMinutes(x.StartTime, x.Duration),
+                ChannelName = x.Channel.Name,
+                ShowName = x.Show.Name,
+                Resume = x.Resume,
+                CategoryName = x.Show.Category.Name,
+                CategoryTag = x.Show.Category.Tag,
+                MovieGenre = x.Show.MovieGenre,
+                ImdbRating = x.Show.ImdbRating,
+                StarImage = x.Show.RatingIcon,
+                FavShow = myFavorites.Contains((int)x.ShowId)
+            }).ToList();
+
+            return scheduleList;
         }
         #endregion
     }

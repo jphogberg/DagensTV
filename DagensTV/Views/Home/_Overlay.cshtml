@@ -2,8 +2,9 @@
 {
     foreach (var item in ViewBag.ScheduleList)
     {
-        <h1>@item.ShowName</h1>
+        <h1 class="@(item.FavShow? "mdi mdi-thumb-up" : "")"> @item.ShowName</h1>
             <h6 id="overlay-text">@item.StartTime.ToShortDateString(), @item.StartTime.ToShortTimeString() - @item.EndTime.ToShortTimeString() <span id="overlay-channelname">@item.ChannelName</span></h6>
             <p id="overlay-resume">@item.Resume</p>
+            <span class="@(item.FavShow? "mdi mdi-information-variant myfavorite-info" : "hidden-info")"> @item.ShowName är markerat som ett av dina favoritprogram.</span>
     }
 }

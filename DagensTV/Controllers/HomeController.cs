@@ -83,31 +83,12 @@ namespace DagensTV.Controllers
 
         public ActionResult ShowInfo(int Id)
         {
-            List<ScheduleVM> scheduleList = db.Schedule.Where(x => x.Id == Id).Select(x => new ScheduleVM
-            {
-                StartTime = x.StartTime,
-                EndTime = (DateTime)DbFunctions.AddMinutes(x.StartTime, x.Duration),
-                //EndTime = DbFunctions.AddMinutes(x.StartTime, x.Duration),
-                ChannelName = x.Channel.Name,
-                ShowName = x.Show.Name,
-                Resume = x.Resume,
-                CategoryName = x.Show.Category.Name,
-                CategoryTag = x.Show.Category.Tag,
-                MovieGenre = x.Show.MovieGenre,
-                ImdbRating = x.Show.ImdbRating,
-                StarImage = x.Show.RatingIcon
-            }).ToList();
+            var scheduleList = dbo.ShowInfo(Id);                       
 
             ViewBag.ScheduleList = scheduleList;
 
             return PartialView("_Overlay");
-        }
-
-        public ActionResult ActiveShow()
-        {
-
-            return View();
-        }
+        }       
         #endregion
 
         #region Popular Content
