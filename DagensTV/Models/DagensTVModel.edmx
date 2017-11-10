@@ -74,10 +74,10 @@
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="StartTime" Type="datetime" Nullable="false" />
           <Property Name="Duration" Type="int" Nullable="false" />
+          <Property Name="EndTime" Type="datetime" Nullable="false" />
           <Property Name="Resume" Type="varchar(max)" />
           <Property Name="ChannelId" Type="int" />
           <Property Name="ShowId" Type="int" />
-          <Property Name="EndTime" Type="datetime" Nullable="false" />
         </EntityType>
         <EntityType Name="Show">
           <Key>

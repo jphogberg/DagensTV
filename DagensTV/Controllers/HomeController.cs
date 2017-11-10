@@ -24,10 +24,7 @@ namespace DagensTV.Controllers
             {
                 var today = DateTime.Now;
                 date = today.ToShortDateString();
-            }
-
-            dbo.GetShowsFromJson(date);
-            dbo.GetScheduleFromJson(date);
+            }          
             
             if (date == DateTime.Now.ToShortDateString())
             {

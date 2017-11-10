@@ -345,7 +345,13 @@ namespace DagensTV.Data
         public IQueryable<ChannelVM> GetSchedule(string date)
         {
             var dt = DateTime.Parse(date);
-            var ts = new TimeSpan(05, 30, 00); // Används inte än, skulle vilja få till att tablåerna går från 05:30:00 en dag till 05:30:00 nmästa men...
+            //var ts = new TimeSpan(05, 30, 00); // Används inte än, skulle vilja få till att tablåerna går från 05:30:00 en dag till 05:30:00 nmästa men...
+
+            if(!db.Schedule.Any(s => s.StartTime.Day == dt.Day))
+            {
+                GetShowsFromJson(date);
+                GetScheduleFromJson(date);
+            }
 
             var schedule = db.Channel.Select(x => new ChannelVM
             {
@@ -374,6 +380,13 @@ namespace DagensTV.Data
         public IQueryable<ChannelVM> GetSchedule(string date, int id)
         {
             var dt = DateTime.Parse(date);
+
+            if (!db.Schedule.Any(s => s.StartTime.Day == dt.Day))
+            {
+                GetShowsFromJson(date);
+                GetScheduleFromJson(date);
+            }
+
             var myChannels = db.MyChannels.Where(x => x.PersonId == id).Select(c => c.ChannelId).ToList();
             var myFavorites = db.MyFavorites.Where(x => x.PersonId == id).Select(s => s.ShowId).ToList();
                        
@@ -395,24 +408,10 @@ namespace DagensTV.Data
                     ImdbRating = sc.Show.ImdbRating,
                     StarImage = sc.Show.RatingIcon,
                     HasPassed = sc.EndTime < DateTime.Now,
-                    IsActive = sc.StartTime < DateTime.Now && sc.EndTime > DateTime.Now                    
+                    IsActive = sc.StartTime < DateTime.Now && sc.EndTime > DateTime.Now,
+                    FavShow = myFavorites.Contains((int)sc.ShowId)
                 }).ToList()
-            });
-
-            // Försök att visa favoritprogram, hann inte längre än så
-            //foreach (var s in schedule)
-            //{
-            //    foreach (var sc in s.Schedules)
-            //    {
-            //        foreach (var mf in myFavorites)
-            //        {
-            //            if (mf.Equals(sc.ShowId))
-            //            {
-            //                sc.FavShow = mf;
-            //            }
-            //        }
-            //    }
-            //}
+            });        
 
             return schedule;            
         }

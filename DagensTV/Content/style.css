@@ -367,7 +367,11 @@ figure figcaption {
 }
 
 .myfavorite-show {
-    text-shadow: 2px #333;
+    font-weight: 700;
+}
+
+.myfavorite-show:hover {
+    font-size: 1.1em;
 }
 
 .content-wrapper {

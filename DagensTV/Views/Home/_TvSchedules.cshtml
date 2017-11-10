@@ -24,7 +24,7 @@
                 {
                     <li class="@(show.HasPassed? "passed-programme" : "") @(show.IsActive?"active-programme":"")">
                         <span class="start-time" data-date="@show.StartTime.ToShortDateString()">@show.StartTime.ToShortTimeString()</span><div class="@show.CategoryTag">
-                            <span class="title" title="@show.ShowName"><a onclick="ShowInfo(@show.Id)">@show.ShowName</a></span><br>
+                            <span class="title" title="@show.ShowName"><a onclick="ShowInfo(@show.Id)" class="@(show.FavShow? "mdi mdi-thumb-up myfavorite-show" : "") "> @show.ShowName</a></span><br>
                             <span class="genre">@show.MovieGenre</span><span class="rating @show.StarImage"> @show.ImdbRating</span>
                         </div>
                         <div id="progressbar" class="@i-track-time @show.CategoryTag" data-start="@show.StartTime" data-end="@show.EndTime"></div>
