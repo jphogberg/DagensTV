@@ -345,7 +345,13 @@ namespace DagensTV.Data
         public IQueryable<ChannelVM> GetSchedule(string date)
         {
             var dt = DateTime.Parse(date);
-            var ts = new TimeSpan(05, 30, 00); // Används inte än, skulle vilja få till att tablåerna går från 05:30:00 en dag till 05:30:00 nmästa men...
+            //var ts = new TimeSpan(05, 30, 00); // Används inte än, skulle vilja få till att tablåerna går från 05:30:00 en dag till 05:30:00 nmästa men...
+
+            if(!db.Schedule.Any(s => s.StartTime.Day == dt.Day))
+            {
+                GetShowsFromJson(date);
+                GetScheduleFromJson(date);
+            }
 
             var schedule = db.Channel.Select(x => new ChannelVM
             {
@@ -374,6 +380,13 @@ namespace DagensTV.Data
         public IQueryable<ChannelVM> GetSchedule(string date, int id)
         {
             var dt = DateTime.Parse(date);
+
+            if (!db.Schedule.Any(s => s.StartTime.Day == dt.Day))
+            {
+                GetShowsFromJson(date);
+                GetScheduleFromJson(date);
+            }
+
             var myChannels = db.MyChannels.Where(x => x.PersonId == id).Select(c => c.ChannelId).ToList();
             var myFavorites = db.MyFavorites.Where(x => x.PersonId == id).Select(s => s.ShowId).ToList();
                        
@@ -395,24 +408,10 @@ namespace DagensTV.Data
                     ImdbRating = sc.Show.ImdbRating,
                     StarImage = sc.Show.RatingIcon,
                     HasPassed = sc.EndTime < DateTime.Now,
-                    IsActive = sc.StartTime < DateTime.Now && sc.EndTime > DateTime.Now                    
+                    IsActive = sc.StartTime < DateTime.Now && sc.EndTime > DateTime.Now,
+                    FavShow = myFavorites.Contains((int)sc.ShowId)
                 }).ToList()
-            });
-
-            // Försök att visa favoritprogram, hann inte längre än så
-            //foreach (var s in schedule)
-            //{
-            //    foreach (var sc in s.Schedules)
-            //    {
-            //        foreach (var mf in myFavorites)
-            //        {
-            //            if (mf.Equals(sc.ShowId))
-            //            {
-            //                sc.FavShow = mf;
-            //            }
-            //        }
-            //    }
-            //}
+            });        
 
             return schedule;            
         }
@@ -420,6 +419,7 @@ namespace DagensTV.Data
         public IQueryable<ChannelVM> FilterScheduleByCategory(string category, string date)
         {            
             var dt = DateTime.Parse(date);
+            var myFavorites = db.MyFavorites.Where(x => x.PersonId == Person.activeUser.Id).Select(s => s.ShowId).ToList();
 
             var filter = db.Channel.Select(x => new ChannelVM
             {
@@ -435,16 +435,34 @@ namespace DagensTV.Data
                     CategoryTag = sc.Show.Category.Tag,
                     MovieGenre = sc.Show.MovieGenre,
                     ImdbRating = sc.Show.ImdbRating,
-                    StarImage = sc.Show.RatingIcon
+                    StarImage = sc.Show.RatingIcon,
+                    FavShow = myFavorites.Contains((int)sc.ShowId)
                 }).ToList()
             });
 
             return filter;
-        }
+        }      
 
-        public List<Category> GetCategories()
+        public List<ScheduleVM> ShowInfo(int id)
         {
-            return db.Category.ToList();
+            var myFavorites = db.MyFavorites.Where(x => x.PersonId == Person.activeUser.Id).Select(s => s.ShowId).ToList();
+
+            var scheduleList = db.Schedule.Where(x => x.Id == id).Select(x => new ScheduleVM
+            {
+                StartTime = x.StartTime,
+                EndTime = (DateTime)DbFunctions.AddMinutes(x.StartTime, x.Duration),
+                ChannelName = x.Channel.Name,
+                ShowName = x.Show.Name,
+                Resume = x.Resume,
+                CategoryName = x.Show.Category.Name,
+                CategoryTag = x.Show.Category.Tag,
+                MovieGenre = x.Show.MovieGenre,
+                ImdbRating = x.Show.ImdbRating,
+                StarImage = x.Show.RatingIcon,
+                FavShow = myFavorites.Contains((int)x.ShowId)
+            }).ToList();
+
+            return scheduleList;
         }
         #endregion
     }

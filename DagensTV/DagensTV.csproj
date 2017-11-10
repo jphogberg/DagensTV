@@ -262,6 +262,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="img\alien.jpg" />
+    <Content Include="img\colott.jpg" />
     <Content Include="img\detroit.jpg" />
     <Content Include="img\doobidoo.jpg" />
     <Content Include="img\hammarby.jpg" />
