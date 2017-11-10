@@ -23,11 +23,15 @@ var ShowInfo = function (id) {
 /* Filtera tablån efter vald kategori */
 $(".category-filter").click(function () {
     var filter = $(this).attr('title');
-    //var date = $(".start-time").text();
+    var date = $(".start-time").data("date");    
     $.ajax({
 
         type: "GET",
-        url: "/Home/FilterSchedule?Filter=" + filter,
+        url: "/Home/FilterSchedule",
+        data: {
+            Filter: filter,
+            date: date
+        },
         contentType: "html",
         success: function (response) {
             $("#schedules").html(response);

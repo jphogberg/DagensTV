@@ -23,7 +23,7 @@
                 @foreach (var show in channel.Schedules)
                 {
                     <li class="@(show.HasPassed? "passed-programme" : "") @(show.IsActive?"active-programme":"")">
-                        <span class="start-time">@show.StartTime.ToShortTimeString()</span><div class="@show.CategoryTag">
+                        <span class="start-time" data-date="@show.StartTime.ToShortDateString()">@show.StartTime.ToShortTimeString()</span><div class="@show.CategoryTag">
                             <span class="title" title="@show.ShowName"><a onclick="ShowInfo(@show.Id)">@show.ShowName</a></span><br>
                             <span class="genre">@show.MovieGenre</span><span class="rating @show.StarImage"> @show.ImdbRating</span>
                         </div>
@@ -33,5 +33,5 @@
                 }
             </ul>
         </section>
-                        }
-                    }
+    }
+}

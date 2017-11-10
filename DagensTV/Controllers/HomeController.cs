@@ -28,12 +28,7 @@ namespace DagensTV.Controllers
 
             dbo.GetShowsFromJson(date);
             dbo.GetScheduleFromJson(date);
-
-            if (Person.activeUser.Id != 0)
-            {
-                return View(dbo.GetSchedule(date, Person.activeUser.Id));
-            }            
-
+            
             if (date == DateTime.Now.ToShortDateString())
             {
                 var dateText = "Dagens tv-tablå";
@@ -50,7 +45,12 @@ namespace DagensTV.Controllers
                 var day = new System.Globalization.CultureInfo("sv-SE").DateTimeFormat.GetDayName(dateParse);
                 var dateText = "Tv-tablå för " + day;
                 ViewBag.Date = dateText;
-            }            
+            }
+
+            if (Person.activeUser.Id != 0)
+            {
+                return View(dbo.GetSchedule(date, Person.activeUser.Id));
+            }
 
             return View(dbo.GetSchedule(date));
         }
@@ -62,9 +62,26 @@ namespace DagensTV.Controllers
             {
                 var today = DateTime.Now;
                 date = today.ToShortDateString();
-            }
+            }                       
 
-            return PartialView("_TvSchedules", dbo.FilterScheduleByCategory(Filter));
+            if (date == DateTime.Now.ToShortDateString())
+            {
+                var dateText = Filter + " på tv idag";
+                ViewBag.Date = dateText;
+            }
+            else if (date == DateTime.Now.AddDays(1).ToShortDateString())
+            {
+                var dateText = Filter + " på tv imorgon";
+                ViewBag.Date = dateText;
+            }
+            else
+            {
+                var dateParse = DateTime.Parse(date).DayOfWeek;
+                var day = new System.Globalization.CultureInfo("sv-SE").DateTimeFormat.GetDayName(dateParse);
+                var dateText = Filter + " på tv på " + day;
+                ViewBag.Date = dateText;
+            }           
+            return PartialView("_TvSchedules", dbo.FilterScheduleByCategory(Filter, date));
         }
 
         public ActionResult ShowInfo(int Id)
