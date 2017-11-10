@@ -13,7 +13,7 @@ using DagensTV.Data;
 namespace DagensTV.Controllers
 {
     public class HomeController : Controller
-    {
+    {        
         DagensTVEntities db = new DagensTVEntities();
         DbOperations dbo = new DbOperations();
 
@@ -45,8 +45,8 @@ namespace DagensTV.Controllers
             }
 
             if (Person.activeUser.Id != 0)
-            {
-                return View(dbo.GetSchedule(date, Person.activeUser.Id));
+            {                
+                return View(dbo.GetSchedule(date, Person.activeUser.Id));                
             }
 
             return View(dbo.GetSchedule(date));

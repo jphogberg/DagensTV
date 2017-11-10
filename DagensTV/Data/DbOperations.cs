@@ -419,6 +419,7 @@ namespace DagensTV.Data
         public IQueryable<ChannelVM> FilterScheduleByCategory(string category, string date)
         {            
             var dt = DateTime.Parse(date);
+            var myFavorites = db.MyFavorites.Where(x => x.PersonId == Person.activeUser.Id).Select(s => s.ShowId).ToList();
 
             var filter = db.Channel.Select(x => new ChannelVM
             {
@@ -434,7 +435,8 @@ namespace DagensTV.Data
                     CategoryTag = sc.Show.Category.Tag,
                     MovieGenre = sc.Show.MovieGenre,
                     ImdbRating = sc.Show.ImdbRating,
-                    StarImage = sc.Show.RatingIcon
+                    StarImage = sc.Show.RatingIcon,
+                    FavShow = myFavorites.Contains((int)sc.ShowId)
                 }).ToList()
             });
 
