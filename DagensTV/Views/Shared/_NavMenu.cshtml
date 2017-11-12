@@ -1,4 +1,8 @@
-﻿<header>
+﻿@using DagensTV.Data
+@using DagensTV.Models
+
+
+<header>
     <a href="@Url.Action("Index", "Home")" id="logo"></a>
     <nav class="menu" id="nav-menu">
         <div id="nav-content">
@@ -6,30 +10,49 @@
                 <li>
                     <a href="@Url.Action("Index", "Home")" class="menuLink mdi mdi-television"
                        id="@(ViewBag.Current == "Home" ? "current" : "")">Tv-tablå</a>
-                </li>
-                @if (User.Identity.IsAuthenticated)
-                {
-                    <li>
-                        <a href="@Url.Action("MyPage", "User")" class="menuLink mdi mdi-settings"
-                           id="@(ViewBag.Current == "MyPage" ? "current" : "")">Inställningar</a>
-                    </li>
-                }
-                else
-                {
-                    <li>
-                        <a href="@Url.Action("Login", "Account")" class="menuLink mdi mdi-settings">Inställningar</a>
-                    </li>                    
-                    @*<li>
-                        <a href="@Url.Action("Index", "Admin")" class="menuLink mdi mdi-settings"
-                           id="@(ViewBag.Current == "Index" ? "current" : "")">Admin</a>
-                    </li>*@
-                }                                  
-                
-                @*<li class="menuLink" id="search-large">
-                        <form>
-                            <input class="searchbox ui-widget" type="search" name="search" placeholder="" title="Sök...">
-                        </form>
-                    </li>*@
+                </li>                
+                @{
+                    DagensTV.Data.DbOperations dbo = new DbOperations();
+                    if (User.Identity.IsAuthenticated && dbo.IsInRole(Person.activeUser.Username, "Redaktör"))
+                    {
+                        <li>
+                            <a href="@Url.Action("MyPage", "User")" class="menuLink mdi mdi-settings"
+                               id="@(ViewBag.Current == "MyPage" ? "current" : "")">Inställningar</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index", "Admin")" class="menuLink mdi mdi-settings"
+                               id="@(ViewBag.Current == "Index" ? "current" : "")">Admin</a>
+                        </li>
+                        @*<li class="menuLink" id="search-large">
+                            <form>
+                                <input class="searchbox ui-widget" type="search" name="search" placeholder="" title="Sök...">
+                            </form>
+                        </li>*@
+                    }
+                    else if (User.Identity.IsAuthenticated)
+                    {
+                        <li>
+                            <a href="@Url.Action("MyPage", "User")" class="menuLink mdi mdi-settings"
+                               id="@(ViewBag.Current == "MyPage" ? "current" : "")">Inställningar</a>
+                        </li>
+                        @*<li class="menuLink" id="search-large">
+                            <form>
+                                <input class="searchbox ui-widget" type="search" name="search" placeholder="" title="Sök...">
+                            </form>
+                        </li>*@
+                    }
+                    else
+                    {
+                        <li>
+                            <a href="@Url.Action("Login", "Account")" class="menuLink mdi mdi-settings">Inställningar</a>
+                        </li>
+                        @*<li class="menuLink" id="search-large">
+                            <form>
+                                <input class="searchbox ui-widget" type="search" name="search" placeholder="" title="Sök...">
+                            </form>
+                        </li>*@
+                    }
+                }                
             </ul>
             <div id="menu-login">
                 <ul>
@@ -39,10 +62,14 @@
                     }
                     else
                     {
-                        <li><a href="@Url.Action("Login", "Account")" class="menuLink mdi mdi-login-variant" 
-                               id="@(ViewBag.Current == "Login" ? "current" : "")"> Logga in</a></li>
-                        <li><a href="@Url.Action("CreateAccount", "Account")" class="menuLink mdi mdi-account-plus"
-                               id="@(ViewBag.Current == "Create" ? "current" : "")"> Skapa konto</a></li>
+                        <li>
+                            <a href="@Url.Action("Login", "Account")" class="menuLink mdi mdi-login-variant"
+                               id="@(ViewBag.Current == "Login" ? "current" : "")">Logga in</a>
+                        </li>
+                            <li>
+                                <a href="@Url.Action("CreateAccount", "Account")" class="menuLink mdi mdi-account-plus"
+                                   id="@(ViewBag.Current == "Create" ? "current" : "")">Skapa konto</a>
+                            </li>
                     }
                 </ul>
             </div>

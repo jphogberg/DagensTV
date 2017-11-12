@@ -38,7 +38,7 @@ namespace DagensTV.Data
         }
 
         public bool IsInRole(string userName, string roleName)
-        {
+        {            
             var role = db.Person
                 .Where(x => x.Username.Equals(userName))
                 .Include(x => x.Role).Where(x => x.Role.Name.Equals(roleName));
@@ -88,9 +88,7 @@ namespace DagensTV.Data
                                     {
                                         string message = string.Format("{0}:{1}",
                                             validationErrors.Entry.Entity.ToString(),
-                                            validationError.ErrorMessage);
-                                        // raise a new exception nesting  
-                                        // the current instance as InnerException
+                                            validationError.ErrorMessage);                                        
                                         raise = new InvalidOperationException(message, raise);
                                     }
                                 }
@@ -156,9 +154,7 @@ namespace DagensTV.Data
                                     {
                                         string message = string.Format("{0}:{1}",
                                             validationErrors.Entry.Entity.ToString(),
-                                            validationError.ErrorMessage);
-                                        // raise a new exception nesting  
-                                        // the current instance as InnerException
+                                            validationError.ErrorMessage);                                        
                                         raise = new InvalidOperationException(message, raise);
                                     }
                                 }
